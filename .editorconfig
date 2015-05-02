@@ -1,0 +1,17 @@
+root = true
+
+[*]
+insert_final_newline = false
+charset = utf-8
+
+[*.{js,html}]
+indent_size = 4
+indent_style = tab
+trim_trailing_whitespace = true
+
+[{package.json,bower.json,.jscs.json}]
+indent_style = space
+indent_size = 2
+
+[*.sh]
+end_of_line = lf

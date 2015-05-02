@@ -1,0 +1,28 @@
+{
+  "browser": true,
+  "bitwise": true,
+  "immed": true,
+  "newcap": false,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "maxlen": 140,
+  "boss": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "expr": true,
+  "strict": true,
+  "loopfunc": true,
+  "sub": true,
+  "undef": true,
+  "globals": {
+    "angular": false,
+    "describe": false,
+    "it": false,
+    "expect": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "module": false,
+    "inject": false
+  }
+}
