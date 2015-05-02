@@ -15,6 +15,19 @@ This is a starter project that gives you an out of the box configuration for the
 * Elixir (for all the above)
 
 
+## Installation
+
+Follow these simple steps:
+
+* Clone the repository
+* `composer install`
+* `npm install`
+* `bower install`
+* `npm install -g gulp`
+* `gulp`
+* `gulp watch`
+
+
 ## Issues and Feature Requests
 
 Open a new issue.
