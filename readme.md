@@ -31,3 +31,10 @@ Follow these simple steps:
 ## Issues and Feature Requests
 
 Open a new issue.
+
+
+## Contributing
+
+You need to have this `pre-commit` hook:
+https://gist.github.com/jadjoubran/ccf963d68f6d80766298
+in order to prevent regression of [issue #1](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/1)
