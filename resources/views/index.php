@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" href="/css/vendor.css">
 	<link rel="stylesheet" href="/css/all.css">
+
+	<meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
 <body>
 
