@@ -5,6 +5,7 @@ This is a starter project that gives you an out of the box configuration for the
 * Laravel5
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * [Laravel5 Repositories](https://github.com/Bosnadev/Repositories)
+* [Laravel5 Entrust](https://github.com/Zizaco/entrust)
 * Angular
 * Angular Material
 * Angular UI Router
