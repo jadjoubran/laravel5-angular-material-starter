@@ -1,7 +1,7 @@
 {
-	"name": "laravel/laravel",
+	"name": "jadjoubran/laravel5-angular-material-starter",
 	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"keywords": ["laravel", "starter", "angular", "material"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
