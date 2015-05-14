@@ -146,7 +146,6 @@ return [
 		'App\Providers\RouteServiceProvider',
 
 		'Barryvdh\Debugbar\ServiceProvider',
-		'Zizaco\Entrust\EntrustServiceProvider',
 
 	],
 
@@ -197,7 +196,6 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 
 		'Debugbar' => 'Barryvdh\Debugbar\Facade',
-		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
 
 	],
 

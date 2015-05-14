@@ -1,11 +1,9 @@
-## Laravel 5 Angular Material Starter
+## Laravel 5 Angular Material Starter - V 1.1
 
 This is a starter project that gives you an out of the box configuration for the following:
 
 * Laravel5
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
-* [Laravel5 Repositories](https://github.com/Bosnadev/Repositories)
-* [Laravel5 Entrust](https://github.com/Zizaco/entrust)
 * Angular
 * Angular Material
 * Angular UI Router
@@ -20,10 +18,10 @@ This is a starter project that gives you an out of the box configuration for the
 
 Follow these simple steps:
 
-If you don't have composer (composer --version to make sure that you have it), you can install it using this command
+If you don't have composer (`composer --version` to make sure that you have it), you can install it using this command
 `npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
 
-* Clone the repository
+* `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
 * `npm install -g gulp bower`
 * `composer install`
 * `npm install`
@@ -41,13 +39,19 @@ Open a new issue.
 
 Here's what I'm planning for the next versions:
 
-+ Remove Entrust & Repositories since they depend on each user's preference and can be easily installed
 + Add Angular boilerplate for Landing and Login
 + Add sample Material Design pages
 + Add sample UI Router conf that contains header and footer
++ Add Restangular
++ Add sample Laravel APIs and call them using Restangular
 
 
 ## Changelog
+
+### v1.1.0
+
++ Remove Entrust & Repositories since they depend on each user's preference and can be easily installed
+
 
 ### v1.0.3
 
@@ -58,7 +62,7 @@ Here's what I'm planning for the next versions:
 
 ### v1.0.2
 
-+ renamed resources/views/index.php to resources/views/index.blade.php for the blade syntax to work (CSRF token) [PR 3](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/3)
++ Renamed resources/views/index.php to resources/views/index.blade.php for the blade syntax to work (CSRF token) [PR 3](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/3)
 
 
 ### v1.0.1
