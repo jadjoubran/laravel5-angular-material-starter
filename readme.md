@@ -1,6 +1,7 @@
 ## Laravel 5 Angular Material Starter - V 1.1
 
-This is a starter project that gives you an out of the box configuration for the following:
+This is a starter project that gives you an out of the box configuration Laravel 5 and AngularJS.
+Here are the goodies that you'll get:
 
 * Laravel5
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
@@ -44,6 +45,8 @@ Here's what I'm planning for the next versions:
 + Add sample UI Router conf that contains header and footer
 + Add Restangular
 + Add sample Laravel APIs and call them using Restangular
++ Sample route authentication (via $localStorage)
++ Installer script that does everything
 
 
 ## Changelog
