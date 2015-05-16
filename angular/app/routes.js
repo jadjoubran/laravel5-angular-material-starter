@@ -10,9 +10,23 @@
 		$urlRouterProvider.otherwise('/');
 
 		$stateProvider
-		.state('landing',{
+		.state('landing', {
 			url: '/',
-			templateUrl: getView('landing')
+			views: {
+				main: {
+					templateUrl: getView('landing')
+				}
+			}
+		}).state('dashboard', {
+			url: '/dashboard',
+			views: {
+				main: {
+					templateUrl: getView('dashboard')
+				},
+				footer: {
+					templateUrl: getView('footer')
+				}
+			}
 		});
 
 

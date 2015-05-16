@@ -3,7 +3,7 @@
 
 	angular.module('app.controllers').controller('LandingCtrl', function( $scope, $mdToast, $mdDialog ){
 
-		$scope.promoImage = 'https://d1zj60nuin5mrx.cloudfront.net/media/2015/05/08130731/laravel-angular.png';
+		$scope.promoImage = 'http://i.imgur.com/XiMykki.png';
 
 		$scope.toastNotification = function(){
 			$mdToast.show(

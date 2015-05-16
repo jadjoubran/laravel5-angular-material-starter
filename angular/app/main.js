@@ -12,9 +12,9 @@
 		]);
 
 	angular.module('app.routes', ['ui.router', 'ngStorage']);
-	angular.module('app.controllers', ['ui.router', 'ngMaterial', 'ngStorage']);
+	angular.module('app.controllers', ['ui.router', 'ngMaterial', 'ngStorage', 'restangular']);
 	angular.module('app.filters', []);
-	angular.module('app.services', ['ui.router', 'ngStorage']);
+	angular.module('app.services', ['ui.router', 'ngStorage', 'restangular']);
 	angular.module('app.directives', []);
 	angular.module('app.config', []);
 

@@ -1,6 +1,22 @@
+.Dashboard-Container li {
+  line-height: 26px;
+}
+
+.Footer-Container {
+  background-color: #ececec;
+  padding: 30px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 
 .Landing-Container {
   max-width: 500px;
   margin: 0 auto 0 auto;
+}
+.Landing-CallToAction {
+  text-align: center;
 }
 

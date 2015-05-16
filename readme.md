@@ -1,6 +1,9 @@
-## Laravel 5 Angular Material Starter - Version 1.1
+## Laravel 5 Angular Material Starter
+> Version 1.2
 
-This is a starter project that gives you an out of the box configuration Laravel 5 and AngularJS.
+![Laravel & Angular](http://i.imgur.com/XiMykki.png)
+
+This is a starter project that gives you an out of the box configuration Laravel 5 and AngularJS (folder by feature architecture).
 Here are the goodies that you'll get:
 
 * Laravel5
@@ -13,6 +16,8 @@ Here are the goodies that you'll get:
 * Jshint
 * Less
 * Elixir (for all the above)
+* Angular Material sample code
+* [ui-router](https://github.com/angular-ui/ui-router) configuration with multiple views
 
 
 ## Installation
@@ -40,17 +45,25 @@ Open a new issue.
 
 Here's what I'm planning for the next versions:
 
-+ Add Angular Material boilerplate for Dashboard
-+ Sample code for Tabs
-+ Add sample UI Router conf that contains header and footer
-+ Add Restangular
-+ Host demo on github pages
-+ Add sample Laravel APIs and call them using Restangular
++ Remove unused dependency in package.json
 + Sample route authentication (via $localStorage)
++ Add sample Laravel APIs and call them using Restangular
++ Laravel login API fixes
++ Host demo on github pages
 + Installer script that does everything
 + Material design custom theming
 
 ## Changelog
+
+### v1.2.0
+
++ Add Angular Material boilerplate for Dashboard
++ Add sample UI Router conf that contains header and footer
++ Sample code for Tabs
++ Add Restangular
++ CSRF integration with Restangular
++ Add Laravel & Angular promo image (from [Laravel News](https://laravel-news.com))
+
 
 ### v1.1.1
 
