@@ -8,11 +8,21 @@
 </head>
 <body>
 
-	<md-button>title1</md-button>
-	
-	<div ui-view></div>
+	<div layout="column" layout-fill>
+		<md-toolbar md-scroll-shrink>
+		<div class="md-toolbar-tools">
+			<h3>
+				<span>Laravel 5 Angular Material Starter</span>
+			</h3>
+		</div>
+	</md-toolbar>
+	<md-content>
+		<div ui-view></div>
+	</md-content>
+</div>
 
-	<script src="/js/vendor.js"></script>
-	<script src="/js/app.js"></script>
+<script src="/js/vendor.js"></script>
+<script src="/js/app.js"></script>
+
 </body>
 </html>

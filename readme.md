@@ -1,4 +1,4 @@
-## Laravel 5 Angular Material Starter - V 1.1
+## Laravel 5 Angular Material Starter - Version 1.1
 
 This is a starter project that gives you an out of the box configuration Laravel 5 and AngularJS.
 Here are the goodies that you'll get:
@@ -40,16 +40,26 @@ Open a new issue.
 
 Here's what I'm planning for the next versions:
 
-+ Add Angular boilerplate for Landing and Login
-+ Add sample Material Design pages
++ Add Angular Material boilerplate for Dashboard
++ Sample code for Tabs
 + Add sample UI Router conf that contains header and footer
 + Add Restangular
++ Host demo on github pages
 + Add sample Laravel APIs and call them using Restangular
 + Sample route authentication (via $localStorage)
 + Installer script that does everything
-
++ Material design custom theming
 
 ## Changelog
+
+### v1.1.1
+
++ Add Angular Material boilerplate for Landing
++ Sample code for Toast and Dialog
++ Disable Elixir success notifications
++ Add $localStorage (ngstorage) - will be used later on for sample authentication driver
++ Added basic ui-router for Landing
+
 
 ### v1.1.0
 
@@ -58,19 +68,19 @@ Here's what I'm planning for the next versions:
 
 ### v1.0.3
 
-+ Fixed Installation steps
-+ Added Changelog
-+ Planning future releases
++ Fix Installation steps
++ Add Changelog
++ Plan future releases
 
 
 ### v1.0.2
 
-+ Renamed resources/views/index.php to resources/views/index.blade.php for the blade syntax to work (CSRF token) [PR 3](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/3)
++ Rename resources/views/index.php to resources/views/index.blade.php for the blade syntax to work (CSRF token) [PR 3](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/3)
 
 
 ### v1.0.1
 
-+ Removed `composer.lock` in order to pull the latest version of vendor dependencies [issue #1](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/1)
++ Remove `composer.lock` in order to pull the latest version of vendor dependencies [issue #1](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/1)
 
 
 ### v1.0.0

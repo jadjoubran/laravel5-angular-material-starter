@@ -1,5 +1,6 @@
 (function(){
 	"use strict";
+
 	var app = angular.module('app',
 		[
 		'app.controllers',
@@ -10,10 +11,10 @@
 		'app.config',
 		]);
 
-	angular.module('app.routes', ['ui.router']);
-	angular.module('app.controllers', ['ui.router']);
+	angular.module('app.routes', ['ui.router', 'ngStorage']);
+	angular.module('app.controllers', ['ui.router', 'ngMaterial', 'ngStorage']);
 	angular.module('app.filters', []);
-	angular.module('app.services', ['ui.router']);
+	angular.module('app.services', ['ui.router', 'ngStorage']);
 	angular.module('app.directives', []);
 	angular.module('app.config', []);
 
