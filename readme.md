@@ -45,15 +45,20 @@ Open a new issue.
 
 Here's what I'm planning for the next versions:
 
-+ Remove unused dependency in package.json
-+ Sample route authentication (via $localStorage)
 + Add sample Laravel APIs and call them using Restangular
 + Laravel login API fixes
++ Sample route authentication (via $localStorage)
++ Gulp watch should not exit when it catches an error
 + Host demo on github pages
 + Installer script that does everything
-+ Material design custom theming
 
 ## Changelog
+
+### v1.2.1
+
++ Remove unused dependency in package.json
++ Material design custom theming
+
 
 ### v1.2.0
 
