@@ -54,6 +54,11 @@ Here's what I'm planning for the next versions:
 
 ## Changelog
 
+### v1.2.2
+
++ API response macro (to make API calls more compatible with Restangular)
+
+
 ### v1.2.1
 
 + Remove unused dependency in package.json

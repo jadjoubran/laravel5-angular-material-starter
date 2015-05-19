@@ -147,6 +147,8 @@ return [
 
 		'Barryvdh\Debugbar\ServiceProvider',
 
+		'App\Providers\ResponseMacroServiceProvider',
+
 	],
 
 	/*
