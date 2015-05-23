@@ -17,9 +17,13 @@ Route::get('/', function(){
 	return view('index');
 });
 
-Route::get('home', 'HomeController@index');
-
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 	]);
+
+Route::group(['prefix' => 'api/v1/'], function(){
+
+	Route::get('test/sample', 'WelcomeController@sample');
+
+});

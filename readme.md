@@ -1,8 +1,14 @@
 ## Laravel 5 Angular Material Starter
-> Version 1.2
+> Version 1.3
+
+## Frontend Demo
+
+[VIEW DEMO](https://jadjoubran.github.io/laravel5-angular-material-starter)
 
 ![Laravel & Angular](http://i.imgur.com/XiMykki.png)
 
+
+## OVERVIEW
 This is a starter project that gives you an out of the box configuration Laravel 5 and AngularJS (folder by feature architecture).
 Here are the goodies that you'll get:
 
@@ -10,14 +16,15 @@ Here are the goodies that you'll get:
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * Angular
 * Angular Material
-* Angular UI Router
+* [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
 * EditorConfig
 * JavaScript Code Style (jscs)
 * Jshint
 * Less
 * Elixir (for all the above)
 * Angular Material sample code
-* [ui-router](https://github.com/angular-ui/ui-router) configuration with multiple views
+* Angular Material custom theming
+* Sample integration between Restangular & Laravel API endpoint
 
 
 ## Installation
@@ -45,14 +52,19 @@ Open a new issue.
 
 Here's what I'm planning for the next versions:
 
-+ Add sample Laravel APIs and call them using Restangular
 + Laravel login API fixes
++ Add sample Layout which relies on flexbox
 + Sample route authentication (via $localStorage)
 + Gulp watch should not exit when it catches an error
-+ Host demo on github pages
 + Installer script that does everything
 
 ## Changelog
+
+### v1.3.0
+
++ Host demo on github pages
++ Add sample Laravel APIs and call them using Restangular
+
 
 ### v1.2.2
 

@@ -33,4 +33,9 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
+	public function sample(){
+		$data = ['sample', 'api', 'call', 'with', 'laravel', 'and', 'restangular'];
+		return response()->api( $data );
+	}
+
 }
