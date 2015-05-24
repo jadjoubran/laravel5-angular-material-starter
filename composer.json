@@ -1,7 +1,7 @@
 {
 	"name": "jadjoubran/laravel5-angular-material-starter",
-	"description": "The Laravel Framework.",
-	"keywords": ["laravel", "starter", "angular", "material"],
+	"description": "Laravel 5 angular material starter project with elixir setup",
+	"keywords": ["laravel", "angular", "material", "starter", "ui-router", "api"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
