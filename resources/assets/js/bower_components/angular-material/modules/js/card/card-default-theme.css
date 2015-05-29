@@ -1,0 +1,12 @@
+/*!
+ * Angular Material Design
+ * https://github.com/angular/material
+ * @license MIT
+ * v0.9.6
+ */
+/* mixin definition ; sets LTR and RTL within the same style call */
+md-card.md-THEME_NAME-theme {
+  background-color: '{{background-color}}';
+  border-radius: 2px; }
+  md-card.md-THEME_NAME-theme .md-card-image {
+    border-radius: 2px 2px 0 0; }

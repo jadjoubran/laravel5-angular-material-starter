@@ -1,0 +1,6 @@
+/*!
+ * Angular Material Design
+ * https://github.com/angular/material
+ * @license MIT
+ * v0.9.6
+ */md-card{box-sizing:border-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:8px;box-shadow:0 3px 1px -2px rgba(0,0,0,.14),0 2px 2px 0 rgba(0,0,0,.098),0 1px 5px 0 rgba(0,0,0,.084)}md-card>:not(md-card-content) img,md-card>img{width:100%}md-card md-card-content{padding:16px}md-card .md-actions{margin:0}md-card .md-actions .md-button{margin:8px 4px}md-card md-card-footer{padding:16px}@media screen and (-ms-high-contrast:active){md-card{border:1px solid #fff}}

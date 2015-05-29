@@ -1,0 +1,8 @@
+{
+  "name": "angular-material-select",
+  "version": "0.9.6",
+  "dependencies": {
+    "angular-material-core": "0.9.6",
+    "angular-material-backdrop": "0.9.6"
+  }
+}

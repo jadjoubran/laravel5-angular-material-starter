@@ -1,6 +1,5 @@
 /vendor
 /node_modules
 .env
-/bower_components
+/resources/assets/js/bower_components
 npm-debug.log
-resources/.tmp
