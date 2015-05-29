@@ -22,7 +22,7 @@ require('laravel-elixir-imagemin');
  elixir(function(mix) {
  	mix
  	.bower()
- 	.angular('angular/')
+ 	.angular("resources/assets/angular/", "public/js/", "app.js")
 	.less('dashboard.less')
 	.less('footer.less')
 	.less('landing.less')
