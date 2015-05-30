@@ -1,5 +1,5 @@
 /vendor
 /node_modules
 .env
-/resources/assets/js/bower_components
+/resources/assets/vendor
 npm-debug.log

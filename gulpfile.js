@@ -17,7 +17,7 @@ require('laravel-elixir-imagemin');
  */
 
  elixir.config.sourcemaps = false;
- elixir.config.registerWatcher("default", "angular/**");
+ elixir.config.registerWatcher("default");
 
  elixir(function(mix) {
  	mix
