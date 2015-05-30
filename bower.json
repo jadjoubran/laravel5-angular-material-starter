@@ -14,7 +14,7 @@
     "angular": "1.4",
     "angular-ui-router": "~0.2.15",
     "ngstorage": "~0.3.3",
-    "angular-material": "~0.9.4",
+    "angular-material": "~0.9.6",
     "restangular": "~1.5.1"
   }
 }

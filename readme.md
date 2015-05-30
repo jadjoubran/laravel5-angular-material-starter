@@ -3,7 +3,7 @@
 
 ## Frontend Demo
 
-[VIEW DEMO](https://jadjoubran.github.io/laravel5-angular-material-starter)
+[View Frontend DEMO](https://jadjoubran.github.io/laravel5-angular-material-starter)
 
 ![Laravel & Angular](http://i.imgur.com/XiMykki.png)
 
@@ -52,13 +52,21 @@ Open a new issue.
 
 Here's what I'm planning for the next versions:
 
++ Add angular material icons
++ Add tooltips sample
 + Laravel login API fixes
-+ Add sample Layout which relies on flexbox
 + Sample route authentication (via $localStorage)
 + Gulp watch should not exit when it catches an error
 + Installer script that does everything
 
 ## Changelog
+
+
+### v1.3.1
+
++ Add sample Layout which relies on flexbox
++ Update Angular, Angular ui-router and Angular Material
+
 
 ### v1.3.0
 
