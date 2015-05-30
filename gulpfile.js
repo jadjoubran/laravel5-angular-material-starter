@@ -17,16 +17,19 @@ require('laravel-elixir-imagemin');
  */
 
  elixir.config.sourcemaps = false;
- elixir.config.registerWatcher("default", "angular/**");
+ elixir.config.registerWatcher("default");
 
  elixir(function(mix) {
  	mix
  	.bower()
- 	.angular('angular/')
- 	.less('../../../angular/**/*.less', 'resources/.tmp/')
- 	.copy('angular/app/**/*.html', 'public/views/app/')
- 	.copy('angular/directives/**/*.html', 'public/views/directives/')
- 	.stylesIn('resources/.tmp', 'public/css/')
- 	.imagemin();
+ 	.angular("resources/assets/angular/", "public/js/", "app.js")
+	.less('dashboard.less')
+	.less('footer.less')
+	.less('landing.less')
+ 	//.less('../../../angular/**/*.less', 'resources/.tmp/')
+ 	//.copy('angular/app/**/*.html', 'public/views/app/')
+ 	//.copy('angular/directives/**/*.html', 'public/views/directives/')
+ 	//.stylesIn('resources/.tmp', 'public/css/')
+ 	//.imagemin();
 
  });
