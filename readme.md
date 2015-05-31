@@ -35,6 +35,7 @@ If you don't have composer (`composer --version` to make sure that you have it),
 `npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
 
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
+* create `.env` file (clone it from `.env.example` and adjust your DB connection string)
 * `npm install -g gulp bower`
 * `composer install`
 * `npm install`
