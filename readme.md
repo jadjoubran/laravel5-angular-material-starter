@@ -53,12 +53,17 @@ Open a new issue.
 
 Here's what I'm planning for the next versions:
 
++ Upgrade to Laravel 5.1
++ Remove CSRF token fix http://laravel.com/docs/5.1/routing#csrf-x-xsrf-token
++ Add backgroundPalette to Custom Material Theme
 + Add angular material icons
++ Add SVG-Morpheus for Angular Material Icons
 + Add tooltips sample
 + Laravel login API fixes
 + Sample route authentication (via $localStorage)
 + Gulp watch should not exit when it catches an error
 + Installer script that does everything
++ Host repository on AWS or DO and remove gh pages example
 
 ## Changelog
 
