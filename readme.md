@@ -64,6 +64,9 @@ Here's what I'm planning for the next releases
 
 ## Changelog
 
+### v1.4.1
++ Fixed laravel 5.1 migration issue
+
 ### v1.4.0
 + Laravel 5.1 Support
 + Remove CSRF token fix (angular automatically takes care of it http://laravel.com/docs/5.1/routing#csrf-x-xsrf-token)
