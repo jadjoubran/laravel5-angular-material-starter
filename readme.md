@@ -1,5 +1,5 @@
-## Laravel 5 Angular Material Starter
-> Version 1.3
+## Laravel 5.1 Angular Material Starter
+> Version 1.4
 
 ## Frontend Demo
 
@@ -9,10 +9,10 @@
 
 
 ## OVERVIEW
-This is a starter project that gives you an out of the box configuration Laravel 5 and AngularJS (folder by feature architecture).
+This is a starter project that gives you an out of the box configuration Laravel 5.1 and AngularJS (folder by feature architecture).
 Here are the goodies that you'll get:
 
-* Laravel5
+* Laravel 5.1
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * Angular
 * Angular Material
@@ -51,11 +51,8 @@ Open a new issue.
 
 ## What's next?
 
-Here's what I'm planning for the next versions:
+Here's what I'm planning for the next releases
 
-+ Upgrade to Laravel 5.1
-+ Remove CSRF token fix http://laravel.com/docs/5.1/routing#csrf-x-xsrf-token
-+ Add backgroundPalette to Custom Material Theme
 + Add angular material icons
 + Add SVG-Morpheus for Angular Material Icons
 + Add tooltips sample
@@ -66,6 +63,10 @@ Here's what I'm planning for the next versions:
 + Host repository on AWS or DO and remove gh pages example
 
 ## Changelog
+
+### v1.4.0
++ Laravel 5.1 Support
++ Remove CSRF token fix (angular automatically takes care of it http://laravel.com/docs/5.1/routing#csrf-x-xsrf-token)
 
 
 ### v1.3.1
