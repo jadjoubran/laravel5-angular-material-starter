@@ -1,8 +1,8 @@
 {
-  "version": "1.4.1",
+  "version": "1.4.2",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "laravel-elixir": "*",
+    "laravel-elixir": "^2.0.0",
     "laravel-elixir-angular": "^0.1.1",
     "laravel-elixir-bower": "^0.1.0",
     "laravel-elixir-imagemin": "^0.1.6"

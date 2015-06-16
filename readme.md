@@ -64,6 +64,10 @@ Here's what I'm planning for the next releases
 
 ## Changelog
 
+### v1.4.2
++ Elixir improvements for Laravel 5.1
++ Removed /resources/.tmp (not used anymore because of Elixir improvements)
+
 ### v1.4.1
 + Fixed laravel 5.1 migration issue
 
