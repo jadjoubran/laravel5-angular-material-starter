@@ -19,7 +19,7 @@ Here are the goodies that you'll get:
 * [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
 * EditorConfig
 * JavaScript Code Style (jscs)
-* Jshint
+* Jshint (rename _jshintrc to .jshintrc if you want to use it. Your code needs to pass for [https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11](gulp to recompile))
 * Less
 * Elixir (for all the above)
 * Angular Material sample code
@@ -53,7 +53,7 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ jshint issue + close it
++ fix EditorConfig for PSR-2 in app/
 + https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
 + Add tooltips sample
 + Speedup gulp watch 
@@ -64,6 +64,10 @@ Here's what I'm planning for the next releases
 
 
 ## Changelog
+
+### v1.5.1
++ jshint is now optional. Rename _jshintrc to .jshintrc. Check [https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11](issue #11)
+
 
 ### v1.5.0
 + Add angular material icons
