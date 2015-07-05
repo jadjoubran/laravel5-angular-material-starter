@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 1.4
+> Version 1.5
 
 ## Frontend Demo
 
@@ -53,16 +53,25 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ Add angular material icons
-+ Add SVG-Morpheus for Angular Material Icons
++ jshint issue + close it
++ https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
 + Add tooltips sample
-+ Laravel login API fixes
++ Speedup gulp watch 
 + Sample route authentication (via $localStorage)
 + Gulp watch should not exit when it catches an error
 + Installer script that does everything
 + Host repository on AWS or DO and remove gh pages example
 
+
 ## Changelog
+
+### v1.5.0
++ Add angular material icons
++ Add SVG-Morpheus for Angular Material Icons
++ Updated demo & gh-pages
++ Updated angular material
++ Add contributor covenant (code of conduct)
+
 
 ### v1.4.2
 + Elixir improvements for Laravel 5.1

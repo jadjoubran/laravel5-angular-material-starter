@@ -6,6 +6,7 @@
 	<md-card-content>
 	<h2 class="md-title">Landing page</h2>
 	<p>
+		<ng-md-icon icon="{{icon}}" style="fill:rgb(0,150,136)"></ng-md-icon><br>
 		This is a starter project that gives you an out of the box configuration for Laravel5 and Angular.<br>
 		<br>
 		It also featuers other useful libraries that you can check out in the <strong>Readme.md</strong>.<br>
@@ -17,25 +18,24 @@
 </div>
 </md-card>
 <br>
+<md-content class="md-padding">
+Angular Material Uses Flexbox<br>
+<br>
+<div layout="row" layout-wrap>
+	<div class="Landing-flex Landing-flex33" flex="33">
+		[flex="33"]
+	</div>
+	<div class="Landing-flex Landing-flex55" flex="55">
+		[flex="55"]
+	</div>
+	<div class="Landing-flex Landing-flexRemaining" flex>
+		[flex]
+	</div>
+</div>
+<br>
 <div class="Landing-CallToAction">
 	<md-button ui-sref="dashboard" class="md-raised md-primary">Show me the Dashboard!</md-button>
 </div>
 <br>
-<md-content class="md-padding">
-	Angular Material Uses Flexbox<br>
-	<br>
-	<div layout="row" layout-wrap>
-		<div class="Landing-flex Landing-flex33" flex="33">
-			[flex="33"]
-		</div>
-		<div class="Landing-flex Landing-flex55" flex="55">
-			[flex="55"]
-		</div>
-		<div class="Landing-flex Landing-flexRemaining" flex>
-			[flex]
-		</div>
-	</div>
-	<br>
-	<br>
 </md-content>
 </div>

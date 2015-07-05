@@ -2,7 +2,7 @@
 <html ng-app="app">
 <head>
 	<link rel="stylesheet" href="/css/vendor.css">
-	<link rel="stylesheet" href="/css/all.css">
+	<link rel="stylesheet" href="/css/app.css">
 
 </head>
 <body>

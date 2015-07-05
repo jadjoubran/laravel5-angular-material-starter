@@ -4,12 +4,10 @@
 
 .Footer-Container {
   background-color: #ececec;
-  padding: 30px;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  right: 0;
+  margin-top: 60px;
+  padding: 30px 0;
   text-align: center;
+  width: 100%;
 }
 
 .Landing-Container {
