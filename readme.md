@@ -17,6 +17,7 @@ Here are the goodies that you'll get:
 * Angular
 * Angular Material
 * [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
+* Optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
 * EditorConfig
 * JavaScript Code Style (jscs)
 * Jshint (rename _jshintrc to .jshintrc if you want to use it. Your code needs to pass for [https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11](gulp to recompile))
