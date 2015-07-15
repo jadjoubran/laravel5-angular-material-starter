@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 1.5
+> Version 1.6
 
 ## Frontend Demo
 
