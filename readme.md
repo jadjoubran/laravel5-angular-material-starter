@@ -53,17 +53,23 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-+ fix EditorConfig for PSR-2 in app/
-+ https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
-+ Add tooltips sample
-+ Speedup gulp watch 
-+ Sample route authentication (via $localStorage)
-+ Gulp watch should not exit when it catches an error
-+ Installer script that does everything
-+ Host repository on AWS or DO and remove gh pages example
+- UI-router HTML5 mode urls
+- https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps (write post installation steps or bash to run jwt)
+- fix EditorConfig for PSR-2 in app/
+- even better support for 5.1 (start from 5.1)
+- Add tooltips sample
+- Speedup gulp watch 
+- Sample route authentication (via $localStorage)
+- Gulp watch should not exit when it catches an error
+- Installer script that does everything
+- Host repository on AWS or DO and remove gh pages example
 
 
 ## Changelog
+
+###v1.6.0
++ added optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
+
 
 ### v1.5.1
 + jshint is now optional. Rename _jshintrc to .jshintrc. Check [https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11](issue #11)
