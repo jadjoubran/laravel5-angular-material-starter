@@ -1,11 +1,9 @@
 ## Laravel 5.1 Angular Material Starter
 > Version 1.6
 
-## Frontend Demo
+<a href="https://jadjoubran.github.io/laravel5-angular-material-starter" target="_blank">View Frontend DEMO</a>
 
-[View Frontend DEMO](https://jadjoubran.github.io/laravel5-angular-material-starter)
-
-![Laravel & Angular](http://i.imgur.com/XiMykki.png)
+![Laravel & Angular](http://i.imgur.com/uUMaSyP.jpg)
 
 
 ## OVERVIEW
@@ -16,7 +14,7 @@ Here are the goodies that you'll get:
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * Angular
 * Angular Material
-* [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
+* [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views & HTML5 mode
 * Optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
 * EditorConfig
 * JavaScript Code Style (jscs)
@@ -44,6 +42,8 @@ If you don't have composer (`composer --version` to make sure that you have it),
 * `gulp`
 * `gulp watch`
 * `php -S localhost:8081 -t public`
+* You're ready to go! <a href="http://localhost:8081" target="_blank">http://localhost:8081</a>
+* Star the repo and submit your feedback as a new issue or on <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
 
 ## Issues and Feature Requests
@@ -54,21 +54,24 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-- UI-router HTML5 mode urls
-- https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps (write post installation steps or bash to run jwt)
+- Json Web Tokens authentication
+- Installer script that does everything
 - fix EditorConfig for PSR-2 in app/
 - even better support for 5.1 (start from 5.1)
 - Add tooltips sample
 - Speedup gulp watch 
 - Sample route authentication (via $localStorage)
 - Gulp watch should not exit when it catches an error
-- Installer script that does everything
 - Host repository on AWS or DO and remove gh pages example
 
 
 ## Changelog
 
-###v1.6.0
+### v1.6.1
++ UI-router HTML5 mode urls
++ updated documentation
+
+### v1.6.0
 + added optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
 
 
