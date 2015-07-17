@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 1.6
+> Version 1.7
 
 <a href="https://jadjoubran.github.io/laravel5-angular-material-starter" target="_blank">View Frontend DEMO</a>
 
@@ -14,7 +14,7 @@ Here are the goodies that you'll get:
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * Angular
 * Angular Material
-* [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views & HTML5 mode
+* [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
 * Optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
 * EditorConfig
 * JavaScript Code Style (jscs)
@@ -46,8 +46,7 @@ If you don't have composer (`composer --version` to make sure that you have it),
 * Star the repo and submit your feedback as a new issue or on <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
 
-## Issues and Feature Requests
-
+## Issues, questions and Feature Requests
 Open a new issue.
 
 ## What's next?
@@ -67,9 +66,13 @@ Here's what I'm planning for the next releases
 
 ## Changelog
 
+### v1.7.0
++ removed UI router HTML5 mode because it breaks when refreshing and I don't want to mess up with the routes
+
 ### v1.6.1
 + UI-router HTML5 mode urls
 + updated documentation
+
 
 ### v1.6.0
 + added optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
