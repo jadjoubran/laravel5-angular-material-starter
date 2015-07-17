@@ -31,12 +31,6 @@ Here are the goodies that you'll get:
 
 Follow these simple steps:
 
-If you don't have composer (`composer --version` to make sure that you have it), you can install it using this command
-`npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
-
-Automated (assuming you have php, composer, npm, bower installed globally)
-`git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
-
 Step by Step:
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
 * php artisan jwt:generate (refresh jwt token | This is very important if you intend to use Json Web Tokens for authentication)
@@ -51,6 +45,11 @@ Step by Step:
 * You're ready to go! <a href="http://localhost:8081" target="_blank">http://localhost:8081</a>
 * Star the repo and submit your feedback as a new issue or on <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
+Automated (assuming you have php, composer, npm, bower installed globally)
+`git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
+
+If you don't have composer (`composer --version` to make sure that you have it), you can install it using this command
+`npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
 
 ## Issues, Questions and Feature Requests
 Open a new issue.
