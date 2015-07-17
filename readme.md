@@ -33,7 +33,7 @@ Follow these simple steps:
 
 Step by Step:
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
-* php artisan jwt:generate (refresh jwt token | This is very important if you intend to use Json Web Tokens for authentication)
+* `php artisan jwt:generate` (refresh jwt secret | This is very important if you intend to use Json Web Tokens for authentication)
 * create `.env` file (clone it from `.env.example` and adjust your DB connection string & generate a random APP_KEY)
 * `npm install -g gulp bower`
 * `composer install`
