@@ -149,6 +149,8 @@ return [
 
 		'App\Providers\ResponseMacroServiceProvider',
 
+		Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class
+
 	],
 
 	/*
@@ -198,6 +200,9 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 
 		'Debugbar' => 'Barryvdh\Debugbar\Facade',
+
+		'JWTAuth'   => Tymon\JWTAuth\Facades\JWTAuth::class,
+		'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class
 
 	],
 

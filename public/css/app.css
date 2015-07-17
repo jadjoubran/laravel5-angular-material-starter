@@ -2,6 +2,10 @@
   line-height: 26px;
 }
 
+.Dashboard-Container li {
+  line-height: 26px;
+}
+
 .Footer-Container {
   background-color: #ececec;
   margin-top: 60px;

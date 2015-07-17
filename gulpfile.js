@@ -21,7 +21,7 @@ require('laravel-elixir-imagemin');
 
  elixir(function(mix) {
  	mix
- 	// .bower() //uncomment it when you add a new bower component (it's commented now because it messes up the other watchers)
+ 	//.bower() //uncomment it when you add a new bower component (it's commented now because it messes up the other watchers)
  	.angular('angular/')
  	.less('../../../angular/**/*.less')
  	.copy('angular/app/**/*.html', 'public/views/app/')

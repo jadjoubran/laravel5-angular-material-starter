@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 1.7
+> Version 2.0
 
 <a href="https://jadjoubran.github.io/laravel5-angular-material-starter" target="_blank">View Frontend DEMO</a>
 
@@ -11,9 +11,10 @@ This is a starter project that gives you an out of the box configuration Laravel
 Here are the goodies that you'll get:
 
 * Laravel 5.1
-* [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * Angular
 * Angular Material
+* JSON Web Tokens authentication
+* [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
 * Optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
 * EditorConfig
@@ -33,12 +34,13 @@ Follow these simple steps:
 If you don't have composer (`composer --version` to make sure that you have it), you can install it using this command
 `npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
 
-Automated (assuming you have composer, npm, bower installed globally)
+Automated (assuming you have php, composer, npm, bower installed globally)
 `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
 
 Step by Step:
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
-* create `.env` file (clone it from `.env.example` and adjust your DB connection string)
+* php artisan jwt:generate (refresh jwt token | This is very important if you intend to use Json Web Tokens for authentication)
+* create `.env` file (clone it from `.env.example` and adjust your DB connection string & generate a random APP_KEY)
 * `npm install -g gulp bower`
 * `composer install`
 * `npm install`
@@ -57,17 +59,20 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
-- Json Web Tokens authentication
 - fix EditorConfig for PSR-2 in app/
 - even better support for 5.1 (start from 5.1)
+- jwt auth example (with seed)
 - Add tooltips sample
-- Speedup gulp watch 
+- Speedup gulp watch
 - Sample route authentication (via $localStorage)
 - Gulp watch should not exit when it catches an error
-- Host repository on AWS or DO and remove gh pages example
+- Host repository on Heroku and remove gh pages example
 
 
 ## Changelog
+
+### v2.0.0
++ Json Web Tokens authentication based on https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
 
 ### v1.7.1
 + Installer script that installs all the required packages

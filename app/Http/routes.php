@@ -11,19 +11,19 @@
 |
 */
 
-// Route::get('/', 'WelcomeController@index');
-
-Route::get('/', function(){
+Route::get('/', function (){
 	return view('index');
 });
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-	]);
 
-Route::group(['prefix' => 'api/v1/'], function(){
+Route::group(['prefix' => 'api/1/'], function (){
 
-	Route::get('test/sample', 'WelcomeController@sample');
+	/*
+	 * used for Json Web Token Authentication - https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
+	 * Make sure to re-enable Csrf middleware if you're disabling JWT
+	 * Also don't forget to run `php artisan jwt:generate` to generate a new token (already part of setup.sh)
+	 * */
+	Route::resource('authenticate', 'AuthenticateController', ['only' => ['index']]);
+	Route::post('authenticate', 'AuthenticateController@authenticate');
 
 });
