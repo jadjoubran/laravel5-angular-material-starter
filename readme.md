@@ -13,7 +13,7 @@ Here are the goodies that you'll get:
 * Laravel 5.1
 * Angular
 * Angular Material
-* JSON Web Tokens authentication
+* [JSON Web Token authentication](https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps)
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
 * Optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
@@ -72,7 +72,7 @@ Here's what I'm planning for the next releases
 ## Changelog
 
 ### v2.0.0
-+ Json Web Tokens authentication based on https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
++ Json Web Token authentication based on https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
 
 ### v1.7.1
 + Installer script that installs all the required packages
