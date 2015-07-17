@@ -33,8 +33,10 @@ Follow these simple steps:
 If you don't have composer (`composer --version` to make sure that you have it), you can install it using this command
 `npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
 
-Automated: `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
+Automated (assuming you have composer, npm, bower installed globally)
+`git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
 
+Step by Step:
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
 * create `.env` file (clone it from `.env.example` and adjust your DB connection string)
 * `npm install -g gulp bower`
@@ -48,14 +50,13 @@ Automated: `git clone git@github.com:jadjoubran/laravel5-angular-material-starte
 * Star the repo and submit your feedback as a new issue or on <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
 
-## Issues, questions and Feature Requests
+## Issues, Questions and Feature Requests
 Open a new issue.
 
 ## What's next?
 
 Here's what I'm planning for the next releases
 
-- Installer script that does everything
 - Json Web Tokens authentication
 - fix EditorConfig for PSR-2 in app/
 - even better support for 5.1 (start from 5.1)
@@ -69,6 +70,7 @@ Here's what I'm planning for the next releases
 ## Changelog
 
 ### v1.7.1
++ Installer script that installs all the required packages
 
 ### v1.7.0
 + removed UI router HTML5 mode because it breaks when refreshing and I don't want to mess up with the routes
