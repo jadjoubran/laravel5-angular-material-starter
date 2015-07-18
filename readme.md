@@ -3,12 +3,12 @@
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
-![Laravel & Angular](http://i.imgur.com/uUMaSyP.jpg)
+![Laravel & Angular](http://i.imgur.com/uUMaSyP.jpg)  
 
 
 ##### Table of Contents  
 [Overview](#overview)  
-[Manual Install](#manual_install)  
+[Manual Installation](#manual_installation)  
 [Bash Installer](#bash_installer)  
 [Issues, Questions and Feature Requests](#issues)  
 [Planned features](#planned_features)  
@@ -16,7 +16,7 @@
 
 <a name="overview"></a>
 ## OVERVIEW
-This is a starter project that gives you an out of the box configuration Laravel 5.1 and AngularJS (folder by feature architecture).
+This is a starter project that gives you an out of the box configuration Laravel 5.1 and AngularJS (folder by feature architecture).  
 Here are the goodies that you'll get:
 
 * Laravel 5.1
@@ -25,23 +25,20 @@ Here are the goodies that you'll get:
 * [JSON Web Token authentication](https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps)
 * [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
-* Optimized deployment script: [deploy.sh](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
+* [Optimized deployment script](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
 * EditorConfig
 * JavaScript Code Style (jscs)
-* Jshint (rename _jshintrc to .jshintrc if you want to use it. Your code needs to pass for [https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11](gulp to recompile))
+* Jshint (rename _jshintrc to .jshintrc if you want to use it. Check [#11](gulp to recompile))
 * Less
-* Elixir (for all the above)
+* Elixir
 * Angular Material sample code
 * Angular Material custom theming
 * Sample integration between Restangular & Laravel API endpoint
 
 
-<a name="manual_install"></a>
-## Manual Install
+<a name="manual_installation"></a>
+## Manual Installation
 
-Follow these simple steps:
-
-Step by Step:
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
 * `php artisan jwt:generate` (refresh jwt secret | This is very important if you intend to use Json Web Tokens for authentication)
 * create `.env` file (clone it from `.env.example` and adjust your DB connection string & generate a random APP_KEY)
@@ -58,13 +55,15 @@ Step by Step:
 
 <a name="bash_installer"></a>
 ##Bash Installer
-Automated (assuming you have php, composer, npm, bower installed globally)
+Assuming you have php, composer, npm, bower installed globally:  
 `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
-
+  
+  
 <a name="issues"></a>
 ## Issues, Questions and Feature Requests
 Open a new issue, I'd love to help.
-
+  
+  
 <a name="planned_features"></a>
 ## Planned features
 
@@ -82,7 +81,8 @@ Open a new issue, I'd love to help.
 - Sample route authentication (via $localStorage)
 - Gulp watch should not exit when it catches an error
 
-
+  
+  
 <a name="changelog"></a>
 ## Changelog
 
