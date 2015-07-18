@@ -1,7 +1,7 @@
 ## Laravel 5.1 Angular Material Starter
 > Version 2.0
 
-<a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View Full DEMO</a>
+<a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
 ![Laravel & Angular](http://i.imgur.com/uUMaSyP.jpg)
 
@@ -43,12 +43,12 @@ Step by Step:
 * `gulp watch`
 * `php -S localhost:8081 -t public`
 * You're ready to go! <a href="http://localhost:8081" target="_blank">http://localhost:8081</a>
-* Star the repo and submit your feedback as a new issue or on <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
+* Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
 Automated (assuming you have php, composer, npm, bower installed globally)
 `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
 
-If you don't have composer (`composer --version` to make sure that you have it), you can install it using this command
+If you don't have composer installed (`composer --version` to make sure that you have it), you can install it using this command
 `npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
 
 ## Issues, Questions and Feature Requests
@@ -59,7 +59,13 @@ Open a new issue.
 Here's what I'm planning for the next releases
 
 - fix mdtabs
-- Host repository on Heroku and remove gh pages example
+- continue heroku setup (database, migrations, seeding)
+- remove csrf token fix?
+- Remove gh-pages branch
+- make readme more appealing
+- angularController
+- redirect to unsupported browser page
+- make demo more appealing
 - toastService
 - dialogService
 - fix EditorConfig for PSR-2 in app/
@@ -73,6 +79,9 @@ Here's what I'm planning for the next releases
 
 
 ## Changelog
+
+### v2.0.1
+
 
 ### v2.0.0
 + Json Web Token authentication based on https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
