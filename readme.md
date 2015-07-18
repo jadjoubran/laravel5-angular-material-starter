@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.0
+> Version 2.1
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
@@ -52,16 +52,13 @@ If you don't have composer installed (`composer --version` to make sure that you
 `npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
 
 ## Issues, Questions and Feature Requests
-Open a new issue.
+Open a new issue, I'd love to help.
 
 ## What's next?
 
 Here's what I'm planning for the next releases
 
-- fix mdtabs
 - continue heroku setup (database, migrations, seeding)
-- remove csrf token fix?
-- Remove gh-pages branch
 - make readme more appealing
 - angularController
 - redirect to unsupported browser page
@@ -80,8 +77,14 @@ Here's what I'm planning for the next releases
 
 ## Changelog
 
-### v2.0.1
+### v2.1.0
++ fixed documentation
++ fixed restangular config
++ added sample restangular API call
++ removed csrf token fix since we disabled CSRF when setting up JWT auth
 
+### v2.0.1
++ fix mdtabs
 
 ### v2.0.0
 + Json Web Token authentication based on https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps

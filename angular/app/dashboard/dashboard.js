@@ -6,7 +6,7 @@
 
 		$scope.sample_test = function(){
 			$scope.sample_data = 'Loading..';
-			Restangular.all('test').doGET('sample').then(function( response ){
+			Restangular.all('test/sample').post().then(function( response ){
 				$scope.sample_data = response.data;
 			});
 		};

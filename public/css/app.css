@@ -11,7 +11,7 @@
 }
 
 .Landing-Container {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto 0 auto;
 }
 .Landing-CallToAction {
@@ -30,4 +30,10 @@
 }
 .Landing-flexRemaining {
   background-color: #9c27b0;
+}
+.Landing-demoIcon {
+  fill: #009688;
+  position: relative;
+  top: 4px;
+  left: 5px;
 }
