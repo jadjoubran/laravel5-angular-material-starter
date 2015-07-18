@@ -60,7 +60,6 @@ Here's what I'm planning for the next releases
 
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
-- angularController
 - redirect to unsupported browser page
 - make demo more appealing
 - toastService
@@ -76,6 +75,9 @@ Here's what I'm planning for the next releases
 
 
 ## Changelog
+
+### v2.1.1
++ Added angularController to serve app (will be used later on for unsupported browser)
 
 ### v2.1.0
 + fixed documentation

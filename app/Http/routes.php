@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function (){
-	return view('index');
-});
+Route::get('/', 'AngularController@serveApp');
 
 
 Route::group(['prefix' => 'api/1/'], function (){
