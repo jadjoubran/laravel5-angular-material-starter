@@ -40,8 +40,8 @@ Here are the goodies that you'll get:
 ## Manual Installation
 
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
-* `php artisan jwt:generate` (refresh jwt secret | This is very important if you intend to use Json Web Tokens for authentication)
-* create `.env` file (clone it from `.env.example` and adjust your DB connection string & generate a random APP_KEY)
+* `php artisan jwt:generate`
+* create `.env` file from `.env.example`. Fix DB credentials & APP_KEY)
 * `npm install -g gulp bower`
 * `composer update`
 * `npm install`
