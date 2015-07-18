@@ -6,6 +6,15 @@
 ![Laravel & Angular](http://i.imgur.com/uUMaSyP.jpg)
 
 
+##### Table of Contents  
+[Overview](#overview)  
+[Manual Install](#manual_install)  
+[Bash Installer](#bash_installer)  
+[Issues, Questions and Feature Requests](#issues)  
+[Planned features](#planned_features)  
+[Changelog](#changelog)
+
+<a name="overview"></a>
 ## OVERVIEW
 This is a starter project that gives you an out of the box configuration Laravel 5.1 and AngularJS (folder by feature architecture).
 Here are the goodies that you'll get:
@@ -27,7 +36,8 @@ Here are the goodies that you'll get:
 * Sample integration between Restangular & Laravel API endpoint
 
 
-## Installation
+<a name="manual_install"></a>
+## Manual Install
 
 Follow these simple steps:
 
@@ -45,18 +55,18 @@ Step by Step:
 * You're ready to go! <a href="http://localhost:8081" target="_blank">http://localhost:8081</a>
 * Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
+
+<a name="bash_installer"></a>
+##Bash Installer
 Automated (assuming you have php, composer, npm, bower installed globally)
 `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
 
-If you don't have composer installed (`composer --version` to make sure that you have it), you can install it using this command
-`npm install -g getcomposer` thanks to [getcomposer](https://github.com/jadjoubran/getcomposer)
-
+<a name="issues"></a>
 ## Issues, Questions and Feature Requests
 Open a new issue, I'd love to help.
 
-## What's next?
-
-Here's what I'm planning for the next releases
+<a name="planned_features"></a>
+## Planned features
 
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
@@ -64,7 +74,6 @@ Here's what I'm planning for the next releases
 - make demo more appealing
 - toastService
 - dialogService
-- fix EditorConfig for PSR-2 in app/
 - even better support for 5.1 (start from 5.1)
 - jwt auth example (with seed)
 - artisan generators
@@ -74,6 +83,7 @@ Here's what I'm planning for the next releases
 - Gulp watch should not exit when it catches an error
 
 
+<a name="changelog"></a>
 ## Changelog
 
 ### v2.1.1
