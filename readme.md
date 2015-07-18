@@ -1,7 +1,7 @@
 ## Laravel 5.1 Angular Material Starter
 > Version 2.0
 
-<a href="https://jadjoubran.github.io/laravel5-angular-material-starter" target="_blank">View Frontend DEMO</a>
+<a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View Full DEMO</a>
 
 ![Laravel & Angular](http://i.imgur.com/uUMaSyP.jpg)
 
@@ -76,6 +76,7 @@ Here's what I'm planning for the next releases
 
 ### v2.0.0
 + Json Web Token authentication based on https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
++ New improved demo! Using heroku instead of github pages.
 
 ### v1.7.1
 + Installer script that installs all the required packages
