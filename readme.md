@@ -36,7 +36,7 @@ Step by Step:
 * `php artisan jwt:generate` (refresh jwt secret | This is very important if you intend to use Json Web Tokens for authentication)
 * create `.env` file (clone it from `.env.example` and adjust your DB connection string & generate a random APP_KEY)
 * `npm install -g gulp bower`
-* `composer install`
+* `composer update`
 * `npm install`
 * `bower install`
 * `gulp`
@@ -58,14 +58,18 @@ Open a new issue.
 
 Here's what I'm planning for the next releases
 
+- fix mdtabs
+- Host repository on Heroku and remove gh pages example
+- toastService
+- dialogService
 - fix EditorConfig for PSR-2 in app/
 - even better support for 5.1 (start from 5.1)
 - jwt auth example (with seed)
+- artisan generators
 - Add tooltips sample
 - Speedup gulp watch
 - Sample route authentication (via $localStorage)
 - Gulp watch should not exit when it catches an error
-- Host repository on Heroku and remove gh pages example
 
 
 ## Changelog
