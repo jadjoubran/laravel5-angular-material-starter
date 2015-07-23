@@ -40,6 +40,7 @@ Here are the goodies that you'll get:
 ## Manual Installation
 
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
+* `cd laravel5-angular-material-starter`
 * create `.env` file from `.env.example`. Fix DB credentials & APP_KEY)
 * `npm install -g gulp bower`
 * `composer update`
