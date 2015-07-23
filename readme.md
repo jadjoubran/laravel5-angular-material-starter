@@ -40,10 +40,10 @@ Here are the goodies that you'll get:
 ## Manual Installation
 
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
-* `php artisan jwt:generate`
 * create `.env` file from `.env.example`. Fix DB credentials & APP_KEY)
 * `npm install -g gulp bower`
 * `composer update`
+* `php artisan jwt:generate`
 * `npm install`
 * `bower install`
 * `gulp`
@@ -67,6 +67,7 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- fix 404 link in #11
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
 - redirect to unsupported browser page

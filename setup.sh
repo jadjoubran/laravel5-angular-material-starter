@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-php artisan jwt:generate
 cp .env.example .env
 npm install -g gulp bower
 composer update
+php artisan jwt:generate
 npm install
 bower install
 gulp
