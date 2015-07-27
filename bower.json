@@ -18,6 +18,7 @@
     "restangular": "~1.5.1",
     "svg-morpheus": "~0.1.8",
     "angular-material-icons": "~0.5.0",
-    "satellizer": "~0.11.2"
+    "satellizer": "~0.11.2",
+    "angular-loading-bar": "~0.8.0"
   }
 }

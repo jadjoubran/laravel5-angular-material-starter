@@ -68,14 +68,13 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- fix 404 link in #11
-- angular-loading-bar
+- toastService
+- dialogService
+- fix bower task
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
 - redirect to unsupported browser page
 - make demo more appealing
-- toastService
-- dialogService
 - even better support for 5.1 (start from 5.1)
 - jwt auth example (with seed)
 - artisan generators
@@ -88,6 +87,9 @@ Open a new issue, I'd love to help.
   
 <a name="changelog"></a>
 ## Changelog
+
+### v2.1.2
++ Added [angular-loading-bar](https://github.com/chieffancypants/angular-loading-bar/) which works automatically
 
 ### v2.1.1
 + Added angularController to serve app (will be used later on for unsupported browser)
