@@ -28,7 +28,7 @@ Here are the goodies that you'll get:
 * [Optimized deployment script](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
 * EditorConfig
 * JavaScript Code Style (jscs)
-* Jshint (rename _jshintrc to .jshintrc if you want to use it. Check [#11](gulp to recompile))
+* Jshint (rename _jshintrc to .jshintrc if you want to use it. Check [#11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11))
 * Less
 * Elixir
 * Angular Material sample code
@@ -69,6 +69,7 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 - fix 404 link in #11
+- angular-loading-bar
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
 - redirect to unsupported browser page
@@ -120,7 +121,7 @@ Open a new issue, I'd love to help.
 
 
 ### v1.5.1
-+ jshint is now optional. Rename _jshintrc to .jshintrc. Check [https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11](issue #11)
++ jshint is now optional. Rename _jshintrc to .jshintrc. Check [issue #11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11)
 
 
 ### v1.5.0
