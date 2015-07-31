@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.1
+> Version 2.2
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
@@ -41,14 +41,13 @@ Here are the goodies that you'll get:
 
 * `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
 * `cd laravel5-angular-material-starter`
-* create `.env` file from `.env.example`. Fix DB credentials & APP_KEY)
+* create `.env` file from `.env.example`. Fix DB credentials & APP_KEY
 * `npm install -g gulp bower`
 * `composer update`
 * `php artisan jwt:generate`
 * `npm install`
 * `bower install`
-* `gulp`
-* `gulp watch`
+* `gulp && gulp watch`
 * `php -S localhost:8081 -t public`
 * You're ready to go! <a href="http://localhost:8081" target="_blank">http://localhost:8081</a>
 * Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
@@ -68,13 +67,15 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- toastService
-- dialogService
+- Update to elixir 3.0 + use elixir.json
+- New demo pages: deployment, Rest API, Theme, loading bar, debugbar
+- update documentation & readme image
 - fix bower task
+- toast service + update documentation
+- dialog service + update documentation
+- redirect to unsupported browser page
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
-- redirect to unsupported browser page
-- make demo more appealing
 - even better support for 5.1 (start from 5.1)
 - jwt auth example (with seed)
 - artisan generators
@@ -87,6 +88,9 @@ Open a new issue, I'd love to help.
   
 <a name="changelog"></a>
 ## Changelog
+
+### v2.2.0
++ New demo & documentation
 
 ### v2.1.2
 + Added [angular-loading-bar](https://github.com/chieffancypants/angular-loading-bar/) which works automatically

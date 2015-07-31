@@ -1,5 +1,5 @@
 {
-  "version": "2.1.2",
+  "version": "2.2.0",
   "devDependencies": {
     "gulp": "^3.9.0",
     "laravel-elixir": "^2.0.0",
