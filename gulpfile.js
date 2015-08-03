@@ -3,7 +3,6 @@ var elixir = require('laravel-elixir');
 
 require('laravel-elixir-bower');
 require('laravel-elixir-angular');
-require('laravel-elixir-imagemin');
 
 /*
  |--------------------------------------------------------------------------
@@ -26,6 +25,5 @@ require('laravel-elixir-imagemin');
  	.less('../../../angular/**/*.less')
  	.copy('angular/app/**/*.html', 'public/views/app/')
  	.copy('angular/directives/**/*.html', 'public/views/directives/');
- 	// .imagemin();
 
  });

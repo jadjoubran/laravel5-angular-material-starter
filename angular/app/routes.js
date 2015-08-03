@@ -54,6 +54,28 @@
 						templateUrl: getView('tabs')
 					}
 				}
+			})
+			.state('app.deploy', {
+				url: '/deploy',
+				data: {
+					pageName: 'Deploy'
+				},
+				views: {
+					'main@': {
+						templateUrl: getView('deploy')
+					}
+				}
+			})
+			.state('app.theme', {
+				url: '/theme',
+				data: {
+					pageName: 'Theme'
+				},
+				views: {
+					'main@': {
+						templateUrl: getView('theme')
+					}
+				}
 			});
 
 

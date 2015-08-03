@@ -3,7 +3,7 @@
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
-![Laravel & Angular](http://i.imgur.com/uUMaSyP.jpg)  
+![Laravel & Angular](http://i.imgur.com/ZbLzOPP.jpg)  
 
 
 ##### Table of Contents  
@@ -67,13 +67,12 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- Update to elixir 3.0 + use elixir.json
-- New demo pages: deployment, Rest API, Theme, loading bar, debugbar
-- update documentation & readme image
-- fix bower task
 - toast service + update documentation
 - dialog service + update documentation
 - redirect to unsupported browser page
+- New demo pages: Rest API, loading bar, debugbar
+- Update to elixir 3.0 + use elixir.json
+- fix gulp bower task
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
 - even better support for 5.1 (start from 5.1)
@@ -88,6 +87,14 @@ Open a new issue, I'd love to help.
   
 <a name="changelog"></a>
 ## Changelog
+
+### v2.2.2
++ new documentation page: Theme
++ new documentation page: Deploy
++ update documentation & readme cover
+
+### v2.2.1
++ removed imagemin for now since it's not being used in elixir
 
 ### v2.2.0
 + New demo & documentation
