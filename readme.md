@@ -39,16 +39,17 @@ Here are the goodies that you'll get:
 <a name="manual_installation"></a>
 ## Manual Installation
 
-* `git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git`
-* `cd laravel5-angular-material-starter`
-* create `.env` file from `.env.example`. Fix DB credentials & APP_KEY
-* `npm install -g gulp bower`
-* `composer update`
-* `php artisan jwt:generate`
-* `npm install`
-* `bower install`
-* `gulp && gulp watch`
-* `php artisan serve`
+    git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git
+    cd laravel5-angular-material-starter
+    cp .env.example .env #create .env file from .env.example. Fix DB credentials
+    php artisan key:generate
+    npm install -g gulp bower
+    composer update
+    php artisan jwt:generate
+    npm install
+    bower install
+    gulp && gulp watch
+    php artisan serve
 * You're ready to go! <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>
 * Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
@@ -67,8 +68,6 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- php artisan serve (fix both installations)
-- php artisan key:generate (fix both installations)
 - composer create-project and remove sh script
 - fix issue with http over https
 - human readable filter + update documentation
@@ -80,13 +79,12 @@ Open a new issue, I'd love to help.
 - fix gulp bower task
 - continue heroku setup (database, migrations, seeding)
 - make readme more appealing
-- even better support for 5.1 (start from 5.1)
+- even better support for 5.1 (fork?)
 - jwt auth example (with seed)
 - artisan generators
 - Add tooltips sample
 - Speedup gulp watch
 - Sample route authentication (via $localStorage)
-- Gulp watch should not exit when it catches an error
 
   
   
@@ -95,6 +93,7 @@ Open a new issue, I'd love to help.
 
 ### v2.2.3
 + now using `artisan serve`
++ now using `artisan key:generate` instead of instructing the user to manually update it
 
 ### v2.2.2
 + new documentation page: Theme
