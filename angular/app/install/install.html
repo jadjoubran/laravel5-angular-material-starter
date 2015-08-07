@@ -2,20 +2,16 @@
 	<md-toolbar class="PageToolbar">
 		<div class="md-toolbar-tools">
 			<h2>
-				<span>Recommended</span>
+				<span>composer create-project</span>
 			</h2>
 		</div>
 	</md-toolbar>
 
 	<section class="language-markup">
-			<pre><code class="line-numbers language-* language-bash">git clone
-git@github.com:jadjoubran/laravel5-angular-material-starter.git
+			<pre><code class="line-numbers language-* language-bash">composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
 cd laravel5-angular-material-starter
-cp .env.example .env #create .env file from .env.example. Fix DB credentials
-php artisan key:generate
+#fix DataBase credentials in .env
 npm install -g gulp bower
-composer update
-php artisan jwt:generate
 npm install
 bower install
 gulp && gulp watch

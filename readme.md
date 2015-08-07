@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.2
+> Version 2.3
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
@@ -8,8 +8,7 @@
 
 ##### Table of Contents  
 [Overview](#overview)  
-[Manual Installation](#manual_installation)  
-[Bash Installer](#bash_installer)  
+[Installation](#installation)  
 [Issues, Questions and Feature Requests](#issues)  
 [Planned features](#planned_features)  
 [Changelog](#changelog)
@@ -36,29 +35,19 @@ Here are the goodies that you'll get:
 * Sample integration between Restangular & Laravel API endpoint
 
 
-<a name="manual_installation"></a>
-## Manual Installation
+<a name="installation"></a>
+## Installation
 
-    git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git
+    composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
     cd laravel5-angular-material-starter
-    cp .env.example .env #create .env file from .env.example. Fix DB credentials
-    php artisan key:generate
+    #fix DataBase credentials in .env
     npm install -g gulp bower
-    composer update
-    php artisan jwt:generate
     npm install
     bower install
     gulp && gulp watch
     php artisan serve
 * You're ready to go! <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>
 * Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
-
-
-<a name="bash_installer"></a>
-##Bash Installer
-Assuming you have php, composer, npm, bower installed globally:  
-`git clone git@github.com:jadjoubran/laravel5-angular-material-starter.git && cd laravel5-angular-material-starter && bash setup.sh`
-  
   
 <a name="issues"></a>
 ## Issues, Questions and Feature Requests
@@ -68,7 +57,6 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- composer create-project and remove sh script
 - fix issue with http over https
 - human readable filter + update documentation
 - toast service + update documentation
@@ -90,6 +78,9 @@ Open a new issue, I'd love to help.
   
 <a name="changelog"></a>
 ## Changelog
+
+### v2.3.0
++ Simplified installation, now using `composer create-project`
 
 ### v2.2.3
 + now using `artisan serve`
