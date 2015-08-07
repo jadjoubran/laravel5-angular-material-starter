@@ -48,8 +48,8 @@ Here are the goodies that you'll get:
 * `npm install`
 * `bower install`
 * `gulp && gulp watch`
-* `php -S localhost:8081 -t public`
-* You're ready to go! <a href="http://localhost:8081" target="_blank">http://localhost:8081</a>
+* `php artisan serve`
+* You're ready to go! <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>
 * Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
 
@@ -67,6 +67,11 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- php artisan serve (fix both installations)
+- php artisan key:generate (fix both installations)
+- composer create-project and remove sh script
+- fix issue with http over https
+- human readable filter + update documentation
 - toast service + update documentation
 - dialog service + update documentation
 - redirect to unsupported browser page
@@ -87,6 +92,9 @@ Open a new issue, I'd love to help.
   
 <a name="changelog"></a>
 ## Changelog
+
+### v2.2.3
++ now using `artisan serve`
 
 ### v2.2.2
 + new documentation page: Theme
