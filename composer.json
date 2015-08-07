@@ -37,8 +37,10 @@
 		],
 		"post-create-project-cmd": [
 			"php -r \"copy('.env.example', '.env');\"",
+ 			"php -r \"unlink('code_of_conduct.md');\"",
+ 			"php -r \"unlink('Procfile');\"",
 			"php artisan key:generate",
-		    "php artisan jwt:generate"
+			"php artisan jwt:generate"
 		]
 	}
 }

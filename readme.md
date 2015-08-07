@@ -57,11 +57,10 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- human readable filter + update documentation
 - toast service + update documentation
 - dialog service + update documentation
 - redirect to unsupported browser page
-- New demo pages: Rest API, loading bar, debugbar
+- New demo pages: Rest API, loading bar, debugbar, filters
 - Update to elixir 3.0 + use elixir.json
 - fix gulp bower task
 - continue heroku setup (database, migrations, seeding)
@@ -77,6 +76,10 @@ Open a new issue, I'd love to help.
   
 <a name="changelog"></a>
 ## Changelog
+
+### v2.3.1
++ removing development files using post-create-project-cmd
++ added `human_readable` angular filter
 
 ### v2.3.0
 + Simplified installation, now using `composer create-project`
