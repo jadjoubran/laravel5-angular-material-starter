@@ -3,7 +3,7 @@
 
 	angular.module('app.controllers').controller('LandingCtrl', function( $scope, $mdToast, $mdDialog, $interval ){
 
-		$scope.promoImage = 'http://i.imgur.com/ZbLzOPP.jpg';
+		$scope.promoImage = '//i.imgur.com/ZbLzOPP.jpg';
 		$scope.icon = 'send';
 
 		var icons = [

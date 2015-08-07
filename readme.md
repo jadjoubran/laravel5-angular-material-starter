@@ -40,7 +40,7 @@ Here are the goodies that you'll get:
 
     composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
     cd laravel5-angular-material-starter
-    #fix DataBase credentials in .env
+    #fix database credentials in .env
     npm install -g gulp bower
     npm install
     bower install
@@ -57,7 +57,6 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- fix issue with http over https
 - human readable filter + update documentation
 - toast service + update documentation
 - dialog service + update documentation
@@ -81,6 +80,8 @@ Open a new issue, I'd love to help.
 
 ### v2.3.0
 + Simplified installation, now using `composer create-project`
++ fix issue with http over https
+
 
 ### v2.2.3
 + now using `artisan serve`
