@@ -57,6 +57,7 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- remove changelog on composer create-project
 - toast service + update documentation
 - dialog service + update documentation
 - redirect to unsupported browser page
