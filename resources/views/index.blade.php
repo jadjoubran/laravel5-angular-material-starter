@@ -1,11 +1,15 @@
 <!doctype html>
 <html ng-app="app">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/prism.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,400' rel='stylesheet' type='text/css'>
     <title>Laravel 5 angular material starter</title>
+    <!--[if lte IE 10]>
+    <script type="text/javascript">document.location.href = '/unsupported-browser'</script>
+    <![endif]-->
 </head>
 <body>
 

@@ -32,6 +32,7 @@ Here are the goodies that you'll get:
 * Angular Material sample code
 * Angular Material custom theming
 * Sample integration between Restangular & Laravel API endpoint
+* Unsupported page for <= IE10
 
 
 <a name="installation"></a>
@@ -56,18 +57,16 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- Unsupported browser page
-- Make sure jscs & jshint are all relevant to Laravel's coding style
 - Setup styleci.io
-- New demo pages: Toasts, Dialogs, Rest API, loading bar, debugbar, filters
+- New demo pages: Toasts, Dialogs, Unsupported Browser, Rest API, loading bar, debugbar, filters
 - Update to elixir 3.0 + use elixir.json
 - fix gulp bower task
 - Migrate to open source hosting
 - make readme more appealing
-- jwt auth example (with seed)
+- jwt auth example (with seed) + route authentication
+- choose between JWT (disable CSRF) or not (enable CSRF)
 - artisan generators
 - even better support for 5.1 (fork?)
 - optional phpcs support
 - Add tooltips sample
 - Speedup gulp watch
-- Sample route authentication (via $localStorage)

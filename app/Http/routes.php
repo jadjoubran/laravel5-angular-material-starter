@@ -13,13 +13,16 @@
 
 Route::get('/', 'AngularController@serveApp');
 
+Route::get('/unsupported-browser', 'AngularController@unsupported');
+
+
+
 
 Route::group(['prefix' => 'api/1/'], function (){
 
 	/*
 	 * used for Json Web Token Authentication - https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
 	 * Make sure to re-enable Csrf middleware if you're disabling JWT
-	 * Also don't forget to run `php artisan jwt:generate` to generate a new token (already part of setup.sh)
 	 * */
 	Route::resource('authenticate', 'AuthenticateController', ['only' => ['index']]);
 	Route::post('authenticate', 'AuthenticateController@authenticate');
