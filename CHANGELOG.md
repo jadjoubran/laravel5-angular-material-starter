@@ -3,6 +3,7 @@
 ### v2.3.2
 + remove changelog on composer create-project
 + toast service + update documentation
++ sidebar markup fixes
 
 ### v2.3.1
 + removing development files using post-create-project-cmd
