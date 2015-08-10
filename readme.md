@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.3
+> Version 2.4
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
@@ -56,15 +56,18 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- redirect to unsupported browser page
+- Unsupported browser page
+- Make sure jscs & jshint are all relevant to Laravel's coding style
+- Setup styleci.io
 - New demo pages: Toasts, Dialogs, Rest API, loading bar, debugbar, filters
 - Update to elixir 3.0 + use elixir.json
 - fix gulp bower task
 - Migrate to open source hosting
 - make readme more appealing
-- even better support for 5.1 (fork?)
 - jwt auth example (with seed)
 - artisan generators
+- even better support for 5.1 (fork?)
+- optional phpcs support
 - Add tooltips sample
 - Speedup gulp watch
 - Sample route authentication (via $localStorage)

@@ -1,17 +1,25 @@
 root = true
 
 [*]
-insert_final_newline = false
 charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
 
 [*.{js,html}]
 indent_size = 4
 indent_style = tab
 trim_trailing_whitespace = true
 
+
 [{package.json,bower.json,.jscs.json}]
 indent_style = space
 indent_size = 2
 
-[*.sh]
-end_of_line = lf
+
+[*.yml]
+indent_style = space
+indent_size = 2

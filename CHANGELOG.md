@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.4.0
++ updated .editorConfig to work with Laravel ([*] taken from Laravel's .gitignore)
+
 ### v2.3.3
 + dialog service + update documentation
 
