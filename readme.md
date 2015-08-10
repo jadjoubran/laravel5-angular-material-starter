@@ -60,7 +60,7 @@ Open a new issue, I'd love to help.
 - New demo pages: Toasts, Dialogs, Rest API, loading bar, debugbar, filters
 - Update to elixir 3.0 + use elixir.json
 - fix gulp bower task
-- continue heroku setup (database, migrations, seeding)
+- Migrate to open source hosting
 - make readme more appealing
 - even better support for 5.1 (fork?)
 - jwt auth example (with seed)
