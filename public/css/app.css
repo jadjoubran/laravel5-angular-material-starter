@@ -1,3 +1,8 @@
+md-toast[md-theme=warn] {
+  background-color: #F44336;
+  border-radius: 2px;
+}
+
 .Header {
   position: fixed;
   left: 250px;

@@ -56,11 +56,9 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- remove changelog on composer create-project
-- toast service + update documentation
 - dialog service + update documentation
 - redirect to unsupported browser page
-- New demo pages: Rest API, loading bar, debugbar, filters
+- New demo pages: Toasts, Dialogs, Rest API, loading bar, debugbar, filters
 - Update to elixir 3.0 + use elixir.json
 - fix gulp bower task
 - continue heroku setup (database, migrations, seeding)

@@ -1,7 +1,7 @@
 (function(){
 	"use strict";
 
-	angular.module('app.controllers').controller('LandingCtrl', function( $scope, $mdToast, $mdDialog, $interval ){
+	angular.module('app.controllers').controller('LandingCtrl', function( $scope, $mdToast, $mdDialog, $interval, ToastService ){
 
 		$scope.promoImage = '//i.imgur.com/ZbLzOPP.jpg';
 		$scope.icon = 'send';
@@ -30,13 +30,12 @@
 			}
 		}, 2000);
 
-		$scope.toastNotification = function(){
-			$mdToast.show(
-				$mdToast.simple()
-				.content('This is a toast notification!')
-				.position('top right')
-				.hideDelay(3000)
-				);
+		$scope.toastSuccess = function(){
+			ToastService.show('This is a toast notification!');
+		};
+
+		$scope.toastError = function(){
+			ToastService.error('Connection interrupted!');
 		};
 
 		$scope.showDialog = function( event ){

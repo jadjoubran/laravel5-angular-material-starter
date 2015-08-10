@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.3.2
++ remove changelog on composer create-project
++ toast service + update documentation
+
 ### v2.3.1
 + removing development files using post-create-project-cmd
 + added `human_readable` angular filter
