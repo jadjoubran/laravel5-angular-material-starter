@@ -6,7 +6,7 @@
 
 			if (toState.data && toState.data.pageName){
 				$rootScope.current_page = toState.data.pageName;
-			}
+			};
 
 
 		});
