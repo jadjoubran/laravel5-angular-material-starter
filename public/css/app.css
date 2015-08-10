@@ -113,3 +113,5 @@ pre[class*="language-"] {
 [ui-view].ng-enter.ng-enter-active {
   opacity: 1;
 }
+
+/*less code specific for add_item dialog*/

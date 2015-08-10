@@ -15,15 +15,16 @@ require('laravel-elixir-angular');
  |
  */
 
- elixir.config.sourcemaps = false;
- elixir.config.registerWatcher("default", "angular/**");
+elixir.config.sourcemaps = false;
+elixir.config.registerWatcher("default", "angular/**");
 
- elixir(function(mix) {
- 	mix
- 	//.bower() //uncomment it when you add a new bower component (it's commented now because it messes up the other watchers)
- 	.angular('angular/')
- 	.less('../../../angular/**/*.less')
- 	.copy('angular/app/**/*.html', 'public/views/app/')
- 	.copy('angular/directives/**/*.html', 'public/views/directives/');
+elixir(function(mix){
+	mix
+		//.bower() //uncomment it when you add a new bower component (it's commented out now because it messes up other tasks)
+		.angular('angular/')
+		.less('../../../angular/**/*.less')
+		.copy('angular/app/**/*.html', 'public/views/app/')
+		.copy('angular/directives/**/*.html', 'public/views/directives/')
+		.copy('angular/dialogs/**/*.html', 'public/views/dialogs/');
 
- });
+});

@@ -56,7 +56,6 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- dialog service + update documentation
 - redirect to unsupported browser page
 - New demo pages: Toasts, Dialogs, Rest API, loading bar, debugbar, filters
 - Update to elixir 3.0 + use elixir.json

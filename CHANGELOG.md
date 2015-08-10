@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.3.3
++ dialog service + update documentation
+
+
 ### v2.3.2
 + remove changelog on composer create-project
 + toast service + update documentation
