@@ -63,8 +63,8 @@ md-toast[md-theme=warn] {
 .Sidebar-page {
   cursor: pointer;
 }
-.Sidebar-page div {
-  width: 100%;
+.Sidebar-page md-list-item {
+  height: 48px;
 }
 .Sidebar-page.active {
   background-color: rgba(158, 158, 158, 0.3) !important;

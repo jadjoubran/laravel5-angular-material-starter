@@ -32,7 +32,7 @@ Here are the goodies that you'll get:
 * Angular Material sample code
 * Angular Material custom theming
 * Sample integration between Restangular & Laravel API endpoint
-* Unsupported page for <= IE10
+* Unsupported browser page for <= IE10
 
 
 <a name="installation"></a>

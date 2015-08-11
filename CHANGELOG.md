@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.4.3
++ IE sidebar fix
+
 ### v2.4.2
 + Unsupported browser page + IE10 conditional comment
 + Added meta viewport for mobile
