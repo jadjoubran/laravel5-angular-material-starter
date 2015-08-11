@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.5.0
++ Setup styleci.io - fixed php code style to be inline with Laravel (Laravel is using Style CI)
+
 ### v2.4.3
 + IE sidebar fix
 

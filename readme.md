@@ -3,18 +3,18 @@
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
-![Laravel & Angular](http://i.imgur.com/ZbLzOPP.jpg)  
+![Laravel & Angular](http://i.imgur.com/ZbLzOPP.jpg)
 
 
-##### Table of Contents  
-[Overview](#overview)  
-[Installation](#installation)  
-[Issues, Questions and Feature Requests](#issues)  
-[Planned features](#planned_features)  
+##### Table of Contents
+[Overview](#overview)
+[Installation](#installation)
+[Issues, Questions and Feature Requests](#issues)
+[Planned features](#planned_features)
 
 <a name="overview"></a>
 ## OVERVIEW
-This is a starter project that gives you an out of the box configuration Laravel 5.1 and AngularJS (folder by feature architecture).  
+This is a starter project that gives you an out of the box configuration Laravel 5.1 and AngularJS (folder by feature architecture).
 Here are the goodies that you'll get:
 
 * Laravel 5.1
@@ -57,7 +57,6 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- Setup styleci.io
 - New demo pages: Toasts, Dialogs, Unsupported Browser, Rest API, loading bar, debugbar, filters
 - Update to elixir 3.0 + use elixir.json
 - fix gulp bower task
