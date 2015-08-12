@@ -1,8 +1,7 @@
-process.env.DISABLE_NOTIFIER = true;
 var elixir = require('laravel-elixir');
-
-require('laravel-elixir-bower');
 require('laravel-elixir-angular');
+
+process.env.DISABLE_NOTIFIER = true;
 
 /*
  |--------------------------------------------------------------------------
@@ -15,16 +14,31 @@ require('laravel-elixir-angular');
  |
  */
 
-elixir.config.sourcemaps = false;
-elixir.config.registerWatcher("default", "angular/**");
+var bower_js = ['./bower_components/angular/angular.js',
+	'./bower_components/angular-material/angular-material.js',
+	'./bower_components/angular-animate/angular-animate.js',
+	'./bower_components/angular-aria/angular-aria.js',
+	'./bower_components/angular-ui-router/release/angular-ui-router.js',
+	'./bower_components/restangular/dist/restangular.js',
+	'./bower_components/lodash/lodash.js',
+	'./bower_components/ngstorage/ngStorage.js',
+	'./bower_components/svg-morpheus/compile/unminified/svg-morpheus.js',
+	'./bower_components/angular-material-icons/angular-material-icons.js',
+	'./bower_components/satellizer/satellizer.js',
+	'./bower_components/angular-loading-bar/build/loading-bar.js',
+];
+var bower_css = ['./bower_components/angular-material/angular-material.css',
+	'./bower_components/angular-material-icons/angular-material-icons.css',
+	'./bower_components/angular-loading-bar/build/loading-bar.css',
+];
 
 elixir(function(mix){
 	mix
-		//.bower() //uncomment it when you add a new bower component (it's commented out now because it messes up other tasks)
-		.angular('angular/')
-		.less('../../../angular/**/*.less')
-		.copy('angular/app/**/*.html', 'public/views/app/')
-		.copy('angular/directives/**/*.html', 'public/views/directives/')
-		.copy('angular/dialogs/**/*.html', 'public/views/dialogs/');
-
+		.scripts(bower_js, 'public/js/vendor.js')
+		.styles(bower_css, 'public/css/vendor.css')
+		.angular('./angular/', 'public/js')
+		.less('./angular/**/*.less')
+		.copy('./angular/app/**/*.html', 'public/views/app/')
+		.copy('./angular/directives/**/*.html', 'public/views/directives/')
+		.copy('./angular/dialogs/**/*.html', 'public/views/dialogs/');
 });

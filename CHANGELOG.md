@@ -1,5 +1,10 @@
 ## Changelog
 
+### v2.6.0
++ Update to [elixir 3.0](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/20)
++ fixed gulp bower task
++ gulp tasks are now much faster (gulp watch is much faster)
+
 ### v2.5.0
 + Setup styleci.io - fixed php code style to be inline with Laravel (Laravel is using Style CI)
 

@@ -64,6 +64,7 @@ md-toast[md-theme=warn] {
   cursor: pointer;
 }
 .Sidebar-page md-list-item {
+  /*IE centering fix*/
   height: 48px;
 }
 .Sidebar-page.active {
@@ -115,3 +116,5 @@ pre[class*="language-"] {
 }
 
 /*less code specific for add_item dialog*/
+
+/*# sourceMappingURL=app.css.map */

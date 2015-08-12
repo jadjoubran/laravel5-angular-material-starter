@@ -28,7 +28,7 @@ Here are the goodies that you'll get:
 * JavaScript Code Style (jscs)
 * Jshint (rename _jshintrc to .jshintrc if you want to use it. Check [#11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11))
 * Less
-* Elixir
+* Elixir 3.0
 * Angular Material sample code
 * Angular Material custom theming
 * Sample integration between Restangular & Laravel API endpoint
@@ -58,13 +58,12 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 - New demo pages: Toasts, Dialogs, Unsupported Browser, Rest API, loading bar, debugbar, filters
-- Update to elixir 3.0 + use elixir.json
-- fix gulp bower task
 - Migrate to open source hosting
 - make readme more appealing
 - jwt auth example (with seed) + route authentication
 - choose between JWT (disable CSRF) or not (enable CSRF)
 - artisan generators
+- custom elixir task: make jshint optional
 - even better support for 5.1 (fork?)
 - optional phpcs support
 - Add tooltips sample
