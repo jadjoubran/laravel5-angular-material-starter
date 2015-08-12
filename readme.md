@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.4
+> Version 2.6
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
@@ -57,7 +57,7 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- New demo pages: Toasts, Dialogs, Unsupported Browser, Rest API, loading bar, debugbar, filters
+- New demo pages: Toasts, Dialogs, Unsupported Browser, Elixir, Rest API, loading bar, debugbar, filters
 - Migrate to open source hosting
 - make readme more appealing
 - jwt auth example (with seed) + route authentication

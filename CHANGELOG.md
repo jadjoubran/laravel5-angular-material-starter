@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.6.1
++ updated bower dependencies (angular material released 0.10.1)
+
+
 ### v2.6.0
 + Update to [elixir 3.0](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/20)
 + fixed gulp bower task
