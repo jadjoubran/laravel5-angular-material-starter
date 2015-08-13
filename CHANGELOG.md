@@ -3,6 +3,7 @@
 ### v2.6.1
 + updated bower dependencies (angular material released 0.10.1)
 + added artisan generator for a new feature: **artisan ng:feature**
++ improve generator to call controller with StudlyCase (StudlyCaseCtrl)
 
 ### v2.6.0
 + Update to [elixir 3.0](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/20)
