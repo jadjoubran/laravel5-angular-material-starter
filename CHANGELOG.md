@@ -1,16 +1,23 @@
-artisan ## Changelog
+## Changelog
+
+### v2.7.0
++ custom elixir ingredients setup & sample
++ custom elixir task: make jshint optional
++ custom elixir task: bower - much faster than the one previously used
++ bower task now automatically uses mainFile from bower.json
++ gulp & gulp watch are now much much faster than before
 
 ### v2.6.2
 + fixed elixir watcher for less
-+ artisan generator for creating a new service **artisan ng:service name**
-+ artisan generator for creating a new filter **artisan ng:filter name**
-+ artisan generator for creating a new config **artisan ng:config name**
++ artisan generator for creating a new angular service **artisan ng:service name**
++ artisan generator for creating a new angular filter **artisan ng:filter name**
++ artisan generator for creating a new angular config **artisan ng:config name**
 
 ### v2.6.1
 + updated bower dependencies (angular material released 0.10.1)
-+ added artisan generator for creating a new feature: **artisan ng:feature name**
++ added artisan generator for creating a new angular feature: **artisan ng:feature name**
 + improve generator to call controller with StudlyCase (StudlyCaseCtrl)
-+ artisan generator for creating a custom dialogs: **artisan ng:dialog name**
++ artisan generator for creating a angular material custom dialogs: **artisan ng:dialog name**
 
 ### v2.6.0
 + Update to [elixir 3.0](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/20)
@@ -98,7 +105,7 @@ artisan ## Changelog
 
 
 ### v1.5.1
-+ jshint is now optional. Rename _jshintrc to .jshintrc. Check [issue #11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11)
++ invalid now - jshint is now optional. Rename _jshintrc to .jshintrc. Check [issue #11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11)
 
 
 ### v1.5.0

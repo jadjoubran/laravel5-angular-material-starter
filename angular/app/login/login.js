@@ -3,6 +3,8 @@
 
     angular.module('app.controllers').controller('LoginCtrl', function ($scope, Restangular, $auth, $state){
 
+	    var credentials = {};
+
         // Use Satellizer's $auth service to login because it'll automatically save the JWT in localStorage
         $auth.login(credentials).then(function (data){
             // If login is successful, redirect to the users state

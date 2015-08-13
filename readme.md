@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.6
+> Version 2.7
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
@@ -20,14 +20,13 @@ Here are the goodies that you'll get:
 * Laravel 5.1
 * Angular
 * Angular Material
-* Elixir 3.0
+* Blazing fast Elixir 3.0 configuration with custom tasks
 * artisan generatores for angular (artisan ng:feature name, artisan ng:dialog name, etc..)
 * [JWT auth](https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps)
 * Laravel [DebugBar](https://github.com/barryvdh/laravel-debugbar)
 * Angular [UI router](https://github.com/angular-ui/ui-router)
 * [Optimized deployment script](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
-* [EditorConfig](http://editorconfig.org/) & [jscs](http://jscs.info/) sample config
-* Jshint (rename _jshintrc to .jshintrc if you want to use it. Check [#11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11))
+* [EditorConfig](http://editorconfig.org/), [jshint](http://jshint.com/) & [jscs](http://jscs.info/) sample config
 * Less
 * Unsupported browser page for IE <= 10
 
@@ -54,15 +53,16 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- bower task to use main file from bower.json
 
-- simplify gulpfile using elixir.json
-- custom elixir task: make jshint optional
+- implement livereload
 - Migrate to open source hosting
+- phpcs laravel config
 - New demo pages: Toasts, Dialogs, Unsupported Browser, artisan angular generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
 - make gulp --production part of the automated release
 - make readme more appealing
 - jwt auth example (with seed) + route authentication
 - composer.lock committed again (issue)
 - choose between JWT (disable CSRF) or not (enable CSRF)
+- automate tests
 - even better support for 5.1 (fork?)
-- optional phpcs support
