@@ -2,6 +2,7 @@
 
 ### v2.6.2
 + fixed elixir watcher for less
++ artisan generator for service **artisan ng:service**
 
 ### v2.6.1
 + updated bower dependencies (angular material released 0.10.1)

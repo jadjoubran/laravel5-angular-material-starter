@@ -54,8 +54,9 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 
-- _jshintrc working instead of .jshintrc?
-- artisan generators for service, filter & config + update overview
+- artisan generators for filter & config + update overview
+- simplify gulpfile using elixir.json
+- custom elixir task: make jshint optional
 - Migrate to open source hosting
 - New demo pages: Toasts, Dialogs, Unsupported Browser, generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
 - make gulp --production part of the automated release
@@ -63,6 +64,5 @@ Open a new issue, I'd love to help.
 - jwt auth example (with seed) + route authentication
 - composer.lock committed again (issue)
 - choose between JWT (disable CSRF) or not (enable CSRF)
-- custom elixir task: make jshint optional
 - even better support for 5.1 (fork?)
 - optional phpcs support
