@@ -4,8 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class AngularFeature extends Command{
-
+class AngularFeature extends Command
+{
     /**
      * The name and signature of the console command.
      * @var string
@@ -22,7 +22,8 @@ class AngularFeature extends Command{
      * Create a new command instance.
      * @return void
      */
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
     }
 
@@ -30,15 +31,16 @@ class AngularFeature extends Command{
      * Execute the console command.
      * @return mixed
      */
-    public function handle(){
+    public function handle()
+    {
         $name = $this->argument('name');
 
-        $html = file_get_contents(__DIR__ . '/Stubs/AngularFeature/feature.html.stub');
-        $js = file_get_contents(__DIR__ . '/Stubs/AngularFeature/feature.js.stub');
-        $less = file_get_contents(__DIR__ . '/Stubs/AngularFeature/feature.less.stub');
+        $html = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.html.stub');
+        $js = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.js.stub');
+        $less = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.less.stub');
 
-        $folder = __DIR__ . '/../../../angular/app/' . $name;
-        if (is_dir($folder)){
+        $folder = __DIR__.'/../../../angular/app/'.$name;
+        if (is_dir($folder)) {
             $this->info('Folder already exists');
 
             return false;
@@ -48,12 +50,12 @@ class AngularFeature extends Command{
         \File::makeDirectory($folder, 0775, true);
 
         //create view (.html)
-        \File::put($folder . '/' . $name . '.html', $html);
+        \File::put($folder.'/'.$name.'.html', $html);
 
         //create controller (.js)
-        \File::put($folder . '/' . $name . '.js', $js);
+        \File::put($folder.'/'.$name.'.js', $js);
 
         //create less file (.less)
-        \File::put($folder . '/' . $name . '.less', $less);
+        \File::put($folder.'/'.$name.'.less', $less);
     }
 }
