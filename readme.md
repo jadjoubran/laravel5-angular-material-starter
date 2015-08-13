@@ -53,6 +53,7 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- elixir watcher not working for less (check js and copy tasks)
 - _jshintrc working instead of .jshintrc?
 - artisan generators for service, filter & config + update overview
 - Migrate to open source hosting
