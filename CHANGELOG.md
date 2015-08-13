@@ -2,13 +2,14 @@
 
 ### v2.6.2
 + fixed elixir watcher for less
-+ artisan generator for service **artisan ng:service**
++ artisan generator for creating a new service **artisan ng:service name**
++ artisan generator for creating a new filter **artisan ng:filter name**
 
 ### v2.6.1
 + updated bower dependencies (angular material released 0.10.1)
-+ added artisan generator for a new feature: **artisan ng:feature**
++ added artisan generator for creating a new feature: **artisan ng:feature name**
 + improve generator to call controller with StudlyCase (StudlyCaseCtrl)
-+ artisan generator for custom dialogs: **artisan ng:dialog**
++ artisan generator for creating a custom dialogs: **artisan ng:dialog name**
 
 ### v2.6.0
 + Update to [elixir 3.0](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/20)

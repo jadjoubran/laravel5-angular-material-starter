@@ -54,7 +54,7 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 
-- artisan generators for filter & config + update overview
+- artisan generators for config + update overview
 - simplify gulpfile using elixir.json
 - custom elixir task: make jshint optional
 - Migrate to open source hosting
