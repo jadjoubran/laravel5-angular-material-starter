@@ -10,7 +10,7 @@
 [Overview](#overview)
 [Installation](#installation)
 [Issues, Questions and Feature Requests](#issues)
-[Planned features](#planned_features)
+[Planned features](#planned_features)  
 
 <a name="overview"></a>
 ## OVERVIEW
@@ -53,13 +53,14 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- artisan generators
 - Migrate to open source hosting
 - New demo pages: Toasts, Dialogs, Unsupported Browser, Elixir, Rest API, loading bar, debugbar, filters, JWT
 - make gulp --production part of the automated release
 - make readme more appealing
 - jwt auth example (with seed) + route authentication
+- composer.lock committed again (issue)
 - choose between JWT (disable CSRF) or not (enable CSRF)
-- artisan generators
 - custom elixir task: make jshint optional
 - even better support for 5.1 (fork?)
 - optional phpcs support
