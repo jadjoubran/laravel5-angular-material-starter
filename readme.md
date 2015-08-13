@@ -20,18 +20,14 @@ Here are the goodies that you'll get:
 * Laravel 5.1
 * Angular
 * Angular Material
+* Elixir 3.0
 * [JSON Web Token authentication](https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps)
-* [Laravel5 Debug Bar](https://github.com/barryvdh/laravel-debugbar)
+* [Laravel Debug Bar](https://github.com/barryvdh/laravel-debugbar)
 * [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
 * [Optimized deployment script](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
-* EditorConfig
-* JavaScript Code Style (jscs)
+* [EditorConfig](http://editorconfig.org/), [jscs](http://jscs.info/) sample config
 * Jshint (rename _jshintrc to .jshintrc if you want to use it. Check [#11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11))
 * Less
-* Elixir 3.0
-* Angular Material sample code
-* Angular Material custom theming
-* Sample integration between Restangular & Laravel API endpoint
 * Unsupported browser page for <= IE10
 
 
@@ -57,8 +53,9 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- New demo pages: Toasts, Dialogs, Unsupported Browser, Elixir, Rest API, loading bar, debugbar, filters
 - Migrate to open source hosting
+- New demo pages: Toasts, Dialogs, Unsupported Browser, Elixir, Rest API, loading bar, debugbar, filters, JWT
+- make gulp --production part of the automated release
 - make readme more appealing
 - jwt auth example (with seed) + route authentication
 - choose between JWT (disable CSRF) or not (enable CSRF)
@@ -66,5 +63,3 @@ Open a new issue, I'd love to help.
 - custom elixir task: make jshint optional
 - even better support for 5.1 (fork?)
 - optional phpcs support
-- Add tooltips sample
-- Speedup gulp watch
