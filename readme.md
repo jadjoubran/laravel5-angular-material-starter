@@ -21,14 +21,14 @@ Here are the goodies that you'll get:
 * Angular
 * Angular Material
 * Elixir 3.0
-* [JSON Web Token authentication](https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps)
-* [Laravel Debug Bar](https://github.com/barryvdh/laravel-debugbar)
-* [Angular UI router](https://github.com/angular-ui/ui-router) configuration with multiple views
+* [JWT auth](https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps)
+* Laravel [DebugBar](https://github.com/barryvdh/laravel-debugbar)
+* Angular [UI router](https://github.com/angular-ui/ui-router)
 * [Optimized deployment script](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
-* [EditorConfig](http://editorconfig.org/), [jscs](http://jscs.info/) sample config
+* [EditorConfig](http://editorconfig.org/) & [jscs](http://jscs.info/) sample config
 * Jshint (rename _jshintrc to .jshintrc if you want to use it. Check [#11](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/11))
 * Less
-* Unsupported browser page for <= IE10
+* Unsupported browser page for IE <= 10
 
 
 <a name="installation"></a>
