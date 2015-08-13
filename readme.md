@@ -7,9 +7,9 @@
 
 
 ##### Table of Contents
-[Overview](#overview)
-[Installation](#installation)
-[Issues, Questions and Feature Requests](#issues)
+[Overview](#overview)  
+[Installation](#installation)  
+[Issues, Questions and Feature Requests](#issues)  
 [Planned features](#planned_features)  
 
 <a name="overview"></a>
