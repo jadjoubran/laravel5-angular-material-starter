@@ -38,14 +38,14 @@ class AngularFeature extends Command
         $studly_name = studly_case($name);
 
         $html = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.html.stub');
-        $js   = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.js.stub');
+        $js = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.js.stub');
         $less = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.less.stub');
 
         $html = str_replace('{{StudlyName}}', $studly_name, $html);
         $js = str_replace('{{StudlyName}}', $studly_name, $js);
 
-        $folder = __DIR__ . '/../../../angular/app/' . $name;
-        if (is_dir($folder)){
+        $folder = __DIR__.'/../../../angular/app/'.$name;
+        if (is_dir($folder)) {
             $this->info('Folder already exists');
 
             return false;
