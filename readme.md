@@ -53,9 +53,11 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- artisan generators
+- artisan generator
+- improve artisan generator (default controller, default classes, etc..) + update documentation
+- dialog artisan generators
 - Migrate to open source hosting
-- New demo pages: Toasts, Dialogs, Unsupported Browser, Elixir, Rest API, loading bar, debugbar, filters, JWT
+- New demo pages: Toasts, Dialogs, Unsupported Browser, generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
 - make gulp --production part of the automated release
 - make readme more appealing
 - jwt auth example (with seed) + route authentication
