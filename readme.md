@@ -53,8 +53,8 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- artisan generator
-- dialog artisan generators + update overview
+- _jshintrc working instead of .jshintrc?
+- artisan generators for service, filter & config + update overview
 - Migrate to open source hosting
 - New demo pages: Toasts, Dialogs, Unsupported Browser, generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
 - make gulp --production part of the automated release

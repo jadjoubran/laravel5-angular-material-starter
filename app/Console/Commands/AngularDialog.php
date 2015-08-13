@@ -5,22 +5,25 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use File;
 
-class AngularFeature extends Command
+class AngularDialog extends Command
 {
     /**
      * The name and signature of the console command.
+     *
      * @var string
      */
-    protected $signature = 'ng:feature {name}';
+    protected $signature = 'ng:dialog {name}';
 
     /**
      * The console command description.
+     *
      * @var string
      */
-    protected $description = 'Create a new feature folder with sample HTML, JS & LESS inside the angular/app folder.';
+    protected $description = 'Create a new dialog folder with sample HTML & JS inside the angular/dialog folder.';
 
     /**
      * Create a new command instance.
+     *
      * @return void
      */
     public function __construct()
@@ -30,21 +33,24 @@ class AngularFeature extends Command
 
     /**
      * Execute the console command.
+     *
      * @return mixed
      */
     public function handle()
     {
         $name = $this->argument('name');
         $studly_name = studly_case($name);
+        $human_readable = ucfirst(str_replace('_', ' ', $name));
 
-        $html = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.html.stub');
-        $js = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.js.stub');
-        $less = file_get_contents(__DIR__.'/Stubs/AngularFeature/feature.less.stub');
+        $html = file_get_contents(__DIR__.'/Stubs/AngularDialog/dialog.html.stub');
+        $js = file_get_contents(__DIR__.'/Stubs/AngularDialog/dialog.js.stub');
 
         $html = str_replace('{{StudlyName}}', $studly_name, $html);
         $js = str_replace('{{StudlyName}}', $studly_name, $js);
+        $html = str_replace('{{HumanReadableName}}', $human_readable, $html);
 
-        $folder = __DIR__.'/../../../angular/app/'.$name;
+
+        $folder = __DIR__.'/../../../angular/dialogs/'.$name;
         if (is_dir($folder)) {
             $this->info('Folder already exists');
 
@@ -60,9 +66,6 @@ class AngularFeature extends Command
         //create controller (.js)
         File::put($folder.'/'.$name.'.js', $js);
 
-        //create less file (.less)
-        File::put($folder.'/'.$name.'.less', $less);
-
-        $this->info('Feature created successfully.');
+        $this->info('Dialog created successfully.');
     }
 }

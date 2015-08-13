@@ -38,8 +38,12 @@
 			ToastService.error('Connection interrupted!');
 		};
 
-		$scope.showDialog = function(){
+		$scope.alertDialog = function(){
 			DialogService.alert('This is an alert title', 'You can specify some description text in here.');
+		};
+
+		$scope.customDialog = function(){
+			DialogService.fromTemplate('add_users');
 		};
 
 	});
