@@ -49,7 +49,6 @@ class AngularDialog extends Command
         $js = str_replace('{{StudlyName}}', $studly_name, $js);
         $html = str_replace('{{HumanReadableName}}', $human_readable, $html);
 
-
         $folder = __DIR__.'/../../../angular/dialogs/'.$name;
         if (is_dir($folder)) {
             $this->info('Folder already exists');
