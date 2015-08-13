@@ -1,9 +1,10 @@
-## Changelog
+artisan ## Changelog
 
 ### v2.6.2
 + fixed elixir watcher for less
 + artisan generator for creating a new service **artisan ng:service name**
 + artisan generator for creating a new filter **artisan ng:filter name**
++ artisan generator for creating a new config **artisan ng:config name**
 
 ### v2.6.1
 + updated bower dependencies (angular material released 0.10.1)

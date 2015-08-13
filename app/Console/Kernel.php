@@ -18,6 +18,7 @@ class Kernel extends ConsoleKernel
         'App\Console\Commands\AngularDialog',
         'App\Console\Commands\AngularService',
         'App\Console\Commands\AngularFilter',
+        'App\Console\Commands\AngularConfig',
     ];
 
     /**
