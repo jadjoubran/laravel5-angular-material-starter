@@ -2,6 +2,7 @@
 
 ### v2.7.1
 + implement livereload
++ livereload: doing soft reload on CSS instead of a full page reload
 
 ### v2.7.0
 + custom elixir ingredients setup & sample
