@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.7.1
++ implement livereload
+
 ### v2.7.0
 + custom elixir ingredients setup & sample
 + custom elixir task: make jshint optional

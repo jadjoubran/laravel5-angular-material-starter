@@ -53,9 +53,6 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-- bower task to use main file from bower.json
-
-- implement livereload
 - Migrate to open source hosting
 - phpcs laravel config
 - New demo pages: Toasts, Dialogs, Unsupported Browser, artisan angular generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
