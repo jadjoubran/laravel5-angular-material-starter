@@ -120,6 +120,15 @@
 						templateUrl: getView('unsupported_browser')
 					}
 				}
+			})
+			.state('app.misc', {
+				url: '/misc',
+				data: {pageName: 'Miscellaneous features'},
+				views: {
+					'main@': {
+						templateUrl: getView('misc')
+					}
+				}
 			});
 
 

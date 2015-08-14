@@ -3,6 +3,8 @@
 ### v2.7.3
 + New demo page for Elixir
 + New demo page: Rest API
++ Misc demo page: angular-loading-bar, debugbar & filters
++ Demo Landing page Call to Action
 
 ### v2.7.2
 + New demo page for Toasts

@@ -48,12 +48,11 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 
-- Misc demo page: angular-loading-bar, debugbar, filters, Restangular
-- Migrate to open source hosting + remove composer.lock
-- Demo pages Design Review
+- Migrate to open source hosting + remove composer.lock properly from pre-commit
 - Make sure that all features have been documented
+- jwt auth example (with database) + route authentication + documentation page
+- Demo pages Design Review
 - make gulp --production part of the automated release + remove sourcemaps
-- jwt auth example (with seed) + route authentication + documentation page
 - choose between JWT (disable CSRF) or not (enable CSRF)
 - automate tests
 - even better support for 5.1 (fork?)
