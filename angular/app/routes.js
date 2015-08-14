@@ -84,6 +84,24 @@
 						templateUrl: getView('dialogs')
 					}
 				}
+			})
+			.state('app.generators', {
+				url: '/generators',
+				data: {pageName: 'Artisan generators'},
+				views: {
+					'main@': {
+						templateUrl: getView('generators')
+					}
+				}
+			})
+			.state('app.unsupported_browser', {
+				url: '/unsupported_browser',
+				data: {pageName: 'Unsupported Browser'},
+				views: {
+					'main@': {
+						templateUrl: getView('unsupported_browser')
+					}
+				}
 			});
 
 

@@ -1,0 +1,22 @@
+<div class="PageContent md-whiteframe-z1" ng-controller="GeneratorsCtrl">
+	<md-toolbar class="PageToolbar">
+		<div class="md-toolbar-tools">
+			<h2>
+				<span>artisan ng:* generators</span>
+			</h2>
+		</div>
+	</md-toolbar>
+
+	<section class="language-markup">
+			<pre><code class="line-numbers language-* language-bash">artisan ng:feature name   #New feature inside angular/app/
+artisan ng:dialog name    #New custom dialog inside angular/dialogs/
+artisan ng:service name   #New service inside angular/services/
+artisan ng:filter name    #New filter inside angular/filters/
+artisan ng:config name    #New config inside angular/config/</code></pre>
+	</section>
+	<div class="PageText">
+		Do <strong>not</strong> append the words Service, Controller or Ctrl.<br>
+		They will be automatically created according to the <a href="" target="_blank">StudlyCase</a> of the name you entered.<br>
+		Use the snake case for more than 1 word: add_users, add_items, edit_data
+	</div>
+</div>

@@ -3,6 +3,8 @@
 ### v2.7.2
 + New demo page for Toasts
 + New demo page for Dialogs
++ New demo page for Unsupported Browser
++ New demo apge for Artisan Angular Generators
 
 ### v2.7.1
 + implement livereload

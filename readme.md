@@ -53,9 +53,9 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- New demo pages: Elixir, Rest API, loading bar, debugbar, filters, JWT
 - Migrate to open source hosting
 - phpcs laravel config
-- New demo pages: Unsupported Browser, artisan angular generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
 - make gulp --production part of the automated release
 - make readme more appealing
 - jwt auth example (with seed) + route authentication
