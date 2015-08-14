@@ -9,7 +9,7 @@
 ##### Table of Contents
 [Overview](#overview)  
 [Installation](#installation)  
-[Issues, Questions and Feature Requests](#issues)  
+[Issues, questions and feature requests](#issues)  
 [Planned features](#planned_features)  
 
 <a name="overview"></a>
@@ -21,14 +21,8 @@ Here are the goodies that you'll get:
 * Angular
 * Angular Material
 * Blazing fast Elixir 3.0 configuration with custom tasks
-* artisan generatores for angular (artisan ng:feature name, artisan ng:dialog name, etc..)
-* [JWT auth](https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps)
-* Laravel [DebugBar](https://github.com/barryvdh/laravel-debugbar)
-* Angular [UI router](https://github.com/angular-ui/ui-router)
-* [Optimized deployment script](https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/deploy.sh)
-* [EditorConfig](http://editorconfig.org/), [jshint](http://jshint.com/) & [jscs](http://jscs.info/) sample config
-* Less
-* Unsupported browser page for IE <= 10
+* artisan generators for angular (artisan ng:feature name, artisan ng:dialog name, etc..)
+* check out the full <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">list of features</a>
 
 
 <a name="installation"></a>
@@ -46,18 +40,17 @@ Here are the goodies that you'll get:
 * Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
 <a name="issues"></a>
-## Issues, Questions and Feature Requests
+## Issues, questions and feature requests
 Open a new issue, I'd love to help.
 
 
 <a name="planned_features"></a>
 ## Planned features
 
+
 - New demo pages: Elixir, Rest API, loading bar, debugbar, filters, JWT
 - Migrate to open source hosting
-- phpcs laravel config
 - make gulp --production part of the automated release
-- make readme more appealing
 - jwt auth example (with seed) + route authentication
 - composer.lock committed again (issue) - also issue with sourcemap files
 - choose between JWT (disable CSRF) or not (enable CSRF)
