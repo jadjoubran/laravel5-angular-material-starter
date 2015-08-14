@@ -1,0 +1,24 @@
+<div class="PageContent md-whiteframe-z1" ng-controller="ToastsCtrl">
+	<md-toolbar class="PageToolbar">
+		<div class="md-toolbar-tools">
+			<h2>
+				<span>ToastService</span>
+			</h2>
+		</div>
+	</md-toolbar>
+
+	<section class="language-markup">
+			<pre><code class="line-numbers language-* language-javascript">//info
+ToastService.show('This is a toast notification!');
+
+//error
+ToastService.error('Connection interrupted!');</code></pre>
+	</section>
+	<div class="PageText">
+		<a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/services/toast.js" target="_blank">ToastService</a>
+		can be extended to suit your needs.<br>
+		<br>
+		<md-button ng-click="toastSuccess()">Add User (success)</md-button>
+		<md-button ng-click="toastError()">Load Data (error)</md-button>
+	</div>
+</div>

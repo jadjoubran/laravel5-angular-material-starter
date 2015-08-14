@@ -55,7 +55,7 @@ Open a new issue, I'd love to help.
 
 - Migrate to open source hosting
 - phpcs laravel config
-- New demo pages: Toasts, Dialogs, Unsupported Browser, artisan angular generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
+- New demo pages: Dialogs, Unsupported Browser, artisan angular generators, Elixir, Rest API, loading bar, debugbar, filters, JWT
 - make gulp --production part of the automated release
 - make readme more appealing
 - jwt auth example (with seed) + route authentication

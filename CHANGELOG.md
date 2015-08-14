@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.7.2
++ New demo page for Toasts
+
 ### v2.7.1
 + implement livereload
 + livereload: doing soft reload on CSS instead of a full page reload

@@ -24,9 +24,7 @@
 			})
 			.state('app.landing', {
 				url: '/',
-				data: {
-					pageName: 'Overview'
-				},
+				data: {pageName: 'Overview'},
 				views: {
 					'main@': {
 						templateUrl: getView('landing')
@@ -35,9 +33,7 @@
 			})
 			.state('app.install', {
 				url: '/install',
-				data: {
-					pageName: 'Install'
-				},
+				data: {pageName: 'Install'},
 				views: {
 					'main@': {
 						templateUrl: getView('install')
@@ -46,9 +42,7 @@
 			})
 			.state('app.tabs', {
 				url: '/features',
-				data: {
-					pageName: 'Features'
-				},
+				data: {pageName: 'Features'},
 				views: {
 					'main@': {
 						templateUrl: getView('tabs')
@@ -57,9 +51,7 @@
 			})
 			.state('app.deploy', {
 				url: '/deploy',
-				data: {
-					pageName: 'Deploy'
-				},
+				data: {pageName: 'Deploy'},
 				views: {
 					'main@': {
 						templateUrl: getView('deploy')
@@ -68,12 +60,19 @@
 			})
 			.state('app.theme', {
 				url: '/theme',
-				data: {
-					pageName: 'Theme'
-				},
+				data: {pageName: 'Theme'},
 				views: {
 					'main@': {
 						templateUrl: getView('theme')
+					}
+				}
+			})
+			.state('app.toasts', {
+				url: '/toasts',
+				data: {pageName: 'Toasts'},
+				views: {
+					'main@': {
+						templateUrl: getView('toasts')
 					}
 				}
 			});

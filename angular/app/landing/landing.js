@@ -30,14 +30,6 @@
 			}
 		}, 2000);
 
-		$scope.toastSuccess = function(){
-			ToastService.show('This is a toast notification!');
-		};
-
-		$scope.toastError = function(){
-			ToastService.error('Connection interrupted!');
-		};
-
 		$scope.alertDialog = function(){
 			DialogService.alert('This is an alert title', 'You can specify some description text in here.');
 		};
