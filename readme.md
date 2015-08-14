@@ -5,7 +5,7 @@
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
-![Laravel & Angular](http://i.imgur.com/ZbLzOPP.jpg)
+![Laravel & Angular](https://i.imgur.com/ZbLzOPP.jpg)
 
 
 ##### Table of Contents

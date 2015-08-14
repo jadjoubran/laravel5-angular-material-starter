@@ -16,7 +16,7 @@
 
 <div style="display: inline-block">
     <a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/" style="text-decoration: none;">
-        <img src="//i.imgur.com/icGtPQC.png"/><br>
+        <img src="https://i.imgur.com/icGtPQC.png"/><br>
     </a>
 </div>
 
@@ -24,7 +24,7 @@
 
 <div style="display: inline-block">
     <a target="_blank" href="https://www.google.com/chrome/browser/desktop/index.html" style="text-decoration: none;">
-        <img src="//i.imgur.com/2J8FJ1Z.png"/><br>
+        <img src="https://i.imgur.com/2J8FJ1Z.png"/><br>
     </a>
 </div>
 
