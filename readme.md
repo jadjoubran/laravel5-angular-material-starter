@@ -47,7 +47,6 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-
 - Make sure that all features have been documented (jshint, jscs)
 - Migrate to open source hosting + remove composer.lock properly from pre-commit
 - jwt auth example (with database) + route authentication + documentation page
