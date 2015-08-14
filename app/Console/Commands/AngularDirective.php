@@ -40,7 +40,7 @@ class AngularDirective extends Command
     {
         $name = $this->argument('name');
         $studly_name = studly_case($name);
-        $directive_name = strtolower(substr($studly_name, 0, 1)) . substr($studly_name, 1);
+        $directive_name = strtolower(substr($studly_name, 0, 1)).substr($studly_name, 1);
 
         $html = file_get_contents(__DIR__.'/Stubs/AngularDirective/directive.html.stub');
         $js = file_get_contents(__DIR__.'/Stubs/AngularDirective/directive.js.stub');
