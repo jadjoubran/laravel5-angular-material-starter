@@ -48,8 +48,8 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 
+- Make sure that all features have been documented (jshint, jscs)
 - Migrate to open source hosting + remove composer.lock properly from pre-commit
-- Make sure that all features have been documented
 - jwt auth example (with database) + route authentication + documentation page
 - Demo pages Design Review
 - make gulp --production part of the automated release + remove sourcemaps

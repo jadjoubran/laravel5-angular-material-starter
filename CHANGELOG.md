@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.7.4
++ New angular/directives folder
++ **artisan ng:directive name** generator
+
 ### v2.7.3
 + New demo page for Elixir
 + New demo page: Rest API

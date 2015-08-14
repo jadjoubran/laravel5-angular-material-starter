@@ -1,0 +1,17 @@
+(function(){
+	"use strict";
+
+	angular.module('app.directives').directive( '{{StudlyName}}', function() {
+
+		return {
+			restrict: 'EA',
+			templateUrl: 'views/directives/{{name}}/{{name}}.html',
+			controller: '{{StudlyName}}Ctrl',
+			link: function( $scope, element, $attrs ){
+				//
+			}
+		};
+
+	});
+
+})();
