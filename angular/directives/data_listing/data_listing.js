@@ -1,7 +1,7 @@
 (function(){
 	"use strict";
 
-	angular.module('app.directives').directive( 'DataListing', function() {
+	angular.module('app.directives').directive( 'dataListing', function() {
 
 		return {
 			restrict: 'EA',
