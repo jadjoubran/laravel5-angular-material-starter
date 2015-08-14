@@ -75,6 +75,15 @@
 						templateUrl: getView('toasts')
 					}
 				}
+			})
+			.state('app.dialogs', {
+				url: '/dialogs',
+				data: {pageName: 'Dialogs'},
+				views: {
+					'main@': {
+						templateUrl: getView('dialogs')
+					}
+				}
 			});
 
 

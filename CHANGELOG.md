@@ -2,6 +2,7 @@
 
 ### v2.7.2
 + New demo page for Toasts
++ New demo page for Dialogs
 
 ### v2.7.1
 + implement livereload
