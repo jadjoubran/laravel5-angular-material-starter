@@ -94,6 +94,15 @@
 					}
 				}
 			})
+			.state('app.elixir', {
+				url: '/elixir',
+				data: {pageName: 'Elixir'},
+				views: {
+					'main@': {
+						templateUrl: getView('elixir')
+					}
+				}
+			})
 			.state('app.unsupported_browser', {
 				url: '/unsupported_browser',
 				data: {pageName: 'Unsupported Browser'},

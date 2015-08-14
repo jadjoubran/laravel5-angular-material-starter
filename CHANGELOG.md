@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.7.3
++ New demo page for Elixir
+
 ### v2.7.2
 + New demo page for Toasts
 + New demo page for Dialogs
