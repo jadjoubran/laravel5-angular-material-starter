@@ -1,6 +1,8 @@
 ## Laravel 5.1 Angular Material Starter
 > Version 2.7
 
+[![StyleCI](https://styleci.io/repos/34944760/shield)](https://styleci.io/repos/34944760)
+
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
 ![Laravel & Angular](http://i.imgur.com/ZbLzOPP.jpg)
