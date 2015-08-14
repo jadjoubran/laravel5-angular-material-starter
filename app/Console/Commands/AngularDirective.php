@@ -40,6 +40,7 @@ class AngularDirective extends Command
     {
         $name = $this->argument('name');
         $studly_name = studly_case($name);
+        $directive_name = strtolower(substr($studly_name, 0, 1)) . substr($studly_name, 1);
 
         $html = file_get_contents(__DIR__.'/Stubs/AngularDirective/directive.html.stub');
         $js = file_get_contents(__DIR__.'/Stubs/AngularDirective/directive.js.stub');
@@ -49,6 +50,7 @@ class AngularDirective extends Command
         $js = str_replace('{{StudlyName}}', $studly_name, $js);
         $definition = str_replace('{{StudlyName}}', $studly_name, $definition);
         $definition = str_replace('{{name}}', $name, $definition);
+        $definition = str_replace('{{directiveName}}', $directive_name, $definition);
 
         $folder = __DIR__.'/../../../angular/directives/'.$name;
         if (is_dir($folder)) {
@@ -64,10 +66,10 @@ class AngularDirective extends Command
         File::put($folder.'/'.$name.'.html', $html);
 
         //create definition (.js)
-        File::put($folder.'/definition.js', $js);
+        File::put($folder.'/definition.js', $definition);
 
         //create controller (.js)
-        File::put($folder.'/'.$name.'.js', $definition);
+        File::put($folder.'/'.$name.'.js', $js);
 
         //create less file (.less)
         File::put($folder.'/'.$name.'.less', $less);

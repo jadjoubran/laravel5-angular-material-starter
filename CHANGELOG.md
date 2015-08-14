@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.7.5
++ fixed issues with ng:directive generator
+
 ### v2.7.4
 + New angular/directives folder
 + **artisan ng:directive name** generator
