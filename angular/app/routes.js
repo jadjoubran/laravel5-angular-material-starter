@@ -103,6 +103,15 @@
 					}
 				}
 			})
+			.state('app.rest_api', {
+				url: '/rest_api',
+				data: {pageName: 'REST API'},
+				views: {
+					'main@': {
+						templateUrl: getView('rest_api')
+					}
+				}
+			})
 			.state('app.unsupported_browser', {
 				url: '/unsupported_browser',
 				data: {pageName: 'Unsupported Browser'},

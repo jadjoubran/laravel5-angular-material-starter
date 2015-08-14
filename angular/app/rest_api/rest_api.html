@@ -1,0 +1,38 @@
+<div class="PageContent md-whiteframe-z1" ng-controller="RestApiCtrl">
+	<md-toolbar class="PageToolbar">
+		<div class="md-toolbar-tools">
+			<h2>
+				<span>Restangular</span>
+			</h2>
+		</div>
+	</md-toolbar>
+
+	<section class="language-markup">
+			<pre><code class="line-numbers language-* language-javascript">Restangular.all('data').doGET().then(function(response){
+	//results are returned under data attribute because of the API ResponseMacro below
+	console.log(response.data);
+});</code></pre>
+	</section>
+	<div class="PageText">
+		<a href="https://github.com/mgonto/restangular" target="_blank">Restangular</a> is an AngularJS service to handle Rest API Restful Resources properly and easily
+	</div>
+	<br>
+	<br>
+	<md-toolbar class="PageToolbar">
+		<div class="md-toolbar-tools">
+			<h2>
+				<span>API ResponseMacro</span>
+			</h2>
+		</div>
+	</md-toolbar>
+
+	<section class="language-markup">
+			<pre><code class="line-numbers language-* language-php">//return your data using the api response macro
+return response()->api($data);</code></pre>
+	</section>
+	<div class="PageText">
+		<a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/app/Providers/ResponseMacroServiceProvider.php" target="_blank">ResponseMacroServiceProvider</a> returns your data inside the <strong>data</strong> object.<br>
+		You can customize it to include other properties.<br>
+		It's also useful to differentiate data from the default Restangular methods.
+	</div>
+</div>
