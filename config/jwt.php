@@ -163,8 +163,8 @@ return [
 //        'storage' => function ($app) {
 //            return new Tymon\JWTAuth\Providers\Storage\IlluminateCacheAdapter($app['cache']);
 //        }
-        'storage' => 'Tymon\JWTAuth\Providers\Storage\IlluminateCacheAdapter'
+        'storage' => 'Tymon\JWTAuth\Providers\Storage\IlluminateCacheAdapter',
 
-    ]
+    ],
 
 ];
