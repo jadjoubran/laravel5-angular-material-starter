@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.7
+> Version 2.8
 
 [![StyleCI](https://styleci.io/repos/34944760/shield)](https://styleci.io/repos/34944760)
 
@@ -49,11 +49,10 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- choose between JWT (disable CSRF) or not (enable CSRF) (or just add it to installation)
 - Make sure that all features have been documented (jshint, jscs)
 - Migrate to open source hosting + remove composer.lock properly from pre-commit
-- jwt auth example (with database) + route authentication + documentation page
 - Demo pages Design Review
 - make gulp --production part of the automated release + remove sourcemaps
-- choose between JWT (disable CSRF) or not (enable CSRF)
 - automate tests
 - even better support for 5.1 (fork?)

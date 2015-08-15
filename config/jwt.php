@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'secret' => env('JWT_SECRET', 'DYuEZT4mtsYmCzbkc2J4B4GptzY8aurP'),
+    'secret' => env('JWT_SECRET', 'changeme'),
 
     /*
     |--------------------------------------------------------------------------
@@ -146,7 +146,10 @@ return [
         |
         */
 
-        'auth' => 'Tymon\JWTAuth\Providers\Auth\Illuminate',
+//        'auth' => function ($app) {
+//            return new Tymon\JWTAuth\Providers\Auth\IlluminateAuthAdapter($app['auth']);
+//        },
+        'auth' => 'Tymon\JWTAuth\Providers\Auth\IlluminateAuthAdapter',
 
         /*
         |--------------------------------------------------------------------------
@@ -157,8 +160,11 @@ return [
         |
         */
 
-        'storage' => 'Tymon\JWTAuth\Providers\Storage\Illuminate',
+//        'storage' => function ($app) {
+//            return new Tymon\JWTAuth\Providers\Storage\IlluminateCacheAdapter($app['cache']);
+//        }
+        'storage' => 'Tymon\JWTAuth\Providers\Storage\IlluminateCacheAdapter'
 
-    ],
+    ]
 
 ];

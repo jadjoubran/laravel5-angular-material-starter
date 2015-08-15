@@ -9,7 +9,7 @@
 
 	<section class="language-markup">
 			<pre><code class="line-numbers language-* language-javascript">Restangular.all('data').doGET().then(function(response){
-	//results are returned under data attribute because of the API ResponseMacro below
+	//results are returned under data attribute because of the API Response Macro below
 	console.log(response.data);
 });</code></pre>
 	</section>
@@ -21,7 +21,7 @@
 	<md-toolbar class="PageToolbar">
 		<div class="md-toolbar-tools">
 			<h2>
-				<span>API ResponseMacro</span>
+				<span>API Response Macro</span>
 			</h2>
 		</div>
 	</md-toolbar>
@@ -33,6 +33,7 @@ return response()->api($data);</code></pre>
 	<div class="PageText">
 		<a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/app/Providers/ResponseMacroServiceProvider.php" target="_blank">ResponseMacroServiceProvider</a> returns your data inside the <strong>data</strong> object.<br>
 		You can customize it to include other properties.<br>
-		It's also useful to differentiate data from the default Restangular methods.
+		It's also useful to differentiate data from the default Restangular methods.<br>
+		Also route versioning is configured for you inside <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/app/Http/routes.php" target="_blank">routes.php</a> file and <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/config/restangular.js" target="_blank">angular/config/restangular.js</a>.
 	</div>
 </div>

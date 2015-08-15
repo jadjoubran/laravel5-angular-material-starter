@@ -10,7 +10,7 @@ class AuthenticateController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('jwt.auth', ['except' => ['authenticate']]);
+        $this->middleware('jwt.auth', ['except' => ['postAuth']]);
     }
 
     /**
@@ -19,12 +19,11 @@ class AuthenticateController extends Controller
      */
     public function getData()
     {
-        //
         //auth protected data
         return ['auth', 'protected', 'data'];
     }
 
-    public function authenticate(Request $request)
+    public function postAuth(Request $request)
     {
         $credentials = $request->only('email', 'password');
 
@@ -39,6 +38,6 @@ class AuthenticateController extends Controller
         }
 
         // if no errors are encountered we can return a JWT
-        return response()->json(compact('token'));
+        return response()->api(compact('token'));
     }
 }

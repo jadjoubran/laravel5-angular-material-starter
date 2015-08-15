@@ -1,5 +1,10 @@
 ## Changelog
 
+### v2.8.0
++ JWT Authentication fixes
++ JWT Auth demo page
++ API versionning in documentation
+
 ### v2.7.5
 + fixed issues with ng:directive generator
 

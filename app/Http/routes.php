@@ -19,10 +19,9 @@ Route::group(['prefix' => 'api/1/'], function () {
 
     /*
      * used for Json Web Token Authentication - https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
-     * Make sure to re-enable Csrf middleware if you're disabling JWT
+     * Make sure to re-enable CSRF middleware if you're disabling JWT
      * */
-    Route::resource('authenticate', 'AuthenticateController', ['only' => ['index']]);
-    Route::post('authenticate', 'AuthenticateController@authenticate');
+    Route::controller('authenticate', 'AuthenticateController');
 
     Route::post('test/sample', 'WelcomeController@sample');
 

@@ -94,6 +94,15 @@
 					}
 				}
 			})
+			.state('app.jwt_auth', {
+				url: '/jwt_auth',
+				data: {pageName: 'JSON Web Token Authentication'},
+				views: {
+					'main@': {
+						templateUrl: getView('jwt_auth')
+					}
+				}
+			})
 			.state('app.elixir', {
 				url: '/elixir',
 				data: {pageName: 'Elixir'},
