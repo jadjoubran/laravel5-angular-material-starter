@@ -1,8 +1,10 @@
 ## Laravel 5.1 Angular Material Starter
 > Version 2.8
 
+[![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
+[![Latest Unstable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/unstable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 [![StyleCI](https://styleci.io/repos/34944760/shield)](https://styleci.io/repos/34944760)
-[![License](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/license.svg)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
+[![License](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/license)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
