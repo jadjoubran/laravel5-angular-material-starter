@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.8.1
++ setup code coverage (code climate)
++ travis setup
+
 ### v2.8.0
 + JWT Authentication fixes
 + JWT Auth demo page

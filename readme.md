@@ -54,7 +54,6 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 - choose between JWT (disable CSRF) or not (enable CSRF) (or just add it to installation)
-- code coverage
 - automate tests
 - Make sure that all features have been documented (jshint, jscs)
 - Migrate to open source hosting + remove composer.lock properly from pre-commit

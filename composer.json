@@ -41,6 +41,7 @@
  			"php -r \"unlink('Procfile');\"",
  			"php -r \"unlink('CHANGELOG.md');\"",
  			"php -r \"unlink('.codeclimate.yml');\"",
+ 			"php -r \"unlink('.travis.yml');\"",
 			"php artisan key:generate",
 			"php artisan jwt:generate"
 		]
