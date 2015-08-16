@@ -1,0 +1,7 @@
+languages:
+  Ruby: false
+  JavaScript: true
+  PHP: true
+  Python: false
+exclude_paths:
+- "public/js/vendor.js"
