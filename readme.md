@@ -2,6 +2,7 @@
 > Version 2.8
 
 [![StyleCI](https://styleci.io/repos/34944760/shield)](https://styleci.io/repos/34944760)
+[![License](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/license.svg)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 
 <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
 
@@ -50,9 +51,10 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 - choose between JWT (disable CSRF) or not (enable CSRF) (or just add it to installation)
+- code coverage
+- automate tests
 - Make sure that all features have been documented (jshint, jscs)
 - Migrate to open source hosting + remove composer.lock properly from pre-commit
 - Demo pages Design Review
 - make gulp --production part of the automated release + remove sourcemaps
-- automate tests
 - even better support for 5.1 (fork?)
