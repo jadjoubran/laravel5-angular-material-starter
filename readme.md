@@ -53,6 +53,7 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
+- move routes. and main.js to correct locations
 - choose between JWT (disable CSRF) or not (enable CSRF) (or just add it to installation)
 - automate tests
 - Make sure that all features have been documented (jshint, jscs)
