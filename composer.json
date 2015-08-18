@@ -10,7 +10,7 @@
 	    "tymon/jwt-auth": "0.5.*"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "~4.0",
+		"phpunit/phpunit": "^4.7.6",
 		"phpspec/phpspec": "~2.1"
 	},
 	"autoload": {
