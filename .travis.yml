@@ -11,5 +11,3 @@ sudo: false
 
 install:
   - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter --no-interaction --prefer-source
-
-script: ./vendor/bin/phpunit
