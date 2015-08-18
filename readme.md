@@ -54,6 +54,7 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 - move routes. and main.js to correct locations
+- setup RDS + better JWT_AUTH demo
 - choose between JWT (disable CSRF) or not (enable CSRF) (or just add it to installation)
 - automate tests
 - Make sure that all features have been documented (jshint, jscs)

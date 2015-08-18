@@ -4,6 +4,7 @@
 + setup code coverage (code climate)
 + travis setup
 + fixed deploy.sh and optimized composer install
++ new demo on elasticbeanstalk (because heroku are messing up with the availability)
 
 ### v2.8.0
 + JWT Authentication fixes
