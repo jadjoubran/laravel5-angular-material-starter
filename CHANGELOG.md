@@ -1,5 +1,8 @@
 ## Changelog
 
+### v2.8.2
++ fixed location for main.js and routes.js
+
 ### v2.8.1
 + setup code coverage (code climate)
 + travis setup
