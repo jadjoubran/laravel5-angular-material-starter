@@ -2,9 +2,9 @@
 <html ng-app="app">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" href="/css/vendor.css">
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="{!! asset('css/vendor.css') !!}">
+    <link rel="stylesheet" href="{!! asset('css/app.css') !!}">
+    <link rel="stylesheet" href="{!! asset('css/prism.css') !!}">
     <link href='//fonts.googleapis.com/css?family=Roboto:500,400' rel='stylesheet' type='text/css'>
     <title>Laravel 5 angular material starter</title>
     <!--[if lte IE 10]>
@@ -17,9 +17,9 @@
 <div ui-view="sidebar"></div>
 <div ui-view="main" class="Page"></div>
 
-<script src="/js/vendor.js"></script>
-<script src="/js/app.js"></script>
-<script src="/js/prism.js"></script>
+<script src="{!! asset('js/vendor.js') !!}"></script>
+<script src="{!! asset('js/app.js') !!}"></script>
+<script src="{!! asset('js/prism.js') !!}"></script>
 
 {{--livereload--}}
 @if ( Config::get('app.debug') )

@@ -7,7 +7,7 @@
 			fromTemplate: function(template, $scope){
 
 				var options = {
-					templateUrl: '/views/dialogs/' + template + '/' + template + '.html'
+					templateUrl: './views/dialogs/' + template + '/' + template + '.html'
 				};
 
 				if ($scope){
