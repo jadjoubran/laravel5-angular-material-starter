@@ -3,6 +3,7 @@
 ### v2.9.0
 + improved description of ng:* generators
 + moved planned features to github issues
++ Applied Laravel 5.1.11 migration (Introduces Authorization support)
 
 ### v2.8.2
 + fixed location for main.js and routes.js
