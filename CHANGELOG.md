@@ -1,5 +1,9 @@
 ## Changelog
 
+### v2.9.0
++ improved description of ng:* generators
++ moved planned features to github issues
+
 ### v2.8.2
 + fixed location for main.js and routes.js
 

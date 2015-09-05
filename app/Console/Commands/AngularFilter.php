@@ -17,7 +17,7 @@ class AngularFilter extends Command
      * The console command description.
      * @var string
      */
-    protected $description = 'Create a new filter inside the angular/filters folder.';
+    protected $description = 'Create a new filter in angular/filters';
 
     /**
      * Create a new command instance.

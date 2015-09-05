@@ -17,7 +17,7 @@ class AngularConfig extends Command
      * The console command description.
      * @var string
      */
-    protected $description = 'Create a new config inside the angular/config folder.';
+    protected $description = 'Create a new config in angular/config';
 
     /**
      * Create a new command instance.
