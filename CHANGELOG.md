@@ -3,7 +3,7 @@
 ### v2.9.0
 + improved description of ng:* generators
 + moved planned features to github issues
-+ Applied Laravel 5.1.11 migration (Introduces Authorization support) [#36](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/36)
++ Applied Laravel 5.1.11 migration (Introduces Authorization support) [#39](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/39)
 + Updated composer depencencies to be aligned with the current version of Laravel [#40](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/40)
 
 ### v2.8.2
