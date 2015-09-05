@@ -10,6 +10,6 @@ php:
 sudo: false
 
 install:
-  - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter --no-interaction --prefer-source
+  - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter=dev-master --no-interaction --prefer-source
 
 script: cd laravel5-angular-material-starter && vendor/bin/phpunit
