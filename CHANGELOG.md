@@ -5,6 +5,7 @@
 + moved planned features to github issues
 + Applied Laravel 5.1.11 migration (Introduces Authorization support) [#39](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/39)
 + Updated composer depencencies to be aligned with the current version of Laravel [#40](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/40)
++ fixed JWT authentication bug when using Apache [#38](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/38)
 
 ### v2.8.2
 + fixed location for main.js and routes.js
