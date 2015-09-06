@@ -1,13 +1,15 @@
-<div class="Header md-whiteframe-z1" ng-controller="HeaderCtrl">
-	<md-toolbar class="md-accent">
-		<div class="md-toolbar-tools" layout-align="space-between center">
-			<h2>
-				<span>{{current_page}}</span>
-			</h2>
-
-			<iframe class="Header-star" src="https://ghbtns.com/github-btn.html?user=jadjoubran&repo=laravel5-angular-material-starter&type=star&count=true&size=large"
-			        frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-
-		</div>
-	</md-toolbar>
+<div class="md-toolbar-tools">
+	<md-button
+			ng-click="openSideNav()"
+			hide-gt-sm
+			class="md-icon-button"
+			aria-label="Show Menu">
+		<ng-md-icon icon="menu"></ng-md-icon>
+	</md-button>
+	<h2>
+		<span>{{current_page}}</span>
+	</h2>
+	<span flex></span>
+	<iframe src="https://ghbtns.com/github-btn.html?user=jadjoubran&repo=laravel5-angular-material-starter&type=star&count=true&size=large"
+			frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </div>

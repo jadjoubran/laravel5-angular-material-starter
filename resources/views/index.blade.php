@@ -11,11 +11,31 @@
     <script type="text/javascript">document.location.href = '/unsupported-browser'</script>
     <![endif]-->
 </head>
-<body>
+<body layout="row">
 
-<header ui-view="header"></header>
-<div ui-view="sidebar"></div>
-<div ui-view="main" class="Page"></div>
+<md-sidenav
+        class="Sidebar md-sidenav-left md-whiteframe-z2"
+        ui-view="sidebar"
+        ng-controller="SidebarCtrl"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-sm')"
+        tabindex="-1">
+</md-sidenav>
+
+<div flex role="main" layout="column" tabindex="-1">
+    <md-toolbar class="Header md-accent md-whiteframe-z1"
+                ui-view="header"
+                layout="column"
+                ng-controller="HeaderCtrl">
+    </md-toolbar>
+    <md-content
+            class="Page"
+            ui-view="main"
+            layout="column"
+            layout-align="start center"
+            layout-padding flex md-scroll-y>
+    </md-content>
+</div>
 
 <script src="{!! asset('js/vendor.js') !!}"></script>
 <script src="{!! asset('js/app.js') !!}"></script>
