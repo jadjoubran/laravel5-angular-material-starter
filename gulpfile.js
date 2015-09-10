@@ -3,7 +3,6 @@ require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
 require('laravel-elixir-livereload');
 
-process.env.DISABLE_NOTIFIER = true;
 
 /*
  |--------------------------------------------------------------------------

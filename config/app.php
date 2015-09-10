@@ -144,6 +144,7 @@ return [
         'App\Providers\ConfigServiceProvider',
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
+        'App\Providers\AuthServiceProvider',
 
         'Barryvdh\Debugbar\ServiceProvider',
 
@@ -198,8 +199,9 @@ return [
         'URL'       => 'Illuminate\Support\Facades\URL',
         'Validator' => 'Illuminate\Support\Facades\Validator',
         'View'      => 'Illuminate\Support\Facades\View',
+        'Gate'      => Illuminate\Support\Facades\Gate::class,
 
-        'Debugbar' => 'Barryvdh\Debugbar\Facade',
+        'Debugbar'  => Barryvdh\Debugbar\Facade::class,
 
         'JWTAuth'   => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
