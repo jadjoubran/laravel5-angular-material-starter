@@ -4,21 +4,27 @@ body {
 .Page {
   background: transparent;
 }
-.PageToolbar {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+.Page .Page-Container {
+  background: transparent;
+  padding: 8px;
 }
-.PageContent {
-  border-radius: 3px;
-  margin: 8px;
-  background: white;
+.Page .Page-Container md-card {
+  width: 940px;
 }
-.PageText {
-  padding: 20px;
-  line-height: 27px;
+.Page .Page-Container md-card md-toolbar:first-child {
+  border-radius: 3px 3px 0 0;
 }
-pre[class*="language-"] {
+@media (max-width: 1240px) {
+  .Page .Page-Container md-card {
+    width: 100%;
+  }
+}
+.Page .Page-Container md-card:last-child {
+  margin-bottom: 16px;
+}
+.Page .Page-Container pre[class*="language-"] {
   border-radius: 0 !important;
+  margin-bottom: 0;
 }
 
 md-toast[md-theme=warn] {
@@ -35,6 +41,9 @@ md-toast[md-theme=warn] {
 
 .Header {
   z-index: 3;
+}
+.Header button:first-child {
+  padding-top: 6px;
 }
 
 
@@ -64,27 +73,16 @@ md-toast[md-theme=warn] {
 
 
 
-.Dashboard-Container li {
-  line-height: 26px;
-}
-
-[ui-view].ng-enter,
-[ui-view].ng-leave {
-  transition: opacity ease-in-out 200ms;
-}
-[ui-view].ng-enter,
-[ui-view].ng-leave.ng-leave-active {
-  opacity: 0;
-}
-[ui-view].ng-enter.ng-enter-active {
-  opacity: 1;
-}
-
 .Sidebar {
-  width: 250px !important;
-  min-width: 250px !important;
-  max-width: 250px !important;
   background-color: #3f51b5;
+  white-space: nowrap;
+}
+.Sidebar,
+.Sidebar.md-locked-open-add-active,
+.Sidebar.md-locked-open {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
 }
 .Sidebar-header {
   min-height: inherit;
@@ -120,6 +118,22 @@ md-toast[md-theme=warn] {
 }
 .Sidebar-version a {
   color: white;
+}
+
+.Dashboard-Container li {
+  line-height: 26px;
+}
+
+[ui-view].ng-enter,
+[ui-view].ng-leave {
+  transition: opacity ease-in-out 200ms;
+}
+[ui-view].ng-enter,
+[ui-view].ng-leave.ng-leave-active {
+  opacity: 0;
+}
+[ui-view].ng-enter.ng-enter-active {
+  opacity: 1;
 }
 
 

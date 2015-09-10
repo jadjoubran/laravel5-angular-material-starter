@@ -1,27 +1,35 @@
-body{
-  background: #f2f2f2;
+body {
+    background: #f2f2f2;
 }
 
-.Page{
+.Page {
 	background: transparent;
+
+  	.Page-Container {
+	    background: transparent;
+	    padding: 8px;
+
+		md-card {
+			width: 940px;
+
+		  	md-toolbar:first-child {
+			  border-radius:3px 3px 0 0;
+			}
+
+			@media (max-width: 1240px) {
+			  width: 100%;
+			}
+		}
+
+		md-card:last-child {
+			margin-bottom: 16px;
+		}
+
+		pre[class*="language-"]{
+			border-radius: 0 !important;
+		    margin-bottom: 0;
+		}
+	}
 }
 
-.PageToolbar{
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-}
 
-.PageContent{
-	border-radius: 3px;
-    margin: 8px;
-    background: white;
-}
-
-.PageText{
-	padding: 20px;
-    line-height: 27px;
-}
-
-pre[class*="language-"]{
-	border-radius: 0 !important;
-}

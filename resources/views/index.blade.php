@@ -13,27 +13,37 @@
 </head>
 <body layout="row">
 
+<!-- Sidenav component -->
 <md-sidenav
         class="Sidebar md-sidenav-left md-whiteframe-z2"
-        ui-view="sidebar"
-        ng-controller="SidebarCtrl"
         md-component-id="left"
-        md-is-locked-open="$mdMedia('gt-sm')"
+        md-is-locked-open="$mdMedia('gt-md')"
         tabindex="-1">
+
+    <!-- Sidebar header/branding -->
+    <md-toolbar class="Sidebar-header">
+        <h1 class="md-toolbar-tools Sidebar-title">Laravel 5 angular<br>material starter</h1>
+        <h6 class="Sidebar-version">
+            <a target="_blank" href="https://github.com/jadjoubran/laravel5-angular-material-starter/releases">version 2</a>
+        </h6>
+    </md-toolbar>
+
+    <!-- Sidebar menu items -->
+    <md-content
+            class="Sidebar-pages md-default-theme"
+            ui-view="sidebar"
+            ng-controller="SidebarCtrl">
+    </md-content>
 </md-sidenav>
 
 <div flex role="main" layout="column" tabindex="-1">
-    <md-toolbar class="Header md-accent md-whiteframe-z1"
-                ui-view="header"
-                layout="column"
-                ng-controller="HeaderCtrl">
+    <md-toolbar class="Header md-accent md-whiteframe-z1" layout="column">
+        <div ui-view="header" ng-controller="HeaderCtrl"></div>
     </md-toolbar>
     <md-content
-            class="Page"
-            ui-view="main"
+            ui-view="main" class="Page"
             layout="column"
-            layout-align="start center"
-            layout-padding flex md-scroll-y>
+            flex md-scroll-y>
     </md-content>
 </div>
 
