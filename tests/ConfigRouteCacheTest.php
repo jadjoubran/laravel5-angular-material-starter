@@ -2,7 +2,6 @@
 
 class ConfigRouteCacheTest extends TestCase
 {
-
     /*
     These 2 tests are used in order to be able to safely deploy using deploy.sh
     */
@@ -16,7 +15,6 @@ class ConfigRouteCacheTest extends TestCase
         $this->assertEquals($exitCode, 0);
     }
 
-
     public function testConfigCache()
     {
         $exitCode = Artisan::call('config:cache');
@@ -25,5 +23,4 @@ class ConfigRouteCacheTest extends TestCase
         $exitCode = Artisan::call('config:clear');
         $this->assertEquals($exitCode, 0);
     }
-
 }
