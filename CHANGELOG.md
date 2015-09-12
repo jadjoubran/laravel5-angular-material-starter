@@ -5,6 +5,7 @@
 + unit test coverage to safely deploy using deploy.sh [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
 + remove route:clear and config:clear from deploy.sh [47](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/47)
 
+
 ### v2.9.0
 + improved description of ng:* generators
 + moved planned features to github issues
