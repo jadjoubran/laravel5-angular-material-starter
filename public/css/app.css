@@ -1,12 +1,15 @@
 body {
   background: #f2f2f2;
 }
+md-input-container .md-input {
+  border-style: solid;
+}
 .Page {
   background: transparent;
 }
 .Page .Page-Container {
   background: transparent;
-  padding: 8px;
+  padding: 8px 16px;
 }
 .Page .Page-Container md-card {
   width: 940px;
@@ -14,16 +17,19 @@ body {
 .Page .Page-Container md-card md-toolbar:first-child {
   border-radius: 3px 3px 0 0;
 }
+.Page .Page-Container md-card md-card-content.language-markup {
+  padding: 8px 0 0 0;
+}
+.Page .Page-Container md-card md-card-content li {
+  line-height: 26px;
+}
 @media (max-width: 1240px) {
   .Page .Page-Container md-card {
     width: 100%;
   }
 }
-.Page .Page-Container md-card:last-child {
-  margin-bottom: 16px;
-}
 .Page .Page-Container pre[class*="language-"] {
-  border-radius: 0 !important;
+  border-radius: 0;
   margin-bottom: 0;
 }
 
@@ -32,20 +38,24 @@ md-toast[md-theme=warn] {
   border-radius: 2px;
 }
 
+[ui-view].ng-enter,
+[ui-view].ng-leave {
+  transition: opacity ease-in-out 200ms;
+}
+[ui-view].ng-enter,
+[ui-view].ng-leave.ng-leave-active {
+  opacity: 0;
+}
+[ui-view].ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.Page.ng-leave.ng-leave-active {
+  display: none;
+}
+
 .u-center {
   text-align: center;
 }
-
-
-
-
-.Header {
-  z-index: 3;
-}
-.Header button:first-child {
-  padding-top: 6px;
-}
-
 
 .Landing-CallToAction {
   text-align: center;
@@ -71,7 +81,12 @@ md-toast[md-theme=warn] {
   left: 5px;
 }
 
-
+.Header {
+  z-index: 3;
+}
+.Header button:first-child {
+  padding-top: 6px;
+}
 
 .Sidebar {
   background-color: #3f51b5;
@@ -119,24 +134,6 @@ md-toast[md-theme=warn] {
 .Sidebar-version a {
   color: white;
 }
-
-.Dashboard-Container li {
-  line-height: 26px;
-}
-
-[ui-view].ng-enter,
-[ui-view].ng-leave {
-  transition: opacity ease-in-out 200ms;
-}
-[ui-view].ng-enter,
-[ui-view].ng-leave.ng-leave-active {
-  opacity: 0;
-}
-[ui-view].ng-enter.ng-enter-active {
-  opacity: 1;
-}
-
-
 
 
 /*# sourceMappingURL=app.css.map */

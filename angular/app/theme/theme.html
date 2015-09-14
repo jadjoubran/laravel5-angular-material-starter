@@ -1,14 +1,15 @@
-<div class="PageContent md-whiteframe-z1">
-	<md-toolbar class="PageToolbar">
-		<div class="md-toolbar-tools">
-			<h2>
-				<span>theme.js</span>
-			</h2>
-		</div>
-	</md-toolbar>
+<md-content class="Page-Container" layout="column" layout-align="start center">
 
-	<section class="language-markup">
-			<pre><code class="line-numbers language-* language-javascript">(function(){
+	<md-card>
+
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2>theme.js</h2>
+			</div>
+		</md-toolbar>
+
+		<md-card-content class="language-markup"><pre><code class="line-numbers language-* language-javascript">
+(function(){
 "use strict";
 
 angular.module('app.config').config( function($mdThemingProvider) {
@@ -20,10 +21,18 @@ angular.module('app.config').config( function($mdThemingProvider) {
 });
 
 })();</code></pre>
-	</section>
-	<div  class="PageText">
-		<a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/config/theme.js" target="_blank">angular/config/theme.js</a>
-		is where you can change your theme.<br>
-		Visit <a href="https://material.angularjs.org/#/Theming/01_introduction" target="_blank">https://material.angularjs.org/#/Theming/01_introduction</a> for more information.
-	</div>
-</div>
+		</md-card-content>
+
+		<md-card-content>
+			<p>
+				<a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/config/theme.js" target="_blank">angular/config/theme.js</a>
+				is where you can change your theme.
+			</p>
+			<p>
+				Visit <a href="https://material.angularjs.org/#/Theming/01_introduction" target="_blank">https://material.angularjs.org/#/Theming/01_introduction</a> for more information.
+			</p>
+		</md-card-content>
+
+	</md-card>
+
+</md-content>
