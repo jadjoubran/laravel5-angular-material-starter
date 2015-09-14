@@ -57,6 +57,13 @@ md-toast[md-theme=warn] {
   text-align: center;
 }
 
+.Header {
+  z-index: 3;
+}
+.Header button:first-child {
+  padding-top: 6px;
+}
+
 .Landing-CallToAction {
   text-align: center;
 }
@@ -79,13 +86,6 @@ md-toast[md-theme=warn] {
   position: relative;
   top: 4px;
   left: 5px;
-}
-
-.Header {
-  z-index: 3;
-}
-.Header button:first-child {
-  padding-top: 6px;
 }
 
 .Sidebar {

@@ -40,11 +40,8 @@
     <md-toolbar class="Header md-accent md-whiteframe-z1" layout="column">
         <div ui-view="header" ng-controller="HeaderCtrl"></div>
     </md-toolbar>
-    <md-content
-            class="Page"
-            layout="column"
-            flex md-scroll-y>
-        <div ui-view="main" ></div>
+    <md-content layout="column" flex md-scroll-y>
+        <div ui-view="main" class="Page"></div>
     </md-content>
 </div>
 
