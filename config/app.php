@@ -151,7 +151,7 @@ return [
         'App\Providers\ResponseMacroServiceProvider',
 
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-        Dingo\Api\Provider\LaravelServiceProvider::class
+        Dingo\Api\Provider\LaravelServiceProvider::class,
 
     ],
 
