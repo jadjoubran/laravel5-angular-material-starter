@@ -1,5 +1,8 @@
 ## Changelog
 
+### 2.9.2
++ started working on dingo/api integration [43](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/43)
+
 ### 2.9.1
 + responsive layout on mobile by [@Bodom78](https://github.com/Bodom78) - [34](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/34#issuecomment-140406965)
 + unit test coverage for artisan ng:* generators [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)

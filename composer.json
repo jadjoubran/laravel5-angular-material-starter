@@ -8,7 +8,8 @@
         "php": ">=5.5.9",
 		"laravel/framework": "5.1.*",
 		"barryvdh/laravel-debugbar": "~2.0",
-	    "tymon/jwt-auth": "0.5.*"
+	    "tymon/jwt-auth": "0.5.*",
+		"dingo/api": "1.0.x@dev"
 	},
 	"require-dev": {
         "fzaninotto/faker": "~1.4",
