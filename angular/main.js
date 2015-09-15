@@ -8,7 +8,7 @@
 		'app.services',
 		'app.directives',
 		'app.routes',
-		'app.config',
+		'app.config'
 		]);
 
 

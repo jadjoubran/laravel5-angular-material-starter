@@ -1,29 +1,47 @@
-body{
-	padding-bottom: 0 !important;
+body {
+  background: #f2f2f2;
 }
 
-.Page{
-	left: 290px;
-	top: 100px;
-	right: 40px;
-	/*to prevent flickering during animation*/
-	position: absolute;
+// https://github.com/angular/material/issues/2914
+md-input-container {
+  .md-input {
+    border-style: solid;
+  }
 }
 
-.PageToolbar{
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-}
+.Page {
+  background: transparent;
 
-.PageContent{
-	border-radius: 3px;
-}
+  .Page-Container {
+    background: transparent;
+    padding: 8px 16px;
 
-.PageText{
-	padding: 20px;
-    line-height: 27px;
-}
+    md-card {
+      width: 940px;
 
-pre[class*="language-"]{
-	border-radius: 0 !important;
+      md-toolbar:first-child {
+        border-radius: 3px 3px 0 0;
+      }
+
+      md-card-content.language-markup {
+        padding: 8px 0 0 0;
+      }
+
+      md-card-content {
+        li {
+          line-height: 26px;
+        }
+      }
+
+      // Responsive break point for cards.
+      @media (max-width: 1240px) {
+        width: 100%;
+      }
+    }
+
+    pre[class*="language-"] {
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+  }
 }

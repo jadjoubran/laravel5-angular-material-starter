@@ -1,27 +1,35 @@
-<div class="PageContent md-whiteframe-z1" ng-controller="JwtAuthCtrl">
-	<md-toolbar class="PageToolbar">
-		<div class="md-toolbar-tools">
-			<h2>
-				<span>angular/config/auth.js</span>
-			</h2>
-		</div>
-	</md-toolbar>
+<md-content class="Page-Container" ng-controller="JwtAuthCtrl" layout="column" layout-align="start center">
 
-	<section class="language-markup">
-			<pre><code class="line-numbers language-* language-javascript">(function (){
+    <md-card>
+
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>angular/config/auth.js</h2>
+            </div>
+        </md-toolbar>
+
+        <md-card-content class="language-markup"><pre><code class="line-numbers language-* language-javascript">
+(function (){
 "use strict";
 
-	angular.module('app.config').config(function ($authProvider){
-		// Satellizer configuration that specifies which API
-		// route the JWT should be retrieved from
-		$authProvider.loginUrl = '/api/1/authenticate/auth';
-	});
+    angular.module('app.config').config(function ($authProvider){
+        // Satellizer configuration that specifies which API
+        // route the JWT should be retrieved from
+        $authProvider.loginUrl = '/api/1/authenticate/auth';
+    });
 
 })();</code></pre>
-	</section>
-	<div class="PageText">
-		Check the <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/app/Http/Controllers/AuthenticateController.php" target="_blank">AuthenticateController</a> for more info.
-		<!--<br>-->
-		<!--<md-button ng-click="requestToken()">Request Token</md-button>-->
-	</div>
-</div>
+        </md-card-content>
+
+        <md-card-content>
+            <p>
+                Check the <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/app/Http/Controllers/AuthenticateController.php" target="_blank">AuthenticateController</a> for more info.
+            </p>
+            <!--<p>
+                <md-button ng-click="requestToken()">Request Token</md-button>
+            </p>-->
+        </md-card-content>
+
+    </md-card>
+
+</md-content>
