@@ -1,6 +1,7 @@
 ## Changelog
 
 ### 2.9.1
++ responsive layout on mobile by [@Bodom78](https://github.com/Bodom78) - [34](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/34#issuecomment-140406965)
 + unit test coverage for artisan ng:* generators [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
 + unit test coverage to safely deploy using deploy.sh [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
 + remove route:clear and config:clear from deploy.sh [47](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/47)
