@@ -15,11 +15,6 @@ Route::get('/', 'AngularController@serveApp');
 
 Route::get('/unsupported-browser', 'AngularController@unsupported');
 
-Route::group(['prefix' => 'api/1/'], function () {
-
-
-
-});
 
 $api = app('Dingo\Api\Routing\Router');
 
@@ -30,7 +25,14 @@ $api->version('v1', function($api){
      */
     $api->controller('authenticate', 'App\Http\Controllers\AuthenticateController');
 
-    $api->post('test/sample', 'App\Http\Controllers\WelcomeController@sample');
 
     $api->get('test', 'App\Http\Controllers\WelcomeController@getSample');
+});
+
+
+//protected with JWT
+$api->version('v1', ['middleware' => 'api.auth'], function($api){
+
+    $api->post('test/sample', 'App\Http\Controllers\WelcomeController@sample');
+
 });
