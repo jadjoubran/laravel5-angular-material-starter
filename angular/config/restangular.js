@@ -3,7 +3,8 @@
 
 	angular.module('app.config').config( function(RestangularProvider) {
 		RestangularProvider
-		.setBaseUrl('/api/');
+		.setBaseUrl('/api/')
+		.setDefaultHeaders({ accept: "application/x.laravel.v1+json" });
 	});
 
 })();
