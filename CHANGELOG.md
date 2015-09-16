@@ -1,5 +1,23 @@
 ## Changelog
 
+### 2.9.2
++ started working on dingo/api integration [43](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/43)
+
+### 2.9.1
++ responsive layout on mobile by [@Bodom78](https://github.com/Bodom78) - [34](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/34#issuecomment-140406965)
++ unit test coverage for artisan ng:* generators [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
++ unit test coverage to safely deploy using deploy.sh [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
++ remove route:clear and config:clear from deploy.sh [47](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/47)
+
+
+### v2.9.0
++ improved description of ng:* generators
++ moved planned features to github issues
++ Applied Laravel 5.1.11 migration (Introduces Authorization support) [#39](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/39)
++ Updated composer depencencies to be aligned with the current version of Laravel [#40](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/40)
++ fixed JWT authentication bug when using Apache [#38](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/38)
++ added unit tests for Laravel Routes. More tests are coming [#42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
+
 ### v2.8.2
 + fixed location for main.js and routes.js
 

@@ -17,7 +17,7 @@ class AngularFeature extends Command
      * The console command description.
      * @var string
      */
-    protected $description = 'Create a new feature folder with sample HTML, JS & LESS inside the angular/app folder.';
+    protected $description = 'Create a new feature in angular/app';
 
     /**
      * Create a new command instance.

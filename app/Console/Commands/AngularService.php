@@ -17,7 +17,7 @@ class AngularService extends Command
      * The console command description.
      * @var string
      */
-    protected $description = 'Create a new service inside the angular/services folder.';
+    protected $description = 'Create a new service in angular/services';
 
     /**
      * Create a new command instance.

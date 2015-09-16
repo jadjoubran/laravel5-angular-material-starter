@@ -1,14 +1,15 @@
-<div class="PageContent md-whiteframe-z1">
-	<md-toolbar class="PageToolbar">
-		<div class="md-toolbar-tools">
-			<h2>
-				<span>composer create-project</span>
-			</h2>
-		</div>
-	</md-toolbar>
+<md-content class="Page-Container" ng-controller="LandingCtrl" layout="column" layout-align="start center">
 
-	<section class="language-markup">
-			<pre><code class="line-numbers language-* language-bash">composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
+	<md-card>
+
+		<md-toolbar class="PageToolbar">
+			<div class="md-toolbar-tools">
+				<h2>composer create-project</h2>
+			</div>
+		</md-toolbar>
+
+		<md-card-content class="language-markup"><pre><code class="line-numbers language-* language-bash">
+composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
 cd laravel5-angular-material-starter
 #fix database credentials in .env
 npm install -g gulp bower
@@ -16,9 +17,14 @@ npm install
 bower install
 gulp && gulp watch
 php artisan serve</code></pre>
-	</section>
-	<div class="PageText">
-		You're ready to go! Open <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> in your
-		browser.
-	</div>
-</div>
+		</md-card-content>
+
+		<md-card-content>
+			<p>
+				You're ready to go! Open <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> in your browser.
+			</p>
+		</md-card-content>
+
+	</md-card>
+
+</md-content>

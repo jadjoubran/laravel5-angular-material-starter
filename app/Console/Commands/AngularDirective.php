@@ -19,7 +19,7 @@ class AngularDirective extends Command
      *
      * @var string
      */
-    protected $description = 'Create a new directive folder with sample HTML, JS & LESS inside the angular/directives folder.';
+    protected $description = 'Create a new directive in angular/directives';
 
     /**
      * Create a new command instance.

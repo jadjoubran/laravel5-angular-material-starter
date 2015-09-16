@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.8
+> Version 2.9
 
 [![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 [![Build Status](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter.svg?branch=master)](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter)
@@ -53,12 +53,4 @@ Open a new issue, I'd love to help.
 <a name="planned_features"></a>
 ## Planned features
 
-
-- setup RDS + better JWT_AUTH demo
-- choose between JWT (disable CSRF) or not (enable CSRF) (or just add it to installation)
-- automate tests
-- Make sure that all features have been documented (jshint, jscs)
-- Migrate to open source hosting + remove composer.lock properly from pre-commit
-- Demo pages Design Review
-- make gulp --production part of the automated release + remove sourcemaps
-- even better support for 5.1 (fork?)
+Moved to [github issues](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/). 

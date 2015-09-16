@@ -1,12 +1,18 @@
 .Sidebar {
-	position: fixed !important;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 250px !important;
-	min-width: 250px !important;
-	max-width: 250px !important;
 	background-color: rgb(63, 81, 181);
+    white-space: nowrap;
+}
+
+.Sidebar,
+.Sidebar.md-locked-open-add-active,
+.Sidebar.md-locked-open {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.Sidebar-header {
+    min-height: inherit;
 }
 
 .Sidebar-title {
