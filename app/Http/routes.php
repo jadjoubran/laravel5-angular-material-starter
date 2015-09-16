@@ -17,12 +17,20 @@ Route::get('/unsupported-browser', 'AngularController@unsupported');
 
 Route::group(['prefix' => 'api/1/'], function () {
 
+
+
+});
+
+$api = app('Dingo\Api\Routing\Router');
+
+$api->version('v1', function($api){
     /*
      * used for Json Web Token Authentication - https://scotch.io/tutorials/token-based-authentication-for-angularjs-and-laravel-apps
      * Make sure to re-enable CSRF middleware if you're disabling JWT
-     * */
-    Route::controller('authenticate', 'AuthenticateController');
+     */
+    $api->controller('authenticate', 'App\Http\Controllers\AuthenticateController');
 
-    Route::post('test/sample', 'WelcomeController@sample');
+    $api->post('test/sample', 'App\Http\Controllers\WelcomeController@sample');
 
+    $api->get('test', 'App\Http\Controllers\WelcomeController@getSample');
 });

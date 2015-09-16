@@ -41,4 +41,9 @@ class WelcomeController extends Controller
 
         return response()->api($data);
     }
+
+    public function getSample()
+    {
+        return response()->api('success');
+    }
 }
