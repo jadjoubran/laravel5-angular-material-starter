@@ -1,3 +1,3 @@
-<div ng-controller="{{StudlyName}}Ctrl">
+<md-content class="Page-Container" ng-controller="{{StudlyName}}Ctrl">
 
-</div>
+</md-content>
