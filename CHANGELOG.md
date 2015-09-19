@@ -1,6 +1,6 @@
 ## Changelog
 
-### 2.9.2
+### 2.10.0
 + dingo/api integration with jwt auth [#43](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/43)
 + fixed deploy.sh script to migrate in production [#56](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/56)
 + fixed links in generators documentation [#55](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/55)
