@@ -1,5 +1,29 @@
 <md-content class="Page-Container" ng-controller="RestApiCtrl" layout="column" layout-align="start center">
 
+	    <md-card>
+
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>dingo/API</h2>
+            </div>
+        </md-toolbar>
+
+        <md-card-content class="language-markup"><pre><code class="line-numbers language-* language-javascript">
+$api->version('v1', function ($api) {
+    $api->get('data', 'App\Http\Controllers\WelcomeController@getSample');
+});</code></pre>
+        </md-card-content>
+
+        <md-card-content>
+            <p>
+                <a href="https://github.com/dingo/api" target="_blank">dingo/api</a> package is meant to provide you, with a set of tools to help you easily and quickly build your own API. dingo/api works out of the box in Laravel angular material starter.<br>
+                Feel free to check their <a href="https://github.com/dingo/api/wiki" target="_blank">wiki</a> to customize it.
+                dingo/api is configured to work harmoniously with <a ui-sref="app.jwt_auth">JWT-auth</a>.
+            </p>
+        </md-card-content>
+
+    </md-card>
+
     <md-card>
 
         <md-toolbar>
@@ -10,7 +34,6 @@
 
         <md-card-content class="language-markup"><pre><code class="line-numbers language-* language-javascript">
 Restangular.all('data').doGET().then(function(response){
-    //results are returned under data attribute because of the API Response Macro below
     console.log(response.data);
 });</code></pre>
         </md-card-content>
@@ -44,10 +67,8 @@ return response()->api($data);</code></pre>
                 You can customize it to include other properties.
             </p>
             <p>
-                It's also useful to differentiate data from the default Restangular methods.
-            </p>
             <p>
-                Also route versioning is configured for you inside <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/app/Http/routes.php" target="_blank">routes.php</a> file and <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/config/restangular.js" target="_blank">angular/config/restangular.js</a>.
+                Also route versioning and Accept header are configured for you in <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/config/restangular.js" target="_blank">angular/config/restangular.js</a>, to match with Dingo/API.
             </p>
         </md-card-content>
 

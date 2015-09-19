@@ -1,13 +1,16 @@
 ## Changelog
 
 ### 2.9.2
-+ started working on dingo/api integration [43](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/43)
++ dingo/api integration with jwt auth [#43](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/43)
++ fixed deploy.sh script to migrate in production [#56](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/56)
++ fixed links in generators documentation [#55](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/55)
++ updated generators to match Demo layout [#54](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/54)
 
 ### 2.9.1
-+ responsive layout on mobile by [@Bodom78](https://github.com/Bodom78) - [34](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/34#issuecomment-140406965)
-+ unit test coverage for artisan ng:* generators [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
-+ unit test coverage to safely deploy using deploy.sh [42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
-+ remove route:clear and config:clear from deploy.sh [47](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/47)
++ responsive layout on mobile by [@Bodom78](https://github.com/Bodom78) - [#34](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/34#issuecomment-140406965)
++ unit test coverage for artisan ng:* generators [#42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
++ unit test coverage to safely deploy using deploy.sh [#42](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/42)
++ remove route:clear and config:clear from deploy.sh [#47](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/47)
 
 ### v2.9.0
 + improved description of ng:* generators
