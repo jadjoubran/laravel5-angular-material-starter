@@ -28,7 +28,7 @@ Here are the goodies that you'll get:
 * Angular Material
 * Blazing fast Elixir 3.0 configuration with custom tasks
 * artisan generators for angular (artisan ng:feature name, artisan ng:dialog name, etc..)
-* check out the full <a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">list of features</a>
+* check out the full <a href="http://laravel-ng-material.elasticbeanstalk.com/#/" target="_blank">list of features</a>
 
 
 <a name="installation"></a>
