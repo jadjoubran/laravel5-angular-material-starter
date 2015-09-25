@@ -29,5 +29,6 @@ elixir(function(mix){
 			'public/css/vendor.css',
 			'public/css/app.css',
 			'public/views/**/*.html'
-		], {liveCSS: true});
+		], {liveCSS: true})
+		.phpUnit();
 });
