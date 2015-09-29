@@ -59,4 +59,4 @@ Moved to [github issues](https://github.com/jadjoubran/laravel5-angular-material
 <a name="DIY"></a>
 ## Do It Yourself
 
-A nice article on [sitepoint](http://www.sitepoint.com/flexible-and-easily-maintainable-laravel-angular-material-apps/) that explains the first few versions of this repository. Recommended read if you're not familiar with the underlying technologies.
+A nice article on <a href="http://www.sitepoint.com/flexible-and-easily-maintainable-laravel-angular-material-apps/" target="_blank">sitepoint</a> that explains the first few versions of this repository. Recommended read if you're not familiar with the underlying technologies.
