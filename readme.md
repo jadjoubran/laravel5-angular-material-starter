@@ -17,6 +17,7 @@
 [Installation](#installation)  
 [Issues, questions and feature requests](#issues)  
 [Planned features](#planned_features)  
+[Do It Yourself](#DIY)
 
 <a name="overview"></a>
 ## OVERVIEW
@@ -54,3 +55,8 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 Moved to [github issues](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/). 
+
+<a name="DIY"></a>
+## Do It Yourself
+
+A nice article on [sitepoint](http://www.sitepoint.com/flexible-and-easily-maintainable-laravel-angular-material-apps/) that explains the first few versions of this repository. Recommended read if you're not familiar with the underlying technologies.
