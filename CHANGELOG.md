@@ -1,5 +1,10 @@
 ## Changelog
 
+### 2.10.1
++ Fixed default cipher [#60](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/60)
++ Fixed dingo/api validation issue [#58](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/58)
++ added phpUnit to gulpfile
+
 ### 2.10.0
 + dingo/api integration with jwt auth [#43](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/43)
 + fixed deploy.sh script to migrate in production [#56](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/56)
