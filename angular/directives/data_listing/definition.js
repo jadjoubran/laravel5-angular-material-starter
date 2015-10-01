@@ -7,7 +7,7 @@
 			restrict: 'EA',
 			templateUrl: 'views/directives/data_listing/data_listing.html',
 			controller: 'DataListingCtrl',
-			link: function( $scope, element, $attrs ){
+			link: function( scope, element, attrs ){
 				//
 			}
 		};

@@ -1,5 +1,8 @@
 ## Changelog
 
+### 2.10.2
++ Rename `$scope` and `$attrs` to `scope` and `attrs` in directive generator [#63](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/63)
+
 ### 2.10.1
 + Fixed default cipher [#60](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/60)
 + Fixed dingo/api validation issue [#58](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/58)

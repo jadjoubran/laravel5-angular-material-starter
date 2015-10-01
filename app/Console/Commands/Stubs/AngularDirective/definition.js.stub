@@ -7,7 +7,7 @@
 			restrict: 'EA',
 			templateUrl: 'views/directives/{{name}}/{{name}}.html',
 			controller: '{{StudlyName}}Ctrl',
-			link: function( $scope, element, $attrs ){
+			link: function( scope, element, attrs ){
 				//
 			}
 		};
