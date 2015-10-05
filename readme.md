@@ -36,7 +36,7 @@ Here are the goodies that you'll get:
 ## Installation
 
 
-Heads up for Windows + Vagrant users: You need to follow the steps in [issue #61](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/61#issuecomment-145564131)
+Heads up for Windows + Vagrant users: Start by applying the fix in [issue #61](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/61#issuecomment-145564131)
 
     composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
     cd laravel5-angular-material-starter
