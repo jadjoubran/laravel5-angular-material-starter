@@ -1,6 +1,7 @@
 {
   "browser": true,
   "bitwise": true,
+  "devel": true,
   "immed": true,
   "newcap": false,
   "noarg": true,
