@@ -15,7 +15,7 @@
 					$scope.confirm_message = 'Confirm Success callback';
 				},
 				function() {
-					$scope.confirm_message = 'Confirm Sancel callback';
+					$scope.confirm_message = 'Confirm Cancel callback';
 				}
 			);
 		};
