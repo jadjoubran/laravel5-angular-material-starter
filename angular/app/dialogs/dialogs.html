@@ -11,6 +11,15 @@
         <md-card-content class="language-markup"><pre><code class="line-numbers language-* language-javascript">
 DialogService.alert('This is an alert title', 'You can specify some description text in here.');
 
+DialogService.confirm('This is a confirm title', 'Are you sure you want to do this?').then(
+	function (){
+		console.log ('Success');
+	},
+	function (){
+		console.error('Cancel');
+	}
+);
+
 //use artisan ng:dialog add_users
 //$scope is optional. You'll be able to use $scope.$parent from within the dialog's controller
 DialogService.fromTemplate('add_users', $scope);</code></pre>
@@ -21,8 +30,11 @@ DialogService.fromTemplate('add_users', $scope);</code></pre>
                 <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/services/dialog.js" target="_blank">DialogService</a>
                 can be extended to suit your needs.
             </p>
+            <span class="md-subhead">{{confirm_message}}</span>
+            <br>
             <div layout="row" layout-align="start center">
                 <md-button ng-click="alertDialog()">Alert Dialog</md-button>
+                <md-button ng-click="confirmDialog()">Confirm Dialog</md-button>
                 <md-button ng-click="customDialog()">Custom Dialog</md-button>
             </div>
         </md-card-content>
