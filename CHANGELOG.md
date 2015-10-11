@@ -2,6 +2,7 @@
 
 ### 2.10.2
 + Rename `$scope` and `$attrs` to `scope` and `attrs` in directive generator [#63](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/63)
++ Added model factory support [#71](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/71)
 
 ### 2.10.1
 + Fixed default cipher [#60](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/60)
