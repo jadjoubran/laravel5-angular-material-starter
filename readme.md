@@ -17,7 +17,8 @@
 [Installation](#installation)  
 [Issues, questions and feature requests](#issues)  
 [Planned features](#planned_features)  
-[Do It Yourself](#DIY)
+[Do It Yourself](#DIY)  
+[Contributing](#contributing)
 
 <a name="overview"></a>
 ## OVERVIEW
@@ -63,3 +64,21 @@ Moved to [github issues](https://github.com/jadjoubran/laravel5-angular-material
 ## Do It Yourself
 
 A nice article on <a href="http://www.sitepoint.com/flexible-and-easily-maintainable-laravel-angular-material-apps/" target="_blank">sitepoint</a> that explains the first few versions of this repository. Recommended read if you're not familiar with the underlying technologies.
+
+<a name="contributing"></a>
+## Contributing
+
+Thank you for contributing to this repository.
+
+Here are the guidelines:
+
+```bash
+#setup jshint
+npm install -g jshint
+```
+
+1. run `jshint angular/**/*.js` to make sure that your javascript code is linted.
+2. run `gulp --production`. Do not send Pull Requests without running this command
+3. delete `.map` files `rm public/css/app.css.map public/css/vendor.css.map public/js/app.map public/js/vendor.js.map`
+4. If you are adding/modifying backend functionality, make sure to include the apprioriate `test`. Let me know if you need help writing the test
+    
