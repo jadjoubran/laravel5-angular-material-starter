@@ -1,8 +1,12 @@
 ## Changelog
 
 ### 2.10.2
++ Out of the box laravel-cors [#69](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/69)
 + Rename `$scope` and `$attrs` to `scope` and `attrs` in directive generator [#63](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/63)
 + Added model factory support [#71](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/71)
++ Fixed livereload when working in vagrant [#77](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/77)
++ Added DialogService confirm method [#44](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/44)
++ Fixed JWT auth bug [#82](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/82)
 
 ### 2.10.1
 + Fixed default cipher [#60](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/60)

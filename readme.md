@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 2.9
+> Version 2.10
 
 [![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 [![Build Status](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter.svg?branch=master)](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter)
@@ -78,7 +78,7 @@ npm install -g jshint
 ```
 
 1. run `jshint angular/**/*.js` to make sure that your javascript code is linted.
-2. run `gulp --production`. Do not send Pull Requests without running this command
+2. run `gulp --production` at the end if you changed any HTML, Less or JS. Do not send Pull Requests without running this command (unless you haven't touched the frontend)
 3. delete `.map` files `rm public/css/app.css.map public/css/vendor.css.map public/js/app.map public/js/vendor.js.map`
 4. If you are adding/modifying backend functionality, make sure to include the apprioriate `test`. Let me know if you need help writing the test
     
