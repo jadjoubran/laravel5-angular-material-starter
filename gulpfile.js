@@ -15,7 +15,7 @@ require('laravel-elixir-livereload');
  |
  */
 
-elixir(function(mix){
+elixir(function(mix) {
 	mix
 		.bower()
 		.angular('./angular/')
@@ -29,6 +29,8 @@ elixir(function(mix){
 			'public/css/vendor.css',
 			'public/css/app.css',
 			'public/views/**/*.html'
-		], {liveCSS: true})
+		], {
+			liveCSS: true
+		})
 		.phpUnit();
 });
