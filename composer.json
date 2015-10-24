@@ -46,6 +46,7 @@
  			"php -r \"unlink('CHANGELOG.md');\"",
  			"php -r \"unlink('.codeclimate.yml');\"",
  			"php -r \"unlink('.travis.yml');\"",
+            "php -r \"rmdir('.ebextensions');\"",
 			"php artisan key:generate",
 			"php artisan jwt:generate"
 		]
