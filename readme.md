@@ -39,14 +39,17 @@ Here are the goodies that you'll get:
 
 Heads up for Windows + Vagrant users: Start by applying the fix in [issue #61](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/61#issuecomment-145564131)
 
-    composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
-    cd laravel5-angular-material-starter
-    #fix database credentials in .env
-    npm install -g gulp bower
-    npm install
-    bower install
-    gulp && gulp watch
-    php artisan serve
+```bash
+composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
+cd laravel5-angular-material-starter
+#fix database credentials in .env
+npm install -g gulp bower
+npm install
+bower install
+gulp && gulp watch
+php artisan serve
+```
+
 * You're ready to go! <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>
 * Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
 
