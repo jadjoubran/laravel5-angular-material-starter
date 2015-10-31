@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="{!! asset('css/vendor.css') !!}">
     <link rel="stylesheet" href="{!! asset('css/app.css') !!}">
-    <link rel="stylesheet" href="{!! asset('css/prism.css') !!}">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/g/prism@1.3.0(themes/prism.css+themes/prism-okaidia.css+plugins/show-language/prism-show-language.css+plugins/line-numbers/prism-line-numbers.css)">
     <link href='//fonts.googleapis.com/css?family=Roboto:500,400' rel='stylesheet' type='text/css'>
     <title>Laravel 5 angular material starter</title>
     <!--[if lte IE 10]>
@@ -24,7 +24,7 @@
     <md-toolbar class="Sidebar-header">
         <h1 class="md-toolbar-tools Sidebar-title">Laravel 5 angular<br>material starter</h1>
         <h6 class="Sidebar-version">
-            <a target="_blank" href="https://github.com/jadjoubran/laravel5-angular-material-starter/releases">version 2</a>
+            <a target="_blank" href="https://github.com/jadjoubran/laravel5-angular-material-starter/releases">version 3 - alpha</a>
         </h6>
     </md-toolbar>
 
@@ -47,7 +47,7 @@
 
 <script src="{!! asset('js/vendor.js') !!}"></script>
 <script src="{!! asset('js/app.js') !!}"></script>
-<script src="{!! asset('js/prism.js') !!}"></script>
+<script src="//cdn.jsdelivr.net/g/prism@1.3.0(prism.js+components/prism-css.min.js+components/prism-php.min.js+components/prism-bash.min.js+components/prism-javascript.min.js+components/prism-markup.min.js+plugins/show-language/prism-show-language.min.js)"></script>
 
 {{--livereload--}}
 @if ( Config::get('app.debug') )

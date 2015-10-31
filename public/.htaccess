@@ -5,10 +5,12 @@
 
     RewriteEngine On
 
+    # JWT fix https://github.com/tymondesigns/jwt-auth/wiki/Authentication
     RewriteCond %{HTTP:Authorization} ^(.*)
     RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 
-    # Redirect Trailing Slashes...
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
     # Handle Front Controller...

@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'secret' => env('JWT_SECRET', 'changeme'),
+    'secret' => env('JWT_SECRET'),
 
     /*
     |--------------------------------------------------------------------------
@@ -159,6 +159,6 @@ return [
 
         'storage' => 'Tymon\JWTAuth\Providers\Storage\IlluminateCacheAdapter',
 
-    ],
+    ]
 
 ];
