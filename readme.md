@@ -17,6 +17,7 @@
 [Installation](#installation)  
 [Issues, questions and feature requests](#issues)  
 [Planned features](#planned_features)  
+[Upcoming Version 3](#version_3)   
 [Do It Yourself](#DIY)  
 [Contributing](#contributing)
 
@@ -62,6 +63,15 @@ Open a new issue, I'd love to help.
 ## Planned features
 
 Moved to [github issues](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/). 
+
+<a name="contributing"></a>
+## Upcoming Version 3
+
+Development of Version 3 is ongoing.  
+In version 3, Laravel Angular Material Starter aims to be the starting point of future Laravel & Angular apps.
+We won't be including a library or a behavior by default, unless we're sure that this is something absolutely necessary. We're also moving towards a recipes/plugins architecture to come up with easy solutions for common scenarios (SEO, Web Sockets, etc).
+
+If you're interested in following the progress or testing new features, checkout the official [trello board](https://trello.com/b/tZ997reo/laravel-angular-material-starter).
 
 <a name="DIY"></a>
 ## Do It Yourself
