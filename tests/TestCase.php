@@ -24,6 +24,9 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 
+        //login the authUser using JWT and store the token
+        $this->setAuthUserToken();
+
         return $app;
     }
 
