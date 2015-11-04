@@ -28,6 +28,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     }
 
     /*Laravel angular material starter test helpers*/
+
     public function seeApiSuccess()
     {
         return $this->seeJsonContains(['errors' => false]);
@@ -60,8 +61,8 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         return $this->see('"'.$entity.'":{');
     }
 
-
-    private function setAuthUserToken(){
+    private function setAuthUserToken()
+    {
         $authUser = factory(App\User::class)->create();
 
         $this->authUser = $authUser;
@@ -70,31 +71,36 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function authUserGet($url, $data = [])
     {
-        $url .= '?token=' . $this->authUserToken;
+        $url .= '?token='.$this->authUserToken;
+
         return $this->get($url, $data);
     }
 
     public function authUserPost($url, $data = [])
     {
-        $url .= '?token=' . $this->authUserToken;
+        $url .= '?token='.$this->authUserToken;
+
         return $this->post($url, $data);
     }
 
     public function authUserPut($url, $data = [])
     {
-        $url .= '?token=' . $this->authUserToken;
+        $url .= '?token='.$this->authUserToken;
+
         return $this->put($url, $data);
     }
 
     public function authUserDelete($url, $data = [])
     {
-        $url .= '?token=' . $this->authUserToken;
+        $url .= '?token='.$this->authUserToken;
+
         return $this->delete($url, $data);
     }
 
     public function authUserCall($verb, $url, $data = [])
     {
-        $url .= '?token=' . $this->authUserToken;
+        $url .= '?token='.$this->authUserToken;
+
         return $this->call($verb, $url, $data);
     }
 }
