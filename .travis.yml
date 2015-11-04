@@ -14,12 +14,11 @@ services:
 
 before_script:
   - mysql -e 'create database laravel;'
-  - export DB_DATABASE=
+  - export DB_DATABASE=laravel
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
-  - php artisan migrate
 
 install:
   - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter=dev-master --no-interaction --prefer-source
 
-script: cd laravel5-angular-material-starter && vendor/bin/phpunit
+script: cd laravel5-angular-material-starter && php artisan migrate --force && vendor/bin/phpunit
