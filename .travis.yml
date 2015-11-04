@@ -17,6 +17,8 @@ before_script:
   - export DB_DATABASE=laravel
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
+
+script:
   - php artisan migrate
 
 install:
