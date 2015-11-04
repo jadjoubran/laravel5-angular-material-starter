@@ -14,11 +14,9 @@ services:
 
 before_script:
   - mysql -e 'create database laravel;'
-  - export DB_DATABASE=laravel
+  - export DB_DATABASE=
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
-
-script:
   - php artisan migrate
 
 install:
