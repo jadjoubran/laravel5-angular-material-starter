@@ -1,9 +1,10 @@
 (function(){
 	"use strict";
 
-	angular.module('app.controllers').controller('JwtAuthCtrl', function($scope, Restangular){
+	angular.module('app.controllers').controller('JwtAuthCtrl', function($scope, API){
 
 		var credentials = {};
+		window.t = API;
 
 		$scope.requestToken = function(){
 			// Use Satellizer's $auth service to login because it'll automatically save the JWT in localStorage
@@ -16,7 +17,7 @@
 		// This request will hit the getData method in the AuthenticateController
 		// on the Laravel side and will return your data that require authentication
 		$scope.getData = function(){
-			Restangular.all('authenticate/data').get().then(function (response){
+			API.all('authenticate/data').get().then(function (response){
 
 			}, function (error){});
 		};

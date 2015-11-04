@@ -23,13 +23,9 @@ $api->version('v1', function ($api) {
      * Make sure to re-enable CSRF middleware if you're disabling JWT
      */
     $api->controller('authenticate', 'App\Http\Controllers\AuthenticateController');
-
-    $api->get('test', 'App\Http\Controllers\WelcomeController@getSample');
 });
 
 //protected with JWT
 $api->version('v1', ['middleware' => 'api.auth'], function ($api) {
-
-    $api->post('test/sample', 'App\Http\Controllers\WelcomeController@sample');
 
 });
