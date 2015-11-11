@@ -8,7 +8,6 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 
 class AuthenticateController extends Controller
 {
-
     public function getData()
     {
         return ['auth', 'protected', 'data'];
