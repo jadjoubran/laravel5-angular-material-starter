@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a4858fed6334646f48dfd0ad6c40beda",
-    "content-hash": "779ebcb56e47fae78786deab2fd9be58",
+    "hash": "6aa9a59f2e17c380d4cb6ae82a994542",
+    "content-hash": "cfda37ceca49fdeafac55ca02580ff5a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -273,7 +273,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dingo/api/zipball/4c8d21c0da07376b8e0caa7111562dc48555880b",
+                "url": "https://api.github.com/repos/dingo/api/zipball/93e4c6a22707a59f86c60fc62248769af5f2f8b3",
                 "reference": "4c8d21c0da07376b8e0caa7111562dc48555880b",
                 "shasum": ""
             },
@@ -889,6 +889,42 @@
                 "laravel"
             ],
             "time": "2015-10-28 21:58:18"
+        },
+        {
+            "name": "laravelangular/generators",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jadjoubran/laravel-ng-artisan-generators.git",
+                "reference": "176952c8de92bf23c054c7a8848bc6d57c832f95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/176952c8de92bf23c054c7a8848bc6d57c832f95",
+                "reference": "176952c8de92bf23c054c7a8848bc6d57c832f95",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelAngular\\Generators\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Rovito",
+                    "email": "alessandro.rovito@gmail.com"
+                }
+            ],
+            "description": "Angular generators for Artisan",
+            "time": "2015-11-11 19:18:17"
         },
         {
             "name": "league/flysystem",

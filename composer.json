@@ -10,7 +10,8 @@
         "barryvdh/laravel-debugbar": "~2.0",
         "tymon/jwt-auth": "0.5.*",
         "dingo/api": "1.0.x@dev",
-        "barryvdh/laravel-cors": "0.7.x"
+        "barryvdh/laravel-cors": "0.7.x",
+        "laravelangular/generators": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
