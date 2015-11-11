@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Routing\Router;
+use Dingo\Api\Routing\Router as ApiRouter;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
@@ -35,10 +36,14 @@ class RouteServiceProvider extends ServiceProvider
      * @param  \Illuminate\Routing\Router  $router
      * @return void
      */
-    public function map(Router $router)
+    public function map(Router $router, ApiRouter $apiRouter)
     {
-        $router->group(['namespace' => $this->namespace], function ($router) {
-            require app_path('Http/routes.php');
+        $apiRouter->version('v1', function ($apiRouter) use ($router) {
+            $apiRouter->group(['namespace' => $this->namespace], function ($api) use ($router){
+                $router->group(['namespace' => $this->namespace], function ($router) use ($api) {
+                    require app_path('Http/routes.php');
+                });
+            });
         });
     }
 }

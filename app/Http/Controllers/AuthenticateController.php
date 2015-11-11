@@ -8,18 +8,9 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 
 class AuthenticateController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('jwt.auth', ['except' => ['postAuth']]);
-    }
 
-    /**
-     * Display a listing of the resource.
-     * @return Response
-     */
     public function getData()
     {
-        //auth protected data
         return ['auth', 'protected', 'data'];
     }
 
