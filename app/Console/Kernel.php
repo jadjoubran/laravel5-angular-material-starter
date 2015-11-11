@@ -14,12 +14,6 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\Inspire::class,
-        \App\Console\Commands\AngularFeature::class,
-        \App\Console\Commands\AngularDialog::class,
-        \App\Console\Commands\AngularDirective::class,
-        \App\Console\Commands\AngularService::class,
-        \App\Console\Commands\AngularFilter::class,
-        \App\Console\Commands\AngularConfig::class,
     ];
 
     /**
