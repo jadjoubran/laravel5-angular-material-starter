@@ -4,7 +4,6 @@
 	angular.module('app.controllers').controller('JwtAuthCtrl', function($scope, API){
 
 		var credentials = {};
-		window.t = API;
 
 		$scope.requestToken = function(){
 			// Use Satellizer's $auth service to login because it'll automatically save the JWT in localStorage

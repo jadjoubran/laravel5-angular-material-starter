@@ -11,11 +11,10 @@
 		'app.config'
 		]);
 
-
-	angular.module('app.routes', ['ui.router', 'ngStorage']);
+	angular.module('app.routes', []);
 	angular.module('app.controllers', ['ui.router', 'ngMaterial', 'ngStorage', 'restangular', 'angular-loading-bar']);
 	angular.module('app.filters', []);
-	angular.module('app.services', ['ui.router', 'ngStorage', 'restangular']);
+	angular.module('app.services', []);
 	angular.module('app.directives', []);
 	angular.module('app.config', []);
 
