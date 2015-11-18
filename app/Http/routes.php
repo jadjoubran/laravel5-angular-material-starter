@@ -6,11 +6,13 @@ Route::get('/unsupported-browser', 'AngularController@unsupported');
 
 $api->version('v1', function ($api) {
 
-    $api->controller('authenticate', 'AuthenticateController');
+    $api->post('users/login', 'LoginController@login');
 
 });
 
-//protected with JWT
+//protected routes with JWT (must be logged in to access any of these routes)
 $api->version('v1', ['middleware' => 'api.auth'], function ($api) {
+
+    $api->get('sample/protected', 'LoginController@protectedData');
 
 });

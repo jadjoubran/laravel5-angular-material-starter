@@ -1,27 +1,43 @@
 (function(){
 	"use strict";
 
-	angular.module('app.controllers').controller('JwtAuthCtrl', function($scope, API){
+	angular.module('app.controllers').controller('JwtAuthCtrl', function($scope, API, $localStorage){
 
-		var credentials = {};
+		$scope.step = 1;
+		$scope.output = null;
+		$scope.$localStorage = $localStorage;
+
+		//make sure you run `php artisan db:seed` so that this login works
+		$scope.user = {
+			email: 'joubran.jad@gmail.com',
+			password: 'laravel_angular'
+		};
 
 		$scope.requestToken = function(){
-			// Use Satellizer's $auth service to login because it'll automatically save the JWT in localStorage
-			// $auth.login(credentials).then(function (data){
-				// If login is successful, redirect to the users state
-				//$state.go('dashboard');
-			// });
+			API.all('sample').get('protected').then(function(response){
+				$scope.output = response.data.join(' ');
+				$scope.outputStatus = {'color': 'green'};
+			}, function(error){
+				$scope.output = error.data.message;
+				$scope.outputStatus = {'color': 'red'};
+			});
 		};
 
-		// This request will hit the getData method in the AuthenticateController
-		// on the Laravel side and will return your data that require authentication
-		$scope.getData = function(){
-			API.all('authenticate/data').get().then(function (response){
-
-			}, function (error){});
+		$scope.login = function(){
+			API.all('users/login').post($scope.user).then(function(response){
+				$scope.output = JSON.stringify(response.data);
+				$localStorage.jwt = response.data.token;
+				$scope.outputStatus = {'color': 'green'};
+				$scope.nextStep();
+			}, function(error){
+				$scope.output = 'Are you sure you have your database setup? Error: '. error.data.message;
+				$scope.outputStatus = {'color': 'red'};
+			});
 		};
 
-
+		$scope.nextStep = function(){
+			$scope.step++;
+		};
 
 	});
 
