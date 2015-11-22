@@ -11,11 +11,11 @@
 		<md-card-content ng-show="step === 1">
 			In order to explain how Json Web Token authentication works, let's go through this interactive tutorial:<br/>
 			<br/>
-			<md-card-content class="language-angular"><pre><code class="line-numbers language-* language-javascript">API.all('sample').get('protected');</code></pre></md-card-content>
-			<br/>
-			Take a look at the existing routes.php file and then click on this button:<br/>
+			Take a look at the existing routes.php file and then click on this button which calls the code below:<br/>
 			<br/>
 			<md-button class="md-primary md-raised" ng-click="requestToken()">Request protected route</md-button>
+			<md-card-content class="language-angular"><pre><code class="line-numbers language-* language-javascript">API.all('sample').get('protected');</code></pre></md-card-content>
+			<br/>
 			<md-button class="md-accent md-raised" ng-click="nextStep()">Next</md-button>
 		</md-card-content>
 	</md-card-content>
@@ -41,7 +41,7 @@
 	<md-card-content><pre><code class="line-numbers language-*">Authorization: Bearer {jwt}</code></pre></md-card-content>
 	<br/>
 	We're already doing this for you in angular/services/API.js: addFullRequestInterceptor.<br/>
-	All you have to do, is now request the protected route:<br/>
+	All you have to do now, is request the protected route:<br/>
 	<md-card-content class="language-angular"><pre><code class="line-numbers language-* language-javascript">API.all('sample').get('protected');</code></pre></md-card-content>
     <md-button class="md-primary md-raised" ng-click="requestToken()">Request protected route</md-button>
 </md-card-content>

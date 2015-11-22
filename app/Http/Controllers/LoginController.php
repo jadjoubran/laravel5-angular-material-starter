@@ -27,6 +27,6 @@ class LoginController extends Controller
 
     public function protectedData()
     {
-        return response()->success(['sample', 'of', 'jwt', 'protected', 'data']);
+        return response()->success(['sample', 'of', 'jwt', 'protected', 'data', '[', 'response', 'from', 'API', ']']);
     }
 }
