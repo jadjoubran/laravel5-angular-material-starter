@@ -48,6 +48,7 @@ cd laravel5-angular-material-starter
 npm install -g gulp bower
 npm install
 bower install
+php artisan migrate
 gulp && gulp watch
 php artisan serve
 ```
