@@ -96,4 +96,4 @@ npm install -g jshint
 2. run `gulp --production` at the end if you changed any HTML, Less or JS. Do not send Pull Requests without running this command (unless you haven't touched the frontend)
 3. delete `.map` files `rm public/css/app.css.map public/css/vendor.css.map public/js/app.map public/js/vendor.js.map`
 4. If you are adding/modifying backend functionality, make sure to include the apprioriate `test`. Let me know if you need help writing the test
-
+    
