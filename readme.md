@@ -44,7 +44,7 @@ Heads up for Windows + Vagrant users: Start by applying the fix in [issue #61](h
 ```bash
 composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
 cd laravel5-angular-material-starter
-#fix database credentials, add API_API_PREFIX and API_DOMAIN entries to .env
+#fix database credentials in .env
 npm install -g gulp bower
 npm install
 bower install
