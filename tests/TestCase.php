@@ -73,7 +73,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     {
         $authUser = factory(App\User::class)->create();
 
-        $this->authUser      = $authUser;
+        $this->authUser = $authUser;
         $this->authUserToken = JWTAuth::fromUser($authUser);
     }
 
