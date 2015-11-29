@@ -73,42 +73,42 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     {
         $authUser = factory(App\User::class)->create();
 
-        $this->authUser = $authUser;
+        $this->authUser      = $authUser;
         $this->authUserToken = JWTAuth::fromUser($authUser);
     }
 
-    public function authUserGet($url, $data = [])
+    public function authUserGet($uri, $parameters = [])
     {
-        $url .= '?token='.$this->authUserToken;
+        $uri .= '?token='.$this->authUserToken;
 
-        return $this->get($url, $data);
+        return $this->get($uri, $parameters);
     }
 
-    public function authUserPost($url, $data = [])
+    public function authUserPost($uri, $parameters = [])
     {
-        $url .= '?token='.$this->authUserToken;
+        $uri .= '?token='.$this->authUserToken;
 
-        return $this->post($url, $data);
+        return $this->post($uri, $parameters);
     }
 
-    public function authUserPut($url, $data = [])
+    public function authUserPut($uri, $parameters = [])
     {
-        $url .= '?token='.$this->authUserToken;
+        $uri .= '?token='.$this->authUserToken;
 
-        return $this->put($url, $data);
+        return $this->put($uri, $parameters);
     }
 
-    public function authUserDelete($url, $data = [])
+    public function authUserDelete($uri, $parameters = [])
     {
-        $url .= '?token='.$this->authUserToken;
+        $uri .= '?token='.$this->authUserToken;
 
-        return $this->delete($url, $data);
+        return $this->delete($uri, $parameters);
     }
 
-    public function authUserCall($verb, $url, $data = [])
+    public function authUserCall($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null)
     {
-        $url .= '?token='.$this->authUserToken;
+        $uri .= '?token='.$this->authUserToken;
 
-        return $this->call($verb, $url, $data);
+        return $this->call($method, $uri, $parameters, $cookies, $files, $server, $content);
     }
 }
