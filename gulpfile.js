@@ -14,22 +14,23 @@ require('laravel-elixir-livereload');
  |
  */
 
- elixir(function(mix) {
- 	mix
- 		.bower()
- 		.angular('./angular/')
- 		.less('./angular/**/*.less', 'public/css')
- 		.copy('./angular/app/**/*.html', 'public/views/app/')
- 		.copy('./angular/directives/**/*.html', 'public/views/directives/')
- 		.copy('./angular/dialogs/**/*.html', 'public/views/dialogs/')
- 		.livereload([
- 			'public/js/vendor.js',
- 			'public/js/app.js',
- 			'public/css/vendor.css',
- 			'public/css/app.css',
- 			'public/views/**/*.html'
- 		], {
- 			liveCSS: true
- 		})
- 		.phpUnit();
- });
+elixir(function(mix) {
+	mix
+		.bower()
+		.angular('./angular/')
+		.less('./angular/**/*.less', 'public/css')
+		.copy('./angular/app/**/*.html', 'public/views/app/')
+		.copy('./angular/directives/**/*.html', 'public/views/directives/')
+		.copy('./angular/dialogs/**/*.html', 'public/views/dialogs/')
+		.livereload([
+			'public/js/vendor.js',
+			'public/js/app.js',
+			'public/css/vendor.css',
+			'public/css/app.css',
+			'public/views/**/*.html'
+		], {
+			liveCSS: true
+		});
+
+	//.phpUnit();
+});
