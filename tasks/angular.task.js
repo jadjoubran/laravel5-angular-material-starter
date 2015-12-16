@@ -4,8 +4,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
-var jshint = require('gulp-jshint');
-var stylish = require('jshint-stylish');
+var eslint = require('gulp-eslint');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var notify = require('gulp-notify');
@@ -22,9 +21,8 @@ Elixir.extend('angular', function(src, output, outputFilename) {
 	new Task('angular in ' + baseDir, function() {
 		// Main file has to be included first.
 		return gulp.src([baseDir + "main.js", baseDir + "**/*.js"])
-			.pipe(jshint())
-			.pipe(jshint.reporter(stylish))
-			//.pipe(jshint.reporter('fail')).on('error', onError) //enable this if you want to force jshint to validate
+			.pipe(eslint())
+			.pipe(eslint.format())
 			.pipe(gulpif(! config.production, sourcemaps.init()))
 			.pipe(concat(outputFilename || 'app.js'))
 			.pipe(ngAnnotate())
