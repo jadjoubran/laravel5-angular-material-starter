@@ -18,6 +18,15 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     /**
+     * This version is applied to the API routes in your routes file.
+     *
+     * Check dingo/api's documentation for more info.
+     *
+     * @var string
+     */
+    protected $version = 'v1';
+
+    /**
      * Define your route model bindings, pattern filters, etc.
      *
      * @param  \Illuminate\Routing\Router  $router
@@ -38,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router, ApiRouter $apiRouter)
     {
-        $apiRouter->version('v1', function ($apiRouter) use ($router) {
+        $apiRouter->version($this->version, function ($apiRouter) use ($router) {
             $apiRouter->group(['namespace' => $this->namespace], function ($api) use ($router) {
                 $router->group(['namespace' => $this->namespace], function ($router) use ($api) {
                     require app_path('Http/routes.php');
