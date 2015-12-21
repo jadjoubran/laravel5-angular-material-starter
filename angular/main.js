@@ -8,7 +8,8 @@
 		'app.services',
 		'app.directives',
 		'app.routes',
-		'app.config'
+		'app.config',
+		'partialsModule'
 		]);
 
 	angular.module('app.routes', []);

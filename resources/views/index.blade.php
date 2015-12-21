@@ -46,6 +46,7 @@
 </div>
 
 <script src="{!! asset('js/vendor.js') !!}"></script>
+<script src="{!! asset('js/partials.js') !!}"></script>
 <script src="{!! asset('js/app.js') !!}"></script>
 <script src="//cdn.jsdelivr.net/g/prism@1.3.0(prism.js+components/prism-css.min.js+components/prism-php.min.js+components/prism-bash.min.js+components/prism-javascript.min.js+components/prism-markup.min.js+plugins/show-language/prism-show-language.min.js)"></script>
 

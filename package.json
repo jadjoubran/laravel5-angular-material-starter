@@ -18,6 +18,8 @@
     "gulp-uglify": "^1",
     "laravel-elixir": "^3.0.0",
     "laravel-elixir-livereload": "^1.1.1",
-    "main-bower-files": "^2.1.0"
+    "main-bower-files": "^2.1.0",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-ng-html2js": "^0.2.0"
   }
 }
