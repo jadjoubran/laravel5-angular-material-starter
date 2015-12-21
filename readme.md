@@ -8,9 +8,9 @@
 [![Code Climate](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter/badges/gpa.svg)](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter)
 [![License](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/license)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 
-<a href="https://infinite-dusk-3948.herokuapp.com/" target="_blank">View DEMO</a>
+<a href="https://laravel-angular.io/" target="_blank">View DEMO</a>
 
-![Laravel & Angular](https://i.imgur.com/ZbLzOPP.jpg)
+![Laravel & Angular](http://i.imgur.com/CwQy3Il.png)
 
 
 ##### Table of Contents
