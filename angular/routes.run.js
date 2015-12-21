@@ -9,9 +9,6 @@
 			}
 
 		});
-		$rootScope.$on("$viewContentLoaded", function(event, toState){
-			window.Prism.highlightAll();
-		});
 
 		$rootScope.$on("$stateChangeSuccess", function(event, toState){
 			$mdSidenav('left').close();
