@@ -50,6 +50,110 @@ try {
   module = angular.module('partialsModule', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/dialogs/dialogs.html',
+    '<md-content class="Page-Container" ng-controller="DialogsCtrl" layout="column" layout-align="start center">\n' +
+    '\n' +
+    '    <md-card>\n' +
+    '\n' +
+    '        <md-toolbar>\n' +
+    '            <div class="md-toolbar-tools">\n' +
+    '                <h2>DialogService</h2>\n' +
+    '            </div>\n' +
+    '        </md-toolbar>\n' +
+    '\n' +
+    '        <md-card-content class="language-markup"><pre><code class="line-numbers language-* language-javascript">\n' +
+    'DialogService.alert(\'This is an alert title\', \'You can specify some description text in here.\');\n' +
+    '\n' +
+    'DialogService.confirm(\'This is a confirm title\', \'Are you sure you want to do this?\').then(\n' +
+    '	function (){\n' +
+    '		console.log (\'Success\');\n' +
+    '	},\n' +
+    '	function (){\n' +
+    '		console.log(\'Cancel\');\n' +
+    '	}\n' +
+    ');\n' +
+    '\n' +
+    '//use artisan ng:dialog add_users\n' +
+    '//$scope is optional. You\'ll be able to use $scope.$parent from within the dialog\'s controller\n' +
+    'DialogService.fromTemplate(\'add_users\', $scope);</code></pre>\n' +
+    '        </md-card-content>\n' +
+    '\n' +
+    '        <md-card-content>\n' +
+    '            <p>\n' +
+    '                <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/services/dialog.js" target="_blank">DialogService</a>\n' +
+    '                can be extended to suit your needs.\n' +
+    '            </p>\n' +
+    '            <span class="md-subhead">{{confirm_message}}</span>\n' +
+    '            <br>\n' +
+    '            <div layout="row" layout-align="start center">\n' +
+    '                <md-button ng-click="alertDialog()">Alert Dialog</md-button>\n' +
+    '                <md-button ng-click="confirmDialog()">Confirm Dialog</md-button>\n' +
+    '                <md-button ng-click="customDialog()">Custom Dialog</md-button>\n' +
+    '            </div>\n' +
+    '        </md-card-content>\n' +
+    '\n' +
+    '    </md-card>\n' +
+    '\n' +
+    '</md-content>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('partialsModule');
+} catch (e) {
+  module = angular.module('partialsModule', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/elixir/elixir.html',
+    '<md-content class="Page-Container" ng-controller="ElixirCtrl" layout="column" layout-align="start center">\n' +
+    '\n' +
+    '    <md-card>\n' +
+    '\n' +
+    '        <md-toolbar>\n' +
+    '            <div class="md-toolbar-tools">\n' +
+    '                <h2>Elixir 3.0 Configuration</h2>\n' +
+    '            </div>\n' +
+    '        </md-toolbar>\n' +
+    '\n' +
+    '        <md-card-content>\n' +
+    '            <p>\n' +
+    '                Elixir 3.0 has been configured to generate the following:\n' +
+    '            </p>\n' +
+    '            <ul>\n' +
+    '                <li><strong>public/js/vendor.js</strong> from your <strong>bower.json</strong>. Always append <strong>--save</strong> to your bower install commands.</li>\n' +
+    '                <li><strong>public/js/app.js</strong> from your javascript files. They are automatically annotated using <a href="https://github.com/olov/ng-annotate" target="_blank">ng-annotate</a>.</li>\n' +
+    '                <li><strong>public/css/vendor.css</strong> from your <strong>bower.json</strong>. Always append <strong>--save</strong> to your bower install commands.</li>\n' +
+    '                <li><strong>public/css/app.css</strong> from your less files. You can easily switch to sass if you\'d like to.</li>\n' +
+    '                <li>Views are automatically copied for you.</li>\n' +
+    '                <li>Livereload is also automatically configured.\n' +
+    '                    <ul>\n' +
+    '                        <li>It re-injects the css files whenever they change</li>\n' +
+    '                        <li>It reloads the page when your javascript or views change</li>\n' +
+    '                    </ul>\n' +
+    '                </li>\n' +
+    '            </ul>\n' +
+    '            <p>\n' +
+    '                You can also create new elixir tasks inside the /tasks folder. Just like the <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/tasks/bower.task.js" target="_blank">bower</a> and <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/tasks/angular.task.js" target="_blank">angular</a> tasks.\n' +
+    '            </p>\n' +
+    '        </md-card-content>\n' +
+    '\n' +
+    '    </md-card>\n' +
+    '\n' +
+    '</md-content>\n' +
+    '\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('partialsModule');
+} catch (e) {
+  module = angular.module('partialsModule', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('./views/app/generators/generators.html',
     '<md-content class="Page-Container" layout="column" layout-align="start center">\n' +
     '\n' +
@@ -122,74 +226,41 @@ try {
   module = angular.module('partialsModule', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/elixir/elixir.html',
-    '<md-content class="Page-Container" ng-controller="ElixirCtrl" layout="column" layout-align="start center">\n' +
-    '\n' +
-    '    <md-card>\n' +
-    '\n' +
-    '        <md-toolbar>\n' +
-    '            <div class="md-toolbar-tools">\n' +
-    '                <h2>Elixir 3.0 Configuration</h2>\n' +
-    '            </div>\n' +
-    '        </md-toolbar>\n' +
-    '\n' +
-    '        <md-card-content>\n' +
-    '            <p>\n' +
-    '                Elixir 3.0 has been configured to generate the following:\n' +
-    '            </p>\n' +
-    '            <ul>\n' +
-    '                <li><strong>public/js/vendor.js</strong> from your <strong>bower.json</strong>. Always append <strong>--save</strong> to your bower install commands.</li>\n' +
-    '                <li><strong>public/js/app.js</strong> from your javascript files. They are automatically annotated using <a href="https://github.com/olov/ng-annotate" target="_blank">ng-annotate</a>.</li>\n' +
-    '                <li><strong>public/css/vendor.css</strong> from your <strong>bower.json</strong>. Always append <strong>--save</strong> to your bower install commands.</li>\n' +
-    '                <li><strong>public/css/app.css</strong> from your less files. You can easily switch to sass if you\'d like to.</li>\n' +
-    '                <li>Views are automatically copied for you.</li>\n' +
-    '                <li>Livereload is also automatically configured.\n' +
-    '                    <ul>\n' +
-    '                        <li>It re-injects the css files whenever they change</li>\n' +
-    '                        <li>It reloads the page when your javascript or views change</li>\n' +
-    '                    </ul>\n' +
-    '                </li>\n' +
-    '            </ul>\n' +
-    '            <p>\n' +
-    '                You can also create new elixir tasks inside the /tasks folder. Just like the <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/tasks/bower.task.js" target="_blank">bower</a> and <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/tasks/angular.task.js" target="_blank">angular</a> tasks.\n' +
-    '            </p>\n' +
-    '        </md-card-content>\n' +
-    '\n' +
-    '    </md-card>\n' +
-    '\n' +
-    '</md-content>\n' +
-    '\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('partialsModule');
-} catch (e) {
-  module = angular.module('partialsModule', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/landing/landing.html',
+  $templateCache.put('./views/app/install/install.html',
     '<md-content class="Page-Container" ng-controller="LandingCtrl" layout="column" layout-align="start center">\n' +
     '\n' +
-    '    <md-card>\n' +
-    '        <img ng-src="{{promoImage}}" class="md-card-image" alt="Laravel 5 Angular material starter">\n' +
+    '	<md-card>\n' +
     '\n' +
-    '        <md-card-content>\n' +
-    '            <h2 class="md-title">Landing page <ng-md-icon icon="{{icon}}" class="Landing-demoIcon"></ng-md-icon></h2>\n' +
-    '            <p>\n' +
-    '                <br>\n' +
-    '                This is a starter project that gives you an out of the box configuration for Laravel5 and\n' +
-    '                Angular.<br>\n' +
-    '            </p>\n' +
-    '            <md-button class="md-primary md-raised" ui-sref="app.install">Install</md-button>\n' +
-    '        </md-card-content>\n' +
+    '		<md-toolbar class="PageToolbar">\n' +
+    '			<div class="md-toolbar-tools">\n' +
+    '				<h2>composer create-project</h2>\n' +
+    '			</div>\n' +
+    '		</md-toolbar>\n' +
     '\n' +
-    '    </md-card>\n' +
+    '		<md-card-content>\n' +
+    '		<u>Heads up for Windows + Vagrant users:</u> Start by applying the fix in <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/issues/61#issuecomment-145564131" target="_blank">issue #61</a>\n' +
+    '		</md-card-content>\n' +
+    '\n' +
+    '		<md-card-content class="language-markup"><pre><code class="line-numbers language-* language-bash">\n' +
+    'composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist\n' +
+    'cd laravel5-angular-material-starter\n' +
+    '#fix database credentials in .env\n' +
+    'npm install -g gulp bower\n' +
+    'npm install\n' +
+    'bower install\n' +
+    'gulp && gulp watch\n' +
+    'php artisan serve</code></pre>\n' +
+    '		</md-card-content>\n' +
+    '\n' +
+    '		<md-card-content>\n' +
+    '			<p>\n' +
+    '				You\'re ready to go! Open <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> in your browser.\n' +
+    '			</p>\n' +
+    '		</md-card-content>\n' +
+    '\n' +
+    '	</md-card>\n' +
     '\n' +
     '</md-content>\n' +
-    '\n' +
     '');
 }]);
 })();
@@ -275,51 +346,26 @@ try {
   module = angular.module('partialsModule', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/dialogs/dialogs.html',
-    '<md-content class="Page-Container" ng-controller="DialogsCtrl" layout="column" layout-align="start center">\n' +
+  $templateCache.put('./views/app/landing/landing.html',
+    '<md-content class="Page-Container" ng-controller="LandingCtrl" layout="column" layout-align="start center">\n' +
     '\n' +
     '    <md-card>\n' +
-    '\n' +
-    '        <md-toolbar>\n' +
-    '            <div class="md-toolbar-tools">\n' +
-    '                <h2>DialogService</h2>\n' +
-    '            </div>\n' +
-    '        </md-toolbar>\n' +
-    '\n' +
-    '        <md-card-content class="language-markup"><pre><code class="line-numbers language-* language-javascript">\n' +
-    'DialogService.alert(\'This is an alert title\', \'You can specify some description text in here.\');\n' +
-    '\n' +
-    'DialogService.confirm(\'This is a confirm title\', \'Are you sure you want to do this?\').then(\n' +
-    '	function (){\n' +
-    '		console.log (\'Success\');\n' +
-    '	},\n' +
-    '	function (){\n' +
-    '		console.log(\'Cancel\');\n' +
-    '	}\n' +
-    ');\n' +
-    '\n' +
-    '//use artisan ng:dialog add_users\n' +
-    '//$scope is optional. You\'ll be able to use $scope.$parent from within the dialog\'s controller\n' +
-    'DialogService.fromTemplate(\'add_users\', $scope);</code></pre>\n' +
-    '        </md-card-content>\n' +
+    '        <img ng-src="{{promoImage}}" class="md-card-image" alt="Laravel 5 Angular material starter">\n' +
     '\n' +
     '        <md-card-content>\n' +
+    '            <h2 class="md-title">Landing page <ng-md-icon icon="{{icon}}" class="Landing-demoIcon"></ng-md-icon></h2>\n' +
     '            <p>\n' +
-    '                <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/blob/master/angular/services/dialog.js" target="_blank">DialogService</a>\n' +
-    '                can be extended to suit your needs.\n' +
+    '                <br>\n' +
+    '                This is a starter project that gives you an out of the box configuration for Laravel5 and\n' +
+    '                Angular.<br>\n' +
     '            </p>\n' +
-    '            <span class="md-subhead">{{confirm_message}}</span>\n' +
-    '            <br>\n' +
-    '            <div layout="row" layout-align="start center">\n' +
-    '                <md-button ng-click="alertDialog()">Alert Dialog</md-button>\n' +
-    '                <md-button ng-click="confirmDialog()">Confirm Dialog</md-button>\n' +
-    '                <md-button ng-click="customDialog()">Custom Dialog</md-button>\n' +
-    '            </div>\n' +
+    '            <md-button class="md-primary md-raised" ui-sref="app.install">Install</md-button>\n' +
     '        </md-card-content>\n' +
     '\n' +
     '    </md-card>\n' +
     '\n' +
     '</md-content>\n' +
+    '\n' +
     '');
 }]);
 })();
@@ -768,52 +814,6 @@ module.run(['$templateCache', function($templateCache) {
     '        </md-card-content>\n' +
     '\n' +
     '    </md-card>\n' +
-    '\n' +
-    '</md-content>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('partialsModule');
-} catch (e) {
-  module = angular.module('partialsModule', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/install/install.html',
-    '<md-content class="Page-Container" ng-controller="LandingCtrl" layout="column" layout-align="start center">\n' +
-    '\n' +
-    '	<md-card>\n' +
-    '\n' +
-    '		<md-toolbar class="PageToolbar">\n' +
-    '			<div class="md-toolbar-tools">\n' +
-    '				<h2>composer create-project</h2>\n' +
-    '			</div>\n' +
-    '		</md-toolbar>\n' +
-    '\n' +
-    '		<md-card-content>\n' +
-    '		<u>Heads up for Windows + Vagrant users:</u> Start by applying the fix in <a href="https://github.com/jadjoubran/laravel5-angular-material-starter/issues/61#issuecomment-145564131" target="_blank">issue #61</a>\n' +
-    '		</md-card-content>\n' +
-    '\n' +
-    '		<md-card-content class="language-markup"><pre><code class="line-numbers language-* language-bash">\n' +
-    'composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist\n' +
-    'cd laravel5-angular-material-starter\n' +
-    '#fix database credentials in .env\n' +
-    'npm install -g gulp bower\n' +
-    'npm install\n' +
-    'bower install\n' +
-    'gulp && gulp watch\n' +
-    'php artisan serve</code></pre>\n' +
-    '		</md-card-content>\n' +
-    '\n' +
-    '		<md-card-content>\n' +
-    '			<p>\n' +
-    '				You\'re ready to go! Open <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> in your browser.\n' +
-    '			</p>\n' +
-    '		</md-card-content>\n' +
-    '\n' +
-    '	</md-card>\n' +
     '\n' +
     '</md-content>\n' +
     '');
