@@ -1,15 +1,16 @@
-<div class="md-toolbar-tools">
-	<md-button
-			ng-click="openSideNav()"
-			hide-gt-md
-			class="md-icon-button"
-			aria-label="Show Menu">
-		<ng-md-icon icon="menu"></ng-md-icon>
-	</md-button>
-	<h2>
-		<span>{{current_page}}</span>
-	</h2>
-	<span flex></span>
-	<iframe src="https://ghbtns.com/github-btn.html?user=jadjoubran&repo=laravel5-angular-material-starter&type=star&count=true&size=large"
-			frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-</div>
+<md-content class="Page-Container DemoHeader" ng-controller="HeaderController as vm">
+	<div layout="row">
+		<div flex="80" flex-offset="10">
+			<div class="DemoHeader-container">
+				<div layout="row" layout-align="space-between">
+					<img src="img/laravel-angular-logo.svg" class="DemoHeader-logo"/>
+					<div>
+						<a class="DemoHeader-link" href="https://laravel-angular.readme.io" target="_blank">Docs</a>
+						<a class="DemoHeader-link" href="">Screencasts</a>
+						<a class="DemoHeader-link" href="https://github.com/jadjoubran/laravel5-angular-material-starter" target="_blank">Github</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</md-content>

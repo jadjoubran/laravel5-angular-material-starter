@@ -1,7 +1,33 @@
-.Header{
-  	z-index: 3;
+@import "../../material/project";
 
-  button:first-child {
-	padding-top: 6px;
-  }
+.DemoHeader {
+    height: 62px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.DemoHeader-container {
+    padding-top: 13px;
+}
+
+.DemoHeader-logo {
+    width: 150px;
+    height: 40px;
+}
+
+.DemoHeader-link{
+    text-decoration: none;
+    color: @dark-gray;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 250ms background-color;
+    border-radius: 5px;
+}
+
+.DemoHeader-link:hover{
+    background-color: @background;
 }

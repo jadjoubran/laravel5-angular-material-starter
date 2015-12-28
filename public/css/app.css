@@ -1,38 +1,4 @@
-body {
-  background: #f2f2f2;
-}
-md-input-container .md-input {
-  border-style: solid;
-}
-.Page {
-  background: transparent;
-}
-.Page .Page-Container {
-  background: transparent;
-  padding: 8px 16px;
-}
-.Page .Page-Container md-card {
-  width: 940px;
-}
-.Page .Page-Container md-card md-toolbar:first-child {
-  border-radius: 3px 3px 0 0;
-}
-.Page .Page-Container md-card md-card-content.language-markup {
-  padding: 8px 0 0 0;
-}
-.Page .Page-Container md-card md-card-content li {
-  line-height: 26px;
-}
-@media (max-width: 1240px) {
-  .Page .Page-Container md-card {
-    width: 100%;
-  }
-}
-.Page .Page-Container pre[class*="language-"] {
-  border-radius: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 
 md-toast[md-theme=warn] {
   background-color: #F44336;
@@ -58,83 +24,121 @@ md-toast[md-theme=warn] {
   text-align: center;
 }
 
-.Header {
-  z-index: 3;
-}
-.Header button:first-child {
-  padding-top: 6px;
-}
-
-.Landing-CallToAction {
+.Footer {
   text-align: center;
+  background-color: #eeeef1;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.Landing-flex {
-  min-height: 50px;
-  padding: 5px;
-  color: white;
-}
-.Landing-flex33 {
-  background-color: #009688;
-}
-.Landing-flex55 {
-  background-color: #3949ab;
-}
-.Landing-flexRemaining {
-  background-color: #9c27b0;
-}
-.Landing-demoIcon {
-  fill: #009688;
-  position: relative;
-  top: 4px;
-  left: 5px;
-}
-
-.Sidebar {
-  background-color: #3f51b5;
-  white-space: nowrap;
-}
-.Sidebar,
-.Sidebar.md-locked-open-add-active,
-.Sidebar.md-locked-open {
-  width: 250px;
-  min-width: 250px;
-  max-width: 250px;
-}
-.Sidebar-header {
-  min-height: inherit;
-}
-.Sidebar-title {
-  font-size: 25px;
-  height: 100px;
-  max-height: 100px;
-  text-align: center;
-  font-weight: 500;
-}
-.Sidebar-pages {
-  background-color: #3f51b5;
-  color: white;
-}
-.Sidebar-pages md-list md-list-item button.md-button:not([disabled]):hover {
-  background-color: rgba(158, 158, 158, 0.2) !important;
-}
-.Sidebar-page {
-  cursor: pointer;
-}
-.Sidebar-page md-list-item {
-  /*IE centering fix*/
-  height: 48px;
-}
-.Sidebar-page.active {
-  background-color: rgba(158, 158, 158, 0.3) !important;
-}
-.Sidebar-version {
-  margin: 0 0 20px 0;
-  text-align: center;
-  font-weight: normal;
-}
-.Sidebar-version a {
-  color: white;
+.Footer-link {
   text-decoration: none;
+  color: #21455B;
+}
+
+.DemoHeader {
+  height: 62px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.DemoHeader-container {
+  padding-top: 13px;
+}
+.DemoHeader-logo {
+  width: 150px;
+  height: 40px;
+}
+.DemoHeader-link {
+  text-decoration: none;
+  color: #535362;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: 250ms background-color;
+  border-radius: 5px;
+}
+.DemoHeader-link:hover {
+  background-color: #F6F9FA;
+}
+
+.Landing {
+  height: 100%;
+  padding-top: 62px;
+}
+.Landing-cover {
+  background-image: url('/img/cover.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+.Landing-heading,
+.Landing-subtitle {
+  color: white;
+}
+.Landing-getStarted {
+  padding: 10px 12px;
+}
+.Landing-laravelAngular {
+  position: relative;
+}
+.Landing-ampersand {
+  font-size: 50px;
+  color: #00A4C8;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.Landing-angular {
+  background-color: #e0e0e5;
+}
+.Landing-laravel,
+.Landing-angular {
+  text-align: center;
+  color: #21455B;
+}
+.Landing-laravelAngular-title {
+  padding-top: 35px;
+}
+.Landing-laravelAngular-subtitle {
+  color: #757584;
+}
+.DemoCode {
+  overflow: auto !important;
+  padding: 10px;
+  line-height: 1.428571429;
+  color: #333333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  width: 80%;
+  margin: 10px auto 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+.DemoCode-highlight {
+  color: #00A4C8;
+}
+.DemoCode-comment {
+  color: #A8A8B7;
+}
+.DemoCode-operator {
+  color: #757584;
+}
+.DemoCode-string {
+  color: #43A047;
+}
+.DemoCode-secondary {
+  color: #FFC107;
+}
+.Landing-features {
+  text-align: center;
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=app.css.map */

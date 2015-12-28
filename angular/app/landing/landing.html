@@ -1,19 +1,55 @@
-<md-content class="Page-Container" ng-controller="LandingCtrl" layout="column" layout-align="start center">
+<div class="Page-Container Landing" ng-controller="LandingController as vm">
+	<div layout="column" class="Landing-cover" layout-align="center center">
+		<div class="md-body-1 Landing-subtitle">A starter project for Laravel & Angular using Angular Material.</div>
+		<h1 class="md-display-1 Landing-heading">Laravel Angular Material Starter</h1>
+		<md-button class="md-raised md-large Landing-getStarted" href="https://laravel-angular.readme.io/docs/install" target="_blank">Get Started</md-button>
+	</div>
 
-    <md-card>
-        <img ng-src="{{promoImage}}" class="md-card-image" alt="Laravel 5 Angular material starter">
+	<div class="Landing-laravelAngular">
+		<div class="Landing-ampersand">&amp;</div>
+		<div layout="row">
+			<div flex="50" class="Landing-laravel" layout-align="center center">
+				<h2 class="md-display-1 Landing-laravelAngular-title">Laravel</h2>
+				<div class="md-body-1 Landing-laravelAngular-subtitle">{{vm.laravel_description}}</div>
+				<br/>
+				<div class="DemoCode">
+					<span class="DemoCode-operator">&lt;?php</span><br/>
+					<br/>
+					<span class="DemoCode-highlight">class</span> PostsController <span class="DemoCode-operator">{</span><br/>
+					<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">public</span> <span class="DemoCode-secondary">function</span> get()<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-operator">{</span><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">$posts</span> = App\Post<span class="DemoCode-operator">::</span>get();<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-secondary">return</span> response<span class="DemoCode-operator">()</span>-&gt;success(compact(<span class="DemoCode-string">'posts'</span>));<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-operator">}</span><br/>
+					<span class="DemoCode-operator">}</span>
+				</div>
+			</div>
+			<div flex="50" class="Landing-angular" layout-align="center center">
+				<h2 class="md-display-1 Landing-laravelAngular-title">Angular</h2>
+				<div class="md-body-1 Landing-laravelAngular-subtitle">{{vm.angular_description}}</div>
+				<br/>
+				<div class="DemoCode">
+					<span class="DemoCode-secondary">function</span> <span class="DemoCode-highlight">LandingController</span><span class="DemoCode-operator">(</span>API<span class="DemoCode-operator">)</span> <span class="DemoCode-operator">{</span><br/>
+					<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-secondary">var</span> <span class="DemoCode-highlight">getPosts</span> = <span class="DemoCode-secondary">function</span><span class="DemoCode-operator">(){</span><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;API.all(<span class="DemoCode-string">'posts'</span>).get<span class="DemoCode-operator">()</span>.then(<span class="DemoCode-secondary">function</span>(response){<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">this</span>.posts = <span class="DemoCode-highlight">response.data</span>;<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-operator">});</span><br/>
+					<span class="DemoCode-operator">}</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <md-card-content>
-            <h2 class="md-title">Landing page <ng-md-icon icon="{{icon}}" class="Landing-demoIcon"></ng-md-icon></h2>
-            <p>
-                <br>
-                This is a starter project that gives you an out of the box configuration for Laravel5 and
-                Angular.<br>
-            </p>
-            <md-button class="md-primary md-raised" ui-sref="app.install">Install</md-button>
-        </md-card-content>
-
-    </md-card>
-
-</md-content>
-
+	<div class="Landing-features" layout-align="center center">
+		<h1 class="md-display-1">Laravel Angular Material Starter</h1>
+		<div class="md-body-1">
+			Laravel Angular Material Starter provides you with many features required when working with Laravel & Angular. Such as Json Web Token authentication, Angular generators and many more..
+		</div>
+		<br/>
+		<div>List of features coming soon..</div>
+		<br/>
+		<br/>
+	</div>
+</div>
