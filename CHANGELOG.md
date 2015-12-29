@@ -1,5 +1,25 @@
 ## Changelog
 
+### 3.0.0
+- Extended documentation & moved out of the repository: [Docs](https://laravel-angular.readme.io)
+- Upgraded to Angular Material ~1.0
+- Follow angular best practices (John Papa's style guide) in demo
+- Follow angular best practices (John Papa's style guide) in Angular Generators
+- Group all demo functionality in 1 folder so they can be easily removed
+- Removed demo specific code
+- Out of the box support for $templateCache (templates loaded in a single js file instead of ajax)
+- New Logo
+- REST API test helpers
+- JWT test helpers
+- API Response macros (success & error) inline with restangular config
+- Restangular error interceptor to show validation errors in dialog
+- eslint instead of jshint. Eslint configured according to Angular best practices
+- Added getting started guide (available in documentation docs)
+- Moved artisan generators to a different repository. However they're loaded by default here
+- Started with a fresh Laravel 5.1 installation
+- Removed the need to add full namespace in routes (because of dingo/api)
+- Out of the box JWT Setup
+
 ### 2.10.2
 + Out of the box laravel-cors [#69](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/69)
 + Rename `$scope` and `$attrs` to `scope` and `attrs` in directive generator [#63](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/63)
