@@ -1,7 +1,7 @@
 <div class="Page-Container Landing" ng-controller="LandingController as vm">
 	<div layout="column" class="Landing-cover" layout-align="center center">
 		<div class="md-body-1 Landing-subtitle">A starter project for Laravel & Angular using Angular Material.</div>
-		<h1 class="md-display-1 Landing-heading">Laravel Angular Material Starter</h1>
+		<h1 class="md-display-3 Landing-heading">Laravel Angular Material Starter</h1>
 		<md-button class="md-raised md-large Landing-getStarted" href="https://laravel-angular.readme.io/docs/install" target="_blank">Get Started</md-button>
 	</div>
 
@@ -9,7 +9,7 @@
 		<div class="Landing-ampersand">&amp;</div>
 		<div layout="row">
 			<div flex="50" class="Landing-laravel" layout-align="center center">
-				<h2 class="md-display-1 Landing-laravelAngular-title">Laravel</h2>
+				<h2 class="md-display-2 Landing-laravelAngular-title">Laravel</h2>
 				<div class="md-body-1 Landing-laravelAngular-subtitle">{{vm.laravel_description}}</div>
 				<br/>
 				<div class="DemoCode">
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			<div flex="50" class="Landing-angular" layout-align="center center">
-				<h2 class="md-display-1 Landing-laravelAngular-title">Angular</h2>
+				<h2 class="md-display-2 Landing-laravelAngular-title">Angular</h2>
 				<div class="md-body-1 Landing-laravelAngular-subtitle">{{vm.angular_description}}</div>
 				<br/>
 				<div class="DemoCode">
@@ -44,11 +44,38 @@
 
 	<div class="Landing-features" layout-align="center center">
 		<h1 class="md-display-1">Laravel Angular Material Starter</h1>
-		<div class="md-body-1">
+		<div class="md-body-1 Landing-featuresDescription">
 			Laravel Angular Material Starter provides you with many features required when working with Laravel & Angular. Such as Json Web Token authentication, Angular generators and many more..
 		</div>
 		<br/>
-		<div>List of features coming soon..</div>
+		<div>
+			<div flex="80" flex-offset="10">
+				<div layout="row" layout-align="space-between">
+					<div flex="33">
+						<div class="Landing-featuresEntry Landing-featuresEntry--restful">
+							<md-icon md-svg-src="/img/icons/restful-api.svg" class="Landing-featuresEntry-icon"></md-icon>
+						</div>
+						<div class="md-headline Landing-featuresTitle">RESTful API</div>
+						<div class="md-subhead Landing-featuresDescription">Build consistent REST APIs and call them fluently using JavaScript, without having to worry about validation errors.</div>
+					</div>
+					<div flex="33">
+						<div class="Landing-featuresEntry Landing-featuresEntry--jwt">
+							<md-icon md-svg-src="/img/icons/json-webtoken.svg" class="Landing-featuresEntry-icon"></md-icon>
+						</div>
+						<div class="md-headline Landing-featuresTitle">Json Web Token Authentication</div>
+						<div class="md-subhead Landing-featuresDescription">Get an out-of-the-box JWT Authentication in your app.</div>
+					</div>
+					<div flex="33">
+						<div class="Landing-featuresEntry Landing-featuresEntry--generators">
+							<md-icon md-svg-src="/img/icons/angular-generators.svg" class="Landing-featuresEntry-icon"></md-icon>
+						</div>
+						<div class="md-headline Landing-featuresTitle">Angular Generators</div>
+						<div class="md-subhead Landing-featuresDescription">Generate angular features, dialogs, directives, services, filters & configs just like you're used to.</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 		<br/>
 		<br/>
 	</div>

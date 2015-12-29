@@ -26,17 +26,21 @@ md-toast[md-theme=warn] {
 
 .Footer {
   text-align: center;
-  background-color: #eeeef1;
+  background-color: #F6F9FA;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.Footer-text {
+  opacity: 0.6;
+  color: #888888;
+}
 .Footer-link {
   text-decoration: none;
-  color: #21455B;
+  color: #888888;
 }
 
 .DemoHeader {
-  height: 62px;
+  height: 64px;
   background-color: white;
   position: absolute;
   top: 0;
@@ -48,8 +52,8 @@ md-toast[md-theme=warn] {
   padding-top: 13px;
 }
 .DemoHeader-logo {
-  width: 150px;
-  height: 40px;
+  width: 171px;
+  height: 41px;
 }
 .DemoHeader-link {
   text-decoration: none;
@@ -77,15 +81,24 @@ md-toast[md-theme=warn] {
 .Landing-subtitle {
   color: white;
 }
+.Landing-heading {
+  color: white;
+  letter-spacing: -1px;
+  margin-top: 20px;
+}
+.Landing-subtitle {
+  opacity: 0.7;
+}
 .Landing-getStarted {
   padding: 10px 12px;
+  font-weight: bold;
 }
 .Landing-laravelAngular {
   position: relative;
 }
 .Landing-ampersand {
   font-size: 50px;
-  color: #00A4C8;
+  color: #00A4C6;
   position: absolute;
   top: 50px;
   left: 0;
@@ -93,18 +106,21 @@ md-toast[md-theme=warn] {
   text-align: center;
 }
 .Landing-angular {
-  background-color: #e0e0e5;
+  background-color: #F6F9FA;
+  border-left: 1px solid #E9F0F3;
 }
 .Landing-laravel,
 .Landing-angular {
   text-align: center;
   color: #21455B;
+  border-bottom: 1px solid #E9F0F3;
 }
 .Landing-laravelAngular-title {
   padding-top: 35px;
+  margin-bottom: 15px;
 }
 .Landing-laravelAngular-subtitle {
-  color: #757584;
+  color: #535362;
 }
 .DemoCode {
   overflow: auto !important;
@@ -122,13 +138,13 @@ md-toast[md-theme=warn] {
   padding-left: 20px;
 }
 .DemoCode-highlight {
-  color: #00A4C8;
+  color: #00A4C6;
 }
 .DemoCode-comment {
-  color: #A8A8B7;
+  color: #888888;
 }
 .DemoCode-operator {
-  color: #757584;
+  color: #888888;
 }
 .DemoCode-string {
   color: #43A047;
@@ -138,7 +154,39 @@ md-toast[md-theme=warn] {
 }
 .Landing-features {
   text-align: center;
-  margin-top: 60px;
+  margin: 60px;
+}
+.Landing-featuresDescription {
+  line-height: 28px;
+  width: 80%;
+  margin: 0 auto;
+}
+.Landing-featuresEntry {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+.Landing-featuresEntry-icon {
+  width: 50%;
+  height: 100%;
+}
+.Landing-featuresTitle {
+  color: #21455B;
+}
+.Landing-featuresDescription {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.Landing-featuresEntry--restful {
+  background-color: #00A4C6;
+}
+.Landing-featuresEntry--jwt {
+  background-color: #EF704D;
+}
+.Landing-featuresEntry--generators {
+  background-color: #25C0CC;
 }
 
 /*# sourceMappingURL=app.css.map */

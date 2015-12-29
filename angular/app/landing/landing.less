@@ -17,8 +17,19 @@
     color: white;
 }
 
+.Landing-heading{
+    color: white;
+    letter-spacing: -1px;
+    margin-top: 20px;
+}
+
+.Landing-subtitle{
+    opacity: 0.7;
+}
+
 .Landing-getStarted{
     padding: 10px 12px;
+    font-weight: bold;
 }
 
 .Landing-laravelAngular{
@@ -36,21 +47,24 @@
 }
 
 .Landing-angular{
-    background-color: lighten(@light-gray, 20%);
+    background-color: @background;
+    border-left: 1px solid @border;
 }
 
 .Landing-laravel,
 .Landing-angular{
     text-align: center;
     color: @navy;
+    border-bottom: 1px solid @border;
 }
 
 .Landing-laravelAngular-title{
     padding-top: 35px;
+    margin-bottom: 15px;
 }
 
 .Landing-laravelAngular-subtitle{
-    color: @gray;
+    color: @black;
 }
 
 .DemoCode{
@@ -74,11 +88,11 @@
 }
 
 .DemoCode-comment{
-    color: @light-gray;
+    color: @grey;
 }
 
 .DemoCode-operator{
-    color: @gray;
+    color: @grey;
 }
 
 .DemoCode-string{
@@ -91,5 +105,45 @@
 
 .Landing-features{
     text-align: center;
-    margin-top: 60px;
+    margin: 60px;
+}
+
+.Landing-featuresDescription{
+    line-height: 28px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Landing-featuresEntry{
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.Landing-featuresEntry-icon{
+    width: 50%;
+    height: 100%;
+}
+
+.Landing-featuresTitle{
+    color: @navy;
+}
+
+.Landing-featuresDescription{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Landing-featuresEntry--restful{
+    background-color: @brand;
+}
+
+.Landing-featuresEntry--jwt{
+    background-color: #EF704D;
+}
+
+.Landing-featuresEntry--generators{
+    background-color: #25C0CC;
 }
