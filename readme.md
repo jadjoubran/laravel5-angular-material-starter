@@ -8,19 +8,23 @@
 [![Code Climate](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter/badges/gpa.svg)](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter)
 [![License](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/license)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 
-<a href="https://laravel-angular.io/" target="_blank">View DEMO</a>
-
 ![Laravel & Angular](http://i.imgur.com/CwQy3Il.png)
 
 
 ##### Table of Contents
-[Docs](#docs)  
-[Installation](#installation)  
+[Demo](#demo)   
+[Docs](#docs)   
 [Issues, questions and feature requests](#issues)  
 [Planned features](#planned_features)  
 [Upcoming Version 3](#version_3)   
 [Do It Yourself](#DIY)  
 [Contributing](#contributing)
+
+<a name="demo"></a>
+## Demo
+
+An online <a href="https://laravel-angular.io/" target="_blank">DEMO</a> is available.
+
 
 <a name="docs"></a>
 ## Docs
