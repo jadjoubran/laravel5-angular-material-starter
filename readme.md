@@ -29,7 +29,7 @@ An online <a href="https://laravel-angular.io/" target="_blank">DEMO</a> is avai
 <a name="docs"></a>
 ## Docs
 
-[View Docs](http://laravel-angular.io/) for installation steps & tutorials.
+[View Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
 
 <a name="issues"></a>
 ## Issues, questions and feature requests
