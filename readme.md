@@ -1,5 +1,5 @@
 ## Laravel 5.1 Angular Material Starter
-> Version 3.0.0-beta
+> Version 3.0.1
 
 [![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 [![Latest Unstable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/unstable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
@@ -14,7 +14,7 @@
 
 
 ##### Table of Contents
-[Overview](#overview)  
+[Docs](#docs)  
 [Installation](#installation)  
 [Issues, questions and feature requests](#issues)  
 [Planned features](#planned_features)  
@@ -22,39 +22,10 @@
 [Do It Yourself](#DIY)  
 [Contributing](#contributing)
 
-<a name="overview"></a>
-## OVERVIEW
-This is a starter project that gives you an out of the box configuration Laravel 5.1 and AngularJS (folder by feature architecture).
-Here are the goodies that you'll get:
+<a name="docs"></a>
+## Docs
 
-* Laravel 5.1
-* Angular
-* Angular Material
-* Blazing fast Elixir 3.0 configuration with custom tasks
-* artisan generators for angular (artisan ng:feature name, artisan ng:dialog name, etc..)
-* check out the full <a href="http://laravel-angular.io/" target="_blank">list of features</a>
-
-
-<a name="installation"></a>
-## Installation
-
-
-Heads up for Windows + Vagrant users: Start by applying the fix in [issue #61](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/61#issuecomment-145564131)
-
-```bash
-composer create-project jadjoubran/laravel5-angular-material-starter --prefer-dist
-cd laravel5-angular-material-starter
-#fix database credentials in .env
-npm install -g gulp bower
-npm install
-bower install
-php artisan migrate
-gulp && gulp watch
-php artisan serve
-```
-
-* You're ready to go! <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>
-* Star the repo and submit your feedback as a new issue or to <a href="https://twitter.com/joubranjad" target="_blank">@JoubranJad</a>
+[View Docs](http://laravel-angular.io/) for installation steps & tutorials.
 
 <a name="issues"></a>
 ## Issues, questions and feature requests
@@ -66,10 +37,6 @@ Open a new issue, I'd love to help.
 
 Moved to [github issues](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/). 
 
-<a name="contributing"></a>
-## Upcoming Version 3
-
-Version 3 is in Beta now. We have [shiny new docs](https://laravel-angular.readme.io/)
 
 <a name="DIY"></a>
 ## Do It Yourself
