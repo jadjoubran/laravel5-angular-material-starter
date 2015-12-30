@@ -1,5 +1,8 @@
 ## Changelog
 
+### 3.0.2
+- Livereload does not work when using `php artisan serve` [#120](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/120)
+
 ### 3.0.0
 - Extended documentation & moved out of the repository: [Docs](https://laravel-angular.readme.io)
 - Upgraded to Angular Material ~1.0
