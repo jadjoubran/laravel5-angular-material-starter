@@ -1,5 +1,9 @@
 @import "../../material/project";
 
+body{
+    font-family: 'Lato';
+}
+
 .Landing{
     height: 100%;
     padding-top: 62px;
@@ -17,6 +21,10 @@
     color: white;
 }
 
+.Landing-headingLight{
+    font-weight: 300;
+}
+
 .Landing-heading{
     color: white;
     letter-spacing: -1px;
@@ -28,8 +36,10 @@
 }
 
 .Landing-getStarted{
-    padding: 10px 12px;
+    padding: 12px 30px;
     font-weight: bold;
+    color: @black !important;
+    border-radius: 4px;
 }
 
 .Landing-laravelAngular{
@@ -40,7 +50,7 @@
     font-size: 50px;
     color: @brand;
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0;
     right: 0;
     text-align: center;
@@ -59,15 +69,21 @@
 }
 
 .Landing-laravelAngular-title{
-    padding-top: 35px;
+    padding-top: 30px;
     margin-bottom: 15px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: @navy;
 }
 
 .Landing-laravelAngular-subtitle{
     color: @black;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .DemoCode{
+    font-family: "Lucida Console", Monaco, monospace;
     overflow: auto !important;
     padding: 10px;
     line-height: 1.428571429;
@@ -78,13 +94,13 @@
     border: 1px solid #cccccc;
     border-radius: 4px;
     width: 80%;
-    margin: 10px auto 30px;
+    margin: 30px auto 100px;
     text-align: left;
     padding-left: 20px;
 }
 
 .DemoCode-highlight{
-    color: @brand;
+    color: #DD4A68;
 }
 
 .DemoCode-comment{
@@ -96,11 +112,11 @@
 }
 
 .DemoCode-string{
-    color: #43A047;
+    color: #690;
 }
 
 .DemoCode-secondary{
-    color: #FFC107;
+    color: #07A;
 }
 
 .Landing-features{
@@ -108,10 +124,17 @@
     margin: 60px;
 }
 
-.Landing-featuresDescription{
-    line-height: 28px;
-    width: 80%;
-    margin: 0 auto;
+.Landing-featuresMainTitle{
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    color: @navy;
+}
+
+.Landing-featuresMainDescription{
+    width: 70%;
+    margin: 0 auto 30px;
+    color: @black;
 }
 
 .Landing-featuresEntry{
@@ -122,18 +145,19 @@
 }
 
 .Landing-featuresEntry-icon{
-    width: 50%;
     height: 100%;
 }
 
 .Landing-featuresTitle{
     color: @navy;
+    letter-spacing: -1px;
+    margin-top: 40px;
 }
 
 .Landing-featuresDescription{
     padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .Landing-featuresEntry--restful{
@@ -146,4 +170,15 @@
 
 .Landing-featuresEntry--generators{
     background-color: #25C0CC;
+}
+
+.Landing-featuresEntry--restful md-icon{
+    width: 100px;
+}
+.Landing-featuresEntry--jwt md-icon{
+    width: 80px;
+}
+
+.Landing-featuresEntry--generators md-icon{
+    width: 80px;
 }

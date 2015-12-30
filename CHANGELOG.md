@@ -1,5 +1,8 @@
 ## Changelog
 
+### 3.0.3
+- Design fixes for Landing demo
+
 ### 3.0.2
 - Livereload does not work when using `php artisan serve` [#120](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/120)
 
