@@ -23,7 +23,7 @@
     {{--livereload--}}
     @if ( env('APP_ENV') === 'local' )
     <script type="text/javascript">
-        document.write('<script src="'+ location.protocol + '//' + (location.host || 'localhost') +':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+        document.write('<script src="'+ location.protocol + '//' + (location.host.split(':')[0] || 'localhost') +':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
     </script>
     @endif
 </body>
