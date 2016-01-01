@@ -9,4 +9,3 @@ public/views
 # Elastic Beanstalk Files
 .elasticbeanstalk
 .ebextensions
-.ebignore
