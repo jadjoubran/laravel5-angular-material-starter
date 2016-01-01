@@ -13,7 +13,7 @@
 
 ## Demo
 
-An online <a href="https://laravel-angular.io/" target="_blank">DEMO</a> is available.
+An online <a href="http://www.laravel-angular.io/" target="_blank">DEMO</a> is available.
 
 
 ## Docs
