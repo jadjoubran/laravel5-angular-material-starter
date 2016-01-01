@@ -12,6 +12,8 @@ body{
 .Landing-cover{
     background-image: url('/img/cover.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     width: 100%;
     height: 700px;
 }
@@ -27,7 +29,7 @@ body{
 
 .Landing-heading{
     color: white;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     margin-top: 20px;
 }
 
@@ -40,6 +42,13 @@ body{
     font-weight: bold;
     color: @black !important;
     border-radius: 4px;
+    text-transform: box-shadow 250ms;
+}
+
+.Landing-getStarted:hover{
+    box-shadow: 0 4px 5px -2px rgba(0,0,0,.2),
+    0 7px 10px 1px rgba(0,0,0,.14),
+    0 2px 16px 1px rgba(0,0,0,.12) !important;
 }
 
 .Landing-laravelAngular{
@@ -54,6 +63,7 @@ body{
     left: 0;
     right: 0;
     text-align: center;
+    font-weight: 300;
 }
 
 .Landing-angular{
@@ -80,6 +90,7 @@ body{
     color: @black;
     padding-left: 30px;
     padding-right: 30px;
+    font-weight: 300;
 }
 
 .DemoCode{
@@ -97,6 +108,7 @@ body{
     margin: 30px auto 100px;
     text-align: left;
     padding-left: 20px;
+    font-size: 14px;
 }
 
 .DemoCode-highlight{
@@ -135,6 +147,7 @@ body{
     width: 70%;
     margin: 0 auto 30px;
     color: @black;
+    font-weight: 300;
 }
 
 .Landing-featuresEntry{
@@ -158,6 +171,7 @@ body{
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
+    font-weight: 300;
 }
 
 .Landing-featuresEntry--restful{
