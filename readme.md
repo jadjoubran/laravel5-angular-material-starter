@@ -1,4 +1,6 @@
 ## Laravel 5.1 Angular Material Starter
+
+[![Join the chat at https://gitter.im/jadjoubran/laravel5-angular-material-starter](https://badges.gitter.im/jadjoubran/laravel5-angular-material-starter.svg)](https://gitter.im/jadjoubran/laravel5-angular-material-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 > Version 3.0.3
 
 [![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
