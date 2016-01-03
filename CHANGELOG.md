@@ -3,6 +3,7 @@
 ### 3.0.4
 - Design fixes for Landing demo
 - Demo is now responsive on mobile
+- Fixed issue when creating a new project (caused by missing .ebextensions folder)
 
 ### 3.0.3
 - Design fixes for Landing demo
