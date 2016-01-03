@@ -2,6 +2,7 @@
 
 ### 3.0.4
 - Design fixes for Landing demo
+- Demo is now responsive on mobile
 
 ### 3.0.3
 - Design fixes for Landing demo

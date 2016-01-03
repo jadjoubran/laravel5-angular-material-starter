@@ -6,8 +6,8 @@
 	</div>
 
 	<div class="Landing-laravelAngular">
-		<div class="Landing-ampersand">&amp;</div>
-		<div layout="row">
+		<div class="Landing-ampersand" hide show-gt-sm>&amp;</div>
+		<div layout="column" layout-gt-sm="row">
 			<div flex="50" class="Landing-laravel" layout-align="center center">
 				<h2 class="md-display-2 Landing-laravelAngular-title">Laravel</h2>
 				<div class="md-title Landing-laravelAngular-subtitle">{{vm.laravel_description}}</div>
@@ -57,8 +57,8 @@
 		</div>
 		<br/>
 		<div>
-			<div layout="row" layout-align="space-between">
-				<div flex="33">
+			<div layout="column" layout-gt-sm="row" layout-align="space-between">
+				<div flex="100" flex-gt-sm="33">
 					<div class="Landing-featuresEntry Landing-featuresEntry--restful">
 						<md-icon md-svg-src="/img/icons/restful-api.svg" class="Landing-featuresEntry-icon"></md-icon>
 					</div>
