@@ -1,5 +1,8 @@
 ## Changelog
 
+### 3.0.5
+- added iOS temporary fix/hack (flex issues) [#130](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/130)
+
 ### 3.0.4
 - Design fixes for Landing demo
 - Demo is now responsive on mobile
