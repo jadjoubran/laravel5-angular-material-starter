@@ -3,7 +3,7 @@
 */
 var gulp = require('gulp'),
     ngHtml2Js = require('gulp-ng-html2js'),
-    minifyHtml = require('gulp-minify-html'),
+    minifyHtml = require('gulp-htmlmin'),
     uglify = require('gulp-uglify'),
     gulpIf = require('gulp-if'),
     concat = require('gulp-concat'),
