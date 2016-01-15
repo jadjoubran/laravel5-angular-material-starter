@@ -1,7 +1,17 @@
 ## Changelog
 
+### 3.0.6
+- npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)
+- updated to laravel-elixir 4
+- fixed restangular issue with the release of lodash 4
+
+### 3.0.5
+- added iOS temporary fix/hack (flex issues) [#130](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/130)
+
 ### 3.0.4
 - Design fixes for Landing demo
+- Demo is now responsive on mobile
+- Fixed issue when creating a new project (caused by missing .ebextensions folder)
 
 ### 3.0.3
 - Design fixes for Landing demo

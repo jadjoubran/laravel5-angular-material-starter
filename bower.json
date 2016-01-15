@@ -16,6 +16,7 @@
     "ngstorage": "~0.3.3",
     "angular-material": "~1.0.1",
     "restangular": "~1.5.1",
-    "angular-loading-bar": "~0.8.0"
+    "angular-loading-bar": "~0.8.0",
+    "lodash": "3"
   }
 }
