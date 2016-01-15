@@ -3,6 +3,7 @@
 ### 3.0.6
 - npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)
 - updated to laravel-elixir 4
+- fixed restangular issue with the release of lodash 4
 
 ### 3.0.5
 - added iOS temporary fix/hack (flex issues) [#130](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/130)
