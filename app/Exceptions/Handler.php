@@ -45,7 +45,8 @@ class Handler extends ExceptionHandler
     {
         $error = $e->getMessage();
         
-        if ($e instanceof ModelNotFoundException) {
+        if ($e instanceof ModelNotFoundException)
+        {
             $e = new NotFoundHttpException($error, $e);
         }
 
