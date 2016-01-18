@@ -21,9 +21,6 @@ elixir(function(mix) {
 		.angular('./angular/')
 		.ngHtml2Js('./angular/**/*.html')
 		.less('./angular/**/*.less', 'public/css')
-		.copy('./angular/app/**/*.html', 'public/views/app/')
-		.copy('./angular/directives/**/*.html', 'public/views/directives/')
-		.copy('./angular/dialogs/**/*.html', 'public/views/dialogs/')
 		.livereload([
 			'public/js/vendor.js',
 			'public/js/partials.js',
