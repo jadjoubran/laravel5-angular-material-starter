@@ -1,5 +1,8 @@
 ## Changelog
 
+### 3.0.7
+- added favicon
+
 ### 3.0.6
 - npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)
 - updated to laravel-elixir 4
