@@ -9,13 +9,14 @@
 	    vm.authenticate = function(provider) {
 	      $auth.authenticate(provider);
 	    };
-	    
-		var user = {
-		  email: vm.email,
-		  password: vm.password
-		};
 
-		vm.login = function(user) {
+		vm.login = function() {
+			var user = {
+			  email: vm.email,
+			  password: vm.password
+			};
+
+$log.info('User: '+angular.toJson(user));
 			$log.info('Logging in...');
 
 			$auth.login(user)
