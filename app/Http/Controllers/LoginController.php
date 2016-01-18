@@ -8,7 +8,6 @@ use GuzzleHttp;
 use Auth\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use GuzzleHttp\Subscriber\Oauth\Oauth1;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
 class LoginController extends Controller
@@ -42,16 +41,15 @@ class LoginController extends Controller
     {
         $user = User::find($request['user']['sub']);
 
-        if (!$user) {
+        if (! $user) {
             return response()->error('User not found', Response::HTTP_UNPROCESSABLE_ENTITY);
         }
 
         $user->$provider = '';
         $user->save();
-        
+
         return response()->json(['token' => $this->createToken($user)]);
     }
-
 
     /**
      * Create Email and Password Account.
@@ -89,7 +87,7 @@ class LoginController extends Controller
             'query' => $params,
         ]);
 
-        $accessToken = array();
+        $accessToken = [];
         parse_str($accessTokenResponse->getBody(), $accessToken);
 
         // Step 2. Retrieve profile information about the current user.
@@ -108,7 +106,7 @@ class LoginController extends Controller
             }
 
             $token = explode(' ', $request->header('Authorization'))[1];
-            $payload = (array) JWTAuth::decode($token, Config::get('app.jwt_secret'), array('HS256'));
+            $payload = (array) JWTAuth::decode($token, Config::get('app.jwt_secret'), ['HS256']);
 
             $user = User::find($payload['sub']);
             $user->github = $profile['id'];
