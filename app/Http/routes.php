@@ -5,10 +5,10 @@ Route::get('/unsupported-browser', 'AngularController@unsupported');
 
 $api->group(['prefix' => 'auth'], function ($api) {
      // Authentication routes...
-     $api->post('login', 'LoginController@postLogin');
+     $api->post('login', 'LoginController@login');
 
     // Registration routes...
-    $api->post('register', 'AuthLoginController@signup');
+    $api->post('register', 'LoginController@signup');
 
     // Satellizer OAuth Routes
     $api->post('twitter', 'LoginController@twitter');
