@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Hash;
 use Config;
 use App\User;
 use GuzzleHttp;
@@ -11,7 +10,6 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use GuzzleHttp\Subscriber\Oauth\Oauth1;
 use Tymon\JWTAuth\Exceptions\JWTException;
-
 
 class LoginController extends Controller
 {
@@ -44,8 +42,7 @@ class LoginController extends Controller
     {
         $user = User::find($request['user']['sub']);
 
-        if (!$user)
-        {
+        if (!$user) {
             return response()->error('User not found', Response::HTTP_UNPROCESSABLE_ENTITY);
         }
 
@@ -84,12 +81,12 @@ class LoginController extends Controller
             'code' => $request->input('code'),
             'client_id' => $request->input('clientId'),
             'client_secret' => Config::get('app.github_secret'),
-            'redirect_uri' => $request->input('redirectUri')
+            'redirect_uri' => $request->input('redirectUri'),
         ];
 
         // Step 1. Exchange authorization code for access token.
         $accessTokenResponse = $client->request('GET', 'https://github.com/login/oauth/access_token', [
-            'query' => $params
+            'query' => $params,
         ]);
 
         $accessToken = array();
@@ -98,17 +95,15 @@ class LoginController extends Controller
         // Step 2. Retrieve profile information about the current user.
         $profileResponse = $client->request('GET', 'https://api.github.com/user', [
             'headers' => ['User-Agent' => 'Satellizer'],
-            'query' => $accessToken
+            'query' => $accessToken,
         ]);
         $profile = json_decode($profileResponse->getBody(), true);
 
         // Step 3a. If user is already signed in then link accounts.
-        if ($request->header('Authorization'))
-        {
+        if ($request->header('Authorization')) {
             $user = User::where('github', '=', $profile['id']);
 
-            if ($user->first())
-            {
+            if ($user->first()) {
                 return response()->json(['message' => 'There is already a GitHub account that belongs to you'], 409);
             }
 
@@ -123,12 +118,10 @@ class LoginController extends Controller
             return response()->json(['token' => $this->createToken($user)]);
         }
         // Step 3b. Create a new user account or return an existing one.
-        else
-        {
+        else {
             $user = User::where('github', '=', $profile['id']);
 
-            if ($user->first())
-            {
+            if ($user->first()) {
                 return response()->json(['token' => $this->createToken($user->first())]);
             }
 
