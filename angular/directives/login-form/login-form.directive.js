@@ -3,16 +3,16 @@
 
     angular.module('app.controllers').controller('LoginFormController', LoginFormController);
 
-    function LoginFormController(){
+    function LoginFormController($auth){
         var vm = this;
 
 	    vm.authenticate = function(provider) {
-	      $authProvider.authenticate(provider);
+	      $auth.authenticate(provider);
 	    };
 	    
 		var user = {
-		  email: $scope.email,
-		  password: $scope.password
+		  email: vm.email,
+		  password: vm.password
 		};
 
 		vm.login = function() {

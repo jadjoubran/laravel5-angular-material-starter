@@ -5,15 +5,15 @@
 
     function loginFormDefinition() {
 
-        var directive = {
-          restrict: 'EA',
-          templateUrl: './views/directives/login-form/login-form.html',
-          controller: 'LoginFormController',
-          controllerAs: 'vm',
-          scope: {},
-          bindToController: true
-        };
+      var directive = {
+        restrict: 'E',
+        templateUrl: './views/directives/login-form/login-form.html',
+        controller: 'LoginFormController',
+        controllerAs: 'vm',
+        scope: {},
+        bindToController: true
+      };
 
-    return directive;
+      return directive;
     }
 })();

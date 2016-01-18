@@ -5,15 +5,15 @@
 
     function registerFormDefinition() {
 
-        var directive = {
-          restrict: 'E',
-          templateUrl: './views/directives/register-form/register-form.html',
-          controller: 'RegisterFormController',
-          controllerAs: 'vm',
-          scope: {},
-          bindToController: true
-        };
+      var directive = {
+        restrict: 'E',
+        templateUrl: './views/directives/register-form/register-form.html',
+        controller: 'RegisterFormController',
+        controllerAs: 'vm',
+        scope: {},
+        bindToController: true
+      };
 
-    return directive;
+      return directive;
     }
 })();

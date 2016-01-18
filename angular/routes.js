@@ -32,7 +32,7 @@
 				}
 			})
 			.state('app.login', {
-				url: '/',
+				url: '/login',
 				data: {},
 				views: {
 					'main@': {
@@ -41,7 +41,7 @@
 				}
 			})
 			.state('app.register', {
-				url: '/',
+				url: '/register',
 				data: {},
 				views: {
 					'main@': {
