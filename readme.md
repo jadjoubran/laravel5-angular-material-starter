@@ -20,6 +20,10 @@ An online <a href="http://www.laravel-angular.io/" target="_blank">DEMO</a> is a
 
 [View Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
 
+## Screencasts
+
+Screencasts on [Youtube](https://www.youtube.com/channel/UCTiRXlOapSWfu02rtOdaGvA).
+
 
 ## Issues, questions and feature requests
 Open a new issue, I'd love to help.
