@@ -1,9 +1,9 @@
 (function(){
     "use strict";
 
-    angular.module('app.controllers').controller('LoginFormController', LoginFormController);
+    angular.module('app.controllers').controller('LoginController', LoginController);
 
-    function LoginFormController(){
+    function LoginController(){
         //
     }
 
