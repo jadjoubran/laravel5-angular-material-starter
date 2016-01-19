@@ -20,8 +20,8 @@
 
 			$auth.login(user)
 			  .then(function(response) {
-$log.info(angular.toJson(response.data));
-				$auth.setToken(response.data.token);
+$log.info(angular.toJson(response.data.token));
+				// $auth.setToken(response.data.token);
 $log.info($localStorage.jwt);
 			    // Redirect user here after a successful log in.
 				ToastService.show('Login successful');
