@@ -48,6 +48,15 @@
 						templateUrl: getView('register')
 					}
 				}
+			})
+			.state('app.loggedin', {
+				url: '/protected',
+				data: {},
+				views: {
+					'main@': {
+						templateUrl: getView('protected')
+					}
+				}
 			});
 
 	});

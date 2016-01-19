@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	angular.module('app.services').factory('API', function(Restangular, ToastService, $localStorage) {
+	angular.module('app.services').factory('API', function(Restangular, ToastService, $auth) {
 
 		//content negotiation
 		var headers = {
@@ -21,8 +21,8 @@
 					}
 				})
 				.addFullRequestInterceptor(function(element, operation, what, url, headers) {
-					if ($localStorage.jwt) {
-						headers.Authorization = 'Bearer ' + $localStorage.jwt;
+					if ($auth.getToken()) {
+						headers.Authorization = 'Bearer ' + $auth.getToken();
 					}
 				});
 		});

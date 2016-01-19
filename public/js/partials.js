@@ -5,34 +5,6 @@ try {
   module = angular.module('partialsModule', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/header/header.html',
-    '<md-content class="Page-Container DemoHeader" ng-controller="HeaderController as vm">\n' +
-    '	<div layout="row">\n' +
-    '		<div flex="90" flex-offset="5" class="DemoHeader-container">\n' +
-    '			<div layout="row" layout-align="space-between">\n' +
-    '				<img src="img/icons/logo.svg" class="DemoHeader-logo"/>\n' +
-    '				<div layout="row" layout-align="center stretch" hide-xs>\n' +
-    '					<a class="DemoHeader-link md-subhead" href="https://laravel-angular.readme.io" target="_blank">Docs</a>\n' +
-    '					<a class="DemoHeader-link md-subhead" href="https://www.youtube.com/channel/UCTiRXlOapSWfu02rtOdaGvA" target="_blank">Screencasts</a>\n' +
-    '					<a class="DemoHeader-link md-subhead" href="https://github.com/jadjoubran/laravel5-angular-material-starter" target="_blank">Github</a>\n' +
-    '					<a class="DemoHeader-link md-subhead" ui-sref="app.login">Login</a>\n' +
-    '					<a class="DemoHeader-link md-subhead" ui-sref="app.register">Register</a>\n' +
-    '				</div>\n' +
-    '			</div>\n' +
-    '		</div>\n' +
-    '	</div>\n' +
-    '</md-content>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('partialsModule');
-} catch (e) {
-  module = angular.module('partialsModule', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('./views/app/footer/footer.html',
     '<md-content class="Page-Container Footer" ng-controller="FooterController as vm" layout-align="center center">\n' +
     '<md-icon md-svg-src="/img/icons/logo-grey.svg" class="Footer-logo"></md-icon>\n' +
@@ -45,6 +17,35 @@ module.run(['$templateCache', function($templateCache) {
     '<div class="Footer-text">\n' +
     '	&copy; 2016 Laravel Angular Material Starter\n' +
     '</div>\n' +
+    '</md-content>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('partialsModule');
+} catch (e) {
+  module = angular.module('partialsModule', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/header/header.html',
+    '<md-content class="Page-Container DemoHeader" ng-controller="HeaderController as vm">\n' +
+    '	<div layout="row">\n' +
+    '		<div flex="90" flex-offset="5" class="DemoHeader-container">\n' +
+    '			<div layout="row" layout-align="space-between">\n' +
+    '				<img src="img/icons/logo.svg" class="DemoHeader-logo"/>\n' +
+    '				<div layout="row" layout-align="center stretch" hide-xs>\n' +
+    '					<a class="DemoHeader-link md-subhead" href="https://laravel-angular.readme.io" target="_blank">Docs</a>\n' +
+    '					<a class="DemoHeader-link md-subhead" href="https://www.youtube.com/channel/UCTiRXlOapSWfu02rtOdaGvA" target="_blank">Screencasts</a>\n' +
+    '					<a class="DemoHeader-link md-subhead" href="https://github.com/jadjoubran/laravel5-angular-material-starter" target="_blank">Github</a>\n' +
+    '					<a class="DemoHeader-link md-subhead" ui-sref="app.login">Login</a>\n' +
+    '					<a class="DemoHeader-link md-subhead" ui-sref="app.register">Register</a>\n' +
+    '					<a class="DemoHeader-link md-subhead" ui-sref="app.loggedin">Protected</a>\n' +
+    '				</div>\n' +
+    '			</div>\n' +
+    '		</div>\n' +
+    '	</div>\n' +
     '</md-content>\n' +
     '');
 }]);
@@ -160,6 +161,27 @@ module.run(['$templateCache', function($templateCache) {
     '<md-content class="Login" ng-controller="LoginFormController as vm">\n' +
     '	<h2 class="text-center">Log in</h2>\n' +
     '	<login-form></login-form>\n' +
+    '</md-content>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('partialsModule');
+} catch (e) {
+  module = angular.module('partialsModule', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/protected/protected.html',
+    '<md-content class="Page-Container" ng-controller="ProtectedController as vm">\n' +
+    '	<div layout="column" class="Landing-cover" layout-align="center center">\n' +
+    '		<div layout="column" layout-gt-sm="row">\n' +
+    '			<h2>This is a protected page.</h2>\n' +
+    '		</div>\n' +
+    '		<br>\n' +
+    '		<p>{{ vm.loggedin || "Please log in to view it\'s contents" }}</p>\n' +
+    '	</div>\n' +
     '</md-content>\n' +
     '');
 }]);
