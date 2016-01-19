@@ -19,11 +19,13 @@ class LoginController extends Controller
         try {
             // verify the credentials and create a token for the user
             if (! $token = JWTAuth::attempt($credentials)) {
-                return response()->error('Invalid credentials', Response::HTTP_UNAUTHORIZED);
+                // return response()->error('Invalid credentials', Response::HTTP_UNAUTHORIZED); NO CLUE WHY THE MACRO ISN'T CATCHING THIS
+                return response()->json(['errors' => 'Invalid credentials'], Response::HTTP_UNAUTHORIZED);
             }
         } catch (JWTException $e) {
             // something went wrong
-            return response()->error('Could not create token', Response::HTTP_INTERNAL_SERVER_ERROR);
+            return response()->json(['errors' => 'Could not create token'], Response::HTTP_INTERNAL_SERVER_ERROR);
+            // return response()->error('Could not create token', Response::HTTP_INTERNAL_SERVER_ERROR);
         }
 
         return response()->success(['token' => $token]);

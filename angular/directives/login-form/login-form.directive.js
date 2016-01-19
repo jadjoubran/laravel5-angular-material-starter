@@ -3,7 +3,7 @@
 
     angular.module('app.controllers').controller('LoginFormController', LoginFormController);
 
-    function LoginFormController($auth, $log, ToastService){
+    function LoginFormController($auth, $log, $location, ToastService){
         var vm = this;
 
 	    vm.authenticate = function(provider) {
@@ -20,14 +20,16 @@
 
 			$auth.login(user)
 			  .then(function(response) {
-$log.info(angular.toJson(response));
+$log.info(angular.toJson(response.data.data.token));
+				$auth.setToken(response.data.data.token);
 			    // Redirect user here after a successful log in.
+				ToastService.show('Login successful');
+				$location.path('api/sample/protected');
 			  })
 			  .catch(function(response) {
-$log.error(angular.toJson(response));
 			    // Handle errors here, such as displaying a notification
 			    // for invalid email and/or password.
-ToastService.error(angular.toJson(response));
+				ToastService.error(response.data.errors);
 			  });
 		};
     }

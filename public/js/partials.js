@@ -5,30 +5,6 @@ try {
   module = angular.module('partialsModule', []);
 }
 module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/footer/footer.html',
-    '<md-content class="Page-Container Footer" ng-controller="FooterController as vm" layout-align="center center">\n' +
-    '<md-icon md-svg-src="/img/icons/logo-grey.svg" class="Footer-logo"></md-icon>\n' +
-    '<br/>\n' +
-    '<br/>\n' +
-    '<div class="Footer-text">\n' +
-    '	An open source project by <a href="https://github.com/jadjoubran" class="Footer-link" target="_blank">Jad Joubran</a>.\n' +
-    '	Design by <a href="https://www.linkedin.com/in/nicolesaidy" class="Footer-link" target="_blank">Nicole Saidy</a>\n' +
-    '</div>\n' +
-    '<div class="Footer-text">\n' +
-    '	&copy; 2016 Laravel Angular Material Starter\n' +
-    '</div>\n' +
-    '</md-content>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('partialsModule');
-} catch (e) {
-  module = angular.module('partialsModule', []);
-}
-module.run(['$templateCache', function($templateCache) {
   $templateCache.put('./views/app/header/header.html',
     '<md-content class="Page-Container DemoHeader" ng-controller="HeaderController as vm">\n' +
     '	<div layout="row">\n' +
@@ -45,6 +21,30 @@ module.run(['$templateCache', function($templateCache) {
     '			</div>\n' +
     '		</div>\n' +
     '	</div>\n' +
+    '</md-content>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('partialsModule');
+} catch (e) {
+  module = angular.module('partialsModule', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/footer/footer.html',
+    '<md-content class="Page-Container Footer" ng-controller="FooterController as vm" layout-align="center center">\n' +
+    '<md-icon md-svg-src="/img/icons/logo-grey.svg" class="Footer-logo"></md-icon>\n' +
+    '<br/>\n' +
+    '<br/>\n' +
+    '<div class="Footer-text">\n' +
+    '	An open source project by <a href="https://github.com/jadjoubran" class="Footer-link" target="_blank">Jad Joubran</a>.\n' +
+    '	Design by <a href="https://www.linkedin.com/in/nicolesaidy" class="Footer-link" target="_blank">Nicole Saidy</a>\n' +
+    '</div>\n' +
+    '<div class="Footer-text">\n' +
+    '	&copy; 2016 Laravel Angular Material Starter\n' +
+    '</div>\n' +
     '</md-content>\n' +
     '');
 }]);
