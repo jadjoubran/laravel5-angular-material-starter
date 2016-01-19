@@ -1,0 +1,9 @@
+<md-content class="Page-Container" ng-controller="ProtectedController as vm">
+	<div layout="column" class="Landing-cover" layout-align="center center">
+		<div layout="column" layout-gt-sm="row">
+			<h2>This is a protected page.</h2>
+		</div>
+		<br>
+		<p>{{ vm.loggedin || "Please log in to view it's contents" }}</p>
+	</div>
+</md-content>

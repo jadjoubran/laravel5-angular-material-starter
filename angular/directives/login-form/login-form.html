@@ -1,0 +1,52 @@
+<form class="ng-pristine ng-invalid ng-invalid-required" method="post" ng-submit="vm.login()" name="loginForm">
+  <div class="form-group has-feedback">
+    <input style="background-repeat: no-repeat; background-attachment: scroll; background-position: right center; cursor: auto;" class="form-control input-lg ng-pristine ng-untouched ng-invalid ng-invalid-required" name="email" ng-model="vm.email" placeholder="Email" required="" autofocus="" type="text">
+    <span class="ion-at form-control-feedback"></span>
+  </div>
+  <div class="form-group has-feedback">
+    <input style="background-repeat: no-repeat; background-attachment: scroll; background-position: right center; cursor: auto;" class="form-control input-lg ng-pristine ng-untouched ng-invalid ng-invalid-required" name="password" ng-model="vm.password" placeholder="Password" required="" type="password">
+    <span class="ion-key form-control-feedback"></span>
+  </div>
+  <button disabled="disabled" type="submit" ng-disabled="loginForm.$invalid" class="btn btn-lg  btn-block btn-success">Log in</button>
+  <br>
+  <p class="text-center text-muted">
+    <small>Don't have an account yet? <a ui-sref="app.register">Register</a></small>
+  </p>
+  <div class="signup-or-separator">
+    <h6 class="text">or</h6>
+    <hr>
+  </div>
+</form>
+<button class="btn btn-block btn-facebook" ng-click="vm.authenticate('facebook')">
+  <i class="ion-social-facebook"></i> Sign in with Facebook
+</button>
+<button class="btn btn-block btn-google-plus" ng-click="vm.authenticate('google')">
+  <span class="ion-social-googleplus"></span>Sign in with Google
+</button>
+<button class="btn btn-block btn-linkedin" ng-click="vm.authenticate('linkedin')">
+  <i class="ion-social-linkedin"></i> Sign in with LinkedIn
+</button>
+<button class="btn btn-block btn-instagram" ng-click="vm.authenticate('instagram')">
+  <i class="ion-social-instagram"></i> Sign in with Instagram
+</button>
+<button class="btn btn-block btn-twitter" ng-click="vm.authenticate('twitter')">
+  <i class="ion-social-twitter"></i> Sign in with Twitter
+</button>
+<button class="btn btn-block btn-foursquare" ng-click="vm.authenticate('foursquare')">
+  <i class="fa fa-foursquare"></i> Sign in with Foursquare
+</button>
+<button class="btn btn-block btn-github" ng-click="vm.authenticate('github')">
+  <i class="ion-social-github"></i> Sign in with GitHub
+</button>
+<button class="btn btn-block btn-bitbucket" ng-click="vm.authenticate('bitbucket')">
+  <i class="fa fa-bitbucket"></i> Sign in with Bitbucket
+</button>
+<button class="btn btn-block btn-yahoo" ng-click="vm.authenticate('yahoo')">
+  <i class="ion-social-yahoo"></i> Sign in with Yahoo
+</button>
+<button class="btn btn-block btn-live" ng-click="vm.authenticate('live')">
+  <i class="ion-social-windows"></i> Sign in with Windows Live
+</button>
+<button class="btn btn-block btn-twitch" ng-click="vm.authenticate('twitch')">
+  <i class="ion-social-twitch"></i> Sign in with Twitch
+</button>
