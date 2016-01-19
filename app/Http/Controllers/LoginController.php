@@ -33,7 +33,7 @@ class LoginController extends Controller
 
     public function protectedData()
     {
-        return response()->success(['Sample of JWT protected data response from API']);
+        return response()->json([ 'data' => 'You are good to view this page']);
     }
 
     /**

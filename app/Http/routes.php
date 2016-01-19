@@ -22,9 +22,9 @@ Route::group(['prefix' => 'auth'], function () {
     Route::get('unlink/{provider}', 'LoginController@unlink');
 });
 
-//protected routes with JWT (must be logged in to access any of these routes)
-$api->group(['providers' => 'jwt'], function ($api) {
-// $api->group(['middleware' => 'api.auth', 'providers' => 'jwt'], function ($api) {
+// Protected routes with JWT (must be logged in to access any of these routes)
+// adjust the domain parameter accordingly
+$api->group(['middleware' => 'api.auth', 'domain' => 'localhost'], function ($api) {
 
     $api->get('sample/protected', 'LoginController@protectedData');
 
