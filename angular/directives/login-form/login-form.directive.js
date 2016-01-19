@@ -24,7 +24,7 @@ $log.info(angular.toJson(response.data.data.token));
 				$auth.setToken(response.data.data.token);
 			    // Redirect user here after a successful log in.
 				ToastService.show('Login successful');
-				$location.path('api/sample/protected');
+				$location.path('register');
 			  })
 			  .catch(function(response) {
 			    // Handle errors here, such as displaying a notification

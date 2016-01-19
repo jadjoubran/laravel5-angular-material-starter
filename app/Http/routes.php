@@ -27,6 +27,4 @@ $api->group(['middleware' => 'api.auth'], function ($api) {
 
     $api->get('sample/protected', 'LoginController@protectedData');
 
-    // Satellizer Route
-
 });
