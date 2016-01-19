@@ -19,14 +19,12 @@
 			$log.info('Logging in...');
 
 			$auth.login(user)
-			  .then(function(response) {
-			    // What to do after a successful logged in
+			  .then(function(response) { // What to do after a successful logged in
 				ToastService.show('Login successful');
 				$state.go('app.loggedin');
 			  })
-			  .catch(function(response) {
-			    // Handle errors here, such as displaying a notification
-			    // for invalid email and/or password.
+			  .catch(function(response) { // Handle errors here
+				$log.info('Error Response: '+angular.toJson(response.data));
 				ToastService.error(response.data.errors);
 			  });
 		};

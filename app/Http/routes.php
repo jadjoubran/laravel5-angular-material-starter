@@ -23,7 +23,8 @@ Route::group(['prefix' => 'auth'], function () {
 });
 
 //protected routes with JWT (must be logged in to access any of these routes)
-$api->group(['middleware' => 'api.auth', 'providers' => 'jwt'], function ($api) {
+$api->group(['providers' => 'jwt'], function ($api) {
+// $api->group(['middleware' => 'api.auth', 'providers' => 'jwt'], function ($api) {
 
     $api->get('sample/protected', 'LoginController@protectedData');
 

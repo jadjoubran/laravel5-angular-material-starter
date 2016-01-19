@@ -7,7 +7,7 @@
         var vm = this;
 
         API.one('sample/protected').get().then(function(data) {
-          vm.loggedin = data;
+          vm.loggedin = angular.fromJson(data.data);
 		});
 		
     }
