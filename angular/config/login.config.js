@@ -6,7 +6,7 @@
 		/* Configuration file for Satellizer's handling of login authentication */		
 		$authProvider.storageType = 'localStorage';
 		$authProvider.tokenName = 'token';
-		
+		$authProvider.httpInterceptor = false;
 	    $authProvider.facebook({
 	      clientId: 'Facebook App ID'
 	    });

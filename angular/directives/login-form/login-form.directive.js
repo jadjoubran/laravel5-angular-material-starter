@@ -3,7 +3,7 @@
 
     angular.module('app.controllers').controller('LoginFormController', LoginFormController);
 
-    function LoginFormController($auth, $log, $location, ToastService){
+    function LoginFormController($auth, $log, $location, ToastService, $localStorage){
         var vm = this;
 
 	    vm.authenticate = function(provider) {
@@ -20,11 +20,12 @@
 
 			$auth.login(user)
 			  .then(function(response) {
-$log.info(angular.toJson(response.data.data.token));
-				$auth.setToken(response.data.data.token);
+$log.info(angular.toJson(response.data));
+				$auth.setToken(response.data.token);
+$log.info($localStorage.jwt);
 			    // Redirect user here after a successful log in.
 				ToastService.show('Login successful');
-				$location.path('register');
+				$location.path('api/sample/protected');
 			  })
 			  .catch(function(response) {
 			    // Handle errors here, such as displaying a notification

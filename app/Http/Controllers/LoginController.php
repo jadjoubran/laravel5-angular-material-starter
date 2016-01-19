@@ -28,7 +28,7 @@ class LoginController extends Controller
             // return response()->error('Could not create token', Response::HTTP_INTERNAL_SERVER_ERROR);
         }
 
-        return response()->success(['token' => $token]);
+        return response()->json(['token' => $token]);
     }
 
     public function protectedData()
