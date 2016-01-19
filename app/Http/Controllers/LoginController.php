@@ -3,18 +3,17 @@
 namespace App\Http\Controllers;
 
 use Config;
+use JWTAuth;
 use App\User;
 use GuzzleHttp;
 use Auth\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Tymon\JWTAuth\Exceptions\JWTException;
 
 class LoginController extends Controller
 {
     public function login(Request $request)
     {
-return response()->error('Here', Response::HTTP_UNPROCESSABLE_ENTITY);
         $credentials = $request->only('email', 'password');
 
         try {

@@ -16,7 +16,6 @@
 			  password: vm.password
 			};
 
-$log.info('User: '+angular.toJson(user));
 			$log.info('Logging in...');
 
 			$auth.login(user)
