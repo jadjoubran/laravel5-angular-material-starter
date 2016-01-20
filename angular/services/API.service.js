@@ -20,6 +20,14 @@
 						}
 					}
 				})
+				.addResponseInterceptor(function (response, operation, what) {
+                    if (operation === 'getList') {
+                        var newResponse = response.data[what];
+                        newResponse.error = response.error;
+                        return newResponse;
+                    }
+                    return response;
+                })
 				.addFullRequestInterceptor(function(element, operation, what, url, headers) {
 					if ($localStorage.jwt) {
 						headers.Authorization = 'Bearer ' + $localStorage.jwt;
