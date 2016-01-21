@@ -4,6 +4,7 @@
 - added favicon
 - faster elixir setup
 - combined generated directive definition and controller
+- ability to pass options to DialogService instead of defaulting to $scope [#141](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/141)
 
 ### 3.0.6
 - npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)
