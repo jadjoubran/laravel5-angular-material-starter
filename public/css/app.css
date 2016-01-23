@@ -1,1 +1,27 @@
-md-toast[md-theme=warn]{background-color:#f44336;border-radius:2px}[ui-view].ng-enter,[ui-view].ng-leave{transition:opacity ease-in-out .2s}[ui-view].ng-enter,[ui-view].ng-leave.ng-leave-active{opacity:0}[ui-view].ng-enter.ng-enter-active{opacity:1}.Page.ng-leave.ng-leave-active{display:none}.Footer,.u-center{text-align:center}.Footer{background-color:#f6f9fa;border-top:1px solid #e9f0f3;padding-top:40px;padding-bottom:40px;color:#727272;font-weight:300}.Footer-text{padding-top:10px;opacity:.8;color:#727272}.Footer-link{text-decoration:none;color:#727272;font-weight:400}.Footer-link:hover{text-decoration:underline}.Footer-logo{width:49px;height:46px}.DemoHeader{height:64px;background-color:#fff;position:absolute;top:0;left:0;right:0;z-index:1}.DemoHeader-container{height:100%}.DemoHeader-logo{width:171px;height:41px;padding-top:13px}.DemoHeader-link{text-decoration:none;color:#535362;padding:0 20px;display:inline-block;transition:.25s background-color;line-height:64px}.DemoHeader-link:hover{background-color:#f6f9fa}.DemoHeader-github{margin-top:17px}body{font-family:Lato}.Landing{height:100%;padding-top:62px}.Landing-cover{background-image:url(/img/cover.jpg);background-size:cover;background-attachment:fixed;background-position:center;width:100%;height:700px}.Landing-heading,.Landing-subtitle{color:#fff}.Landing-headingLight{font-weight:300}.Landing-heading{color:#fff;letter-spacing:-3px;margin-top:20px;font-size:60px;text-align:center}.Landing-subtitle{opacity:.7;text-align:center}.Landing-getStarted{padding:12px 30px;font-weight:700;color:#535362!important;border-radius:4px;text-transform:box-shadow .25s}.Landing-getStarted:hover{box-shadow:0 4px 5px -2px rgba(0,0,0,.2),0 7px 10px 1px rgba(0,0,0,.14),0 2px 16px 1px rgba(0,0,0,.12)!important}.Landing-laravelAngular{position:relative}.Landing-ampersand{font-size:50px;color:#00a4c6;position:absolute;top:70px;left:0;right:0;text-align:center;font-weight:300}.Landing-angular{background-color:#f6f9fa;border-left:1px solid #e9f0f3}.Landing-angular,.Landing-laravel{text-align:center;color:#21455b;border-bottom:1px solid #e9f0f3}.Landing-laravelAngular-title{padding-top:30px;margin-bottom:15px;font-weight:300;letter-spacing:-1px;color:#21455b}.Landing-laravelAngular-subtitle{color:#535362;padding-left:30px;padding-right:30px;font-weight:300}.DemoCode{font-family:Lucida Console,Monaco,monospace;overflow:auto!important;padding:10px;line-height:1.428571429;color:#333;word-break:break-all;word-wrap:break-word;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px;width:80%;margin:30px auto 100px;text-align:left;padding-left:20px;font-size:14px}.DemoCode-highlight{color:#dd4a68}.DemoCode-comment,.DemoCode-operator{color:#727272}.DemoCode-string{color:#690}.DemoCode-secondary{color:#07a}.Landing-features{text-align:center;margin:60px 10px}.Landing-featuresMainTitle{font-weight:300;letter-spacing:-1px;margin-bottom:15px;color:#21455b}.Landing-featuresMainDescription{width:70%;margin:0 auto 30px;color:#535362;font-weight:300}.Landing-featuresEntry{width:176px;height:176px;border-radius:50%;margin:40px auto 20px}.Landing-featuresEntry-icon{height:100%}.Landing-featuresTitle{color:#21455b;letter-spacing:-1px;margin-top:40px}.Landing-featuresDescription{padding-top:10px;padding-left:50px;padding-right:50px;font-weight:300}.Landing-featuresEntry--restful{background-color:#00a4c6}.Landing-featuresEntry--jwt{background-color:#ef704d}.Landing-featuresEntry--generators{background-color:#25c0cc}.Landing-featuresEntry--restful md-icon{width:100px}.Landing-featuresEntry--generators md-icon,.Landing-featuresEntry--jwt md-icon{width:80px}@media only screen and (max-width:950px){.iOS-hack .flex-33,.iOS-hack .flex-50,.iOS-hack .flex-100{-webkit-flex:none!important;-ms-flex:none!important;flex:none!important}}
+
+
+md-toast[md-theme=warn] {
+  background-color: #F44336;
+  border-radius: 2px;
+}
+
+[ui-view].ng-enter,
+[ui-view].ng-leave {
+  transition: opacity ease-in-out 200ms;
+}
+[ui-view].ng-enter,
+[ui-view].ng-leave.ng-leave-active {
+  opacity: 0;
+}
+[ui-view].ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.Page.ng-leave.ng-leave-active {
+  display: none;
+}
+
+.u-center {
+  text-align: center;
+}
+
+/*# sourceMappingURL=app.css.map */
