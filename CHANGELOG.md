@@ -7,6 +7,7 @@
 - ability to pass options to DialogService instead of defaulting to $scope [#141](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/141)
 - **[Breaking]** Update angular folder structure/naming [#142](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/142)
 - reverted to `gulp-minify-css` [#144](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/144)
+- EcmaScript 6 generators thanks to [@jsalhani](https://github.com/jsalhani) [#152](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/152)
 
 ### 3.0.6
 - npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)
