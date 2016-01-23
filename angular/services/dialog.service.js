@@ -1,45 +1,44 @@
-(function(){
-	"use strict";
+export class DialogService {
+	constructor($mdDialog) {
+		'ngInject';
 
-	angular.module("app.services").factory('DialogService', function($mdDialog){
+		this.$mdDialog = $mdDialog
+	}
 
-		return {
-			fromTemplate: function(template, options){
-				if ( !template ){
-					return false;
-				}
+	fromTemplate(template, options) {
+		if (!template) {
+			return false;
+		}
 
-				if ( !options ){
-					options = {};
-				}
+		if (!options) {
+			options = {};
+		}
 
-				options.templateUrl = './views/dialogs/' + template + '/' + template + '.html'
+		options.templateUrl = './views/dialogs/' + template + '/' + template + '.html'
 
-				return $mdDialog.show(options);
-			},
+		return this.$mdDialog.show(options);
+	}
 
-			hide: function(){
-				return $mdDialog.hide();
-			},
+	hide() {
+		return this.$mdDialog.hide();
+	}
 
-			alert: function(title, content){
-				$mdDialog.show(
-					$mdDialog.alert()
-						.title(title)
-						.content(content)
-						.ok('Ok')
-				);
-			},
+	alert(title, content) {
+		this.$mdDialog.show(
+			this.$mdDialog.alert()
+			.title(title)
+			.content(content)
+			.ok('Ok')
+		);
+	}
 
-			confirm: function(title, content) {
-				return $mdDialog.show(
-					$mdDialog.confirm()
-						.title(title)
-						.content(content)
-						.ok('Ok')
-						.cancel('Cancel')
-				);
-			}
-		};
-	});
-})();
+	confirm(title, content) {
+		return this.$mdDialog.show(
+			this.$mdDialog.confirm()
+			.title(title)
+			.content(content)
+			.ok('Ok')
+			.cancel('Cancel')
+		);
+	}
+}
