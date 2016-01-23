@@ -1,9 +1,5 @@
-(function() {
-	"use strict";
-
-	angular.module('app.controllers').controller('LandingController', LandingController);
-
-	function LandingController() {
+export class LandingController {
+	constructor() {
 		var vm = this;
 
 		vm.laravel_description = 'Response macros integrated with your Angular app';
@@ -16,5 +12,4 @@
 		*/
 		vm.iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 	}
-
-})();
+}

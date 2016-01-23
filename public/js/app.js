@@ -57,9 +57,11 @@
 
 	__webpack_require__(5);
 
-	__webpack_require__(6);
-
 	__webpack_require__(7);
+
+	__webpack_require__(8);
+
+	__webpack_require__(9);
 
 /***/ },
 /* 1 */
@@ -88,12 +90,50 @@
 
 	'use strict';
 
-	var _RoutesConfig = __webpack_require__(4);
+	var _landing = __webpack_require__(4);
+
+	angular.module('app.controllers').controller('LandingController', _landing.LandingController);
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var LandingController = exports.LandingController = function LandingController() {
+		_classCallCheck(this, LandingController);
+
+		var vm = this;
+
+		vm.laravel_description = 'Response macros integrated with your Angular app';
+		vm.angular_description = 'Query your API without worrying about validations';
+
+		/*
+	 This is a terrible temporary hack,
+	 to fix layout issues with flex on iOS (chrome & safari)
+	 Make sure to remove this when you modify this demo
+	 */
+		vm.iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+	};
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _RoutesConfig = __webpack_require__(6);
 
 	angular.module('app.routes').config(_RoutesConfig.RoutesConfig);
 
 /***/ },
-/* 4 */
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -133,19 +173,19 @@
 	}
 
 /***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-/***/ },
 /* 7 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+/***/ },
+/* 9 */
 /***/ function(module, exports) {
 
 	"use strict";
