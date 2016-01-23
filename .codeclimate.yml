@@ -4,6 +4,7 @@ engines:
 ratings:
   paths:
     - angular/**
+    - "**.js"
 languages:
   Ruby: false
   JavaScript: true
