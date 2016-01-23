@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var notify = require('gulp-notify');
 var gulpif = require('gulp-if');
+var webpack = require('webpack-stream');
 
 var Elixir = require('laravel-elixir');
 
@@ -24,7 +25,8 @@ Elixir.extend('angular', function(src, output, outputFilename) {
 			.pipe(eslint())
 			.pipe(eslint.format())
 			.pipe(gulpif(! config.production, sourcemaps.init()))
-			.pipe(concat(outputFilename || 'app.js'))
+			.pipe(webpack(require('../webpack.config.js')))
+			// .pipe(concat(outputFilename || 'app.js'))
 			.pipe(ngAnnotate())
 			.pipe(gulpif(config.production, uglify()))
 			.pipe(gulpif(! config.production, sourcemaps.write()))
