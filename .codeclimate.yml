@@ -1,3 +1,10 @@
+engines:
+  eslint:
+    enabled: true
+ratings:
+  paths:
+    - angular/**
+    - "**.js"
 languages:
   Ruby: false
   JavaScript: true

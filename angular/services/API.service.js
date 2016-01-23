@@ -1,8 +1,6 @@
-(function() {
-	"use strict";
-
-	angular.module('app.services').factory('API', function(Restangular, ToastService, $localStorage) {
-
+export class APIService {
+	constructor(Restangular, ToastService, $localStorage) {
+		'ngInject';
 		//content negotiation
 		var headers = {
 			'Content-Type': 'application/json',
@@ -26,6 +24,5 @@
 					}
 				});
 		});
-	});
-
-})();
+	}
+}

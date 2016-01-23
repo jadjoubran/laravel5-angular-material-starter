@@ -1,40 +1,40 @@
-(function(){
-	"use strict";
+export class ToastService {
+	constructor($mdToast) {
+		'ngInject';
 
-	angular.module("app.services").factory('ToastService', function($mdToast){
+		this.$mdToast = $mdToast;
 
-		var delay = 6000,
-			position = 'top right',
-			action = 'OK';
+		this.delay = 6000;
+		this.position = 'top right';
+		this.action = 'OK';
+	}
 
-		return {
-			show: function(content){
-				if (!content){
-					return false;
-				}
+	show(content) {
+		if (!content) {
+			return false;
+		}
 
-				return $mdToast.show(
-					$mdToast.simple()
-						.content(content)
-						.position(position)
-						.action(action)
-						.hideDelay(delay)
-				);
-			},
-			error: function(content){
-				if (!content){
-					return false;
-				}
+		return this.$mdToast.show(
+			this.$mdToast.simple()
+			.content(content)
+			.position(this.position)
+			.action(this.action)
+			.hideDelay(this.delay)
+		);
+	}
 
-				return $mdToast.show(
-					$mdToast.simple()
-						.content(content)
-						.position(position)
-						.theme('warn')
-						.action(action)
-						.hideDelay(delay)
-				);
-			}
-		};
-	});
-})();
+	error(content) {
+		if (!content) {
+			return false;
+		}
+
+		return this.$mdToast.show(
+			this.$mdToast.simple()
+			.content(content)
+			.position(this.position)
+			.theme('warn')
+			.action(this.action)
+			.hideDelay(this.delay)
+		);
+	}
+}
