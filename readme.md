@@ -46,7 +46,5 @@ Thank you for contributing to this repository.
 
 Here are the guidelines:
 
-1. run `gulp --production` at the end if you changed any HTML, Less or JS. Do not send Pull Requests without running this command (unless you haven't touched the frontend)
-2. delete `.map` files `rm public/css/app.css.map public/css/vendor.css.map public/js/app.map public/js/vendor.js.map`
-3. If you are adding/modifying backend functionality, make sure to include the apprioriate `test`. Let me know if you need help writing the test
+1. If you are adding/modifying backend functionality, make sure to include the appropriate `test`. Let me know if you need help writing the test.
     

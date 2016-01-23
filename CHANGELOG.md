@@ -8,6 +8,7 @@
 - **[Breaking]** Update angular folder structure/naming [#142](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/142)
 - reverted to `gulp-minify-css` [#144](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/144)
 - EcmaScript 6 generators thanks to [@jsalhani](https://github.com/jsalhani) [#152](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/152)
+- Ignore (stop tracking) public/js and public/css
 
 ### 3.0.6
 - npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)

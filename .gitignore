@@ -5,3 +5,5 @@
 npm-debug.log
 .idea/
 public/views
+public/js
+public/css
