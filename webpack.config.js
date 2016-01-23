@@ -1,6 +1,6 @@
 module.exports = {
 	// configuration
-	entry: "index.main.js",
+	entry: "./angular/index.main.js",
 	output: {
 		filename: "app.js"
 	},
