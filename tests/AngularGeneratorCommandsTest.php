@@ -10,9 +10,9 @@ class AngularGeneratorCommandsTest extends TestCase
 
         $this->assertEquals($exitCode, 0);
 
-        $this->assertContains('ng:feature', $output);
+        $this->assertContains('ng:page', $output);
         $this->assertContains('ng:dialog', $output);
-        $this->assertContains('ng:directive', $output);
+        $this->assertContains('ng:component', $output);
         $this->assertContains('ng:service', $output);
         $this->assertContains('ng:filter', $output);
         $this->assertContains('ng:config', $output);
