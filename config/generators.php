@@ -2,7 +2,7 @@
 
 return [
       'source' => [
-            'main'            => 'angular',
+            'root'            => 'angular',
             'page'            => 'app/pages',
             'components'      => 'app/components',
             'config'          => 'config',
@@ -10,7 +10,7 @@ return [
             'filters'         => 'filters',
             'services'        => 'services',
       ],
-      'prefixFileNames' => [
+      'prefix' => [
             'component'       => '.component.js',
             'componentView'   => '.component.html',
             'dialog'          => '.dialog.js',
