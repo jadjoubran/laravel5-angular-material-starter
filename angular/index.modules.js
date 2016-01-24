@@ -1,5 +1,4 @@
 angular.module('app', [
-	'app.controllers',
 	'app.filters',
 	'app.services',
 	'app.components',
@@ -9,8 +8,10 @@ angular.module('app', [
 ]);
 
 angular.module('app.routes', []);
-angular.module('app.controllers', ['ui.router', 'ngMaterial', 'ngStorage', 'restangular', 'angular-loading-bar']);
 angular.module('app.filters', []);
 angular.module('app.services', []);
-angular.module('app.components', []);
 angular.module('app.config', []);
+angular.module('app.components', [
+	'ui.router', 'ngMaterial', 'ngStorage',
+	'restangular', 'angular-loading-bar'
+]);

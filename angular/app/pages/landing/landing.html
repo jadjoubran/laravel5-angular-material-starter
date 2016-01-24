@@ -1,4 +1,4 @@
-<div class="Page-Container Landing" ng-controller="LandingController as vm" ng-class="{'iOS-hack': vm.iOS}">
+<div class="Page-Container Landing" class="iOS-hack">
 	<div layout="column" class="Landing-cover" layout-align="center center">
 		<div class="md-headline Landing-subtitle">Build your next powerful web app</div>
 		<h1 class="md-display-3 Landing-heading"><strong>laravel angular</strong> <span class="Landing-headingLight">material starter</span></h1>
@@ -10,7 +10,7 @@
 		<div layout="column" layout-gt-sm="row">
 			<div flex="50" class="Landing-laravel" layout-align="center center">
 				<h2 class="md-display-2 Landing-laravelAngular-title">Laravel</h2>
-				<div class="md-title Landing-laravelAngular-subtitle">{{vm.laravel_description}}</div>
+				<div class="md-title Landing-laravelAngular-subtitle">Response macros integrated with your Angular app</div>
 				<br/>
 				<div class="DemoCode">
 					<span class="DemoCode-operator">&lt;?php</span><br/>
@@ -30,12 +30,12 @@
 			</div>
 			<div flex="50" class="Landing-angular" layout-align="center center">
 				<h2 class="md-display-2 Landing-laravelAngular-title">Angular</h2>
-				<div class="md-title Landing-laravelAngular-subtitle">{{vm.angular_description}}</div>
+				<div class="md-title Landing-laravelAngular-subtitle">Query your API without worrying about validations</div>
 				<br/>
 				<div class="DemoCode">
 					(<span class="DemoCode-secondary">function</span>(){<br/>
 					<span class="DemoCode-string">"use strict"</span>;<br/><br/>
-					<span class="DemoCode-secondary">function</span> <span class="DemoCode-highlight">LandingController</span>(API) {<br/>
+					<span class="DemoCode-secondary">function</span> <span class="DemoCode-highlight">PostsComponent</span>(API) {<br/>
 					<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">this</span>.<span class="DemoCode-highlight">getPosts</span> = <span class="DemoCode-secondary">function</span>(){<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;API.all(<span class="DemoCode-string">'posts'</span>).get()<br/>
