@@ -4,12 +4,13 @@
 - added favicon
 - faster elixir setup
 - combined generated directive definition and controller
-- ability to pass options to DialogService instead of defaulting to $scope [#141](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/141)
+- **[Breaking]** ability to pass options to DialogService instead of defaulting to $scope [#141](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/141)
 - **[Breaking]** Update angular folder structure/naming [#142](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/142)
 - reverted to `gulp-minify-css` [#144](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/144)
-- EcmaScript 6 generators thanks to [@jsalhani](https://github.com/jsalhani) [#152](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/152)
-- Ignore (stop tracking) public/js and public/css
-- Remove all controllers to promote components (Angular 1.5) [#154](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/154)
+- **[Breaking]** EcmaScript 6 generators thanks to [@jsalhani](https://github.com/jsalhani) [#152](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/152)
+- **[Breaking]** Ignore (stop tracking) public/js and public/css
+- **[Breaking]** Remove all controllers to promote components (Angular 1.5) [#154](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/154)
+- **[Breaking]** Speed up tests by deferring creation of JWT [#153](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/153)
 
 ### 3.0.6
 - npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)
