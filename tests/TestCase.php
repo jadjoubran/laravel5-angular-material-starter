@@ -32,21 +32,24 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function getAuthUser()
     {
-        if ( !$this->authUser ){
+        if (! $this->authUser) {
             $this->setAuthUserToken();
         }
+
         return $this->authUser;
     }
 
     public function getAuthUserToken()
     {
-        if ( !$this->authUserToken ){
+        if (! $this->authUserToken) {
             $this->setAuthUserToken();
         }
+
         return $this->authUserToken;
     }
 
     /*Laravel angular material starter test helpers*/
+
     public function seeApiSuccess()
     {
         return $this->seeJsonContains(['errors' => false]);
@@ -85,7 +88,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     }
 
     /**
-     * login the authUser using JWT and store the token
+     * login the authUser using JWT and store the token.
      */
     private function setAuthUserToken()
     {
