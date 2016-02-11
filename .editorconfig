@@ -11,7 +11,7 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{js,html}]
+[*.{*.js,html}]
 indent_size = 4
 indent_style = tab
 trim_trailing_whitespace = true

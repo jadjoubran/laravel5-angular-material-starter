@@ -11,6 +11,7 @@
 - **[Breaking]** Ignore (stop tracking) public/js and public/css
 - **[Breaking]** Remove all controllers to promote components (Angular 1.5) [#154](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/154)
 - **[Breaking]** Speed up tests by deferring creation of JWT [#153](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/153)
+- Fixed editorconfig to catch .component.js and .service.js files (\*.js)
 
 ### 3.0.6
 - npm dependencies cleanup [#133](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/133)
