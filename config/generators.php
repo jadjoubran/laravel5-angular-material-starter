@@ -15,6 +15,8 @@ return [
             'componentView'   => '.component.html',
             'dialog'          => '.dialog.js',
             'service'         => '.service.js',
+            'config'          => '.config.js',
+            'filter'          => '.filter.js',
             'pageView'        => '.page.html',
       ],
 ];

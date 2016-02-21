@@ -16,20 +16,21 @@ require('laravel-elixir-livereload');
  */
 
 elixir(function(mix) {
-	mix
-		.bower()
-		.angular('./angular/')
-		.ngHtml2Js('./angular/**/*.html')
-		.less('./angular/**/*.less', 'public/css')
-		.livereload([
-			'public/js/vendor.js',
-			'public/js/partials.js',
-			'public/js/app.js',
-			'public/css/vendor.css',
-			'public/css/app.css'
-		], {
-			liveCSS: true
-		});
+    mix
+    	.bower()
+    	.angular('./angular/')
+    	.ngHtml2Js('./angular/**/*.html')
+    	.less('./angular/**/*.less', 'public/css')
+    	.livereload([
+    		'public/js/vendor.js',
+    		'public/js/partials.js',
+    		'public/js/app.js',
+    		'public/css/vendor.css',
+    		'public/css/app.css'
+    	], {
+    		liveCSS: true
+    	});
 
-	//.phpUnit();
+    //uncomment this for gulp tdd
+    //.phpUnit();
 });

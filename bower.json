@@ -15,8 +15,10 @@
     "angular-ui-router": "~0.2.15",
     "ngstorage": "~0.3.3",
     "angular-material": "~1.0",
-    "restangular": "~1.5.1",
-    "angular-loading-bar": "~0.8.0",
-    "lodash": "3"
+    "restangular": "~1.5.2",
+    "angular-loading-bar": "~0.8.0"
+  },
+  "resolutions": {
+    "angular": "~1.4"
   }
 }

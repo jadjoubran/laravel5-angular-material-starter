@@ -15,12 +15,6 @@ class LaravelRoutesTest extends TestCase
         $this->assertEquals(200, $response->status());
     }
 
-    public function testServeAngular()
-    {
-        $this->visit('/')
-             ->see('ng-app');
-    }
-
     public function testUnsupportedBrowserPage()
     {
         $this->visit('/unsupported-browser')

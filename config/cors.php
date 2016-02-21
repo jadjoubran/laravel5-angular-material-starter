@@ -19,3 +19,4 @@ return [
     'maxAge' => 0,
     'hosts' => [],
 ];
+

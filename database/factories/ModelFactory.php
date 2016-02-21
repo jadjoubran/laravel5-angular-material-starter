@@ -15,7 +15,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->email,
-        'password' => str_random(36),
+        //use bcrypt('password') if you want to assert for a specific password
+        'password' => str_random(10),
         'remember_token' => str_random(10),
     ];
 });
