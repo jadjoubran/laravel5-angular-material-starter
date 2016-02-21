@@ -9,6 +9,11 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
      */
     protected $baseUrl = 'http://localhost';
 
+
+    private $authUser = null;
+
+    private $authUserToken = null;
+
     /**
      * Creates the application.
      *
@@ -25,7 +30,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function getAuthUser()
     {
-        if (! $this->authUser) {
+        if ( !$this->authUser) {
             $this->setAuthUserToken();
         }
 
@@ -34,7 +39,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function getAuthUserToken()
     {
-        if (! $this->authUserToken) {
+        if ( !$this->authUserToken) {
             $this->setAuthUserToken();
         }
 
@@ -91,11 +96,11 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         $this->authUserToken = JWTAuth::fromUser($authUser);
     }
 
-    public function authUserGet($uri, $parameters = [])
+    public function authUserGet($uri, $headers = [])
     {
-        $uri .= '?token='.$this->getAuthUserToken();
+        $headers = ['AUthorization' => 'Bearer '.$this->getAuthUserToken()];
 
-        return $this->get($uri, $parameters);
+        return $this->get($uri, $headers);
     }
 
     public function authUserPost($uri, $parameters = [])
