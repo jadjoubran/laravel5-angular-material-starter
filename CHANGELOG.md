@@ -2,6 +2,7 @@
 
 ### 3.1.0
 - **[Breaking]** Upgrade to Laravel 5.2 (using a Fresh 5.2 installation)
+- **[Breaking]** Upgrade to Angular 1.5 (.component support)
 - added favicon
 - faster elixir setup
 - combined generated directive definition and controller
