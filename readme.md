@@ -13,14 +13,16 @@
 
 ## Demo
 
-An online <a href="http://www.laravel-angular.io/" target="_blank">DEMO</a> is available.
+An online <a href="http://www.laravel-angular.io/" target="_blank">demo</a> is available.
 
 
 ## Docs
 
 [View Latest Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
 
-[3.0 Docs](https://laravel-angular.readme.io/v3.0)
+
+
+Running on 3.0? Here are the [3.0 Docs](https://laravel-angular.readme.io/v3.0)
 
 ## Screencasts
 
