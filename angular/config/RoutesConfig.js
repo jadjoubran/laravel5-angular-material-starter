@@ -2,7 +2,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 	'ngInject';
 
 	var getView = function(viewName) {
-		return './views/app/pages/' + viewName + '/' + viewName + '.html';
+		return './views/app/pages/' + viewName + '/' + viewName + '.page.html';
 	};
 
 	$urlRouterProvider.otherwise('/');
