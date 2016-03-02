@@ -1,4 +1,4 @@
-## Laravel 5.1 Angular Material Starter
+## Laravel 5.2 Angular Material Starter
 
 [![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
 [![Latest Unstable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/unstable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
@@ -18,20 +18,17 @@ An online <a href="http://www.laravel-angular.io/" target="_blank">DEMO</a> is a
 
 ## Docs
 
-[View Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
+[View Latest Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
+
+[3.0 Docs](https://laravel-angular.readme.io/v3.0)
 
 ## Screencasts
 
-Screencasts on [Youtube](https://www.youtube.com/channel/UCTiRXlOapSWfu02rtOdaGvA).
+Screencasts on [Youtube](https://www.youtube.com/c/LaravelAngularMaterialStarter).
 
 
 ## Issues, questions and feature requests
 Open a new issue, I'd love to help.
-
-
-## Planned features
-
-Moved to [github issues](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/). 
 
 
 
