@@ -26,6 +26,7 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;<span class="DemoCode-secondary">success</span>(compact(<span class="DemoCode-string">'posts'</span>));<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 					}
+					<br/>
 				</div>
 			</div>
 			<div flex="50" class="Landing-angular" layout-align="center center">
@@ -33,18 +34,20 @@
 				<div class="md-title Landing-laravelAngular-subtitle">Query your API without worrying about validations</div>
 				<br/>
 				<div class="DemoCode">
-					(<span class="DemoCode-secondary">function</span>(){<br/>
-					<span class="DemoCode-string">"use strict"</span>;<br/><br/>
-					<span class="DemoCode-secondary">function</span> <span class="DemoCode-highlight">PostsComponent</span>(API) {<br/>
+					<span class="DemoCode-secondary">Class</span> <span class="DemoCode-highlight">PostsController</span>(API) {<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">constructor</span>(API){<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-string">'ngInject'</span>;<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.API = API<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 					<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">this</span>.<span class="DemoCode-highlight">getPosts</span> = <span class="DemoCode-secondary">function</span>(){<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;API.all(<span class="DemoCode-string">'posts'</span>).get()<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then(<span class="DemoCode-secondary">function</span>(response){<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">getPosts</span>(){<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.API.all(<span class="DemoCode-string">'posts'</span>).get()<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((<span class="DemoCode-secondary">response</span>) => {<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">this</span>.posts = <span class="DemoCode-highlight">response.data</span>;<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+					}<br/>
 					<br/>
-					})();
 				</div>
 			</div>
 		</div>
