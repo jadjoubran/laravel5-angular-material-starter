@@ -1,5 +1,8 @@
 ## Changelog
 
+### 3.1.1
+- Fixed page views issue on fresh installs [#184](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/184)
+
 ### 3.1.0
 - **[Breaking]** Upgrade to Laravel 5.2 (using a Fresh 5.2 installation)
 - **[Breaking]** Upgrade to Angular 1.5 (.component support)
