@@ -23,7 +23,7 @@ Elixir.extend('angular', function(src, output, outputFilename) {
 
 	new Task('angular in ' + baseDir, function() {
 		// Main file has to be included first.
-		return gulp.src([baseDir + "index.main.js", baseDir + "**/*.js"])
+		return gulp.src([baseDir + "index.main.js", baseDir + "**/*.*.js"])
 			.pipe(eslint())
 			.pipe(eslint.format())
 			.pipe(gulpif(!config.production, sourcemaps.init()))
