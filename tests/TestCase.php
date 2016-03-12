@@ -54,13 +54,13 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function seeValidationError()
     {
-        return $this->see(422)
+        return $this->assertResponseStatus(422)
         ->see('"errors":{');
     }
 
     public function seeApiError($error_code)
     {
-        return $this->see($error_code)
+        return $this->assertResponseStatus($error_code)
         ->see('"errors":{');
     }
 
