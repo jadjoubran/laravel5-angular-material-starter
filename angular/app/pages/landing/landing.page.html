@@ -42,7 +42,7 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
 					<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">getPosts</span>(){<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.API.all(<span class="DemoCode-string">'posts'</span>).get()<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.API.all(<span class="DemoCode-string">'posts'</span>).get('')<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((<span class="DemoCode-secondary">response</span>) => {<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="DemoCode-highlight">this</span>.posts = <span class="DemoCode-highlight">response.data</span>;<br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
