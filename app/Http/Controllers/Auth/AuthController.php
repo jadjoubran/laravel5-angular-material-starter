@@ -14,7 +14,7 @@ class AuthController extends Controller
 
         try {
             // verify the credentials and create a token for the user
-            if (!$token = JWTAuth::attempt($credentials)) {
+            if (! $token = JWTAuth::attempt($credentials)) {
                 return response()->error('Invalid credentials', Response::HTTP_UNAUTHORIZED);
             }
         } catch (\JWTException $e) {
@@ -32,10 +32,10 @@ class AuthController extends Controller
             'password'   => 'required|min:8',
         ]);
 
-        $user            = new User;
-        $user->name      = trim($request->name);
-        $user->email     = trim(strtolower($request->email));
-        $user->password  = bcrypt($request->password);
+        $user = new User;
+        $user->name = trim($request->name);
+        $user->email = trim(strtolower($request->email));
+        $user->password = bcrypt($request->password);
         $user->save();
 
         $token = JWTAuth::fromUser($user);
