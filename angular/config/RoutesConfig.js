@@ -37,5 +37,14 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 					templateUrl: getView('login')
 				}
 			}
-		});
+		})
+        .state('app.register', {
+            url: '/register',
+            data: {},
+            views: {
+                'main@': {
+                    templateUrl: getView('register')
+                }
+            }
+        });
 }
