@@ -5,7 +5,7 @@ export function SatellizerConfig($authProvider) {
 		return true;
 	}
 
-	$authProvider.loginUrl = '/auth/login';
-	$authProvider.signupUrl = '/auth/signup';
+	$authProvider.loginUrl = '/api/auth/login';
+	$authProvider.signupUrl = '/api/auth/register';
 
 }

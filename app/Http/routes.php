@@ -39,6 +39,4 @@ $api->group([], function ($api) {
 //protected routes with JWT (must be logged in to access any of these routes)
 $api->group(['middleware' => 'api.auth'], function ($api) {
 
-    $api->get('sample/protected', 'LoginController@protectedData');
-
 });

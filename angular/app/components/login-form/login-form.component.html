@@ -1,15 +1,17 @@
-<div>
-	<md-input-container class="LoginForm-inputContainer">
-		<label>Email</label>
-		<input type="email" ng-model="vm.email">
-	</md-input-container>
-</div>
+<form ng-submit="vm.login()">
+	<div>
+		<md-input-container class="LoginForm-inputContainer">
+			<label>Email</label>
+			<input type="email" ng-model="vm.email">
+		</md-input-container>
+	</div>
 
-<div>
-	<md-input-container class="LoginForm-inputContainer">
-		<label>Password</label>
-		<input type="password" ng-model="vm.password">
-	</md-input-container>
-</div>
+	<div>
+		<md-input-container class="LoginForm-inputContainer">
+			<label>Password</label>
+			<input type="password" ng-model="vm.password">
+		</md-input-container>
+	</div>
 
-<md-button type="submit" class="LoginForm-submit md-primary md-raised">Login</md-button>
+	<md-button type="submit" class="LoginForm-submit md-primary md-raised">Login</md-button>
+</form>
