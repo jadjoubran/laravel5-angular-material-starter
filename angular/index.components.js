@@ -1,3 +1,3 @@
-//import {YourComponent} from './app/components/your/your.component';
+import {LoginFormComponent} from './app/components/login-form/login-form.component';
 
-//angular.module('app.components').component('yourComponent', YourComponent);
+angular.module('app.components').component('loginForm', LoginFormComponent);

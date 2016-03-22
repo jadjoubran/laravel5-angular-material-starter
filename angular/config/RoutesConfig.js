@@ -21,11 +21,20 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 			}
 		})
 		.state('app.landing', {
-			url: '/',
+            url: '/',
+            data: {},
+            views: {
+                'main@': {
+                    templateUrl: getView('landing')
+                }
+            }
+        })
+        .state('app.login', {
+			url: '/login',
 			data: {},
 			views: {
 				'main@': {
-					templateUrl: getView('landing')
+					templateUrl: getView('login')
 				}
 			}
 		});
