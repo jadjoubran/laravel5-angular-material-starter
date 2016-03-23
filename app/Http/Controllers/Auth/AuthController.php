@@ -12,6 +12,11 @@ class AuthController extends Controller
 {
     public function postLogin(Request $request)
     {
+        $this->validate($request, [
+            'email'    => 'required|email',
+            'password' => 'required|min:8',
+        ]);
+
         $credentials = $request->only('email', 'password');
 
         try {
@@ -36,9 +41,9 @@ class AuthController extends Controller
             'password'   => 'required|min:8',
         ]);
 
-        $user = new User;
-        $user->name = trim($request->name);
-        $user->email = trim(strtolower($request->email));
+        $user           = new User;
+        $user->name     = trim($request->name);
+        $user->email    = trim(strtolower($request->email));
         $user->password = bcrypt($request->password);
         $user->save();
 

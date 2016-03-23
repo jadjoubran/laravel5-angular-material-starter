@@ -1,8 +1,9 @@
 class LoginFormController {
-	constructor($auth) {
+	constructor($auth, ToastService) {
 		'ngInject';
 
 		this.$auth = $auth;
+		this.ToastService = ToastService;
 
 		this.email = '';
 		this.password = '';
@@ -16,11 +17,20 @@ class LoginFormController {
 
 		this.$auth.login(user)
 			.then((response) => {
-				//save token in localStorage
 				this.$auth.setToken(response.data);
 
 				//
-			});
+			})
+			.catch(this.failedLogin.bind(this));
+	}
+
+	failedLogin(response) {
+		if (response.status === 422) {
+			for (var error in response.data.errors) {
+				return this.ToastService.error(response.data.errors[error][0]);
+			}
+		}
+		this.ToastService.error(response.statusText);
 	}
 }
 
