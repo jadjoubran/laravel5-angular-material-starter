@@ -19,7 +19,7 @@ class LoginFormController {
 			.then((response) => {
 				this.$auth.setToken(response.data);
 
-				//
+				this.ToastService.show('Logged in successfully.');
 			})
 			.catch(this.failedLogin.bind(this));
 	}

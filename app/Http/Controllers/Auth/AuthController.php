@@ -33,7 +33,7 @@ class AuthController extends Controller
         return response()->success(compact('user', 'token'));
     }
 
-    public function postRegister()
+    public function postRegister(Request $request)
     {
         $this->validate($request, [
             'name'       => 'required|min:3',
