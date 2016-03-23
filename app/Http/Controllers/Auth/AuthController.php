@@ -41,9 +41,9 @@ class AuthController extends Controller
             'password'   => 'required|min:8',
         ]);
 
-        $user           = new User;
-        $user->name     = trim($request->name);
-        $user->email    = trim(strtolower($request->email));
+        $user = new User;
+        $user->name = trim($request->name);
+        $user->email = trim(strtolower($request->email));
         $user->password = bcrypt($request->password);
         $user->save();
 
