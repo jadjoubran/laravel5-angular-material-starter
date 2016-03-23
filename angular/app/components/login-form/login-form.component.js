@@ -16,7 +16,7 @@ class LoginFormController {
 
 		this.$auth.login(user)
 			.then((response) => {
-				this.$auth.setToken(response.data.data.token);
+				this.$auth.setToken(response.data);
 			});
 	}
 }
