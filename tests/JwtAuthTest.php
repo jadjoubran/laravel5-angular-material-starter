@@ -7,7 +7,7 @@ class JwtAuthTest extends TestCase
     use DatabaseTransactions;
 
     /**
-     * Test successful login with JWT
+     * Test successful login with JWT.
      */
     public function testSuccessfulLogin()
     {
@@ -26,7 +26,7 @@ class JwtAuthTest extends TestCase
     }
 
     /**
-     * Test failed login with JWT
+     * Test failed login with JWT.
      */
     public function testFailedLogin()
     {
@@ -42,7 +42,7 @@ class JwtAuthTest extends TestCase
     }
 
     /**
-     * Test successful registration
+     * Test successful registration.
      */
     public function testSuccessfulRegistration()
     {
