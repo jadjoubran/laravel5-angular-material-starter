@@ -16,7 +16,10 @@ class LoginFormController {
 
 		this.$auth.login(user)
 			.then((response) => {
+				//save token in localStorage
 				this.$auth.setToken(response.data);
+
+				//
 			});
 	}
 }
