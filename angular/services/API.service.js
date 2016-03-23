@@ -1,5 +1,5 @@
 export class APIService {
-	constructor(Restangular, ToastService, $localStorage) {
+	constructor(Restangular, ToastService, $window) {
 		'ngInject';
 		//content negotiation
 		var headers = {
@@ -19,8 +19,9 @@ export class APIService {
 					}
 				})
 				.addFullRequestInterceptor(function(element, operation, what, url, headers) {
-					if ($localStorage.jwt) {
-						headers.Authorization = 'Bearer ' + $localStorage.jwt;
+					var token = $window.localStorage.satellizer_token;
+					if (token) {
+						headers.Authorization = 'Bearer ' + token;
 					}
 				});
 		});
