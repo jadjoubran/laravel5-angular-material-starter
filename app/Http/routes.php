@@ -19,7 +19,6 @@ Route::group(['middleware' => ['web']], function () {
 
 });
 
-
 $api->group(['middleware' => ['api']], function ($api) {
 
     $api->controller('auth', 'Auth\AuthController');
