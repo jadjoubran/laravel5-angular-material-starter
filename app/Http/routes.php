@@ -2,41 +2,31 @@
 
 /*
 |--------------------------------------------------------------------------
-| Routes File
+| Application Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you will register all of the routes in an application.
+| Here is where you can register all of the routes for an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
 */
 
-Route::get('/', 'AngularController@serveApp');
-
-Route::get('/unsupported-browser', 'AngularController@unsupported');
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
-
 Route::group(['middleware' => ['web']], function () {
-    //
+
+    Route::get('/', 'AngularController@serveApp');
+
+    Route::get('/unsupported-browser', 'AngularController@unsupported');
+
 });
 
-$api->group([], function ($api) {
+
+$api->group(['middleware' => ['api']], function ($api) {
 
     $api->controller('auth', 'Auth\AuthController');
 
 });
 
-//protected routes with JWT (must be logged in to access any of these routes)
-$api->group(['middleware' => 'api.auth'], function ($api) {
+//protected routes with JWT (must be logged in)
+$api->group(['middleware' => ['api', 'api.auth']], function ($api) {
 
 });
