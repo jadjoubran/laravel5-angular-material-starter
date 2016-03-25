@@ -3,6 +3,7 @@ require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
 require('./tasks/ngHtml2Js.task.js');
 require('laravel-elixir-livereload');
+require('laravel-elixir-karma');
 
 /*
  |--------------------------------------------------------------------------
@@ -29,7 +30,22 @@ elixir(function(mix) {
     		'public/css/app.css'
     	], {
     		liveCSS: true
-    	});
+    	})
+        .karma({ jsDir:[
+            'bower_components/angular/angular.js',
+            'bower_components/angular-material/*.js',
+            'bower_components/angular-ui-router/**/*.js',
+            'bower_components/ngstorage/**/*.js',
+            'bower_components/satellizer/**/*.js',
+            'bower_components/angular-loading-bar/**/*.js',
+            'bower_components/restangular/**/*.js',
+            'node_modules/angular-mocks/angular-mocks.js',
+            'angular/**/*.js',
+            'tests/angular/**/*test.js'
+
+        ],
+        browsers :['PhantomJS']
+        });
 
     //uncomment this for gulp tdd
     //.phpUnit();
