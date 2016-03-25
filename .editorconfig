@@ -11,11 +11,6 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{*.js,html}]
-indent_size = 4
-indent_style = tab
-trim_trailing_whitespace = true
-
 
 [{package.json,bower.json,.jscs.json}]
 indent_style = space
