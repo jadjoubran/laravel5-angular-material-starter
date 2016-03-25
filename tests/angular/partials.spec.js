@@ -4,7 +4,7 @@ describe('Test footer partial', () => {
     beforeEach(inject(function($templateCache) {
         temp=$templateCache;
     }));
-
+    
     it('Should contain the footer partial', () => {
         let footer = temp.get('./views/app/pages/footer/footer.page.html');
         expect(footer).toBe('<md-content class="Page-Container Footer iOS-hack" layout-align="center center">\n' +

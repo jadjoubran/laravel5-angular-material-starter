@@ -31,18 +31,13 @@ elixir(function(mix) {
     	], {
     		liveCSS: true
     	})
-        .karma({ jsDir:[
-            'bower_components/angular/angular.js',
-            'bower_components/angular-material/*.js',
-            'bower_components/angular-ui-router/**/*.js',
-            'bower_components/ngstorage/**/*.js',
-            'bower_components/satellizer/**/*.js',
-            'bower_components/angular-loading-bar/**/*.js',
-            'bower_components/restangular/**/*.js',
-            'node_modules/angular-mocks/angular-mocks.js',
-            'angular/**/*.js',
-            'tests/angular/**/*test.js'
-
+        .karma({
+            jsDir:[
+                'public/js/vendor.js',
+                'node_modules/angular-mocks/angular-mocks.js',
+                'public/js/partials.js',
+                'public/js/app.js',
+                'tests/angular/**/*spec.js'
         ],
         browsers :['PhantomJS']
         });
