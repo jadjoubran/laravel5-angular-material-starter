@@ -9,14 +9,14 @@ module.exports = function(config) {
             'node_modules/ng-describe/dist/ng-describe.js',
             'public/js/partials.js',
             'public/js/app.js',
-            'tests/angular/**/*spec.js'
+            'tests/angular/**/*.spec.js'
         ],
         browsers: ['PhantomJS'],
 
         exclude: [],
 
         preprocessors: {
-            'tests/angular/**/*spec.js': ['browserify']
+            'tests/angular/**/*.spec.js': ['browserify']
         },
 
         browserify: {
