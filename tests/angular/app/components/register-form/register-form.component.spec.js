@@ -3,13 +3,14 @@ ngDescribe({
     modules: 'app',
     tests: function ($rootScope, $compile) {
         var element;
-        var scope;
+
         beforeEach(inject(function($rootScope, $compile){
-            scope = $rootScope.$new();
+            var scope  = $rootScope.$new();
             element = angular.element('<register-form></register-form>');
             element = $compile(element)(scope);
             scope.$apply();
         }));
+        
         it('Should have name, email, password inputs', () => {
             var inputs =element.find('input');
             expect(inputs.length).toBe(3);

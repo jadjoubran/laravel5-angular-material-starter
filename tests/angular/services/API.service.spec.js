@@ -19,19 +19,25 @@ ngDescribe({
                 return unproxiedPromise;
 
         }
+        
         describe('Api service will perform get',() =>{
+
             it('from /api/test' ,()=>{
                 spyOn(API, 'all').and.callThrough();
+
                 var mockToReturn = {
                     someProp: 'someValue',
                     someOtherProp: 'someOtherValue'
                 };
+
                 var someParameter = 'someParameter';
                 httpBackend.expectGET('/api/test') .respond(mockToReturn);
                 var newRes = API.all('test').get('');
                 httpBackend.flush();
                 newRes = getValue(newRes, q, scope);
+
                 expect(newRes.someProp).toEqual('someValue');
+
                 expect(newRes.someOtherProp).toEqual('someOtherValue');
             })
         });
