@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "699f902ef9d3e088a8eeedc27612d8be",
-    "content-hash": "671c062194387a4a58a4d442f1d781b7",
+    "hash": "77fa2b9820101869c2411633cbc02a8b",
+    "content-hash": "2831e91db1b40eac8df6e323036981b8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -163,7 +163,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dingo/api/zipball/3062aac74327d589e0fed92d276225ee7aaab377",
+                "url": "https://api.github.com/repos/dingo/api/zipball/b0491204a4f9c6ac305f344a0d30954175002364",
                 "reference": "3062aac74327d589e0fed92d276225ee7aaab377",
                 "shasum": ""
             },
@@ -823,16 +823,16 @@
         },
         {
             "name": "laravelangular/generators",
-            "version": "2.1.3",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jadjoubran/laravel-ng-artisan-generators.git",
-                "reference": "7790cf39e68969984f42385f1dc29d3818367de3"
+                "reference": "ecbedef6265e7b8964d981cfd57eaf751d610e23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/7790cf39e68969984f42385f1dc29d3818367de3",
-                "reference": "7790cf39e68969984f42385f1dc29d3818367de3",
+                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/ecbedef6265e7b8964d981cfd57eaf751d610e23",
+                "reference": "ecbedef6265e7b8964d981cfd57eaf751d610e23",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +859,7 @@
                 }
             ],
             "description": "Angular generators for Artisan",
-            "time": "2016-03-06 15:14:47"
+            "time": "2016-03-27 10:46:02"
         },
         {
             "name": "league/flysystem",
