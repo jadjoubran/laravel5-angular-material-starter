@@ -4,3 +4,4 @@ import {RegisterFormComponent} from './app/components/register-form/register-for
 angular.module('app.components')
 	.component('loginForm', LoginFormComponent)
 	.component('registerForm', RegisterFormComponent);
+

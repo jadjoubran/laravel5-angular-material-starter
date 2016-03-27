@@ -15,3 +15,4 @@ angular.module('app.components', [
 	'ui.router', 'ngMaterial', 'angular-loading-bar',
 	'restangular', 'ngStorage', 'satellizer'
 ]);
+

@@ -3,6 +3,7 @@ require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
 require('./tasks/ngHtml2Js.task.js');
 require('laravel-elixir-livereload');
+require('laravel-elixir-karma');
 
 /*
  |--------------------------------------------------------------------------
@@ -29,7 +30,17 @@ elixir(function(mix) {
     		'public/css/app.css'
     	], {
     		liveCSS: true
-    	});
+    	})
+        .karma({
+			jsDir:[
+				'public/js/vendor.js',
+				'node_modules/angular-mocks/angular-mocks.js',
+				'node_modules/ng-describe/dist/ng-describe.js',
+				'public/js/partials.js',
+				'public/js/app.js',
+				'tests/angular/**/*.spec.js'
+        	]
+        });
 
     //uncomment this for gulp tdd
     //.phpUnit();
