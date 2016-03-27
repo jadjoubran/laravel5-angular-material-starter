@@ -4,9 +4,6 @@ import './index.modules';
 //Config
 import './index.config';
 
-//Run
-import './index.routes';
-
 //Filters
 import './index.filters';
 
