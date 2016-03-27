@@ -7,4 +7,6 @@ export function ThemeConfig($mdThemingProvider) {
         })
 		.accentPalette('grey')
 		.warnPalette('red');
+
+    $mdThemingProvider.theme('warn');
 }
