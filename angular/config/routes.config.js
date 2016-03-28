@@ -1,7 +1,7 @@
 export function RoutesConfig($stateProvider, $urlRouterProvider) {
 	'ngInject';
 
-	var getView = function(viewName) {
+	var getView = (viewName) => {
 		return './views/app/pages/' + viewName + '/' + viewName + '.page.html';
 	};
 
@@ -31,7 +31,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.login', {
 			url: '/login',
-			data: {},
+			data: {},//{auth: true} would require JWT auth for this route
 			views: {
 				'main@': {
 					templateUrl: getView('login')
@@ -40,7 +40,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 		})
         .state('app.register', {
             url: '/register',
-            data: {},
+            data: {},//{auth: true} would require JWT auth for this route
             views: {
                 'main@': {
                     templateUrl: getView('register')

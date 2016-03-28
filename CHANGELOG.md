@@ -8,6 +8,7 @@
 - auto generate tests for components & services [#221](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/221)
 - update dialog template to .dialog.html [#224](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/224)
 - error toasts: register warn theme to avoid console warning [#225](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/225)
+- Sample JWT authenticated routes for angular [#223](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/223)
 
 ### 3.1.1
 - Fixed page views issue on fresh installs [#184](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/184)

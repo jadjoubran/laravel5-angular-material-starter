@@ -1,6 +1,9 @@
 //Modules
 import './index.modules';
 
+//Run
+import './index.run';
+
 //Config
 import './index.config';
 

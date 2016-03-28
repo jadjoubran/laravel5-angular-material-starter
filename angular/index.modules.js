@@ -1,4 +1,5 @@
 angular.module('app', [
+    'app.run',
 	'app.filters',
 	'app.services',
 	'app.components',
@@ -7,6 +8,7 @@ angular.module('app', [
 	'partialsModule'
 ]);
 
+angular.module('app.run', []);
 angular.module('app.routes', []);
 angular.module('app.filters', []);
 angular.module('app.services', []);
