@@ -1,7 +1,8 @@
 export function RoutesRun($rootScope, $state, $auth) {
     'ngInject';
 
-    $rootScope.$on("$stateChangeStart", function(event, toState) {
+
+    var deregisterationCallback =  $rootScope.$on("$stateChangeStart", function(event, toState) {
 
         if (toState.data && toState.data.auth) {
             /*Cancel going to the authenticated state and go back to landing*/
@@ -12,4 +13,5 @@ export function RoutesRun($rootScope, $state, $auth) {
         }
 
     });
+    $rootScope.$on('$destroy', deregisterationCallback)
 }
