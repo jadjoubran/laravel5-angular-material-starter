@@ -18,7 +18,7 @@ require('laravel-elixir-karma');
 
 elixir(function(mix) {
 
-    var livereloadPaths = [
+    var assets = [
             'public/js/vendor.js',
             'public/js/partials.js',
             'public/js/app.js',
@@ -39,7 +39,8 @@ elixir(function(mix) {
         .angular('./angular/')
         .ngHtml2Js('./angular/**/*.html')
         .less('./angular/**/*.less', 'public/css')
-        .livereload(livereloadPaths, {
+        .version(assets)
+        .livereload('public/build/rev-manifest.json', {
             liveCSS: true
         })
         .karma({
