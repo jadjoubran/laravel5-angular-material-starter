@@ -17,31 +17,32 @@ require('laravel-elixir-karma');
  */
 
 elixir(function(mix) {
-    mix
-    	.bower()
-    	.angular('./angular/')
-    	.ngHtml2Js('./angular/**/*.html')
-    	.less('./angular/**/*.less', 'public/css')
-    	.livereload([
-    		'public/js/vendor.js',
-    		'public/js/partials.js',
-    		'public/js/app.js',
-    		'public/css/vendor.css',
-    		'public/css/app.css'
-    	], {
-    		liveCSS: true
-    	})
-        .karma({
-			jsDir:[
-				'public/js/vendor.js',
-				'node_modules/angular-mocks/angular-mocks.js',
-				'node_modules/ng-describe/dist/ng-describe.js',
-				'public/js/partials.js',
-				'public/js/app.js',
-				'tests/angular/**/*.spec.js'
-        	]
-        });
 
-    //uncomment this for gulp tdd
-    //.phpUnit();
+    var livereloadPaths = [
+            'public/js/vendor.js',
+            'public/js/partials.js',
+            'public/js/app.js',
+            'public/css/vendor.css',
+            'public/css/app.css'
+        ],
+        karmaJsDir = [
+            'public/js/vendor.js',
+            'node_modules/angular-mocks/angular-mocks.js',
+            'node_modules/ng-describe/dist/ng-describe.js',
+            'public/js/partials.js',
+            'public/js/app.js',
+            'tests/angular/**/*.spec.js'
+        ];
+
+    mix
+        .bower()
+        .angular('./angular/')
+        .ngHtml2Js('./angular/**/*.html')
+        .less('./angular/**/*.less', 'public/css')
+        .livereload(livereloadPaths, {
+            liveCSS: true
+        })
+        .karma({
+            jsDir: karmaJsDir
+        });
 });
