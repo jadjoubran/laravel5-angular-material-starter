@@ -5,7 +5,7 @@ angular.module('app', [
 	'app.components',
 	'app.routes',
 	'app.config',
-	'partialsModule'
+	'app.partials'
 ]);
 
 angular.module('app.run', []);
