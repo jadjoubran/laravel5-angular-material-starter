@@ -8,7 +8,7 @@ export function RoutesRun($rootScope, $state, $auth) {
             /*Cancel going to the authenticated state and go back to landing*/
             if (!$auth.isAuthenticated()) {
                 event.preventDefault();
-                return $state.go('app.landing');
+                return $state.go('app.login');
             }
         }
 
