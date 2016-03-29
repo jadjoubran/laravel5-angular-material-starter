@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 elixir.extend('ngHtml2Js', function(src, output, options) {
 
     var defaultOptions = {
-        moduleName: 'partialsModule',
+        moduleName: 'app.partials',
         prefix: './views/'
     };
 
