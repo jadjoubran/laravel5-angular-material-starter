@@ -1,44 +1,58 @@
 export class DialogService {
-	constructor($mdDialog) {
-		'ngInject';
+    constructor($mdDialog) {
+        'ngInject';
 
-		this.$mdDialog = $mdDialog
-	}
+        this.$mdDialog = $mdDialog
+    }
 
-	fromTemplate(template, options) {
-		if (!template) {
-			return false;
-		}
+    fromTemplate(template, options) {
+        if (!template) {
+            return false;
+        }
 
-		if (!options) {
-			options = {};
-		}
+        if (!options) {
+            options = {};
+        }
 
-		options.templateUrl = './views/dialogs/' + template + '/' + template + 'dialog.html'
+        options.templateUrl = './views/dialogs/' + template + '/' + template + 'dialog.html'
 
-		return this.$mdDialog.show(options);
-	}
+        return this.$mdDialog.show(options);
+    }
 
-	hide() {
-		return this.$mdDialog.hide();
-	}
+    hide() {
+        return this.$mdDialog.hide();
+    }
 
-	alert(title, content) {
-		this.$mdDialog.show(
-			this.$mdDialog.alert()
-			.title(title)
-			.content(content)
-			.ok('Ok')
-		);
-	}
+    alert(title, content) {
+        var alert = this.$mdDialog.alert()
+            .title(title)
+            .content(content)
+            .ariaLabel(content)
+            .ok('Ok');
 
-	confirm(title, content) {
-		return this.$mdDialog.show(
-			this.$mdDialog.confirm()
-			.title(title)
-			.content(content)
-			.ok('Ok')
-			.cancel('Cancel')
-		);
-	}
+        this.$mdDialog.show(alert);
+    }
+
+    confirm(title, content) {
+        var confirm = this.$mdDialog.confirm()
+            .title(title)
+            .content(content)
+            .ariaLabel(content)
+            .ok('Ok')
+            .cancel('Cancel');
+
+        return this.$mdDialog.show(confirm);
+    }
+
+    prompt(title, content, placeholder) {
+        var prompt = this.$mdDialog.prompt()
+            .title(title)
+            .textContent(content)
+            .placeholder(placeholder)
+            .ariaLabel(placeholder)
+            .ok('Ok')
+            .cancel('Cancel');
+
+        return this.$mdDialog.show(prompt);
+    }
 }
