@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var mainBowerFiles = require('main-bower-files');
 var filter = require('gulp-filter');
 var notify = require('gulp-notify');
-var minify = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var concat_sm = require('gulp-concat-sourcemap');
 var concat = require('gulp-concat');
@@ -55,7 +55,7 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
 			.on('error', onError)
 			.pipe(filter('**/*.css'))
 			.pipe(concat(cssFile))
-			.pipe(gulpIf(config.production, minify()))
+			.pipe(gulpIf(config.production, cssnano({safe: true})))
 			.pipe(gulp.dest(cssOutputFolder || config.css.outputFolder))
 			.pipe(notify({
 				title: 'Laravel Elixir',
