@@ -7,7 +7,7 @@ php:
   - 7.0
   - hhvm
 
-sudo: false
+sudo: falseg
 
 services:
   - mysql
@@ -17,6 +17,7 @@ before_script:
   - export DB_DATABASE=laravel
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
+  - rm -f /home/travis/.npm/e2c9c17d-is-npm-lodash-3-10-1-package-tgz.lock
 
 install:
   - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter=dev-master --no-interaction --prefer-source
