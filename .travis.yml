@@ -7,7 +7,7 @@ php:
   - 7.0
   - hhvm
 
-sudo: true
+sudo: false
 
 services:
   - mysql
