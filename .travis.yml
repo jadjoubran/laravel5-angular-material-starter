@@ -12,14 +12,16 @@ sudo: false
 services:
   - mysql
 
+before_install:
+  - nvm install 5.1
+
 before_script:
   - mysql -e 'create database laravel;'
   - export DB_DATABASE=laravel
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
-  - rm -f /home/travis/.npm/e2c9c17d-is-npm-lodash-3-10-1-package-tgz.lock
 
 install:
   - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter=dev-master --no-interaction --prefer-source
 
-script: cd laravel5-angular-material-starter && npm install -g gulp bower && npm install && bower install && php artisan migrate --force && vendor/bin/phpunit
+script: cd laravel5-angular-material-starter && npm install -g gulp bower && npm install && bower install && php artisan migrate --force && gulp && vendor/bin/phpunit
