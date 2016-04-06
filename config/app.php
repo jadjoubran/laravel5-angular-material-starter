@@ -154,13 +154,14 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+
+        Dingo\Api\Provider\LaravelServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ResponseMacroServiceProvider::class,
 
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         LaravelAngular\Generators\LaravelServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
-        Dingo\Api\Provider\LaravelServiceProvider::class,
 
     ],
 
