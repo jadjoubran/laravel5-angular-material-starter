@@ -3,7 +3,7 @@
 ### 3.2.0 [Work in Progress]
 - Out of the box JWT authentication with Satellizer [#202](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/202)
 - Consistent indentation in editorconfig [#190](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/190)
-- Karma tests setup using ngDescribe thanks to [kujtimiihoxha](https://github.com/kujtimiihoxha) [#117](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/184)
+- Karma tests setup using ngDescribe thanks to [kujtimiihoxha](https://github.com/kujtimiihoxha) [#117](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/117)
 - consistent file naming for index.routes.js [#222](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/222)
 - auto generate tests for components & services [#221](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/221)
 - update dialog template to .dialog.html [#224](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/224)
