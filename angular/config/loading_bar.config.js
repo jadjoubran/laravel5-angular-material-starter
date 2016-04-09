@@ -1,4 +1,4 @@
-export function LoadingBar(cfpLoadingBarProvider) {
+export function LoadingBarConfig(cfpLoadingBarProvider) {
 	'ngInject';
 	cfpLoadingBarProvider.includeSpinner = false;
 }
