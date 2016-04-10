@@ -31,4 +31,7 @@ return [
                 'services'        => 'services',
             ],
       ],
+      'misc' => [
+            'auto_import' => true,
+      ],
 ];
