@@ -11,7 +11,7 @@ class RegisterFormController {
 	}
 
 	register() {
-		var user = {
+		let user = {
 			name: this.name,
 			email: this.email,
 			password: this.password
@@ -31,7 +31,7 @@ class RegisterFormController {
 
 	failedRegistration(response) {
 		if (response.status === 422) {
-			for (var error in response.data.errors) {
+			for (let error in response.data.errors) {
 				return this.ToastService.error(response.data.errors[error][0]);
 			}
 		}

@@ -24,7 +24,7 @@ export class DialogService {
     }
 
     alert(title, content) {
-        var alert = this.$mdDialog.alert()
+        let alert = this.$mdDialog.alert()
             .title(title)
             .content(content)
             .ariaLabel(content)
@@ -34,7 +34,7 @@ export class DialogService {
     }
 
     confirm(title, content) {
-        var confirm = this.$mdDialog.confirm()
+        let confirm = this.$mdDialog.confirm()
             .title(title)
             .content(content)
             .ariaLabel(content)
@@ -45,7 +45,7 @@ export class DialogService {
     }
 
     prompt(title, content, placeholder) {
-        var prompt = this.$mdDialog.prompt()
+        let prompt = this.$mdDialog.prompt()
             .title(title)
             .textContent(content)
             .placeholder(placeholder)

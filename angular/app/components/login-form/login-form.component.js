@@ -10,7 +10,7 @@ class LoginFormController {
 	}
 
 	login() {
-		var user = {
+		let user = {
 			email: this.email,
 			password: this.password
 		};
@@ -26,7 +26,7 @@ class LoginFormController {
 
 	failedLogin(response) {
 		if (response.status === 422) {
-			for (var error in response.data.errors) {
+			for (let error in response.data.errors) {
 				return this.ToastService.error(response.data.errors[error][0]);
 			}
 		}

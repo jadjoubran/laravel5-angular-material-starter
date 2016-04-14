@@ -1,7 +1,7 @@
 export function RoutesConfig($stateProvider, $urlRouterProvider) {
 	'ngInject';
 
-	var getView = (viewName) => {
+	let getView = (viewName) => {
 		return `./views/app/pages/${viewName}/${viewName}.page.html`;
 	};
 
@@ -10,6 +10,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('app', {
 			abstract: true,
+            data: {},//{auth: true} would require JWT auth
 			views: {
 				header: {
 					templateUrl: getView('header')
@@ -22,7 +23,6 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 		})
 		.state('app.landing', {
             url: '/',
-            data: {},
             views: {
                 'main@': {
                     templateUrl: getView('landing')
@@ -31,7 +31,6 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.login', {
 			url: '/login',
-			data: {},
 			views: {
 				'main@': {
 					templateUrl: getView('login')
@@ -40,7 +39,6 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 		})
         .state('app.register', {
             url: '/register',
-            data: {},
             views: {
                 'main@': {
                     templateUrl: getView('register')
@@ -49,10 +47,17 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.forgot_password', {
             url: '/forgot-password',
-            data: {},
             views: {
                 'main@': {
                     templateUrl: getView('forgot-password')
+                }
+            }
+        })
+        .state('app.reset_password', {
+            url: '/reset-password/:email/:code',
+            views: {
+                'main@': {
+                    templateUrl: getView('reset-password')
                 }
             }
         });
