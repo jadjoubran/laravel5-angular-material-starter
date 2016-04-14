@@ -22,7 +22,9 @@ Route::group(['middleware' => ['web']], function () {
 //public API routes
 $api->group(['middleware' => ['api']], function ($api) {
 
-    $api->controller('auth', 'Auth\AuthController');
+    $api->post('auth/login', 'Auth\AuthController@login');
+
+    $api->post('auth/register', 'Auth\AuthController@register');
 
 });
 

@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 
 class AuthController extends Controller
 {
-    public function postLogin(Request $request)
+    public function login(Request $request)
     {
         $this->validate($request, [
             'email'    => 'required|email',
@@ -33,7 +33,7 @@ class AuthController extends Controller
         return response()->success(compact('user', 'token'));
     }
 
-    public function postRegister(Request $request)
+    public function register(Request $request)
     {
         $this->validate($request, [
             'name'       => 'required|min:3',
