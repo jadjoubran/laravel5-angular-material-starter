@@ -12,11 +12,14 @@ export class APIService {
 				.setBaseUrl('/api/')
 				.setDefaultHeaders(headers)
 				.setErrorInterceptor(function(response) {
-					if (response.status === 422) {
+					if (response.status === 422 || response.status === 401) {
 						for (let error in response.data.errors) {
 							return ToastService.error(response.data.errors[error][0]);
 						}
 					}
+                    if (response.status === 500) {
+                      return ToastService.error(response.statusText)
+                    }
 				})
 				.addFullRequestInterceptor(function(element, operation, what, url, headers) {
 					let token = $window.localStorage.satellizer_token;
