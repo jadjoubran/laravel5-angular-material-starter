@@ -31,7 +31,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.login', {
 			url: '/login',
-			data: {},//{auth: true} would require JWT auth for this route
+			data: {},
 			views: {
 				'main@': {
 					templateUrl: getView('login')
@@ -40,10 +40,19 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 		})
         .state('app.register', {
             url: '/register',
-            data: {},//{auth: true} would require JWT auth for this route
+            data: {},
             views: {
                 'main@': {
                     templateUrl: getView('register')
+                }
+            }
+        })
+        .state('app.forgot_password', {
+            url: '/forgot-password',
+            data: {},
+            views: {
+                'main@': {
+                    templateUrl: getView('forgot-password')
                 }
             }
         });

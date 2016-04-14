@@ -19,13 +19,14 @@ Route::group(['middleware' => ['web']], function () {
 
 });
 
+//public API routes
 $api->group(['middleware' => ['api']], function ($api) {
 
     $api->controller('auth', 'Auth\AuthController');
 
 });
 
-//protected routes with JWT (must be logged in)
+//protected API routes with JWT (must be logged in)
 $api->group(['middleware' => ['api', 'api.auth']], function ($api) {
 
 });
