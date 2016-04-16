@@ -4,11 +4,13 @@ class RegisterFormController {
 
 		this.$auth = $auth;
 		this.ToastService = ToastService;
-
-		this.name = '';
-		this.email = '';
-		this.password = '';
 	}
+
+    $onInit(){
+        this.name = '';
+        this.email = '';
+        this.password = '';
+    }
 
 	register() {
 		let user = {

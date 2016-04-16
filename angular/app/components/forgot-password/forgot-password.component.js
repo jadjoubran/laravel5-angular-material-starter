@@ -5,7 +5,9 @@ class ForgotPasswordController {
         this.API = API;
         this.$state = $state;
         this.ToastService = ToastService;
+    }
 
+    $onInit(){
         this.email = '';
     }
 

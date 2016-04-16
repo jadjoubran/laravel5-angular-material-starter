@@ -5,7 +5,9 @@ class ResetPasswordController {
         this.API = API;
         this.$state = $state;
         this.ToastService = ToastService;
+    }
 
+    $onInit(){
         this.password = '';
         this.password_confirmation = '';
         this.isValidCode = false;
