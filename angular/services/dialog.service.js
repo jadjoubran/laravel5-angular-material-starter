@@ -14,7 +14,7 @@ export class DialogService {
             options = {};
         }
 
-        options.templateUrl = './views/dialogs/' + template + '/' + template + 'dialog.html'
+        options.templateUrl = './views/dialogs/' + template + '/' + template + '.dialog.html'
 
         return this.$mdDialog.show(options);
     }
