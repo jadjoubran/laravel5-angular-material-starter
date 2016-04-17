@@ -16,6 +16,9 @@ class PasswordResetController extends Controller
             'email' => 'required|email|exists:users,email',
         ]);
 
+        //invalidate old tokens
+        PasswordReset::whereEmail($request->email)->delete();
+
         $email = $request->email;
         $reset = PasswordReset::create([
             'email' => $email,
@@ -26,6 +29,7 @@ class PasswordResetController extends Controller
 
         Mail::send('auth.reset_link', compact('email', 'token'), function ($mail) use ($email) {
             $mail->to($email)
+            ->from('noreply@localhost')
             ->subject('Password reset link');
         });
 
@@ -61,6 +65,9 @@ class PasswordResetController extends Controller
         $user = User::whereEmail($request->email)->firstOrFail();
         $user->password = bcrypt($request->password);
         $user->save();
+
+        //delete pending resets
+        PasswordReset::whereEmail($request->email)->delete();
 
         return response()->success(true);
     }

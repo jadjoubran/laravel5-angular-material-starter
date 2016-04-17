@@ -23,10 +23,12 @@ class ResetPasswordController {
             email, token
         }).then(() => {
             this.isValidToken = true;
+        }, () => {
+            this.$state.go('app.landing');
         });
     }
 
-    reset() {
+    submit() {
         let data = {
             email: this.$state.params.email,
             token: this.$state.params.token,

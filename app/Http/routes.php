@@ -28,7 +28,7 @@ $api->group(['middleware' => ['api']], function ($api) {
 
     // Password Reset Routes...
     $api->post('auth/password/email', 'Auth\PasswordResetController@sendResetLinkEmail');
-    $api->post('auth/password/verify', 'Auth\PasswordResetController@verify');
+    $api->get('auth/password/verify', 'Auth\PasswordResetController@verify');
     $api->post('auth/password/reset', 'Auth\PasswordResetController@reset');
 
 });

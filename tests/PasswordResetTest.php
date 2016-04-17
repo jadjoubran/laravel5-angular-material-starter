@@ -25,18 +25,15 @@ class PasswordResetTest extends TestCase
     {
         $reset = factory(PasswordReset::class)->create();
 
-        $this->post('/api/auth/password/verify', [
-            'email' => $reset->email,
-            'token' => $reset->token,
-            ])
-            ->seeApiSuccess();
+        $this->get("/api/auth/password/verify?email={$reset->email}&token={$reset->token}")
+             ->seeApiSuccess();
     }
 
     public function testVerifyTokenUnsuccessfully()
     {
         $reset = factory(PasswordReset::class)->create();
 
-        $this->post('/api/auth/password/verify', [
+        $this->get('/api/auth/password/verify', [
             'email' => $reset->email,
             'token' => str_random(10),
             ])
@@ -45,7 +42,7 @@ class PasswordResetTest extends TestCase
 
     public function testResetPasswordWithTokenSuccessfully()
     {
-        $user = factory(App\User::class)->create();
+        $user  = factory(App\User::class)->create();
         $reset = factory(PasswordReset::class)->create([
             'email' => $user->email,
         ]);
@@ -66,7 +63,7 @@ class PasswordResetTest extends TestCase
 
     public function testResetPasswordWithTokenUnsuccessfully()
     {
-        $user = factory(App\User::class)->create();
+        $user  = factory(App\User::class)->create();
         $reset = factory(PasswordReset::class)->create([
             'email' => $user->email,
         ]);
