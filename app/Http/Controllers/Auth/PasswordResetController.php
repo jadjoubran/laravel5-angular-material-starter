@@ -19,7 +19,7 @@ class PasswordResetController extends Controller
         $email = $request->email;
         $reset = PasswordReset::create([
             'email' => $email,
-            'token' => str_random(10)
+            'token' => str_random(10),
         ]);
 
         $token = $reset->token;
@@ -43,9 +43,10 @@ class PasswordResetController extends Controller
         ->whereToken($request->token)
         ->first();
 
-        if (!$check) {
+        if (! $check) {
             return response()->error('Email does not exist', 422);
         }
+
         return response()->success(true);
     }
 

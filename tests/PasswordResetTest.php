@@ -43,7 +43,6 @@ class PasswordResetTest extends TestCase
             ->seeValidationError();
     }
 
-
     public function testResetPasswordWithTokenSuccessfully()
     {
         $user = factory(App\User::class)->create();
