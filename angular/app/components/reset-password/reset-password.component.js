@@ -10,31 +10,31 @@ class ResetPasswordController {
     $onInit(){
         this.password = '';
         this.password_confirmation = '';
-        this.isValidCode = false;
+        this.isValidToken = false;
 
-        this.validateCode();
+        this.verifyToken();
     }
 
-    validateCode() {
+    verifyToken() {
         let email = this.$state.params.email;
-        let code = this.$state.params.code;
+        let token = this.$state.params.token;
 
-        this.API.all('auth/reset').get('check', {
-            email, code
+        this.API.all('auth/password').get('verify', {
+            email, token
         }).then(() => {
-            this.isValidCode = true;
+            this.isValidToken = true;
         });
     }
 
     reset() {
         let data = {
             email: this.$state.params.email,
-            code: this.$state.params.code,
+            token: this.$state.params.token,
             password: this.password,
             password_confirmation: this.password_confirmation
         };
 
-        this.API.all('auth/reset').post(data).then(() => {
+        this.API.all('auth/password/reset').post(data).then(() => {
             this.ToastService.show('Password successfully changed');
             this.$state.go('app.login');
         });

@@ -54,7 +54,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
             }
         })
         .state('app.reset_password', {
-            url: '/reset-password/:email/:code',
+            url: '/reset-password/:email/:token',
             views: {
                 'main@': {
                     templateUrl: getView('reset-password')
