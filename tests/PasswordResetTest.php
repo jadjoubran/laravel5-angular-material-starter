@@ -42,7 +42,7 @@ class PasswordResetTest extends TestCase
 
     public function testResetPasswordWithTokenSuccessfully()
     {
-        $user  = factory(App\User::class)->create();
+        $user = factory(App\User::class)->create();
         $reset = factory(PasswordReset::class)->create([
             'email' => $user->email,
         ]);
@@ -63,7 +63,7 @@ class PasswordResetTest extends TestCase
 
     public function testResetPasswordWithTokenUnsuccessfully()
     {
-        $user  = factory(App\User::class)->create();
+        $user = factory(App\User::class)->create();
         $reset = factory(PasswordReset::class)->create([
             'email' => $user->email,
         ]);
