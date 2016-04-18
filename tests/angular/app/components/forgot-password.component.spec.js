@@ -1,11 +1,24 @@
 ngDescribe({
     name: 'Test forgot-password component',
     modules: 'app',
+    inject: '$http',
     element: '<forgot-password></forgot-password>',
-    tests: function (deps) {
+    http: {
+        post: {
+            '/api/auth/password/email': {
+                data: true
+            }
+        }
+    },
+    tests: function(deps) {
 
-        it('basic test', () => {
-            //
+        it('should request email verification successfully', () => {
+            var component = deps.element.isolateScope().vm;
+
+            component.email = 'email@localhost.com';
+            component.submit();
+
+            deps.http.flush();
         });
     }
 });

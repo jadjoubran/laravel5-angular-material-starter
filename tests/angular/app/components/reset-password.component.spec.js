@@ -1,11 +1,32 @@
 ngDescribe({
     name: 'Test reset-password component',
     modules: 'app',
+    inject: '$http',
     element: '<reset-password></reset-password>',
-    tests: function (deps) {
+    http: {
+        get: {
+            '/api/auth/password/verify': {
+                data: true
+            }
+        },
+        post: {
+            '/api/auth/password/reset' : {
+                data: true
+            }
+        }
+    },
+    tests: function(deps) {
 
-        it('basic test', () => {
+        it('should expect verification on init', () => {
             //
+        });
+
+        it('should submit password reset successfully', () => {
+            var component = deps.element.isolateScope().vm;
+
+            component.submit()
+
+            deps.http.flush();
         });
     }
 });
