@@ -5,14 +5,16 @@
 - Consistent indentation in editorconfig [#190](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/190)
 - Karma tests setup using ngDescribe thanks to [kujtimiihoxha](https://github.com/kujtimiihoxha) [#117](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/117)
 - consistent file naming for index.routes.js [#222](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/222)
-- auto generate tests for components & services [#221](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/221)
 - update dialog template to .dialog.html [#224](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/224)
 - error toasts: register warn theme to avoid console warning [#225](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/225)
 - Sample JWT authenticated routes for angular [#223](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/223)
-- Generators auto-import [#239](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/239)
-- added artisan ng:directive generators for specific cases [#257](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/257)
 - Out of the box JWT forgot password functionality [#129](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/129)
 - Error interceptors now shows other errors than status 422 [#251](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/251)
+- **Generators**:
+    - auto generate tests for components & services [#221](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/221)
+    - Generators auto-import [#239](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/239)
+    - added artisan ng:directive generators for specific cases [#257](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/257)
+
 
 ### 3.1.1
 - Fixed page views issue on fresh installs [#184](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/184)
