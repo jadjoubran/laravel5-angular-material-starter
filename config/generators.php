@@ -5,6 +5,7 @@ return [
             'root'            => 'angular',
             'page'            => 'app/pages',
             'components'      => 'app/components',
+            'directives'      => 'directives',
             'config'          => 'config',
             'dialogs'         => 'dialogs',
             'filters'         => 'filters',
@@ -15,6 +16,7 @@ return [
             'componentView'   => '.component.html',
             'dialog'          => '.dialog.js',
             'dialogView'      => '.dialog.html',
+            'directive'       => '.directive.js',
             'service'         => '.service.js',
             'config'          => '.config.js',
             'filter'          => '.filter.js',
@@ -24,10 +26,12 @@ return [
             'enable' => [
                 'components'      => true,
                 'services'        => true,
+                'directives'      => true,
             ],
             'source' => [
                 'root'            => 'tests/angular/',
                 'components'      => 'app/components',
+                'directives'      => 'directives',
                 'services'        => 'services',
             ],
       ],

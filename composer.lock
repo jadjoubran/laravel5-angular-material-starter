@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b68b711ccd8c8dc486ee61c3fa5310b",
-    "content-hash": "0ecc0b8c4ae7e2a6b6821c2ed61a4b35",
+    "hash": "8e5e5bcb00b2731a94a1c49601bf25c9",
+    "content-hash": "a32521b21c25b103ae04a260d13abf57",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -823,16 +823,16 @@
         },
         {
             "name": "laravelangular/generators",
-            "version": "2.3.3",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jadjoubran/laravel-ng-artisan-generators.git",
-                "reference": "90d430e370d483817f9e095d31182fef056e18b8"
+                "reference": "822970650453c85c28091588d388ad7dbc495f77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/90d430e370d483817f9e095d31182fef056e18b8",
-                "reference": "90d430e370d483817f9e095d31182fef056e18b8",
+                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/822970650453c85c28091588d388ad7dbc495f77",
+                "reference": "822970650453c85c28091588d388ad7dbc495f77",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +859,7 @@
                 }
             ],
             "description": "Angular generators for Artisan",
-            "time": "2016-04-16 15:52:22"
+            "time": "2016-04-20 15:43:18"
         },
         {
             "name": "league/flysystem",
