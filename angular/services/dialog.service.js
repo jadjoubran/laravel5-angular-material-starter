@@ -22,6 +22,10 @@ export class DialogService {
     hide() {
         return this.$mdDialog.hide();
     }
+    
+    cancel(){
+        return this.$mdDialog.cancel();
+    }
 
     alert(title, content) {
         let alert = this.$mdDialog.alert()
