@@ -19,8 +19,8 @@ export class DialogService {
         return this.$mdDialog.show(options);
     }
 
-    hide() {
-        return this.$mdDialog.hide();
+    hide(params) {
+        return this.$mdDialog.hide(params);
     }
     
     cancel(){
