@@ -17,7 +17,6 @@ export class ToastService {
         if (!options) {
             options = {};
         }
-        console.log(options)
 
         options.templateUrl = './views/toasts/' + template + '/' + template + '.toast.html';
 
