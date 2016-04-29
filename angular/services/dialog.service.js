@@ -19,16 +19,16 @@ export class DialogService {
         return this.$mdDialog.show(options);
     }
 
-    hide() {
-        return this.$mdDialog.hide();
+    hide(params) {
+        return this.$mdDialog.hide(params);
     }
-    
+
     cancel(){
         return this.$mdDialog.cancel();
     }
 
-    alert(title, content) {
-        let alert = this.$mdDialog.alert()
+    alert(title, content, params) {
+        let alert = this.$mdDialog.alert(params)
             .title(title)
             .content(content)
             .ariaLabel(content)
@@ -37,8 +37,8 @@ export class DialogService {
         this.$mdDialog.show(alert);
     }
 
-    confirm(title, content) {
-        let confirm = this.$mdDialog.confirm()
+    confirm(title, content, params) {
+        let confirm = this.$mdDialog.confirm(params)
             .title(title)
             .content(content)
             .ariaLabel(content)
@@ -48,8 +48,8 @@ export class DialogService {
         return this.$mdDialog.show(confirm);
     }
 
-    prompt(title, content, placeholder) {
-        let prompt = this.$mdDialog.prompt()
+    prompt(title, content, placeholder, params) {
+        let prompt = this.$mdDialog.prompt(params)
             .title(title)
             .textContent(content)
             .placeholder(placeholder)
