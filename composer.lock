@@ -823,16 +823,16 @@
         },
         {
             "name": "laravelangular/generators",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jadjoubran/laravel-ng-artisan-generators.git",
-                "reference": "41e435ae516f6ad0c4ba5de145e7c76afffe87c9"
+                "reference": "a9f36ffab86ba272a5d223eb17c21d401a087dee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/41e435ae516f6ad0c4ba5de145e7c76afffe87c9",
-                "reference": "41e435ae516f6ad0c4ba5de145e7c76afffe87c9",
+                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/a9f36ffab86ba272a5d223eb17c21d401a087dee",
+                "reference": "a9f36ffab86ba272a5d223eb17c21d401a087dee",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +859,7 @@
                 }
             ],
             "description": "Angular generators for Artisan",
-            "time": "2016-04-22 19:04:54"
+            "time": "2016-04-29 15:14:54"
         },
         {
             "name": "league/flysystem",
