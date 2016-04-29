@@ -36,9 +36,9 @@ elixir(function(mix) {
 
     mix
         .bower()
-        .angular('./angular/')
-        .ngHtml2Js('./angular/**/*.html')
-        .less('./angular/**/*.less', 'public/css')
+        .angular('angular/')
+        .ngHtml2Js('angular/**/*.html')
+        .less('angular/**/*.less', 'public/css')
         .version(assets)
         .livereload('public/build/rev-manifest.json', {
             liveCSS: true
