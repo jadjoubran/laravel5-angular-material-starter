@@ -43,9 +43,8 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
 			.pipe(gulp.dest(jsOutputFolder || Elixir.config.js.outputFolder))
 			.pipe(notify({
 				title: 'Laravel Elixir',
-				subtitle: 'Javascript Bower Files Imported!',
 				icon: __dirname + '/../node_modules/laravel-elixir/icons/laravel.png',
-				message: ' '
+				message: 'Javascript Bower Files Imported!'
 			}));
 	}).watch('bower.json');
 
@@ -59,9 +58,8 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
 			.pipe(gulp.dest(cssOutputFolder || config.css.outputFolder))
 			.pipe(notify({
 				title: 'Laravel Elixir',
-				subtitle: 'CSS Bower Files Imported!',
 				icon: __dirname + '/../node_modules/laravel-elixir/icons/laravel.png',
-				message: ' '
+				message: 'CSS Bower Files Imported!'
 			}));
 	}).watch('bower.json');
 
