@@ -12,11 +12,11 @@
   ],
   "dependencies": {
     "angular": "~1.5",
-    "angular-ui-router": "~0.2.15",
-    "ngstorage": "~0.3.3",
-    "angular-material": "~1.1",
+    "angular-ui-router": "~1.0.0-alpha.3",
+    "ngstorage": "~0.3.10",
+    "angular-material": "~1.0.8",
     "restangular": "~1.5.2",
-    "angular-loading-bar": "~0.8.0",
+    "angular-loading-bar": "~0.9.0",
     "satellizer": "^0.14.0"
   }
 }
