@@ -24,11 +24,5 @@
     <script src="{!! elixir('js/partials.js') !!}"></script>
     <script src="{!! elixir('js/app.js') !!}"></script>
 
-    {{--livereload--}}
-    @if ( env('APP_ENV') === 'local' )
-    <script type="text/javascript">
-        document.write('<script src="'+ location.protocol + '//' + (location.host.split(':')[0] || 'localhost') +':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
-    </script>
-    @endif
 </body>
 </html>
