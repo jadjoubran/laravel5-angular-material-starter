@@ -1,17 +1,17 @@
-export function RoutesRun($rootScope, $state, $auth) {
+export function RoutesRun($state, $transitions) {
     'ngInject';
 
+    let requiresAuthCriteria = {
+        to: ($state) => $state.data && $state.data.auth
+    };
 
-    let deregisterationCallback =  $rootScope.$on("$stateChangeStart", function(event, toState) {
-
-        if (toState.data && toState.data.auth) {
-            /*Cancel going to the authenticated state and go back to the login page*/
-            if (!$auth.isAuthenticated()) {
-                event.preventDefault();
-                return $state.go('app.login');
-            }
+    let redirectToLogin = ($auth) => {
+        'ngInject';
+        if (!$auth.isAuthenticated()) {
+            return $state.target('app.login', undefined, {location: false});
         }
+    };
 
-    });
-    $rootScope.$on('$destroy', deregisterationCallback)
+    $transitions.onBefore(requiresAuthCriteria, redirectToLogin, {priority:10});
+
 }
