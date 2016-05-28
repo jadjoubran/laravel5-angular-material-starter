@@ -86,13 +86,12 @@ class PasswordResetTest extends TestCase
 
         $mock->shouldReceive('send')
         ->withArgs([Mockery::on(function ($message) use ($checks) {
+            $this->assertEquals($checks['title'], $message->getSubject());
+            $this->assertSame([$checks['email'] => null], $message->getTo());
+            $this->assertContains($checks['content'], $message->getBody());
 
-                $this->assertEquals($checks['title'], $message->getSubject());
-                $this->assertSame([$checks['email'] => null], $message->getTo());
-                $this->assertContains($checks['content'], $message->getBody());
-
-                return true;
-            }), Mockery::any()])
+            return true;
+        }), Mockery::any()])
             ->once();
     }
 }
