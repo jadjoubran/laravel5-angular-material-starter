@@ -48,11 +48,11 @@ class RouteServiceProvider extends ServiceProvider
     public function map(Router $router, ApiRouter $apiRouter)
     {
         $apiRouter->version($this->version, function ($apiRouter) use ($router) {
-                   $apiRouter->group(['namespace' => $this->namespace], function ($api) use ($router) {
-                       $router->group(['namespace' => $this->namespace], function ($router) use ($api) {
-                           require app_path('Http/routes.php');
-                       });
-                   });
-               });
+            $apiRouter->group(['namespace' => $this->namespace], function ($api) use ($router) {
+                $router->group(['namespace' => $this->namespace], function ($router) use ($api) {
+                    require app_path('Http/routes.php');
+                });
+            });
+        });
     }
 }
