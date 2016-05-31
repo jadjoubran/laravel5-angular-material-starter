@@ -20,7 +20,7 @@ class JwtAuthTest extends TestCase
             'password' => 'test12345',
         ])
         ->seeApiSuccess()
-        ->seeJsonKeyValueString('email', $user->email)
+        ->seeJson(['email' => $user->email])
         ->seeJsonKey('token')
         ->dontSee('"password"');
     }
@@ -54,7 +54,7 @@ class JwtAuthTest extends TestCase
             'password' => 'test15125',
         ])
         ->seeApiSuccess()
-        ->seeJsonKeyValueString('email', $user->email)
+        ->seeJson(['email' => $user->email])
         ->seeJsonKey('token');
     }
 }

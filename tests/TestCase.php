@@ -131,14 +131,4 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $this->call($method, $uri, $parameters, $cookies, $files, $server, $content);
     }
-
-    public function seeJsonKeyValue($key, $value)
-    {
-        return $this->see('"'.$key.'":'.$value);
-    }
-
-    public function seeJsonKeyValueString($key, $value)
-    {
-        return $this->see('"'.$key.'":"'.$value.'"');
-    }
 }
