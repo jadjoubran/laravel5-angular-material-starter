@@ -11,7 +11,7 @@ return [
             'filters'         => 'filters',
             'services'        => 'services',
       ],
-      'prefix' => [
+      'suffix' => [
             'component'       => '.component.js',
             'componentView'   => '.component.html',
             'dialog'          => '.dialog.js',
