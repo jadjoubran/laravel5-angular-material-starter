@@ -10,6 +10,10 @@
 
     <title>Laravel Angular Material Starter</title>
 
+    <meta name="theme-color" content="#00768E">
+
+    <link rel="manifest" href="manifest.json">
+
     <!--[if lte IE 10]>
     <script type="text/javascript">document.location.href = '/unsupported-browser'</script>
     <![endif]-->
