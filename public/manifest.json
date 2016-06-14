@@ -5,10 +5,10 @@
   "name": "Laravel & Angular",
   "short_name": "laravel-angular.io",
   "display": "standalone",
-  "start_url": "?homescreen=1",
+  "start_url": "/?homescreen=1",
   "icons": [
     {
-      "src": "public/img/icon.png",
+      "src": "img/icon.png",
       "sizes": "198x198",
       "type": "image/png"
     }
