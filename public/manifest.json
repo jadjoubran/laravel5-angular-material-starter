@@ -1,16 +1,16 @@
 {
   "lang": "en-us",
   "background_color": "#FFFFFF",
-  "theme_color": "#00768E",
+  "theme_color": "#0690B7",
   "name": "Laravel & Angular",
   "short_name": "laravel-angular.io",
   "display": "standalone",
   "start_url": "?homescreen=1",
   "icons": [
     {
-      "src": "public/favicon.ico",
-      "sizes": "144x144",
-      "type": "image/ico"
+      "src": "public/img/icon.png",
+      "sizes": "198x198",
+      "type": "image/png"
     }
   ]
 }

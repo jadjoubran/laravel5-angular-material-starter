@@ -10,7 +10,7 @@
 
     <title>Laravel Angular Material Starter</title>
 
-    <meta name="theme-color" content="#00768E">
+    <meta name="theme-color" content="#0690B7">
 
     <link rel="manifest" href="manifest.json">
 
