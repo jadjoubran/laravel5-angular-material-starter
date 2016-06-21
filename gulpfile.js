@@ -2,6 +2,7 @@ var elixir = require('laravel-elixir');
 require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
 require('./tasks/ngHtml2Js.task.js');
+require('./tasks/serviceWorker.task.js');
 require('laravel-elixir-karma');
 
 /*
@@ -39,6 +40,7 @@ elixir(function(mix) {
         .ngHtml2Js('./angular/**/*.html')
         .less('./angular/**/*.less', 'public/css')
         .version(assets)
+        .serviceWorker()
         .browserSync({
             proxy: 'localhost:8000'
         })
