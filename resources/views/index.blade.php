@@ -16,9 +16,7 @@
 </head>
 <body>
 
-    <div ui-view="header"></div>
-    <div ui-view="main"></div>
-    <div ui-view="footer"></div>
+    <App></App>
 
     <script src="{!! elixir('js/vendor.js') !!}"></script>
     <script src="{!! elixir('js/partials.js') !!}"></script>
