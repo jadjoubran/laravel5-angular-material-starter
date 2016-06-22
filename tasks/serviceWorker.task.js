@@ -22,7 +22,14 @@ Elixir.extend('serviceWorker', function(jsOutputFile, jsOutputFolder, cssOutputF
             // rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
             ],
             stripPrefix: rootDir,
-            maximumFileSizeToCacheInBytes: 5242880
+            maximumFileSizeToCacheInBytes: 5242880,
+            runtimeCaching: [{
+              urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
+              handler: 'cacheFirst'
+            }, {
+              urlPattern: /^https:\/\/fonts\.gstatic\.com\//,
+              handler: 'cacheFirst'
+            }]
         });
     }).watch('bower.json');
 
