@@ -17,30 +17,37 @@
     <style>
         body{
             margin: 0;
-            background-color: #E9F0F3;
         }
-        #app-shell{
+        #app-shell-header{
             background-color: white;
+            height: 64px;
         }
-        #app-shell img{
+        #app-shell-header img{
             padding: 13px 0;
             margin-left: 5%;
+        }
+        #app-shell-content{
+            background-color: #00A4C6;
+            min-height: 600px;
         }
     </style>
 </head>
 <body>
 
     <app-shell>
-        <div id="app-shell">
+        <div id="app-shell-header">
             <img src="img/icons/logo.svg" width="171" height="41" >
         </div>
+        <div id="app-shell-content"></div>
     </app-shell>
+
+    <app-view></app-view>
 
 
     <noscript>
         <link rel="stylesheet" href="{!! elixir('css/vendor.css') !!}">
         <link rel="stylesheet" href="{!! elixir('css/app.css') !!}">
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
     </noscript>
 
     <script>
