@@ -29,8 +29,11 @@ Elixir.extend('swPrecache', function(jsOutputFile, jsOutputFolder, cssOutputFile
             }, {
               urlPattern: /^https:\/\/fonts\.gstatic\.com\//,
               handler: 'cacheFirst'
+            }, {
+              urlPattern: /^https:\/\/ghbtns\.com\//,
+              handler: 'cacheFirst'
             }]
         });
-    }).watch('bower.json');
+    }).watch('public/build/rev-manifest.json');
 
 });

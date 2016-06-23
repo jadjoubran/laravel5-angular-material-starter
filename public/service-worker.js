@@ -83,7 +83,7 @@ function parse(e){for(var t,r=[],n=0,o=0,a="";null!=(t=PATH_REGEXP.exec(e));){va
 
 
 /* eslint-disable quotes, comma-spacing */
-var PrecacheConfig = [["/build/css/final-880bfee88c.css","880bfee88ce4fc13924939c92d0b6845"],["/build/js/final-26668ed060.js","26668ed0604df4bb9813ed44fb08452f"],["/img/cover.jpg","24dd6482d9e2d982f18a1746ea3e4b7f"],["/img/icon.png","7803e776ea4a6133c2cc17479b904447"],["/img/icons/angular-generators.svg","8332f6acb165cbd6946eaa986af903bc"],["/img/icons/elixir.svg","cbee7e251a32f42752f376e641e6920d"],["/img/icons/folder-byfeature.svg","9c3875c4465ac6fd4618e6a03ddecd1d"],["/img/icons/json-webtoken.svg","cd52d5a3fd4a668a7e24ba3f549d1260"],["/img/icons/logo-grey.svg","1134d1377b245a40089571f94cca67c4"],["/img/icons/logo.svg","4417721be495be1a65ad7cd622ea958c"],["/img/icons/restful-api.svg","c49ec241782187c2f27e6469913901e2"]];
+var PrecacheConfig = [["/build/css/final-dd7f0a50a2.css","dd7f0a50a26382e9c96014aaf68910c8"],["/build/js/final-32846cf5a9.js","32846cf5a97cd18b1171dc0151e797e1"],["/img/cover.jpg","24dd6482d9e2d982f18a1746ea3e4b7f"],["/img/icon.png","7803e776ea4a6133c2cc17479b904447"],["/img/icons/angular-generators.svg","8332f6acb165cbd6946eaa986af903bc"],["/img/icons/elixir.svg","cbee7e251a32f42752f376e641e6920d"],["/img/icons/folder-byfeature.svg","9c3875c4465ac6fd4618e6a03ddecd1d"],["/img/icons/json-webtoken.svg","cd52d5a3fd4a668a7e24ba3f549d1260"],["/img/icons/logo-grey.svg","1134d1377b245a40089571f94cca67c4"],["/img/icons/logo.svg","4417721be495be1a65ad7cd622ea958c"],["/img/icons/restful-api.svg","c49ec241782187c2f27e6469913901e2"]];
 /* eslint-enable quotes, comma-spacing */
 var CacheNamePrefix = 'sw-precache-v1--' + (self.registration ? self.registration.scope : '') + '-';
 
@@ -312,6 +312,7 @@ self.addEventListener('fetch', function(event) {
 
 toolbox.router.get(/^https:\/\/fonts\.googleapis\.com\//, toolbox.cacheFirst, {});
 toolbox.router.get(/^https:\/\/fonts\.gstatic\.com\//, toolbox.cacheFirst, {});
+toolbox.router.get(/^https:\/\/ghbtns\.com\//, toolbox.cacheFirst, {});
 
 
 
