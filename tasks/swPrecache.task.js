@@ -9,15 +9,15 @@ var Elixir = require('laravel-elixir');
 
 var Task = Elixir.Task;
 
-Elixir.extend('serviceWorker', function(jsOutputFile, jsOutputFolder, cssOutputFile, cssOutputFolder) {
+Elixir.extend('swPrecache', function(jsOutputFile, jsOutputFolder, cssOutputFile, cssOutputFolder) {
 
     new Task('generateServiceWorker', function() {
         var rootDir = 'public';
 
         return swPrecache.write(path.join(rootDir, 'service-worker.js'), {
             staticFileGlobs: [
-            rootDir + '/build/js/*-*.js',
-            rootDir + '/build/css/*-*.css',
+            rootDir + '/build/js/final-*.js',
+            rootDir + '/build/css/final-*.css',
             rootDir + '/img/**/*.{png,jpg,gif,svg}'
             // rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
             ],
