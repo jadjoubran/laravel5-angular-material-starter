@@ -24,6 +24,9 @@ Elixir.extend('swPrecache', function(jsOutputFile, jsOutputFolder, cssOutputFile
             stripPrefix: rootDir,
             maximumFileSizeToCacheInBytes: 5242880,
             runtimeCaching: [{
+                urlPattern: /\//,
+                handler: 'cacheFirst'
+            }, {
               urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
               handler: 'cacheFirst'
             }, {
