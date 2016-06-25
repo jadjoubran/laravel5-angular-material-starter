@@ -17,7 +17,7 @@ class AppViewController {
         let toastService = this.ToastService;
 
         navigator.serviceWorker.addEventListener('controllerchange', () => {
-            navigator.serviceWorker.controller.addEventListener('statechange', function(e) {
+            navigator.serviceWorker.controller.addEventListener('statechange', function() {
                 if (this.state === 'activated') {
                     toastService.show('App is ready for offline use.');
                 }

@@ -16,6 +16,12 @@ Elixir.extend('swPrecache', function(jsOutputFile, jsOutputFolder, cssOutputFile
 
         return swPrecache.write(path.join(rootDir, 'service-worker.js'), {
             staticFileGlobs: [
+            rootDir + '/fonts/lato-bold-webfont.woff',
+            rootDir + '/fonts/lato-bold-webfont.woff2',
+            rootDir + '/fonts/lato-light-webfont.woff',
+            rootDir + '/fonts/lato-light-webfont.woff2',
+            rootDir + '/fonts/lato-regular-webfont.woff',
+            rootDir + '/fonts/lato-regular-webfont.woff2',
             rootDir + '/build/js/final-*.js',
             rootDir + '/build/css/final-*.css',
             rootDir + '/img/**/*.{png,jpg,gif,svg}'
