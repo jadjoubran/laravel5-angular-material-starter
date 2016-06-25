@@ -49,7 +49,7 @@
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
     </noscript>
 
-    <script>
+    <script async>
         var link = document.createElement("link");
         link.href = "{!! elixir('css/final.css') !!}";
         link.type = "text/css";
