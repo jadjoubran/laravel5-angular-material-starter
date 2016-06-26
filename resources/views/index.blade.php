@@ -36,20 +36,14 @@
 
     <app-shell>
         <div id="app-shell-header">
-            <img src="img/icons/logo.svg" width="171" height="41" >
+            <img src="img/icons/logo.svg" width="171" height="41">
         </div>
         <div id="app-shell-content"></div>
     </app-shell>
 
     <app-view></app-view>
 
-
-    <noscript>
-        <link rel="stylesheet" href="{!! elixir('css/final.css') !!}">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
-    </noscript>
-
-    <script async>
+    <script async defer>
         var link = document.createElement("link");
         link.href = "{!! elixir('css/final.css') !!}";
         link.type = "text/css";
@@ -61,11 +55,9 @@
 
     <script>
         if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/service-worker.js').then(function() {
-            console.log('ServiceWorker registration successful.');
-          }).catch(function(error) {
-            console.error('ServiceWorker registration failed: ', error);
-          });
+          navigator.serviceWorker
+          .register('/service-worker.js')
+          .then(function(){}).catch(function(){});
         }
     </script>
 
