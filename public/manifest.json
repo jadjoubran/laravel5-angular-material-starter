@@ -3,7 +3,7 @@
   "background_color": "#FFFFFF",
   "theme_color": "#0690B7",
   "name": "Laravel & Angular",
-  "short_name": "laravel-angular.io",
+  "short_name": "Laravel & Angular",
   "display": "standalone",
   "start_url": "/?homescreen=1",
   "icons": [
