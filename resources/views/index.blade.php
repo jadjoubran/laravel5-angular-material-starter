@@ -43,23 +43,22 @@
 
     <app-view></app-view>
 
+
     <script async defer>
+    (function(){
         var link = document.createElement("link");
         link.href = "{!! elixir('css/final.css') !!}";
         link.type = "text/css";
         link.rel = "stylesheet";
         document.body.appendChild(link);
+    })();
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
     </script>
 
     <script src="{!! elixir('js/final.js') !!}" async defer></script>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker
-          .register('/service-worker.js')
-          .then(function(){}).catch(function(){});
-        }
-    </script>
 
 </body>
 </html>

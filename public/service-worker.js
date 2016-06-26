@@ -83,7 +83,7 @@ function parse(e){for(var t,r=[],n=0,o=0,a="";null!=(t=PATH_REGEXP.exec(e));){va
 
 
 /* eslint-disable quotes, comma-spacing */
-var PrecacheConfig = [["/build/css/final-fb722fe16f.css","fb722fe16f707eb6421e680b264fc23b"],["/build/js/final-927e9ac802.js","927e9ac8027ae757b63bb8a5eda6ece9"],["/fonts/lato-bold-webfont.woff","cfccde6629bfb1034de36d6fa08ab9f4"],["/fonts/lato-bold-webfont.woff2","8aaf19a258d78391cc7d3cde66732c51"],["/fonts/lato-light-webfont.woff","e5e4b3f473d181b71511eb75f07a3ecd"],["/fonts/lato-light-webfont.woff2","eeb3756bfdce23dc6f56f66c0ff95527"],["/fonts/lato-regular-webfont.woff","846ec700685b22ae84c645991990793e"],["/fonts/lato-regular-webfont.woff2","73436c973bb773094a508fdd4bb78af9"],["/img/cover.jpg","24dd6482d9e2d982f18a1746ea3e4b7f"],["/img/icon.png","7803e776ea4a6133c2cc17479b904447"],["/img/icons/angular-generators.svg","8332f6acb165cbd6946eaa986af903bc"],["/img/icons/elixir.svg","cbee7e251a32f42752f376e641e6920d"],["/img/icons/folder-byfeature.svg","9c3875c4465ac6fd4618e6a03ddecd1d"],["/img/icons/json-webtoken.svg","cd52d5a3fd4a668a7e24ba3f549d1260"],["/img/icons/logo-grey.svg","1134d1377b245a40089571f94cca67c4"],["/img/icons/logo.svg","4417721be495be1a65ad7cd622ea958c"],["/img/icons/restful-api.svg","c49ec241782187c2f27e6469913901e2"]];
+var PrecacheConfig = [["/build/css/final-fb5c4ac3ac.css","fb5c4ac3acc56d4c5074e86267c7349e"],["/build/js/final-3089f74e18.js","3089f74e185ebbd3b57129f5e0a16eaf"],["/fonts/lato-bold-webfont.woff","cfccde6629bfb1034de36d6fa08ab9f4"],["/fonts/lato-bold-webfont.woff2","8aaf19a258d78391cc7d3cde66732c51"],["/fonts/lato-light-webfont.woff","e5e4b3f473d181b71511eb75f07a3ecd"],["/fonts/lato-light-webfont.woff2","eeb3756bfdce23dc6f56f66c0ff95527"],["/fonts/lato-regular-webfont.woff","846ec700685b22ae84c645991990793e"],["/fonts/lato-regular-webfont.woff2","73436c973bb773094a508fdd4bb78af9"],["/img/cover.jpg","663c637c9a53da423260d738aae89fd0"],["/img/icon.png","7803e776ea4a6133c2cc17479b904447"],["/img/icons/angular-generators.svg","8332f6acb165cbd6946eaa986af903bc"],["/img/icons/elixir.svg","cbee7e251a32f42752f376e641e6920d"],["/img/icons/folder-byfeature.svg","9c3875c4465ac6fd4618e6a03ddecd1d"],["/img/icons/json-webtoken.svg","cd52d5a3fd4a668a7e24ba3f549d1260"],["/img/icons/logo-grey.svg","1134d1377b245a40089571f94cca67c4"],["/img/icons/logo.svg","4417721be495be1a65ad7cd622ea958c"],["/img/icons/restful-api.svg","c49ec241782187c2f27e6469913901e2"]];
 /* eslint-enable quotes, comma-spacing */
 var CacheNamePrefix = 'sw-precache-v1--' + (self.registration ? self.registration.scope : '') + '-';
 
@@ -310,10 +310,10 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/\//, toolbox.cacheFirst, {});
-toolbox.router.get(/^https:\/\/fonts\.googleapis\.com\//, toolbox.cacheFirst, {});
-toolbox.router.get(/^https:\/\/fonts\.gstatic\.com\//, toolbox.cacheFirst, {});
-toolbox.router.get(/^https:\/\/ghbtns\.com\//, toolbox.cacheFirst, {});
+toolbox.router.get('/', toolbox.cacheFirst, {});
+toolbox.router.get('https://fonts.googleapis.com/', toolbox.cacheFirst, {});
+toolbox.router.get('https://fonts.gstatic.com/', toolbox.cacheFirst, {});
+toolbox.router.get('https://ghbtns.com/', toolbox.cacheFirst, {});
 
 
 
