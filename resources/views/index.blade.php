@@ -14,23 +14,7 @@
     <script type="text/javascript">document.location.href = '/unsupported-browser'</script>
     <![endif]-->
 
-    <style>
-        body{
-            margin: 0;
-        }
-        #app-shell-header{
-            background-color: white;
-            height: 64px;
-        }
-        #app-shell-header img{
-            padding: 13px 0;
-            margin-left: 5%;
-        }
-        #app-shell-content{
-            background-color: #00A4C6;
-            min-height: 600px;
-        }
-    </style>
+    <style><?php require("../angular/critical.css") ?></style>
 </head>
 <body>
 
