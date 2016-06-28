@@ -3,6 +3,7 @@ require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
 require('./tasks/ngHtml2Js.task.js');
 require('./tasks/swPrecache.task.js');
+require('./tasks/concatScripts.task.js');
 require('laravel-elixir-karma');
 
 /*
@@ -22,6 +23,12 @@ elixir(function(mix) {
             'public/js/final.js',
             'public/css/final.css'
         ],
+        scripts = [
+            './public/js/vendor.js', './public/js/partials.js', './public/js/app.js'
+        ],
+        styles = [
+            './public/css/vendor.css', './public/css/app.css'
+        ],
         karmaJsDir = [
             'public/js/vendor.js',
             'node_modules/angular-mocks/angular-mocks.js',
@@ -35,9 +42,9 @@ elixir(function(mix) {
         .bower()
         .angular('./angular/')
         .ngHtml2Js('./angular/**/*.html')
-        .scripts(['./public/js/vendor.js', './public/js/partials.js', './public/js/app.js'], 'public/js/final.js')
+        .concatScripts(scripts, 'final.js')
         .less('./angular/**/*.less', 'public/css')
-        .styles(['./public/css/vendor.css', './public/css/app.css'], './public/css/final.css')
+        .styles(styles, './public/css/final.css')
         .version(assets)
         .swPrecache()
         .browserSync({

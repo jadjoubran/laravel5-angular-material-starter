@@ -2,7 +2,6 @@
  *copyrights to https://github.com/HRcc/laravel-elixir-angular
  */
 var gulp = require('gulp');
-var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var eslint = require('gulp-eslint');
 var uglify = require('gulp-uglify');

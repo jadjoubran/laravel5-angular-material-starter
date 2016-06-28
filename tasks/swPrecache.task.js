@@ -1,10 +1,9 @@
-var gulp = require('gulp');
 var path = require('path');
 var swPrecache = require('sw-precache');
 
 var Elixir = require('laravel-elixir');
 
-var preCacheConfig = require('./precache-config.json');
+var preCacheConfig = require('./../precache-config.json');
 
 var Task = Elixir.Task;
 
