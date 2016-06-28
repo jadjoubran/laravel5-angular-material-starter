@@ -8,26 +8,35 @@ class AppViewController {
     }
 
     $onInit() {
-        this.showReadyForOfflineUse();
+        this.registerServiceWorker();
         this.checkForNewerVersions();
     }
 
-    showReadyForOfflineUse() {
-        //cannot use arrow function
-        let toastService = this.ToastService;
+    registerServiceWorker() {
+        if (!('serviceWorker' in navigator)) {
+            return false;
+        }
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(this.handleRegistration.bind(this));
+    }
 
-        navigator.serviceWorker.addEventListener('controllerchange', () => {
-            navigator.serviceWorker.controller.addEventListener('statechange', function() {
-                if (this.state === 'activated') {
-                    toastService.show('App is ready for offline use.');
+    handleRegistration(registration) {
+        registration.onupdatefound = () => {
+            const installingWorker = registration.installing;
+            installingWorker.onstatechange = () => {
+                if (installingWorker.state === 'installed') {
+                    if (!navigator.serviceWorker.controller) {
+                        this.ToastService.show('App is ready for offline use.');
+                    }
                 }
-            });
-        });
+            }
+        }
     }
 
     checkForNewerVersions() {
         if (navigator.serviceWorker && navigator.serviceWorker.controller) {
             navigator.serviceWorker.controller.onstatechange = (e) => {
+
                 if (e.target.state === 'redundant') {
                     let toast = this.$mdToast.simple()
                         .content('A newer version of this site is available.')

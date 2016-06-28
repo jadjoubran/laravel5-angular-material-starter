@@ -36,10 +36,6 @@
         link.rel = "stylesheet";
         document.body.appendChild(link);
     })();
-
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js');
-    }
     </script>
 
     <script src="{!! elixir('js/final.js') !!}" async defer></script>
