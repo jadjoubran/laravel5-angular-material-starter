@@ -2,6 +2,7 @@
   "private": true,
   "devDependencies": {
     "angular-mocks": "^1.5.2",
+    "gulp-sass": "^2.3.2",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-babel-preprocessor": "~4.0.0",
