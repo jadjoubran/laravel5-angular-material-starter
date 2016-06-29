@@ -2,23 +2,23 @@
 
 .Footer{
     text-align: center;
-    background-color: @background;
-    border-top: 1px solid @border;
+    background-color: $background;
+    border-top: 1px solid $border;
     padding-top: 40px;
     padding-bottom: 40px;
-    color: @grey;
+    color: $grey;
     font-weight: 300;
 }
 
 .Footer-text{
     padding-top: 10px;
     opacity: 0.8;
-    color: @grey;
+    color: $grey;
 }
 
 .Footer-link{
     text-decoration: none;
-    color: @grey !important;
+    color: $grey !important;
     font-weight: 400;
 }
 
