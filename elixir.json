@@ -4,7 +4,7 @@
     },
     "css": {
         "outputFolder": "public/css",
-        "less": {
+        "sass": {
             "folder": "../../angular/"
         }
     }
