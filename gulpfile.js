@@ -37,7 +37,7 @@ elixir(function(mix) {
         .bower()
         .angular('./angular/')
         .ngHtml2Js('./angular/**/*.html')
-        .less('./angular/**/*.less', 'public/css')
+        .sass('./angular/**/*.scss', 'public/css')
         .version(assets)
         .browserSync({
             proxy: 'localhost:8000'
