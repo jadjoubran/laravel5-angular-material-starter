@@ -14,6 +14,7 @@
     "ng-describe": "^1.8.0",
     "phantomjs-prebuilt": "^2.1.6",
     "stringify": "^3.1.0",
+    "sw-precache": "^3.2.0",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.0.0"
   },
@@ -44,6 +45,7 @@
     "gulp-util": "^3.0.3",
     "laravel-elixir": "^5.0.0",
     "main-bower-files": "^2.1.0",
+    "sw-toolbox": "^3.2.1",
     "underscore": "^1.8.3",
     "webpack": "^1.12.11",
     "webpack-dev-server": "^1.14.1",

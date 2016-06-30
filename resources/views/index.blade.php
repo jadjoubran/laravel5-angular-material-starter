@@ -4,25 +4,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="{!! elixir('css/vendor.css') !!}">
-    <link rel="stylesheet" href="{!! elixir('css/app.css') !!}">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-
     <title>Laravel Angular Material Starter</title>
+
+    <meta name="theme-color" content="#0690B7">
+
+    <link rel="manifest" href="manifest.json">
 
     <!--[if lte IE 10]>
     <script type="text/javascript">document.location.href = '/unsupported-browser'</script>
     <![endif]-->
+
+    <style><?php require("../angular/critical.css") ?></style>
 </head>
 <body>
 
-    <div ui-view="header"></div>
-    <div ui-view="main"></div>
-    <div ui-view="footer"></div>
+    <app-shell>
+        <div id="app-shell-header">
+            <img src="img/icons/logo.svg" width="171" height="41">
+        </div>
+        <div id="app-shell-content"></div>
+    </app-shell>
 
-    <script src="{!! elixir('js/vendor.js') !!}"></script>
-    <script src="{!! elixir('js/partials.js') !!}"></script>
-    <script src="{!! elixir('js/app.js') !!}"></script>
+    <app-view></app-view>
+
+
+    <script async defer>
+    (function(){
+        var link = document.createElement("link");
+        link.href = "{!! elixir('css/final.css') !!}";
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        document.body.appendChild(link);
+    })();
+    </script>
+
+    <script src="{!! elixir('js/final.js') !!}" async defer></script>
 
 </body>
 </html>

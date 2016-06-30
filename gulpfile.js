@@ -2,6 +2,8 @@ var elixir = require('laravel-elixir');
 require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
 require('./tasks/ngHtml2Js.task.js');
+require('./tasks/swPrecache.task.js');
+require('./tasks/concatScripts.task.js');
 require('laravel-elixir-karma');
 
 /*
@@ -18,11 +20,14 @@ require('laravel-elixir-karma');
 elixir(function(mix) {
 
     var assets = [
-            'public/js/vendor.js',
-            'public/js/partials.js',
-            'public/js/app.js',
-            'public/css/vendor.css',
-            'public/css/app.css'
+            'public/js/final.js',
+            'public/css/final.css'
+        ],
+        scripts = [
+            './public/js/vendor.js', './public/js/partials.js', './public/js/app.js'
+        ],
+        styles = [
+            './public/css/vendor.css', './public/css/app.css'
         ],
         karmaJsDir = [
             'public/js/vendor.js',
@@ -37,8 +42,11 @@ elixir(function(mix) {
         .bower()
         .angular('./angular/')
         .ngHtml2Js('./angular/**/*.html')
+        .concatScripts(scripts, 'final.js')
         .sass('./angular/**/*.scss', 'public/css')
+        .styles(styles, './public/css/final.css')
         .version(assets)
+        .swPrecache()
         .browserSync({
             proxy: 'localhost:8000'
         })
