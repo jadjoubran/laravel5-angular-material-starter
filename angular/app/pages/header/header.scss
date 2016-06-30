@@ -1,4 +1,4 @@
-@import "./angular/material/project";
+@import "../../../material/project";
 
 .DemoHeader {
     height: 64px;
@@ -22,7 +22,7 @@
 
 .DemoHeader-link{
     text-decoration: none;
-    color: @black !important;
+    color: $black !important;
     padding: 0 20px;
     display: inline-block;
     transition: 250ms background-color;
@@ -30,7 +30,7 @@
 }
 
 .DemoHeader-link:hover{
-    background-color: @background;
+    background-color: $background;
 }
 
 .DemoHeader-github{

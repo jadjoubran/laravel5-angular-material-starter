@@ -1,7 +1,7 @@
-@import "./angular/material/project";
+@import "../../../material/project";
 
 body{
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 .Landing{
@@ -9,10 +9,8 @@ body{
 }
 
 .Landing-cover{
-    background-image: url('/img/cover.jpg');
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background: url('/img/cover.jpg') fixed center;
     width: 100%;
     height: 700px;
 }
@@ -42,9 +40,9 @@ body{
 .Landing-getStarted{
     padding: 12px 30px;
     font-weight: bold;
-    color: @black !important;
+    color: $black !important;
     border-radius: 4px;
-    text-transform: box-shadow 250ms;
+    transition: box-shadow 250ms;
 }
 
 .Landing-getStarted:hover{
@@ -59,7 +57,7 @@ body{
 
 .Landing-ampersand{
     font-size: 50px;
-    color: @brand;
+    color: $brand;
     position: absolute;
     top: 70px;
     left: 0;
@@ -69,15 +67,15 @@ body{
 }
 
 .Landing-angular{
-    background-color: @background;
-    border-left: 1px solid @border;
+    background-color: $background;
+    border-left: 1px solid $border;
 }
 
 .Landing-laravel,
 .Landing-angular{
     text-align: center;
-    color: @navy;
-    border-bottom: 1px solid @border;
+    color: $navy;
+    border-bottom: 1px solid $border;
 }
 
 .Landing-laravelAngular-title{
@@ -85,11 +83,11 @@ body{
     margin-bottom: 15px;
     font-weight: 300;
     letter-spacing: -1px;
-    color: @navy;
+    color: $navy;
 }
 
 .Landing-laravelAngular-subtitle{
-    color: @black;
+    color: $black;
     padding-left: 30px;
     padding-right: 30px;
     font-weight: 300;
@@ -98,7 +96,7 @@ body{
 .DemoCode{
     font-family: "Lucida Console", Monaco, monospace;
     overflow: auto !important;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     line-height: 1.428571429;
     color: #333333;
     word-break: break-all;
@@ -109,7 +107,6 @@ body{
     width: 80%;
     margin: 30px auto 100px;
     text-align: left;
-    padding-left: 20px;
     font-size: 14px;
 }
 
@@ -118,11 +115,11 @@ body{
 }
 
 .DemoCode-comment{
-    color: @grey;
+    color: $grey;
 }
 
 .DemoCode-operator{
-    color: @grey;
+    color: $grey;
 }
 
 .DemoCode-string{
@@ -142,13 +139,13 @@ body{
     font-weight: 300;
     letter-spacing: -1px;
     margin-bottom: 15px;
-    color: @navy;
+    color: $navy;
 }
 
 .Landing-featuresMainDescription{
     width: 70%;
     margin: 0 auto 30px;
-    color: @black;
+    color: $black;
     font-weight: 300;
 }
 
@@ -164,7 +161,7 @@ body{
 }
 
 .Landing-featuresTitle{
-    color: @navy;
+    color: $navy;
     letter-spacing: -1px;
     margin-top: 40px;
 }
@@ -174,11 +171,11 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     font-weight: 300;
-    color: @black;
+    color: $black;
 }
 
 .Landing-featuresEntry--restful{
-    background-color: @brand;
+    background-color: $brand;
 }
 
 .Landing-featuresEntry--jwt{
