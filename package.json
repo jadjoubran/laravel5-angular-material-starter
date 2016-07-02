@@ -44,7 +44,7 @@
     "gulp-ng-annotate": "^1",
     "gulp-ng-html2js": "^0.2.0",
     "gulp-notify": "^2.0.0",
-    "laravel-elixir": "^4.2.1",
+    "laravel-elixir": "^5.0.0",
     "laravel-elixir-livereload": "^1.1.1",
     "main-bower-files": "^2.1.0",
     "underscore": "^1.8.3"

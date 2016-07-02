@@ -21,7 +21,7 @@ before_script:
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
 
-install:
-  - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter=dev-master --no-interaction --prefer-source
+#install:
+#  - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter=dev-master --no-interaction --prefer-source
 
-script: cd laravel5-angular-material-starter && npm install -g gulp bower && npm install && bower install && php artisan migrate --force && gulp && vendor/bin/phpunit
+script: npm install -g gulp bower && npm install && bower install && php artisan migrate --force && gulp && vendor/bin/phpunit
