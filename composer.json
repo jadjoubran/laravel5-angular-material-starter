@@ -36,7 +36,7 @@
         "pre-install-cmd": [
             "php -r \"copy('.env.example', '.env');\""
         ],
-        "post-create-project-cmd": [
+        "post-install-cmd": [
            "php -r \"unlink('code_of_conduct.md');\"",
            "php -r \"unlink('CHANGELOG.md');\"",
            "php -r \"unlink('.codeclimate.yml');\"",
