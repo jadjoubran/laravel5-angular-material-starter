@@ -18,6 +18,6 @@ Elixir.extend('swPrecache', function() {
 
         return swPrecache.write(path.join('public', 'service-worker.js'), preCacheConfig);
 
-    }).watch('public/build/rev-manifest.json');
+    }).watch(['public/build/rev-manifest.json', 'precache-config.json']);
 
 });
