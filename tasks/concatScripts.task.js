@@ -7,7 +7,7 @@ var Task = Elixir.Task;
 
 Elixir.extend('concatScripts', function(scripts, dest) {
 
-    new Task('concatScripts', function() {
+    new Task('concat-scripts', function() {
 
     return gulp.src(scripts)
     .pipe(concat(dest))

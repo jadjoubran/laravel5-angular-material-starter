@@ -7,7 +7,7 @@ var Task = Elixir.Task;
 
 Elixir.extend('swPrecache', function() {
 
-    new Task('generateServiceWorker', function() {
+    new Task('generate-service-worker', function() {
 
         /*
           always read the latest config. Allows changing
