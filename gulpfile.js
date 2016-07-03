@@ -49,8 +49,8 @@ elixir(function(mix) {
         .swPrecache()
         .browserSync({
             proxy: 'localhost:8000'
-        })
-        .karma({
-            jsDir: karmaJsDir
         });
+
+        //enable front-end tests by uncommenting the below line
+        // .karma({jsDir: karmaJsDir});
 });
