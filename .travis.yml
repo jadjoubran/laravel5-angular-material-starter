@@ -22,6 +22,7 @@ before_script:
   - export DB_PASSWORD=
 
 install:
-  - composer install && npm install -g gulp bower && npm install && bower install && php artisan migrate --force && gulp
+  - composer install && npm install -g gulp bower && npm install && bower install
 
-script:  vendor/bin/phpunit
+script:  
+  - php artisan migrate --force && gulp && vendor/bin/phpunit
