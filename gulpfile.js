@@ -1,9 +1,10 @@
-var elixir = require('laravel-elixir');
+var elixir     = require('laravel-elixir');
+
+require('./tasks/concatScripts.task.js');
+require('./tasks/swPrecache.task.js');
+require('./tasks/ngHtml2Js.task.js');
 require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
-require('./tasks/ngHtml2Js.task.js');
-require('./tasks/swPrecache.task.js');
-require('./tasks/concatScripts.task.js');
 require('laravel-elixir-karma');
 
 /*
