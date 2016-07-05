@@ -25,7 +25,7 @@ elixir.extend('ngHtml2Js', function(src, output, options) {
         .src(src || ['**/*.{htm,html}'], config.get('assets.js.folder'))
         .output(output || Elixir.config.js.outputFolder, 'partials.js');
 
-    new elixir.Task('ngHtml2Js', function() {
+    new elixir.Task('ng-html-js', function() {
 
         return gulp.src(paths.src.path)
             .pipe(gulpIf(elixir.config.production, minifyHtml({
