@@ -29,7 +29,7 @@
     <app-view></app-view>
 
 
-    <script async defer>
+    <script>
     (function(){
         var link = document.createElement("link");
         link.href = "{!! elixir('css/final.css') !!}";

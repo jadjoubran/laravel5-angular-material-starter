@@ -48,10 +48,7 @@ elixir(function(mix) {
         .sass('./angular/critical.scss', 'public/css/critical.css')
         .styles(styles, './public/css/final.css')
         .version(assets)
-        .swPrecache()
-        .browserSync({
-            proxy: 'localhost:8000'
-        });
+        .swPrecache();
 
         //enable front-end tests by uncommenting the below line
         // .karma({jsDir: karmaJsDir});
