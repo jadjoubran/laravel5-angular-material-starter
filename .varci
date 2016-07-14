@@ -1,0 +1,8 @@
+-ruleset:   
+ -  tag_support:    
+ -    name: "Label issues as support"   
+ -    events: [ issues ]    
+ -    label: support    
+ -    when:   
+ -      - body contains "[x] support" or body contains "[ x] support" or body contains "[x ] support"   
+ -      - action = "opened"
