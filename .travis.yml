@@ -16,10 +16,13 @@ before_install:
   - nvm install 5.1
 
 before_script:
+  - cp .env.example .env
   - mysql -e 'create database laravel;'
   - export DB_DATABASE=laravel
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
+  - php artisan key:generate
+  - php artisan jwt:generate
 
 install:
   - composer install && npm install -g gulp bower && npm install && bower install
