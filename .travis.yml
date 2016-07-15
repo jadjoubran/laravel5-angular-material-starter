@@ -20,6 +20,8 @@ before_script:
   - export DB_DATABASE=laravel
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
+  - php artisan key:generate
+  - php artisan jwt:generate
 
 install:
   - composer install && npm install -g gulp bower && npm install && bower install
