@@ -40,7 +40,9 @@
            "php -r \"unlink('code_of_conduct.md');\"",
            "php -r \"unlink('CHANGELOG.md');\"",
            "php -r \"unlink('.codeclimate.yml');\"",
-           "php -r \"unlink('.travis.yml');\""
+           "php -r \"unlink('.travis.yml');\"",
+           "php artisan key:generate",
+           "php artisan jwt:generate"
         ],
         "post-install-cmd": [
            "php artisan clear-compiled",
