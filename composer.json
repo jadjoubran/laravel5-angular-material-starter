@@ -9,7 +9,7 @@
         "laravel/framework": "5.2.*",
         "tymon/jwt-auth": "0.5.*",
         "barryvdh/laravel-cors": "0.7.x",
-        "laravelangular/generators": "2.6.x",
+        "laravelangular/generators": "2.7.x",
         "dingo/api": "1.0.x@dev"
     },
     "require-dev": {
