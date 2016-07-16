@@ -16,12 +16,16 @@ before_install:
   - nvm install 5.1
 
 before_script:
+  - cp .env.example .env
   - mysql -e 'create database laravel;'
   - export DB_DATABASE=laravel
   - export DB_USERNAME=travis
   - export DB_PASSWORD=
+  - php artisan key:generate
+  - php artisan jwt:generate
 
 install:
-  - travis_retry composer create-project jadjoubran/laravel5-angular-material-starter=dev-master --no-interaction --prefer-source
+  - composer install && npm install -g gulp bower && npm install && bower install
 
-script: cd laravel5-angular-material-starter && npm install -g gulp bower && npm install && bower install && php artisan migrate --force && gulp && vendor/bin/phpunit
+script:  
+  - php artisan migrate --force && gulp && vendor/bin/phpunit
