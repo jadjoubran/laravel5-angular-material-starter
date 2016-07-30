@@ -1,8 +1,8 @@
-ruleset:   
-  tag_support:    
-    name: "Label issues as support"   
-    events: [ issues ]    
-    label: support    
-    when:   
-      - body contains "/\[\s?x\s?\] support/"
+ruleset:
+  tag_support:
+    name: "Label issues as support"
+    events: [ issues ]
+    label: support
+    when:
+      - body matches "/\[\s?x\s?\] support/"
       - action = "opened"
