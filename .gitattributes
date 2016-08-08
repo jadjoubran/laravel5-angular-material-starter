@@ -8,3 +8,5 @@
 .github export-ignore
 .travis.yml export-ignore
 .varci.yml export-ignore
+code_of_conduct.md export-ignore
+CHANGELOG.md export-ignore
