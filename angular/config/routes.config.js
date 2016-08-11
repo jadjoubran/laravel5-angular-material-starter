@@ -7,10 +7,16 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/');
 
+    /*
+        data: {auth: true} would require JWT auth
+        However you can't apply it to the abstract state
+        or landing state because you'll enter a redirect loop
+    */
+
 	$stateProvider
 		.state('app', {
 			abstract: true,
-            data: {},//{auth: true} would require JWT auth
+            data: {},
 			views: {
 				header: {
 					templateUrl: getView('header')
