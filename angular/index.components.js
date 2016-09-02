@@ -1,5 +1,5 @@
 import {AppHeaderComponent} from './app/components/app-header/app-header.component';
-import {AppViewComponent} from './app/components/app-view/app-view.component';
+import {AppRootComponent} from './app/components/app-root/app-root.component';
 import {AppShellComponent} from './app/components/app-shell/app-shell.component';
 import {ResetPasswordComponent} from './app/components/reset-password/reset-password.component';
 import {ForgotPasswordComponent} from './app/components/forgot-password/forgot-password.component';
@@ -8,7 +8,7 @@ import {RegisterFormComponent} from './app/components/register-form/register-for
 
 angular.module('app.components')
 	.component('appHeader', AppHeaderComponent)
-	.component('appView', AppViewComponent)
+	.component('appRoot', AppRootComponent)
 	.component('appShell', AppShellComponent)
 	.component('resetPassword', ResetPasswordComponent)
 	.component('forgotPassword', ForgotPasswordComponent)

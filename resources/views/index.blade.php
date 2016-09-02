@@ -26,7 +26,7 @@
         <div id="app-shell-content"></div>
     </app-shell>
 
-    <app-view></app-view>
+    <app-root></app-root>
 
 
     <script>

@@ -1,4 +1,4 @@
-class AppViewController {
+class AppRootController {
     constructor($mdToast, ToastService, $window) {
         'ngInject';
 
@@ -53,9 +53,9 @@ class AppViewController {
     }
 }
 
-export const AppViewComponent = {
-    templateUrl: './views/app/components/app-view/app-view.component.html',
-    controller: AppViewController,
+export const AppRootComponent = {
+    templateUrl: './views/app/components/app-root/app-root.component.html',
+    controller: AppRootController,
     controllerAs: 'vm',
     bindings: {}
 }
