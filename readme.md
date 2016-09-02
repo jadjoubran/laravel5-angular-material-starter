@@ -1,49 +1,27 @@
-## Laravel 5.2 Angular Material Starter
+# Laravel PHP Framework
 
-[![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
-[![Latest Unstable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/unstable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
-[![Build Status](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter.svg?branch=master)](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter)
-[![StyleCI](https://styleci.io/repos/34944760/shield?style=flat)](https://styleci.io/repos/34944760)
-[![Code Climate](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter/badges/gpa.svg)](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter)
-[![License](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/license)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
-[![Join the chat at https://gitter.im/jadjoubran/laravel5-angular-material-starter](https://badges.gitter.im/jadjoubran/laravel5-angular-material-starter.svg)](https://gitter.im/jadjoubran/laravel5-angular-material-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-![Laravel & Angular](http://i.imgur.com/CwQy3Il.png)
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
 
+Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Demo
+## Official Documentation
 
-An online <a href="http://www.laravel-angular.io/" target="_blank">demo</a> is available.
-
-
-## Docs
-
-[View Latest Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
-
-Build Progressive Web Apps using version [3.3](https://laravel-angular.readme.io/v3.3)
-
-Running on 3.2? Here are the [3.2 Docs](https://laravel-angular.readme.io/v3.1)
-
-## Screencasts
-
-Screencasts on [Youtube](https://www.youtube.com/c/LaravelAngularMaterialStarter).
-
-
-## Issues, questions and feature requests
-Open a new issue, I'd love to help.
-
-
-
-## Do It Yourself (Outdated)
-
-A nice article on <a href="http://www.sitepoint.com/flexible-and-easily-maintainable-laravel-angular-material-apps/" target="_blank">sitepoint</a> that explains the first few versions of this repository. Recommended read if you're not familiar with the underlying technologies.
-
+Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
 ## Contributing
 
-Thank you for contributing to this repository.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
 
-Here are the guidelines:
+## Security Vulnerabilities
 
-1. If you are adding/modifying backend functionality, make sure to include the appropriate `test`. Let me know if you need help writing the test.
-    
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

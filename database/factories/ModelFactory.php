@@ -12,17 +12,12 @@
 */
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
-    return [
-        'name'  => $faker->name,
-        'email' => $faker->safeEmail,
-        //use bcrypt('password') if you want to assert for a specific password, but it might slow down your tests
-        'password' => str_random(10),
-    ];
-});
+    static $password;
 
-$factory->define(App\PasswordReset::class, function (Faker\Generator $faker) {
     return [
-        'email'  => $faker->safeEmail,
-        'token' => str_random(10),
+        'name' => $faker->name,
+        'email' => $faker->safeEmail,
+        'password' => $password ?: $password = bcrypt('secret'),
+        'remember_token' => str_random(10),
     ];
 });
