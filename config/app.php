@@ -168,6 +168,7 @@ return [
          */
 
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        LaravelAngular\Generators\LaravelServiceProvider::class,
 
         /*
          * Application Service Providers...

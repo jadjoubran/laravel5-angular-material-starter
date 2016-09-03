@@ -1,0 +1,27 @@
+{
+  "staticFileGlobs": [
+    "public/fonts/lato-light-webfont.woff",
+    "public/fonts/lato-light-webfont.woff2",
+    "public/fonts/lato-regular-webfont.woff",
+    "public/fonts/lato-regular-webfont.woff2",
+    "public/build/js/final-*.js",
+    "public/build/css/final-*.css",
+    "public/img/**/*.{png,jpg,gif,svg}"
+  ],
+  "stripPrefix": "public",
+  "maximumFileSizeToCacheInBytes": 5242880,
+  "runtimeCaching": [{
+    "urlPattern": "'/'",
+    "handler": "cacheFirst"
+  }, {
+    "urlPattern": "'https://fonts.googleapis.com/'",
+    "handler": "cacheFirst"
+  }, {
+    "urlPattern": "'https://fonts.gstatic.com/'",
+    "handler": "cacheFirst"
+  }, {
+    "urlPattern": "'https://ghbtns.com/'",
+    "handler": "cacheFirst"
+  }],
+  "handleFetch": true
+}

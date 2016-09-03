@@ -16,5 +16,8 @@
     "angular": true,
     "module": true,
     "inject": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
   }
 }

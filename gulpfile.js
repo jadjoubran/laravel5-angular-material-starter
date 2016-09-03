@@ -2,7 +2,11 @@
 
 const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vue');
+require('laravel-elixir-ng-annotate');
+require('laravel-elixir-eslint');
+
+require('./tasks/swPrecache.task.js');
+require('./tasks/bower.task.js');
 
 /*
  |--------------------------------------------------------------------------
@@ -34,12 +38,16 @@ require('laravel-elixir-vue');
      ];
 
 elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('./angular/index.main.js', 'app.js')
+    mix.bower()
+       .webpack('./angular/index.main.js', 'public/js/app.js')
+       .annotate('public/js/app.js')
        .sass(['./angular/**/*.scss', '!./angular/critical.scss'], 'public/css')
        .sass('./angular/critical.scss', 'public/css/critical.css')
        .styles(styles, './public/css/final.css')
-       .combine(scripts, 'final.js');
+       .eslint('./angular/**/*.js')
+       .combine(scripts, 'public/js/final.js')
+       .version(assets)
+       .swPrecache();
 
        //enable front-end tests by adding the below task
        // .karma({jsDir: karmaJsDir});

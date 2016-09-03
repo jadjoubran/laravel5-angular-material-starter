@@ -1,0 +1,22 @@
+{
+  "name": "laravel5-angular-material-starter",
+  "authors": [
+    "Jad Joubran <jad@jadjoubran.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5",
+    "angular-ui-router": "~1.0.0-alpha.3",
+    "ngstorage": "~0.3.10",
+    "angular-material": "~1.0.8",
+    "restangular": "~1.5.2",
+    "angular-loading-bar": "~0.9.0",
+    "satellizer": "^0.14.0"
+  }
+}

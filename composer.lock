@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "50f2fc3100a4f0f1a586b6bc991d100c",
-    "content-hash": "6c4cde498f8515489de2b0e73ca9e88e",
+    "hash": "732c394ca2888a67072b0425bc4ad4d7",
+    "content-hash": "376af0bb76daf3fb08f5762cfbe1481d",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -432,6 +432,46 @@
                 "laravel"
             ],
             "time": "2016-09-01 14:06:47"
+        },
+        {
+            "name": "laravelangular/generators",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jadjoubran/laravel-ng-artisan-generators.git",
+                "reference": "0ddb7bf3e8768ce9aee99f8545990f47973baed7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jadjoubran/laravel-ng-artisan-generators/zipball/0ddb7bf3e8768ce9aee99f8545990f47973baed7",
+                "reference": "0ddb7bf3e8768ce9aee99f8545990f47973baed7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.1.* || 5.2.* || 5.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelAngular\\Generators\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Joubran",
+                    "email": "joubran.jad@gmail.com"
+                },
+                {
+                    "name": "Alessandro Rovito",
+                    "email": "alessandro.rovito@gmail.com"
+                }
+            ],
+            "description": "Angular generators for Artisan",
+            "time": "2016-09-03 20:37:16"
         },
         {
             "name": "league/flysystem",
