@@ -99,8 +99,8 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function authUserGet($uri, $headers = [])
     {
-        if(!isset($headers['Authorization'])){
-            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        if (! isset($headers['Authorization'])) {
+            $headers['Authorization'] = 'Bearer '.$this->getAuthUserToken();
         }
 
         return $this->get($uri, $headers);
@@ -108,8 +108,8 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function authUserPost($uri, $parameters = [], $headers = [])
     {
-        if(!isset($headers['Authorization'])){
-            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        if (! isset($headers['Authorization'])) {
+            $headers['Authorization'] = 'Bearer '.$this->getAuthUserToken();
         }
 
         return $this->post($uri, $parameters, $headers);
@@ -117,17 +117,17 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function authUserPut($uri, $parameters = [], $headers = [])
     {
-        if(!isset($headers['Authorization'])){
-            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        if (! isset($headers['Authorization'])) {
+            $headers['Authorization'] = 'Bearer '.$this->getAuthUserToken();
         }
 
         return $this->put($uri, $parameters, $headers);
     }
 
-    public function authUserDelete($uri, $parameters = [], $headers)
+    public function authUserDelete($uri, $parameters, $headers)
     {
-        if(!isset($headers['Authorization'])){
-            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        if (! isset($headers['Authorization'])) {
+            $headers['Authorization'] = 'Bearer '.$this->getAuthUserToken();
         }
 
         return $this->delete($uri, $parameters, $headers);
@@ -135,8 +135,8 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function authUserCall($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null)
     {
-        if(!isset($parameters['Authorization'])){
-            $parameters['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        if (! isset($parameters['Authorization'])) {
+            $parameters['Authorization'] = 'Bearer '.$this->getAuthUserToken();
         }
 
         return $this->call($method, $uri, $parameters, $cookies, $files, $server, $content);
