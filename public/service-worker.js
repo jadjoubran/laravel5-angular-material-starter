@@ -24,7 +24,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/build/css/final-2f6709236b.css","2f6709236bfe16d1ba4e827aa2dd8f1e"],["/build/js/final-457d99eb5e.js","457d99eb5e33972775cc1a21f0524017"],["/img/cover.jpg","663c637c9a53da423260d738aae89fd0"],["/img/icon.png","7803e776ea4a6133c2cc17479b904447"],["/img/icons/angular-generators.svg","8332f6acb165cbd6946eaa986af903bc"],["/img/icons/elixir.svg","cbee7e251a32f42752f376e641e6920d"],["/img/icons/folder-byfeature.svg","9c3875c4465ac6fd4618e6a03ddecd1d"],["/img/icons/json-webtoken.svg","cd52d5a3fd4a668a7e24ba3f549d1260"],["/img/icons/logo-grey.svg","1134d1377b245a40089571f94cca67c4"],["/img/icons/logo.svg","4417721be495be1a65ad7cd622ea958c"],["/img/icons/restful-api.svg","c49ec241782187c2f27e6469913901e2"]];
+var precacheConfig = [["/build/css/final-1c64fe1fe9.css","1c64fe1fe9708a60db1b255a212bccbf"],["/build/js/final-9d28a42511.js","9d28a4251191e2f040ad4f7ca60433ef"],["/img/cover.jpg","663c637c9a53da423260d738aae89fd0"],["/img/icon.png","7803e776ea4a6133c2cc17479b904447"],["/img/icons/angular-generators.svg","8332f6acb165cbd6946eaa986af903bc"],["/img/icons/elixir.svg","cbee7e251a32f42752f376e641e6920d"],["/img/icons/folder-byfeature.svg","9c3875c4465ac6fd4618e6a03ddecd1d"],["/img/icons/json-webtoken.svg","cd52d5a3fd4a668a7e24ba3f549d1260"],["/img/icons/logo-grey.svg","1134d1377b245a40089571f94cca67c4"],["/img/icons/logo.svg","4417721be495be1a65ad7cd622ea958c"],["/img/icons/restful-api.svg","c49ec241782187c2f27e6469913901e2"]];
 var cacheName = 'sw-precache-v2--' + (self.registration ? self.registration.scope : '');
 
 

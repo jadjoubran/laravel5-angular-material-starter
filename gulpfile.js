@@ -2,7 +2,6 @@
 
 const elixir = require('laravel-elixir');
 
-require('laravel-elixir-ng-annotate');
 require('laravel-elixir-eslint');
 
 require('./tasks/swPrecache.task.js');
@@ -39,8 +38,7 @@ require('./tasks/bower.task.js');
 
 elixir(mix => {
     mix.bower()
-       .webpack('./angular/index.main.js', 'public/js/app.js')
-       .annotate('public/js/app.js')
+       .webpack('./angular/index.main.js', './public/js/app.js')
        .sass(['./angular/**/*.scss', '!./angular/critical.scss'], 'public/css')
        .sass('./angular/critical.scss', 'public/css/critical.css')
        .styles(styles, './public/css/final.css')
