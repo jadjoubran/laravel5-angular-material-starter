@@ -99,35 +99,45 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
     public function authUserGet($uri, $headers = [])
     {
-        $headers = ['AUthorization' => 'Bearer '.$this->getAuthUserToken()];
+        if(!isset($headers['Authorization'])){
+            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        }
 
         return $this->get($uri, $headers);
     }
 
-    public function authUserPost($uri, $parameters = [])
+    public function authUserPost($uri, $parameters = [], $headers = [])
     {
-        $uri .= '?token='.$this->getAuthUserToken();
+        if(!isset($headers['Authorization'])){
+            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        }
 
-        return $this->post($uri, $parameters);
+        return $this->post($uri, $parameters, $headers);
     }
 
-    public function authUserPut($uri, $parameters = [])
+    public function authUserPut($uri, $parameters = [], $headers = [])
     {
-        $uri .= '?token='.$this->getAuthUserToken();
+        if(!isset($headers['Authorization'])){
+            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        }
 
-        return $this->put($uri, $parameters);
+        return $this->put($uri, $parameters, $headers);
     }
 
-    public function authUserDelete($uri, $parameters = [])
+    public function authUserDelete($uri, $parameters = [], $headers)
     {
-        $uri .= '?token='.$this->getAuthUserToken();
+        if(!isset($headers['Authorization'])){
+            $headers['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        }
 
-        return $this->delete($uri, $parameters);
+        return $this->delete($uri, $parameters, $headers);
     }
 
     public function authUserCall($method, $uri, $parameters = [], $cookies = [], $files = [], $server = [], $content = null)
     {
-        $uri .= '?token='.$this->getAuthUserToken();
+        if(!isset($parameters['Authorization'])){
+            $parameters['Authorization'] = 'Bearer ' . $this->getAuthUserToken();
+        }
 
         return $this->call($method, $uri, $parameters, $cookies, $files, $server, $content);
     }
