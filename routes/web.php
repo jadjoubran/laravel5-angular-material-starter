@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'AngularController@serveApp');
+
+Route::get('/unsupported-browser', 'AngularController@unsupported');

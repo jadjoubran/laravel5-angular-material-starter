@@ -14,13 +14,10 @@
     "jquery": "^3.1.0",
     "laravel-elixir": "^6.0.0-9",
     "laravel-elixir-eslint": "^3.0.0",
-    "laravel-elixir-vue": "^0.1.4",
     "laravel-elixir-webpack-official": "^1.0.2",
     "lodash": "^4.14.0",
     "main-bower-files": "^2.13.1",
     "ng-annotate-loader": "^0.1.1",
-    "sw-precache": "^4.0.0",
-    "vue": "^1.0.26",
-    "vue-resource": "^0.9.3"
+    "sw-precache": "^4.0.0"
   }
 }
