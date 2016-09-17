@@ -28,22 +28,22 @@ abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
     }
 
     public function getAuthUser()
-       {
-           if (! $this->authUser) {
-               $this->setAuthUserToken();
-           }
+    {
+        if (! $this->authUser) {
+            $this->setAuthUserToken();
+        }
 
-           return $this->authUser;
-       }
+        return $this->authUser;
+    }
 
-       public function getAuthUserToken()
-       {
-           if (! $this->authUserToken) {
-               $this->setAuthUserToken();
-           }
+    public function getAuthUserToken()
+    {
+        if (! $this->authUserToken) {
+            $this->setAuthUserToken();
+        }
 
-           return $this->authUserToken;
-       }
+        return $this->authUserToken;
+    }
 
     public function seeApiSuccess()
     {
