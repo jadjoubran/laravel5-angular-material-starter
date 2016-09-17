@@ -4,8 +4,8 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.js$/,
-            loaders: ['ng-annotate', 'babel'],
-            exclude: /node_modules/
+            loaders: ['ng-annotate','babel?presets[]=es2015'],
+            exclude: /node_modules/,
         }]
     }
 };
