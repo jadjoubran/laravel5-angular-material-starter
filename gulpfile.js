@@ -38,7 +38,7 @@ require('./tasks/bower.task.js');
 
 elixir(mix => {
     mix.bower()
-       .copy('./angular/**/*.html', './public/views/')
+       .copy('./angular/app/**/*.html', './public/views/app/')
        .webpack('./angular/index.main.js', './public/js/app.js')
        .sass(['./angular/**/*.scss', '!./angular/critical.scss'], 'public/css')
        .sass('./angular/critical.scss', 'public/css/critical.css')

@@ -13,13 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
-
 Route::post('auth/login', 'Auth\AuthController@login');
 Route::post('auth/register', 'Auth\AuthController@register');
 
 Route::post('auth/password/email', 'Auth\PasswordResetController@sendResetLinkEmail');
 Route::get('auth/password/verify', 'Auth\PasswordResetController@verify');
 Route::post('auth/password/reset', 'Auth\PasswordResetController@reset');
+
+
+//protected API routes with JWT (must be logged in)
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:api');
