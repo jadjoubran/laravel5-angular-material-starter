@@ -2,8 +2,10 @@
 
 namespace App\Exceptions;
 
+use Route;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
+use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -44,6 +46,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if (Route::current()->getPrefix() === 'api' && $exception instanceof ValidationException){
+            return response()->error($exception->validator, 422);
+        }
         return parent::render($request, $exception);
     }
 
@@ -56,7 +61,7 @@ class Handler extends ExceptionHandler
      */
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        if ($request->expectsJson()) {
+        if (Route::current()->getPrefix() === 'api') {
             return response()->json(['error' => 'Unauthenticated.'], 401);
         }
 
