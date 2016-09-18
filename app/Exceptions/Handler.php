@@ -46,9 +46,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if (Route::current()->getPrefix() === 'api' && $exception instanceof ValidationException){
+        if (Route::current()->getPrefix() === 'api' && $exception instanceof ValidationException) {
             return response()->error($exception->validator, 422);
         }
+
         return parent::render($request, $exception);
     }
 
