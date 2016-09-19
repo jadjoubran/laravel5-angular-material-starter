@@ -9,7 +9,7 @@
         "laravel/framework": "5.2.*",
         "tymon/jwt-auth": "0.5.*",
         "barryvdh/laravel-cors": "0.7.x",
-        "laravelangular/generators": "2.6.x",
+        "laravelangular/generators": "2.7.x",
         "dingo/api": "1.0.x@dev"
     },
     "require-dev": {
@@ -37,16 +37,12 @@
             "php -r \"copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-           "php -r \"unlink('code_of_conduct.md');\"",
-           "php -r \"unlink('CHANGELOG.md');\"",
-           "php -r \"unlink('.codeclimate.yml');\"",
-           "php -r \"unlink('.travis.yml');\"",
            "php artisan key:generate",
            "php artisan jwt:generate"
         ],
         "post-install-cmd": [
-            "php artisan clear-compiled",
-            "php artisan optimize"
+           "php artisan clear-compiled",
+           "php artisan optimize"
         ],
         "pre-update-cmd": [
             "php artisan clear-compiled"

@@ -1,5 +1,20 @@
 ## Changelog
 
+### 3.3.0
+- Progressive Web App capabilities
+- Progressive Web App tools (web app manifest generator, sw-precache)
+- Commented out karma by default (run it in a separate console)
+- Removed bold open-sans font
+- Removed browserSync
+- Removed deprecated seeJsonKeyValue test helpers
+- Removed gitignore that needs to be in global gitignore
+- Migrated from LESS to SCSS [#350](https://github.com/jadjoubran/laravel5-angular-material-starter/pull/350)
+- Combined all javascripts into 1 final.js
+- Combined all styles into 1 final.css
+
+### 3.2.1
+- Fixed npm install issue [#353](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/353)
+
 ### 3.2.0
 - Out of the box JWT authentication with Satellizer [#202](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/202)
 - Consistent indentation in editorconfig [#190](https://github.com/jadjoubran/laravel5-angular-material-starter/issues/190)

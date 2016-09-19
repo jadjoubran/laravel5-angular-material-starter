@@ -14,7 +14,8 @@
     <script type="text/javascript">document.location.href = '/unsupported-browser'</script>
     <![endif]-->
 
-    <style><?php require("../angular/critical.css") ?></style>
+    <style><?php require( public_path( "css/critical.css" ) ) ?></style>
+    
 </head>
 <body>
 
@@ -28,7 +29,7 @@
     <app-view></app-view>
 
 
-    <script async defer>
+    <script>
     (function(){
         var link = document.createElement("link");
         link.href = "{!! elixir('css/final.css') !!}";

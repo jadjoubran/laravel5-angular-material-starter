@@ -20,9 +20,9 @@ An online <a href="http://www.laravel-angular.io/" target="_blank">demo</a> is a
 
 [View Latest Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
 
+Build Progressive Web Apps using version [3.3](https://laravel-angular.readme.io/v3.3)
 
-
-Running on 3.0? Here are the [3.0 Docs](https://laravel-angular.readme.io/v3.0)
+Running on 3.2? Here are the [3.2 Docs](https://laravel-angular.readme.io/v3.1)
 
 ## Screencasts
 

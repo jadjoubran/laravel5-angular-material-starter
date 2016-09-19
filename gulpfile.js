@@ -1,9 +1,10 @@
-var elixir = require('laravel-elixir');
+var elixir     = require('laravel-elixir');
+
+require('./tasks/concatScripts.task.js');
+require('./tasks/swPrecache.task.js');
+require('./tasks/ngHtml2Js.task.js');
 require('./tasks/angular.task.js');
 require('./tasks/bower.task.js');
-require('./tasks/ngHtml2Js.task.js');
-require('./tasks/swPrecache.task.js');
-require('./tasks/concatScripts.task.js');
 require('laravel-elixir-karma');
 
 /*
@@ -43,14 +44,12 @@ elixir(function(mix) {
         .angular('./angular/')
         .ngHtml2Js('./angular/**/*.html')
         .concatScripts(scripts, 'final.js')
-        .sass('./angular/**/*.scss', 'public/css')
+        .sass(['./angular/**/*.scss', '!./angular/critical.scss'], 'public/css')
+        .sass('./angular/critical.scss', 'public/css/critical.css')
         .styles(styles, './public/css/final.css')
         .version(assets)
-        .swPrecache()
-        .browserSync({
-            proxy: 'localhost:8000'
-        })
-        .karma({
-            jsDir: karmaJsDir
-        });
+        .swPrecache();
+
+        //enable front-end tests by uncommenting the below line
+        // .karma({jsDir: karmaJsDir});
 });
