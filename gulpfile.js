@@ -23,10 +23,10 @@ require('./tasks/bower.task.js');
          'public/css/final.css'
      ],
      scripts = [
-         './public/js/vendor.js', './public/js/app.js'
+         'public/js/vendor.js', 'public/js/app.js'
      ],
      styles = [
-         './public/css/vendor.css', './public/css/app.css'
+         'public/css/vendor.css', 'public/css/app.css'
      ],
      karmaJsDir = [
          'public/js/vendor.js',
@@ -38,12 +38,12 @@ require('./tasks/bower.task.js');
 
 elixir(mix => {
     mix.bower()
-       .copy('./angular/app/**/*.html', './public/views/app/')
-       .webpack('./angular/index.main.js', './public/js/app.js')
-       .sass(['./angular/**/*.scss', '!./angular/critical.scss'], 'public/css')
-       .sass('./angular/critical.scss', 'public/css/critical.css')
-       .styles(styles, './public/css/final.css')
-       .eslint('./angular/**/*.js')
+       .copy('angular/app/**/*.html', 'public/views/app/')
+       .webpack('angular/index.main.js', 'public/js/app.js')
+       .sass(['angular/**/*.scss', '!angular/critical.scss'], 'public/css')
+       .sass('angular/critical.scss', 'public/css/critical.css')
+       .styles(styles, 'public/css/final.css')
+       .eslint('angular/**/*.js')
        .combine(scripts, 'public/js/final.js')
        .version(assets)
        .swPrecache();
