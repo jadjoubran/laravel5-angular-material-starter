@@ -7,6 +7,12 @@ require('laravel-elixir-eslint');
 require('./tasks/swPrecache.task.js');
 require('./tasks/bower.task.js');
 
+// setting assets paths
+elixir.config.assetsPath = './';
+elixir.config.css.folder = 'angular';
+elixir.config.css.sass.folder = 'angular';
+elixir.config.js.folder = 'angular';
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -26,7 +32,9 @@ require('./tasks/bower.task.js');
          'public/js/vendor.js', 'public/js/app.js'
      ],
      styles = [
-         'public/css/vendor.css', 'public/css/app.css'
+         // for some reason, ./ prefix here works fine!
+         // it is needed to override elixir.config.css.folder for styles mixin
+         './public/css/vendor.css', './public/css/app.css'
      ],
      karmaJsDir = [
          'public/js/vendor.js',
@@ -39,9 +47,9 @@ require('./tasks/bower.task.js');
 elixir(mix => {
     mix.bower()
        .copy('angular/app/**/*.html', 'public/views/app/')
-       .webpack('angular/index.main.js', 'public/js/app.js')
-       .sass(['angular/**/*.scss', '!angular/critical.scss'], 'public/css')
-       .sass('angular/critical.scss', 'public/css/critical.css')
+       .webpack('index.main.js', 'public/js/app.js')
+       .sass(['**/*.scss', 'critical.scss'], 'public/css')
+       .sass('critical.scss', 'public/css/critical.css')
        .styles(styles, 'public/css/final.css')
        .eslint('angular/**/*.js')
        .combine(scripts, 'public/js/final.js')
