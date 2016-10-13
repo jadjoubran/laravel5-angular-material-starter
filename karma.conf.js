@@ -7,7 +7,6 @@ module.exports = function(config) {
             'public/js/vendor.js',
             'node_modules/angular-mocks/angular-mocks.js',
             'node_modules/ng-describe/dist/ng-describe.js',
-            'public/js/partials.js',
             'public/js/app.js',
             'tests/angular/**/*.spec.js'
         ],

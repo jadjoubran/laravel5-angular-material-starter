@@ -14,8 +14,8 @@
     <script type="text/javascript">document.location.href = '/unsupported-browser'</script>
     <![endif]-->
 
-    <style><?php require( public_path( "css/critical.css" ) ) ?></style>
-    
+    <style><?php require(public_path("css/critical.css")) ?></style>
+
 </head>
 <body>
 
@@ -26,7 +26,8 @@
         <div id="app-shell-content"></div>
     </app-shell>
 
-    <app-view></app-view>
+
+    <app-root></app-root>
 
 
     <script>
@@ -39,7 +40,7 @@
     })();
     </script>
 
-    <script src="{!! elixir('js/final.js') !!}" async defer></script>
+    <script src="{!! elixir('js/final.js') !!}" async></script>
 
 </body>
 </html>

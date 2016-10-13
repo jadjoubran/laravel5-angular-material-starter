@@ -1,5 +1,10 @@
 ## Changelog
 
+### 3.4.0
+
+- Removed dingo/api
+- Upgraded to Laravel 5.3
+
 ### 3.3.0
 - Progressive Web App capabilities
 - Progressive Web App tools (web app manifest generator, sw-precache)

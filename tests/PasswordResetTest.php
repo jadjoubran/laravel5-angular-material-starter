@@ -91,7 +91,6 @@ class PasswordResetTest extends TestCase
             $this->assertContains($checks['content'], $message->getBody());
 
             return true;
-        }), Mockery::any()])
-            ->once();
+        }), Mockery::any()])->once();
     }
 }

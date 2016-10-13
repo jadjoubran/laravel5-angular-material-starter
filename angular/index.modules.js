@@ -6,7 +6,6 @@ angular.module('app', [
     'app.directives',
 	'app.routes',
 	'app.config',
-	'app.partials'
 ]);
 
 angular.module('app.run', []);

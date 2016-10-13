@@ -1,6 +1,6 @@
 <?php
 
-class TestCase extends Illuminate\Foundation\Testing\TestCase
+abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
     /**
      * The base URL to use while testing the application.
@@ -44,8 +44,6 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $this->authUserToken;
     }
-
-    /*Laravel angular material starter test helpers*/
 
     public function seeApiSuccess()
     {

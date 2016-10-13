@@ -198,16 +198,3 @@ body{
 .Landing-featuresEntry--generators md-icon{
     width: 80px;
 }
-
-/*
-This is a terrible temporary hack,
-to fix layout issues with flex on iOS (chrome & safari)
-Make sure to remove this when you modify this demo
-*/
-@media only screen and (max-width : 950px) {
-    .iOS-hack .flex-100,
-    .iOS-hack .flex-50,
-    .iOS-hack .flex-33{
-        flex: none !important;
-    }
-}
