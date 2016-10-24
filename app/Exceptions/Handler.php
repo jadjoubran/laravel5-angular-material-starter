@@ -64,7 +64,7 @@ class Handler extends ExceptionHandler
      */
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        if ($request->wantsJson() || $this->isApiRoute($request)) {
+        if ($request->expectsJson() || $this->isApiRoute($request)) {
             return response()->json(['error' => $exception->getMessage()], 401);
         }
 
