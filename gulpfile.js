@@ -47,6 +47,7 @@ elixir.config.js.folder = 'angular';
 elixir(mix => {
     mix.bower()
        .copy('angular/app/**/*.html', 'public/views/app/')
+       .copy('angular/dialogs/**/*.html', 'public/views/dialogs/')
        .webpack('index.main.js', 'public/js/app.js')
        .sass(['**/*.scss', 'critical.scss'], 'public/css')
        .sass('critical.scss', 'public/css/critical.css')
