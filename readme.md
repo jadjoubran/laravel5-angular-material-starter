@@ -24,6 +24,12 @@ An online <a href="http://www.laravel-angular.io/" target="_blank">demo</a> is a
 
 Running on 3.2? Here are the [3.2 Docs](https://laravel-angular.readme.io/v3.2)
 
+## Laravel 5 & Angular 2
+
+Join the discussion on
+- [Laravel & Angular](https://github.com/jadjoubran/laravel-angular)
+- [Angular & Laravel](https://github.com/jadjoubran/angular-laravel)
+
 ## Screencasts
 
 Screencasts on [Youtube](https://www.youtube.com/c/LaravelAngularMaterialStarter).
