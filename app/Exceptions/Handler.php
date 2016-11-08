@@ -2,6 +2,8 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Route;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
@@ -46,7 +48,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if (Route::current()->getPrefix() === 'api' && $exception instanceof ValidationException) {
+        if ($exception instanceof ValidationException && $this->isApiRoute($request)) {
             return response()->error($exception->validator, 422);
         }
 
@@ -62,10 +64,21 @@ class Handler extends ExceptionHandler
      */
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        if (Route::current()->getPrefix() === 'api') {
-            return response()->json(['error' => 'Unauthenticated.'], 401);
+        if ($request->expectsJson() || $this->isApiRoute($request)) {
+            return response()->json(['error' => $exception->getMessage()], 401);
         }
 
         return redirect()->guest('login');
+    }
+
+    /**
+     * Check for api routes.
+     *
+     * @param Request $request
+     * @return bool
+     */
+    protected function isApiRoute($request)
+    {
+        return $request->route() && in_array('api', $request->route()->middleware());
     }
 }
