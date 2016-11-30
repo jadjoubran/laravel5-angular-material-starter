@@ -6,6 +6,7 @@ require('laravel-elixir-eslint');
 
 require('./tasks/swPrecache.task.js');
 require('./tasks/bower.task.js');
+require('./tasks/template-cache.task');
 
 // setting assets paths
 elixir.config.assetsPath = './';
@@ -29,7 +30,7 @@ elixir.config.js.folder = 'angular';
          'public/css/final.css'
      ],
      scripts = [
-         'public/js/vendor.js', 'public/js/app.js'
+         'public/js/vendor.js', 'public/js/app.js', 'public/js/views.js'
      ],
      styles = [
          // for some reason, ./ prefix here works fine!
@@ -46,7 +47,8 @@ elixir.config.js.folder = 'angular';
 
 elixir(mix => {
     mix.bower()
-       .copy('angular/app/**/*.html', 'public/views/app/')
+       // .copy('angular/app/**/*.html', 'public/views/app/')
+       .templateCache('angular/app/**/*.html', 'public/js')
        .webpack('index.main.js', 'public/js/app.js')
        .sass(['**/*.scss', 'critical.scss'], 'public/css')
        .sass('critical.scss', 'public/css/critical.css')
