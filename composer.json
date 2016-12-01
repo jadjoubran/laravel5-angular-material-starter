@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.3.*",
-        "tymon/jwt-auth": "0.5.*",
+        "tymon/jwt-auth": "1.0.*@dev",
         "laravelangular/generators": "2.7.*",
         "irazasyed/jwt-auth-guard": "^1.0",
         "barryvdh/laravel-cors": "^0.8.2"
