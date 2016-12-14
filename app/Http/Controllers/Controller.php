@@ -20,7 +20,7 @@ class Controller extends BaseController
         $validator = $this->getValidationFactory()->make($request->all(), $rules, $messages, $customAttributes);
 
         if ($validator->fails()) {
-            throw new ValidationHttpException($validator->errors());
+            throw new ValidationException($validator->errors());
         }
     }
 }
