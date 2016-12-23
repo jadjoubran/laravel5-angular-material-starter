@@ -20,12 +20,7 @@ class Controller extends BaseController
         $validator = $this->getValidationFactory()->make($request->all(), $rules, $messages, $customAttributes);
 
         if ($validator->fails()) {
-            if (Route::current()->getPrefix() === 'api') {
-                $message = $validator->errors()->first();
-                throw new ValidationException($message);
-            } else {
-                throw new ValidationException($this);
-            }
+            throw new ValidationException($validator->errors());
         }
     }
 }
