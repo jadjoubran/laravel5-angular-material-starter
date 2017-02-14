@@ -21,6 +21,12 @@
     "lodash": "^4.14.0",
     "main-bower-files": "^2.13.1",
     "ng-annotate-loader": "^0.1.1",
-    "sw-precache": "^4.0.0"
+    "sw-precache": "^4.0.0",
+    "buble": "^0.15.2",
+    "buble-loader": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-uglify": "^2.0.1"
   }
 }
