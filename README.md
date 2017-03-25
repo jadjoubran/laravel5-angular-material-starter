@@ -44,6 +44,9 @@ Open a new issue, I'd love to help.
 
 A nice article on <a href="http://www.sitepoint.com/flexible-and-easily-maintainable-laravel-angular-material-apps/" target="_blank">sitepoint</a> that explains the first few versions of this repository. Recommended read if you're not familiar with the underlying technologies.
 
+## Community translations
+
+- [v3.4 - Chinese](https://github.com/ArrayZoneYour/Laravel-Angular-Material-Doc-Chinese)
 
 ## Contributing
 
