@@ -21,6 +21,14 @@ export class APIService {
                       return ToastService.error(response.statusText)
                     }
 				})
+				.addResponseInterceptor(function (response, operation, what) {
+                    if (operation === 'getList') {
+                        var newResponse = response.data[what];
+                        newResponse.error = response.error;
+                        return newResponse;
+                    }
+                    return response;
+                })
 				.addFullRequestInterceptor(function(element, operation, what, url, headers) {
 					let token = $window.localStorage.satellizer_token;
 					if (token) {
