@@ -9,13 +9,31 @@ export class ToastService {
 		this.action = 'OK';
 	}
 
-	show(content) {
+    fromTemplate(template, options) {
+        if (!template) {
+            return false;
+        }
+
+        if (!options) {
+            options = {};
+        }
+
+        options.templateUrl = './views/toasts/' + template + '/' + template + '.toast.html';
+
+        return this.$mdToast.show(options);
+    }
+
+    hide(params){
+        return this.$mdToast.hide(params);
+    }
+
+	show(content, params) {
 		if (!content) {
 			return false;
 		}
 
 		return this.$mdToast.show(
-			this.$mdToast.simple()
+			this.$mdToast.simple(params)
 			.content(content)
 			.position(this.position)
 			.action(this.action)
@@ -23,13 +41,13 @@ export class ToastService {
 		);
 	}
 
-	error(content) {
+	error(content, params) {
 		if (!content) {
 			return false;
 		}
 
 		return this.$mdToast.show(
-			this.$mdToast.simple()
+			this.$mdToast.simple(params)
 			.content(content)
 			.position(this.position)
 			.theme('warn')
