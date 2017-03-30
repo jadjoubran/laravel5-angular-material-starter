@@ -1,9 +1,10 @@
 class LoginFormController {
-	constructor($auth, ToastService) {
+	constructor($auth, ToastService, $state) {
 		'ngInject';
 
 		this.$auth = $auth;
 		this.ToastService = ToastService;
+		this.$state = $state;
 	}
 
     $onInit(){
@@ -22,6 +23,8 @@ class LoginFormController {
 				this.$auth.setToken(response.data);
 
 				this.ToastService.show('Logged in successfully.');
+				
+				this.$state.go(this.returnTo.state, this.returnTo.params, { reload: true });
 			})
 			.catch(this.failedLogin.bind(this));
 	}
