@@ -10,11 +10,6 @@
 
 ![Laravel & Angular](http://i.imgur.com/CwQy3Il.png)
 
-## 2017 Update
-
-While this starter used to be an excellent starting point for Laravel 5 & Angular 1.x, using Angular 1.x results in large JavaScript bundles which makes mobile experience slow.  
-Thus it's recommended to upgrade to Angular (2+).
-
 
 ## Demo
 
@@ -32,14 +27,8 @@ You can use the shiny new [Laravel & Angular package](https://github.com/jadjoub
 [View Latest Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
 
 
-
 Running on 3.2? Here are the [3.2 Docs](https://laravel-angular.readme.io/v3.2)
 
-## Laravel 5 & Angular 2
-
-Join the discussion on
-- [Laravel & Angular](https://github.com/jadjoubran/laravel-angular)
-- [Angular & Laravel](https://github.com/jadjoubran/angular-laravel)
 
 ## Screencasts
 
