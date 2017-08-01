@@ -16,6 +16,12 @@
 An online <a href="http://www.laravel-angular.io/" target="_blank">demo</a> is available.
 
 
+## Angular (2+) update
+
+While this starter used to be an excellent starting point for Laravel 5 & Angular 1.x, using Angular 1.x results in large JavaScript bundles which makes mobile experience slow.  
+Thus it's recommended to upgrade to Angular (2+).
+You can use the shiny new [Laravel & Angular package](https://github.com/jadjoubran/laravel-angular)
+
 ## Docs
 
 [View Latest Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
