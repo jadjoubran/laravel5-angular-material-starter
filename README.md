@@ -10,6 +10,11 @@
 
 ![Laravel & Angular](http://i.imgur.com/CwQy3Il.png)
 
+## 2017 Update
+
+While this starter used to be an excellent starting point for Laravel 5 & Angular 1.x, using Angular 1.x results in large JavaScript bundles which makes mobile experience slow.  
+Thus it's recommended to upgrade to Angular (2+).
+
 
 ## Demo
 
